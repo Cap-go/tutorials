@@ -1,2 +1,0 @@
-# tutorials
-Capacitor tutorials
