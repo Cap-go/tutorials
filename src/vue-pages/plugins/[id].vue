@@ -37,20 +37,20 @@ const showReadme = ref(1)
           </div>
           <div class="flex flex-row flex-wrap items-center justify-between">
             <a
+              target="_blank"
               v-if="props.href"
+              :href="props.href"
               aria-label="View Repo URL"
               class="mt-8 w-full rounded border border-white/50 px-6 py-2 text-center text-sm hover:border-white sm:w-auto"
-              :href="props.href"
-              target="_blank"
             >
               View Repo &rarr;
             </a>
             <a
+              target="_blank"
               v-if="props.name"
               aria-label="View NPM"
-              class="mt-8 w-full rounded border border-white/50 px-6 py-2 text-center text-sm hover:border-white sm:w-auto"
               :href="`https://www.npmjs.com/package/${props.name}`"
-              target="_blank"
+              class="mt-8 w-full rounded border border-white/50 px-6 py-2 text-center text-sm hover:border-white sm:w-auto"
             >
               View on NPM &rarr;
             </a>

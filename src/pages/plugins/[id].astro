@@ -7,15 +7,20 @@ import { useRuntimeConfig } from '../../config/app'
 import VuePluginPDP from '../../vue-pages/plugins/[id].vue'
 
 export async function getStaticPaths() {
-  let plugins: Plugin[] = actions
-  let tuts = await Astro.glob('../../content/plugins-tutorials/**/*.md')
   let tutMap: any = {}
+  let processTuts: Plugin[] = []
+  let tuts = await Astro.glob('../../content/plugins-tutorials/**/*.md')
   tuts.forEach((i) => {
     const slug = i.file.substring(i.file.lastIndexOf('/') + 1).replace('.md', '')
     tutMap[slug] = i.rawContent()
+    const findTut = actions.find((item) => item.href.substring(item.href.lastIndexOf('/') + 1) === slug.replace('.md', ''))
+    if (findTut) {
+      processTuts.push(findTut)
+    }
   })
+  let plugins: Plugin[] = processTuts
   await Promise.all(
-    actions.map(async (item, index) => {
+    processTuts.map(async (item, index) => {
       const fetchWithToken = async (githubApiUrl: string) => {
         if (import.meta.env.BEARER_TOKEN) {
           return await fetch(githubApiUrl, {

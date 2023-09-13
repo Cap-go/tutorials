@@ -20,6 +20,8 @@ async function loadVectorStore() {
   return await FaissStore.fromDocuments([new Document({ pageContent: 'Hey' })], new OpenAIEmbeddings())
 }
 
+let createTuts = {}
+
 async function chat(input, pluginPath) {
   const outputFile = join(process.cwd(), 'src', 'content', 'plugins-tutorials', `${pluginPath}.md`)
   const currentContent = existsSync(outputFile) ? readFileSync(outputFile, 'utf8') : null
@@ -51,16 +53,30 @@ async function chat(input, pluginPath) {
     })
     const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever(), prompt)
     await chain.call({ query: input })
+    createTuts[pluginPath] = '✅'
   } catch (error) {
+    createTuts[pluginPath] = '❌'
     writeFileSync(outputFile, currentContent, 'utf8')
     console.error(error.message || error.toString())
   }
 }
 
-actions
-  .filter((i) => i.href.length > 0)
-  .slice(0, 3)
-  .forEach((item) => {
-    console.log(item)
-    chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))
-  })
+// Parse command-line arguments for start and end limits
+const startLimit = parseInt(process.argv[2]) || 0
+const endLimit = parseInt(process.argv[3]) || actions.length
+
+async function spinTutorails(list) {
+  console.log('Spinning tutorials...')
+  const gap = 5
+  const len = list.length
+  const div = Math.floor(len / gap)
+  for (let i = 0; i < div; i += gap) {
+    console.log('Processing', i, 'to', i + gap)
+    await Promise.all(list.slice(i, i + gap).map((item) => chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))))
+  }
+  await Promise.all(list.slice(div * gap).map((item) => chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))))
+  console.log('Done!')
+  console.table(createTuts)
+}
+
+spinTutorails(actions.slice(startLimit, endLimit).filter((i) => i.href.length > 0))
