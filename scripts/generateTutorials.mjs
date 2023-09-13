@@ -1,15 +1,15 @@
-import { join } from 'node:path'
-import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { z } from 'zod'
+import { join } from 'node:path'
 import * as dotenv from 'dotenv'
+import { actions } from './action.mjs'
 import { Document } from 'langchain/document'
 import { PromptTemplate } from 'langchain/prompts'
 import { RetrievalQAChain } from 'langchain/chains'
 import { FaissStore } from 'langchain/vectorstores/faiss'
 import { ChatOpenAI } from 'langchain/chat_models/openai'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { OutputFixingParser, StructuredOutputParser } from 'langchain/output_parsers'
-import { actions } from './action.mjs'
 
 dotenv.config()
 
@@ -22,7 +22,7 @@ async function loadVectorStore() {
 
 async function chat(input, pluginPath) {
   const outputFile = join(process.cwd(), 'src', 'content', 'plugins-tutorials', `${pluginPath}.md`)
-  const currentContent = readFileSync(outputFile, 'utf8')
+  const currentContent = existsSync(outputFile) ? readFileSync(outputFile, 'utf8') : null
   try {
     const vectorStore = await loadVectorStore()
     writeFileSync(outputFile, '', 'utf8')
@@ -57,6 +57,10 @@ async function chat(input, pluginPath) {
   }
 }
 
-actions.forEach((item) => {
-  chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))
-})
+actions
+  .filter((i) => i.href.length > 0)
+  .slice(0, 3)
+  .forEach((item) => {
+    console.log(item)
+    chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))
+  })

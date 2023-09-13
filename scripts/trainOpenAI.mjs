@@ -1,12 +1,12 @@
 import { join } from 'node:path'
-import { existsSync } from 'node:fs'
 import * as dotenv from 'dotenv'
+import { existsSync } from 'node:fs'
+import { actions } from './action.mjs'
 import { Document } from 'langchain/document'
 import { FaissStore } from 'langchain/vectorstores/faiss'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
 import { CheerioWebBaseLoader } from 'langchain/document_loaders/web/cheerio'
-import { actions } from './action.mjs'
 
 const appDir = process.cwd()
 
@@ -48,10 +48,14 @@ async function train(list) {
 }
 
 train(
-  actions.map((i) => {
-    const githubUrlParts = i.href.split('/')
-    const githubOwner = githubUrlParts[3]
-    const githubRepo = githubUrlParts[4]
-    return `https://raw.githubusercontent.com/${githubOwner}/${githubRepo}/main/README.md`
-  }),
+  actions
+    .filter((i) => i.href.length > 0)
+    .slice(0, 3)
+    .map((i) => {
+      const githubUrlParts = i.href.split('/')
+      const githubOwner = githubUrlParts[3]
+      const githubRepo = githubUrlParts[4]
+      console.log(githubUrlParts)
+      return `https://raw.githubusercontent.com/${githubOwner}/${githubRepo}/main/README.md`
+    }),
 )

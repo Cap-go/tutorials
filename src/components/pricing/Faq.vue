@@ -18,7 +18,8 @@ import { openMessenger } from '../../services/chatwoot'
           <div class="ml-4">
             <p class="text-xl font-semibold text-white">How are Monthly Active Users (MAU) counted?</p>
             <p class="mt-4 text-base text-gray-400">
-              We count MAU (Monthly Active Users) by tracking unique users who open your app within a 30-day period. Each user is counted once, regardless of how many times they engage with the app.
+              We count MAU (Monthly Active Users) by tracking unique users who open your app within a 30-day period. Each user is counted once, regardless of how many times they
+              engage with the app.
             </p>
             <p class="mt-4 text-base text-gray-400">
               At Capgo, we don't count emulators and dev builds in your usage. Learn more about this
@@ -34,7 +35,8 @@ import { openMessenger } from '../../services/chatwoot'
           <div class="ml-4">
             <p class="text-xl font-semibold text-white">What does storage mean?</p>
             <p class="mt-4 text-base text-gray-400">
-              Storage, specifically edge storage, refers to the total capacity Capgo provides at edge locations to store all your update bundles. This ensures that users receive the latest version of your app or service quickly and efficiently.
+              Storage, specifically edge storage, refers to the total capacity Capgo provides at edge locations to store all your update bundles. This ensures that users receive
+              the latest version of your app or service quickly and efficiently.
             </p>
           </div>
         </div>
@@ -46,7 +48,8 @@ import { openMessenger } from '../../services/chatwoot'
           <div class="ml-4">
             <p class="text-xl font-semibold text-white">How is Bandwidth Counted ?</p>
             <p class="mt-4 text-base text-gray-400">
-              At Capgo, we measure bandwidth by tracking the amount of data transmitted between the storage location and user devices through edge servers. This helps us deliver real-time updates.
+              At Capgo, we measure bandwidth by tracking the amount of data transmitted between the storage location and user devices through edge servers. This helps us deliver
+              real-time updates.
             </p>
           </div>
         </div>
@@ -58,7 +61,8 @@ import { openMessenger } from '../../services/chatwoot'
           <div class="ml-4">
             <p class="text-xl font-semibold text-white">Not sure about your number of active users?</p>
             <p class="mt-4 text-base text-gray-400">
-              If you're unsure about the number of active users you have and worried about reaching your plan limit, take advantage of Capgo's free trial. It's a great way to test our service, find the right plan, avoid unexpected charges, and ensure everything works smoothly.
+              If you're unsure about the number of active users you have and worried about reaching your plan limit, take advantage of Capgo's free trial. It's a great way to test
+              our service, find the right plan, avoid unexpected charges, and ensure everything works smoothly.
             </p>
           </div>
         </div>
