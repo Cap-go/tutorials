@@ -34,7 +34,6 @@
     "@types/semver": "^7.5.0",
     "@unocss/astro": "^0.55.0",
     "@unocss/reset": "^0.55.0",
-    "@vite-pwa/astro": "^0.1.1",
     "dayjs": "^1.11.9",
     "dotenv": "^16.3.1",
     "eslint": "^8.46.0",
