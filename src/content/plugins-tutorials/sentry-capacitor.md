@@ -1,31 +1,43 @@
-# Using @sentry/capacitor package - Markdown Tutorial
+# Using @sentry/capacitor for Error Tracking in Capacitor Apps
 
-This tutorial will guide you on how to use the `@sentry/capacitor` package for error monitoring and reporting in your Capacitor applications. 
+[Sentry](https://sentry.io/) is a popular error tracking platform that helps developers monitor and fix issues in their applications. With the `@sentry/capacitor` package, you can easily integrate Sentry into your Capacitor apps and track errors and exceptions.
 
-## Installation
+In this tutorial, we'll go through the steps to install and use the `@sentry/capacitor` package in your Capacitor app.
 
-First, you need to install the `@sentry/capacitor` package along with the `@sentry/angular` package. You can use the following command to install the packages using yarn:
+## Prerequisites
+Before getting started, make sure you have the following prerequisites:
+- Capacitor CLI installed (`npm install -g @capacitor/cli`)
+- A Sentry account. If you don't have one, sign up for free at [https://sentry.io](https://sentry.io/).
+
+## Step 1: Install the Required Packages
+Open your project in the terminal and install the `@sentry/capacitor` package along with the `@sentry/angular` package (optional if you're using Angular) by running the following command:
 
 ```bash
 yarn add @sentry/capacitor @sentry/angular --exact
 ```
 
-## Initialization
-
-To use the SDK, you need to call the `Sentry.init` function as early as possible after loading the page. This will initialize the SDK and hook into the environment. You can also pass the `sentryAngularInit` function as the second parameter to enable Angular integration.
+## Step 2: Initialize Sentry
+In your app's `app.module.ts` file, import the necessary Sentry modules:
 
 ```typescript
-// app.module.ts
-
 import * as Sentry from "@sentry/capacitor";
-import { init as sentryAngularInit, createErrorHandler } from "@sentry/angular";
+import { init as sentryAngularInit, createErrorHandler }  from "@sentry/angular";
+```
 
-// Init by passing the sibling SDK's init as the second parameter.
+Initialize Sentry by calling `Sentry.init` and passing the DSN (Data Source Name) for your Sentry project:
+
+```typescript
 Sentry.init({
   dsn: "__DSN__",
 }, sentryAngularInit);
+```
 
-// Attach the Sentry ErrorHandler
+Replace `__DSN__` with your actual DSN. You can find the DSN in your Sentry project settings.
+
+## Step 3: Attach Sentry ErrorHandler
+To automatically capture errors and exceptions in your app, attach the Sentry ErrorHandler in your `app.module.ts` file:
+
+```typescript
 @NgModule({
   providers: [
     {
@@ -36,50 +48,43 @@ Sentry.init({
 })
 ```
 
-## Setting Context Information
+## Step 4: Set Context Information
+You can set context information that will be attached to error reports. For example, you can set user information, tags, and extras. Here's an example of setting user information:
 
-You can use the `configureScope` function of `@sentry/capacitor` to set context information such as user information, tags, and extra data. Here's an example:
-
-```javascript
+```typescript
 import * as Sentry from '@sentry/capacitor';
 
 Sentry.configureScope(scope => {
-  scope.setExtra('battery', 0.7);
-  scope.setTag('user_mode', 'admin');
-  scope.setUser({ id: '4711' });
+  scope.setUser({ id: 'user123' });
 });
 ```
 
-## Adding Breadcrumbs
+You can also set tags and extras using the `setTag` and `setExtra` methods respectively.
 
-Breadcrumbs are used to track the user's actions before an error occurred. You can add a breadcrumb using the `addBreadcrumb` function of `@sentry/capacitor`. Here's an example:
+## Step 5: Capture Errors and Events
+To capture errors, exceptions, or custom events, use the methods provided by `@sentry/capacitor`. Here are a few examples:
 
-```javascript
+```typescript
 import * as Sentry from '@sentry/capacitor';
 
-Sentry.addBreadcrumb({
-  message: 'My Breadcrumb',
-  // ...
-});
-```
+// Capture an exception
+Sentry.captureException(new Error('Something went wrong'));
 
-## Capturing Errors and Events
-
-You can capture exceptions, messages, or manual events using the `captureMessage`, `captureException`, and `captureEvent` functions of `@sentry/capacitor`. Here are some examples:
-
-```javascript
-import * as Sentry from '@sentry/capacitor';
-
+// Capture a message
 Sentry.captureMessage('Hello, world!');
 
-Sentry.captureException(new Error('Good bye'));
-
+// Capture a manual event
 Sentry.captureEvent({
-  message: 'Manual',
+  message: 'Custom event',
   stacktrace: [
     // ...
   ],
 });
 ```
 
-That's it! You have now learned how to use the `@sentry/capacitor` package for
+## Conclusion
+That's it! You have successfully integrated Sentry error tracking into your Capacitor app using the `@sentry/capacitor` package. Now, any errors or exceptions that occur in your app will be captured and sent to Sentry for analysis.
+
+For more information and advanced usage of the `@sentry/capacitor` package, refer to the [official documentation](https://docs.sentry.io/platforms/javascript/guides/capacitor/).
+
+Happy error tracking!

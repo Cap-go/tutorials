@@ -1,51 +1,58 @@
 # Using @capacitor-community/apple-sign-in
 
-This tutorial will guide you through the process of using the `@capacitor-community/apple-sign-in` package to implement Sign in With Apple functionality in your Capacitor project.
+This tutorial will guide you through the process of using the `@capacitor-community/apple-sign-in` package in your Capacitor project. This package allows you to integrate Sign in with Apple functionality into your app.
+
+## Prerequisites
+
+Before getting started, make sure you have the following:
+
+- Capacitor installed
+- Capacitor project set up
 
 ## Installation
 
-To install the package, run the following command in your project's root directory:
+To install the `@capacitor-community/apple-sign-in` package, run the following command:
 
-```shell
-npm i @capacitor-community/apple-sign-in
+```
+npm install @capacitor-community/apple-sign-in
 ```
 
 ## Usage
 
-### Setting up the Plugin
-
-The first step is to import the necessary classes and functions from the package:
+1. Import the necessary modules and classes:
 
 ```typescript
-import { Plugins } from "@capacitor/core";
+import { Plugins } from '@capacitor/core';
 import {
   SignInWithApple,
-  SignInWithApplePluginResponse,
+  SignInWithAppleResponse,
   SignInWithAppleOptions,
-} from "@capacitor-community/apple-sign-in";
+} from '@capacitor-community/apple-sign-in';
 ```
 
-Next, register the plugin for web usage:
+2. Register the `SignInWithApple` plugin for web usage:
 
 ```typescript
 registerWebPlugin(SignInWithApple);
 ```
 
-### Authorizing with Sign in With Apple
-
-To authorize a user with Sign in With Apple, you need to call the `SignInWithApple.authorize` method. Here's an example:
+3. Set up your options for Sign in with Apple:
 
 ```typescript
 let options: SignInWithAppleOptions = {
-  clientId: "com.your.webservice",
-  redirectURI: "https://www.yourfrontend.com/login",
-  scope: "email name",
-  state: "12345",
-  nonce: "nonce",
+  clientId: 'com.your.webservice',
+  redirectURI: 'https://www.yourfrontend.com/login',
+  scopes: 'email name',
+  state: '12345',
+  nonce: 'nonce',
 };
+```
 
+4. Call the `authorize` method to initiate the Sign in with Apple flow:
+
+```typescript
 SignInWithApple.authorize(options)
-  .then((result: SignInWithApplePluginResponse) => {
+  .then((result: SignInWithAppleResponse) => {
     // Handle user information
     // Validate token with server and create new session
   })
@@ -54,26 +61,16 @@ SignInWithApple.authorize(options)
   });
 ```
 
-In the above example, you need to provide the following options:
+## Instructions for iOS
 
-- `clientId`: The identifier of your web service. This is separate from your app service id. If you do not have this id, you must create one and link it to your app in your Apple Developer account.
-- `redirectURI`: The URL that the web sign in is called from.
-- `scope`: The scopes you want to authorize.
-- `state`: A value that you can use to track the state of the authorization request.
-- `nonce`: A cryptographic nonce that you can use to validate the authenticity of the response.
+- Make sure you have setup the Sign in with Apple capability in your Xcode project.
+- Ensure that you have added the appropriate entitlements and capabilities for Sign in with Apple.
+- You may need to configure additional settings in your Apple Developer account to enable Sign in with Apple.
 
-The `SignInWithApple.authorize` method returns a promise that resolves with a `SignInWithApplePluginResponse` object containing user information.
+## Instructions for Android
 
-### Handling Errors
-
-If there is an error during the authorization process, the `catch` block will be executed. You can handle the error in this block. For example:
-
-```typescript
-.catch((error) => {
-  console.error("Error signing in with Apple:", error);
-});
-```
+The `@capacitor-community/apple-sign-in` package does not currently support Android. It is only available for iOS and web platforms.
 
 ## Conclusion
 
-In this tutorial, you learned how to use the `@capacitor-community/apple
+Congratulations! You have successfully learned how to integrate Sign in with Apple functionality into your Capacitor project using the `@capacitor-community/apple-sign-in` package. You can now allow users to sign in using their Apple accounts in your app.

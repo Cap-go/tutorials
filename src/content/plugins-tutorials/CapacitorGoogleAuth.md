@@ -1,90 +1,57 @@
-# Using @codetrix-studio/capacitor-google-auth Package Tutorial
+Sure! Here's a step-by-step tutorial on how to use the `@iwarranty-io/capacitor-google-auth` package:
 
-The @codetrix-studio/capacitor-google-auth package is a Capacitor plugin for Google Auth. This tutorial will guide you through the process of installing and using this package in your Capacitor project.
+## Step 1: Installation
 
-## Installation
-
-Follow these steps to install the @codetrix-studio/capacitor-google-auth package:
-
-1. Open your terminal and navigate to your project directory.
-2. Run the following command to install the package:
+First, you need to install the package using npm or yarn. Open your terminal and run the following command:
 
 ```sh
-npm i --save @codetrix-studio/capacitor-google-auth
+npm install @iwarranty-io/capacitor-google-auth
 ```
 
-3. Update the Capacitor dependencies by running:
+## Step 2: Update Capacitor Dependencies
+
+After installing the package, you need to update your Capacitor dependencies. Run the following command:
 
 ```sh
 npx cap update
 ```
 
-## Usage
+## Step 3: Initialize the Plugin
 
-### Web
+To use the Capacitor Google Auth plugin, you need to initialize it in your app. Here's an example for a web application:
 
-To use the @codetrix-studio/capacitor-google-auth package in a web project, follow these steps:
+```typescript
+import { GoogleAuth } from '@iwarranty-io/capacitor-google-auth';
 
-1. Import the GoogleAuth class from the package:
-
-```ts
-import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
-```
-
-2. Manually initialize the plugin by calling the `initialize` function after the platform DOM is ready:
-
-```ts
 GoogleAuth.initialize({
-  clientId: 'CLIENT_ID.apps.googleusercontent.com',
+  clientId: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
   scopes: ['profile', 'email'],
-  grantOfflineAccess: true,
 });
 ```
 
-3. Use the plugin functions as needed. For example, to sign in with Google:
+Replace `YOUR_CLIENT_ID` with your actual Google Client ID.
 
-```ts
-GoogleAuth.signIn();
-```
+## Step 4: Sign In
 
-### Angular
+Once the plugin is initialized, you can now use the `signIn` method to initiate the sign-in process. Here's an example:
 
-To use the @codetrix-studio/capacitor-google-auth package in an Angular project, follow these steps:
+```typescript
+import { GoogleAuth } from '@iwarranty-io/capacitor-google-auth';
 
-1. Import the GoogleAuth class from the package:
-
-```ts
-import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
-```
-
-2. Initialize the plugin in the `initializeApp` method in your `app.component.ts` file:
-
-```ts
-constructor() {
-  this.initializeApp();
-}
-
-initializeApp() {
-  this.platform.ready().then(() => {
-    GoogleAuth.initialize();
-  });
+async function signInWithGoogle() {
+  try {
+    const response = await GoogleAuth.signIn();
+    // Handle the response here
+  } catch (error) {
+    console.error(error);
+  }
 }
 ```
 
-3. Use the plugin functions as needed. For example, to sign in with Google:
+The `signIn` method returns a response object containing the user's access token, ID token, and other information. You can handle the response based on your application's requirements.
 
-```ts
-async googleSignIn() {
-  let googleUser = await GoogleAuth.signIn();
-  // Use the user data as needed
-}
-```
+And that's it! You have successfully integrated the `@iwarranty-io/capacitor-google-auth` package into your application.
 
-### Vue 3
+Note: This tutorial assumes you are using Capacitor version 3. If you are using a different version, please refer to the package's documentation for the appropriate usage instructions.
 
-To use the @codetrix-studio/capacitor-google-auth package in a Vue 3 project, follow these steps:
-
-1. Import the GoogleAuth class from the package in your Vue component:
-
-```vue
-import { GoogleAuth }
+I hope this tutorial helps! Let me know if you have any further questions.
