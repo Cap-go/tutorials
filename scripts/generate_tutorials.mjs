@@ -25,6 +25,10 @@ let createTuts = {}
 async function chat(input, pluginPath) {
   const outputFile = join(process.cwd(), 'src', 'content', 'plugins-tutorials', `${pluginPath}.md`)
   const currentContent = existsSync(outputFile) ? readFileSync(outputFile, 'utf8') : null
+  // if file exists
+  if (currentContent && currentContent.length > 10) {
+    return
+  }
   try {
     const vectorStore = await loadVectorStore()
     writeFileSync(outputFile, '', 'utf8')
