@@ -1,0 +1,20 @@
+.prose pre {
+  background-color: theme('colors.black.DEFAULT') !important;
+}
+
+.prose * {
+  line-height: 2 !important !important;
+}
+
+.prose img {
+  width: 100% !important;
+  border-radius: 0.5rem !important;
+}
+
+.prose thead {
+  color: theme('colors.mutedBlue.300') !important;
+}
+
+.prose blockquote {
+  color: theme('colors.pumpkinOrange.300') !important;
+}

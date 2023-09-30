@@ -1,0 +1,23 @@
+---
+import '../css/global.css'
+import SEO from '../components/SEO.astro'
+// @ts-ignore
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
+
+const { content } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <SEO {...content} />
+  </head>
+  <body>
+    <div class="overflow-x-hidden bg-gray-900 text-white">
+      <Header client:load />
+      <slot />
+      <Footer client:load />
+    </div>
+  </body>
+</html>
