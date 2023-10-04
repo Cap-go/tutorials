@@ -60,7 +60,9 @@ async function chat(input, pluginPath) {
     createTuts[pluginPath] = '✅'
   } catch (error) {
     createTuts[pluginPath] = '❌'
-    writeFileSync(outputFile, currentContent, 'utf8')
+    if (currentContent) {
+      writeFileSync(outputFile, currentContent, 'utf8')
+    }
     console.error(error.message || error.toString())
   }
 }
