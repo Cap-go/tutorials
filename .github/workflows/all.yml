@@ -55,8 +55,8 @@ jobs:
       
       - name: Commit generated files
         run: |
-          git config --global user.name "Rishi Raj Jain"
-          git config --global user.email "rishi18304@iiitd.ac.in"
+          git config --global user.name "Martin DONADIEU"
+          git config --global user.email "martindonadieu@gmail.com"
           git add -A
           git commit -m "Commit generated files"
           git push origin main -f
