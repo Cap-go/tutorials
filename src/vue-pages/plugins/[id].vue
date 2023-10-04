@@ -10,7 +10,7 @@ const showReadme = ref(1)
 <template>
   <div class="w-full flex flex-col items-center">
     <div class="w-full flex flex-row flex-wrap px-10 lg:max-w-6xl xl:px-0">
-      <a aria-label="Back To Plugins" href="/plugins/" class="max-w-max border-b border-white/10 pb-0.5 text-white/50 hover:text-white">← Back To Plugins</a>
+      <a aria-label="Back To Tutorials" href="/" class="max-w-max border-b border-white/10 pb-0.5 text-white/50 hover:text-white">← Back To Tutorials</a>
     </div>
     <div class="mt-6 w-full flex flex-row flex-wrap px-10 gap-8 lg:max-w-6xl xl:px-0">
       <button class="text-sm px-3 py-1" :class="showReadme !== 0 ? 'border border-white rounded' : 'border rounded border-white/10'" @click="showReadme = 1">
