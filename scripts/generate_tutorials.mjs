@@ -60,7 +60,9 @@ async function chat(input, pluginPath) {
     createTuts[pluginPath] = '✅'
   } catch (error) {
     createTuts[pluginPath] = '❌'
-    writeFileSync(outputFile, currentContent, 'utf8')
+    if (currentContent) {
+      writeFileSync(outputFile, currentContent, 'utf8')
+    }
     console.error(error.message || error.toString())
   }
 }
@@ -69,6 +71,13 @@ async function chat(input, pluginPath) {
 const startLimit = parseInt(process.argv[2]) || 0
 const endLimit = parseInt(process.argv[3]) || actions.length
 
+const inputQuery = (item) =>
+  `Generate a markdown tutorial of using ${
+    item.name
+  } package, also add a frontmatter with values in double quotes to the same file containing title for the blog, description as the summary of what will be in the blog, created_at as the date of this answer, published boolean value as true and slug value equal to ${item.href.substring(
+    item.href.lastIndexOf('/') + 1,
+  )}`
+
 async function spinTutorails(list) {
   console.log('Spinning tutorials...')
   const gap = 5
@@ -76,9 +85,9 @@ async function spinTutorails(list) {
   const div = Math.floor(len / gap)
   for (let i = 0; i < div; i += gap) {
     console.log('Processing', i, 'to', i + gap)
-    await Promise.all(list.slice(i, i + gap).map((item) => chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))))
+    await Promise.all(list.slice(i, i + gap).map((item) => chat(inputQuery(item), item.href.substring(item.href.lastIndexOf('/') + 1))))
   }
-  await Promise.all(list.slice(div * gap).map((item) => chat(`Generate a markdown tutorial of using ${item.name} package`, item.href.substring(item.href.lastIndexOf('/') + 1))))
+  await Promise.all(list.slice(div * gap).map((item) => chat(inputQuery(item), item.href.substring(item.href.lastIndexOf('/') + 1))))
   console.log('Done!')
   console.table(createTuts)
 }

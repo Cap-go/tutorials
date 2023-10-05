@@ -52,3 +52,12 @@ jobs:
         env:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      - name: Commit generated files
+        run: |
+          git config --global user.name "Martin DONADIEU"
+          git config --global user.email "martindonadieu@gmail.com"
+          git add -A
+          git commit -m "Commit generated files"
+          git push origin main -f
+        working-directory: ./
