@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { join } from 'path'
 import { exit } from 'process'
-import { writeFileSync } from 'fs'
 import { spawnSync } from 'child_process'
+import { writeFileSync, existsSync, mkdirSync } from 'fs'
 
 const searchKeywords = ['plugin', 'capacitor']
 const searchUrl = `https://registry.npmjs.org/-/v1/search?text=${searchKeywords.join('+')}&size=100`
