@@ -41,8 +41,14 @@ async function fetchPackages() {
     }
     console.table({ 'Total Packages': count })
     console.log(`Writing to scripts/action.mjs...`)
+    if (!existsSync(join(process.cwd(), 'scripts', 'action.mjs'))) {
+      mkdirSync(join(process.cwd(), 'scripts'))
+    }
     writeFileSync(join(process.cwd(), 'scripts', 'action.mjs'), `export const actions = [${resultArray.map((i) => JSON.stringify(i))}]`)
     console.log(`Writing to src/config/plugins.ts...`)
+    if (!existsSync(join(process.cwd(), 'src', 'config', 'plugins.ts'))) {
+      mkdirSync(join(process.cwd(), 'src', 'config'))
+    }
     writeFileSync(
       join(process.cwd(), 'src', 'config', 'plugins.ts'),
       `export interface Action {
