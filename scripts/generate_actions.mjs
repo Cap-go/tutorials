@@ -47,6 +47,7 @@ async function fetchPackages() {
     writeFileSync(join(process.cwd(), 'scripts', 'action.mjs'), `export const actions = [${resultArray.map((i) => JSON.stringify(i))}]`)
     console.log(`Writing to src/config/plugins.ts...`)
     if (!existsSync(join(process.cwd(), 'src', 'config', 'plugins.ts'))) {
+      mkdirSync(join(process.cwd(), 'src'))
       mkdirSync(join(process.cwd(), 'src', 'config'))
     }
     writeFileSync(
