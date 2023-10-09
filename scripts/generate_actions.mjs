@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { join } from 'path'
 import { exit } from 'process'
-import { writeFileSync } from 'fs'
 import { spawnSync } from 'child_process'
+import { writeFileSync, existsSync, mkdirSync } from 'fs'
 
 const searchKeywords = ['plugin', 'capacitor']
 const searchUrl = `https://registry.npmjs.org/-/v1/search?text=${searchKeywords.join('+')}&size=100`
@@ -41,8 +41,15 @@ async function fetchPackages() {
     }
     console.table({ 'Total Packages': count })
     console.log(`Writing to scripts/action.mjs...`)
+    if (!existsSync(join(process.cwd(), 'scripts', 'action.mjs'))) {
+      mkdirSync(join(process.cwd(), 'scripts'))
+    }
     writeFileSync(join(process.cwd(), 'scripts', 'action.mjs'), `export const actions = [${resultArray.map((i) => JSON.stringify(i))}]`)
     console.log(`Writing to src/config/plugins.ts...`)
+    if (!existsSync(join(process.cwd(), 'src', 'config', 'plugins.ts'))) {
+      mkdirSync(join(process.cwd(), 'src'))
+      mkdirSync(join(process.cwd(), 'src', 'config'))
+    }
     writeFileSync(
       join(process.cwd(), 'src', 'config', 'plugins.ts'),
       `export interface Action {
