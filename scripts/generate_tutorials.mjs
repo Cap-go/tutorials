@@ -71,25 +71,30 @@ async function chat(input, pluginPath) {
 const startLimit = parseInt(process.argv[2]) || 0
 const endLimit = parseInt(process.argv[3]) || actions.length
 
+const getSlug = (href) => href.substring(href.lastIndexOf('/') + 1).toLowerCase()
+
 const inputQuery = (item) =>
   `Generate a markdown tutorial of using ${
     item.name
-  } package, also add a frontmatter with values in double quotes to the same file containing title for the blog, description as the summary of what will be in the blog, created_at as the date of this answer, published boolean value as true and slug value equal to ${item.href.substring(
-    item.href.lastIndexOf('/') + 1,
+  } package, also add a frontmatter with values in double quotes to the same file containing title for the blog, description as the summary of what will be in the blog, created_at as the date of this answer, published boolean value as true and slug value equal to ${getSlug(
+    item.href,
   )}`
 
-async function spinTutorails(list) {
-  console.log('Spinning tutorials...')
+async function spinTutorials(list) {
   const gap = 5
   const len = list.length
   const div = Math.floor(len / gap)
-  for (let i = 0; i < div; i += gap) {
+  // Process the first > 5
+  for (let i = 0; i < div * gap; i += gap) {
     console.log('Processing', i, 'to', i + gap)
-    await Promise.all(list.slice(i, i + gap).map((item) => chat(inputQuery(item), item.href.substring(item.href.lastIndexOf('/') + 1))))
+    await Promise.all(list.slice(i, i + gap).map((item) => chat(inputQuery(item), getSlug(item.href))))
   }
-  await Promise.all(list.slice(div * gap).map((item) => chat(inputQuery(item), item.href.substring(item.href.lastIndexOf('/') + 1))))
+  // Process the remaining < 5
+  if (len % gap !== 0) {
+    await Promise.all(list.slice(div * gap).map((item) => chat(inputQuery(item), getSlug(item.href))))
+  }
   console.log('Done!')
   console.table(createTuts)
 }
 
-spinTutorails(actions.slice(startLimit, endLimit).filter((i) => i.href.length > 0))
+spinTutorials(actions.slice(startLimit, endLimit).filter((i) => i.href.length > 0))

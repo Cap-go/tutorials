@@ -1,122 +1,98 @@
-# Using @charliecat/capacitor-plugin-siri-shorts
+---
+title: "Using the capacitor-plugin-siri-shortcuts package"
+description: "A tutorial on how to use the capacitor-plugin-siri-shortcuts package to add Siri Shortcuts to your Capacitor app."
+created_at: "2021-10-15"
+published: true
+slug: capacitor-plugin-siri-shortcuts
+---
 
-This tutorial will guide you through the process of using the `@charliecat/capacitor-plugin-siri-shorts` package to donate and remove Siri Shortcuts in your Capacitor app.
+# Using the capacitor-plugin-siri-shortcuts package
+
+In this tutorial, we will learn how to use the capacitor-plugin-siri-shortcuts package to add Siri Shortcuts functionality to your Capacitor app.
 
 ## Prerequisites
 
-Before you begin, make sure you have the following:
+Before we begin, make sure you have the following:
 
-- Xcode 10 or higher
-- iOS 12 or higher
+- XCode 10 installed
+- iOS 12 platform
+
+If you don't have these prerequisites, you won't be able to use the capacitor-plugin-siri-shortcuts package.
 
 ## Installation
 
-To install the package, run the following command:
+First, install the package using npm:
 
-```sh
-npm install @charliecat/capacitor-plugin-siri-shorts
 ```
-
-## Setup
-
-### iOS Project Setup
-
-1. Open your iOS project in Xcode.
-
-2. Open the `Info.plist` file of your project.
-
-3. Inside the `NSUserActivityTypes` array, add a new item with your Bundle Identifier followed by `.shortcut`. For example, if your Bundle Identifier is `com.myapp`, the item should be `$(PRODUCT_BUNDLE_IDENTIFIER).shortcut`.
-
-   ```xml
-   <key>NSUserActivityTypes</key>
-   <array>
-       ...
-       <string>$(PRODUCT_BUNDLE_IDENTIFIER).shortcut</string>
-       ...
-   </array>
-   ```
-
-4. Open the `AppDelegate.swift` file of your project.
-
-5. Expand the `application(_:continue:restorationHandler:)` method and add the following line before the return statement:
-
-   ```swift
-   NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "appLaunchBySiriShortcuts"), object: userActivity, userInfo: userActivity.userInfo))
-   ```
-
-   The method should now look like this:
-
-   ```swift
-   func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-       ...
-       NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "appLaunchBySiriShortcuts"), object: userActivity, userInfo: userActivity.userInfo))
-       return CAPBridge.handleContinueActivity(userActivity, restorationHandler)
-   }
-   ```
+npm i @msepena/capacitor-plugin-sirishortcuts
+```
 
 ## Usage
 
-### Importing the Plugin
+To use the capacitor-plugin-siri-shortcuts package, follow these steps:
 
-Import the `SiriShortcuts` plugin in your component file:
+1. Import the necessary modules in your app component file:
 
-```typescript
+```javascript
+import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
 import { Plugins } from '@capacitor/core';
-
-const { SiriShortcuts } = Plugins;
+import { SiriShortcutsPlugin } from "@msepena/capacitor-plugin-sirishortcuts";
 ```
 
-### Donating a Shortcut
+2. Initialize the app and add a listener for the 'appLaunchBySirishortcuts' event:
 
-To donate a shortcut, use the `donate` method with the desired options:
+```javascript
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html'
+})
+export class AppComponent {
+  constructor(
+    private platform: Platform
+  ) {
+    this.initializeApp();
+  }
 
-```typescript
-const data = {
-  persistentIdentifier: 'myShortcut',
-  title: 'My Shortcut',
-  suggestedInvocationPhrase: 'Open my app',
-  isEligibleForSearch: true,
-  userInfo: { deeplink: 'home' },
-  isEligibleForPrediction: true,
-};
+  initializeApp() {
+    this.platform.ready().then(() => {
+      const { StatusBar, SplashScreen, Toast, SiriShortcuts } = Plugins;
+      SplashScreen.hide();
+    
+      SiriShortcuts.addListener('appLaunchBySirishortcuts', (resp) => {
+        Toast.show({text: resp['deeplink']});
+      });
+    });
+  }
+}
+```
 
-SiriShortcuts.donate(data)
-  .then(() => {
-    console.log('Shortcut donated successfully');
-  })
-  .catch((error) => {
-    console.error('Failed to donate shortcut:', error);
+3. Implement the 'donate' function to donate a Siri Shortcut:
+
+```javascript
+donate() {
+  const data = {
+    persistentIdentifier: 'open-my-app',
+    title: 'Open my app',
+    suggestedInvocationPhrase: 'Open my app',
+    isEligibleForSearch: true,
+    userInfo: {deeplink: "home"},
+    isEligibleForPrediction: true,
+  }
+  const { Toast, SiriShortcuts } = Plugins;
+
+  SiriShortcuts.donate(data).then(resp => {
+    Toast.show( {text: "successfully donated"});
+  }, error => {
+    Toast.show( {text: error['message']});
   });
+}
 ```
 
-### Removing a Shortcut
-
-To remove a shortcut, use the `remove` method with the persistent identifier of the shortcut:
-
-```typescript
-const persistentIdentifier = 'myShortcut';
-
-SiriShortcuts.remove({ persistentIdentifier })
-  .then(() => {
-    console.log('Shortcut removed successfully');
-  })
-  .catch((error) => {
-    console.error('Failed to remove shortcut:', error);
-  });
-```
-
-## Listening for Shortcut Launch
-
-To listen for when the app is launched by a Siri Shortcut, add a listener for the `'appLaunchBySiriShortcuts'` event:
-
-```typescript
-SiriShortcuts.addListener('appLaunchBySiriShortcuts', (data) => {
-  console.log('App launched by Siri Shortcut:', data);
-});
-```
-
-Make sure to add this listener in a suitable place, such as the `initializeApp` method of your app component.
+4. You can now call the 'donate' function to donate a Siri Shortcut whenever you want.
 
 ## Conclusion
 
-Congratulations! You have successfully learned how to use the `@charliecat/capacitor-plugin-siri-shorts` package to donate and remove Siri Shortcuts in your Capacitor app. You can now enhance your app's functionality by integrating with Siri Shortcuts.
+In this tutorial, we have learned how to use the capacitor-plugin-siri-shortcuts package to add Siri Shortcuts to your Capacitor app. By following the steps outlined above, you can enhance your app's user experience by allowing users to perform actions using Siri voice commands.
+
+Remember to refer to the official documentation of the capacitor-plugin-siri-shortcuts package for more detailed information and additional features.

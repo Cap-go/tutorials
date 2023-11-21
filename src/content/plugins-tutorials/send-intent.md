@@ -1,34 +1,35 @@
-# Tutorial: Using the Send-Intent Package
+---
+title: "Using the send-intent Package"
+description: "A tutorial on how to use the send-intent package in Capacitor"
+created_at: "2022-09-20"
+published: true
+slug: "send-intent"
+---
 
-In this tutorial, we will guide you through the process of using the Send-Intent package in your Ionic/Capacitor application to handle incoming data shared from other apps. The Send-Intent package is a Capacitor plugin that supports both Android and iOS platforms.
+# Using the send-intent Package
 
-## Prerequisites
-To follow along with this tutorial, you should have the following:
+The `send-intent` package is a Capacitor plugin that allows you to check if your app was targeted as a share goal and handle shared files in your Ionic application. This tutorial will guide you through the installation and usage of the `send-intent` package.
 
-1. Node.js and npm installed on your machine.
-2. An existing Ionic/Capacitor project.
-3. Basic knowledge of Ionic and Capacitor concepts.
+## Installation
 
-## Step 1: Install the Send-Intent Package
-To get started, open your command line interface and navigate to the root directory of your Ionic/Capacitor project. Then run the following command:
+To get started, you need to install the `send-intent` package in your Capacitor project. Open your terminal and execute the following command:
 
-```
+```bash
 npm install send-intent
+npx cap sync
 ```
 
-This will install the Send-Intent package and its dependencies in your project.
+## Usage
 
-## Step 2: Import and Use the SendIntent Plugin
+Once you have installed the package, you can import and use it in your application. 
 
-1. Open the file where you want to handle incoming shared data. This could be in a component, a service, or any other relevant file in your project.
-
-2. Import the SendIntent plugin from the installed package:
+First, import the `SendIntent` module in your JavaScript file:
 
 ```js
-import { SendIntent } from "send-intent";
+import { SendIntent } from 'send-intent';
 ```
 
-3. Use the `checkSendIntentReceived()` method to check if your app was targeted as a share goal:
+Next, you can use the `checkSendIntentReceived` method to check if your app was targeted as a share goal:
 
 ```js
 SendIntent.checkSendIntentReceived().then((result) => {
@@ -36,49 +37,22 @@ SendIntent.checkSendIntentReceived().then((result) => {
     console.log('SendIntent received');
     console.log(JSON.stringify(result));
   }
-  // Handle the received data here
-}).catch((error) => {
-  console.error(error);
-});
+  if (result.url) {
+    let resultUrl = decodeURIComponent(result.url);
+    Filesystem.readFile({ path: resultUrl })
+      .then((content) => {
+        console.log(content.data);
+      })
+      .catch((err) => console.error(err));
+  }
+}).catch((err) => console.error(err));
 ```
 
-The `checkSendIntentReceived()` method returns a promise that resolves with the received data if the app was targeted as a share goal. You can then handle the received data as needed.
+In this code snippet, we are checking if the `result` object exists and logging it to the console. If the `result` object has a `url` property, we are using Capacitor's `Filesystem` plugin to read the content of the file.
 
-## Step 3: Handle the Received Data
+## Android Configuration
 
-The received data object will contain information about the shared content. The specific properties will depend on the type of data shared.
-
-For example, if a file was shared, the `url` property of the received data object will contain the URI of the shared file. You can use Capacitor's Filesystem plugin to retrieve the file content using the URL.
-
-Here's an example of how you can handle a shared file:
-
-```js
-import { Filesystem } from "@capacitor/filesystem";
-
-// ...
-
-if (result.url) {
-  const resultUrl = decodeURIComponent(result.url);
-  Filesystem.readFile({ path: resultUrl })
-    .then((content) => {
-      console.log(content.data);
-      // Do something with the file content
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-}
-```
-
-Handle the received data according to your application's requirements. You can access other properties of the received data object to retrieve additional information.
-
-## Step 4: Android Configuration (Optional)
-
-On Android, you need to configure a new activity in the `AndroidManifest.xml` file to handle the incoming share intents.
-
-1. Open the `AndroidManifest.xml` file located at `android/app/src/main/AndroidManifest.xml`.
-
-2. Add the following code inside the `<application>` element:
+If you are using Android, you need to configure a new activity in the `AndroidManifest.xml` file. Open the file located at `android/app/src/main/AndroidManifest.xml` and add the following code:
 
 ```xml
 <activity
@@ -97,19 +71,20 @@ On Android, you need to configure a new activity in the `AndroidManifest.xml` fi
 </activity>
 ```
 
-This configures the activity to handle share intents with various MIME types, such as plain text, images, applications, and videos.
+It is recommended to close the `send-intent-activity` after processing the send-intent in your app. You can do this by calling the `finish()` method:
 
-## Step 5: iOS Configuration (Optional)
+```js
+SendIntent.finish();
+```
 
-On iOS, you need to create a "Share Extension" and set the activation rules to display your app as a share option.
+## iOS Configuration
 
-1. Create a Share Extension in your Xcode project. Refer to Apple's documentation for creating an app extension: [Creating an App Extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html#//apple_ref/doc/uid/TP40014214-CH5-SW1).
+For iOS, you need to create a "Share Extension" and make sure the extensions "iOS deployment target" version is in sync with your app's deployment target version. You can refer to the [Creating an App Extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html#//apple_ref/doc/uid/TP40014214-CH5-SW1) documentation for more details.
 
-2. Make sure the "iOS deployment target" version of the Share Extension matches your app's deployment target version.
-
-3. Set the activation rules in the Share Extension's Info.plist file to include your app as a share option.
+Make sure to set the activation rules in the extension's `Info.plist` file to display your app as a share option.
 
 ## Conclusion
-In this tutorial, you learned how to use the Send-Intent package in your Ionic/Capacitor application to handle incoming shared data from other apps. You learned how to install the package, import the plugin, handle the received data, and optionally configure the package for Android and iOS platforms.
 
-Now you can enhance your app's functionality by allowing users to easily share data into your app from other apps on their devices.
+In this tutorial, we have learned how to use the `send-intent` package in Capacitor to handle shared files in your Ionic application. We have covered the installation process and demonstrated how to check for shared intents and read file content. Additionally, we have provided Android and iOS configuration instructions.
+
+You can now implement the `send-intent` package in your Capacitor project and handle shared files with ease. Happy coding!
