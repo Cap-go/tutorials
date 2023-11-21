@@ -1,94 +1,94 @@
-# Using capacitor-plugin-kommunicate
+---
+title: "Using Capacitor Plugin Kommunicate"
+description: "A tutorial on how to use the capacitor-plugin-kommunicate package."
+created_at: "2021-08-25"
+published: true
+slug: "kommunicate-capacitor-plugin"
+---
 
-This tutorial will guide you through the process of integrating and using the `capacitor-plugin-kommunicate` package in your Ionic app.
+# Using Capacitor Plugin Kommunicate
 
-## Step 1: Installation
+In this tutorial, we will learn how to use the capacitor-plugin-kommunicate package to add real-time live chat, in-app messaging, and bot integration to your Ionic apps using Capacitor.
 
-To begin, install the `capacitor-plugin-kommunicate` package by running the following command in your project directory:
+## Installation
+
+To install the capacitor-plugin-kommunicate package, open your command line interface and navigate to the root directory of your Ionic app. Run the following command:
 
 ```
 npm install capacitor-plugin-kommunicate
 ```
 
-Next, add the Android and iOS modules to your project if they don't already exist:
+Next, add the necessary Android and iOS modules by running the following commands:
 
 ```
 npx cap add android
 npx cap add ios
 ```
 
-## Step 2: Android Setup
-
-Open the Android module in Android Studio by running the following command:
+For Android, open the Android module in Android Studio using the following command:
 
 ```
 npx cap open android
 ```
 
-In your `android/app/java/<App-Package>/MainActivity.java` file, register the plugin by adding the following code:
+And then register the plugin in your `MainActivity.java` file:
 
 ```java
 @Override
 public void onCreate(Bundle savedInstanceState) {
-  super.onCreate(savedInstanceState);
+    super.onCreate(savedInstanceState);
 
-  registerPlugin(KommunicateCapacitorPlugin.class);
+    registerPlugin(KommunicateCapacitorPlugin.class);
 }
 ```
 
-## Step 3: iOS Setup
-
-Navigate to the `<Your-Project>/ios/App` directory and run the following command to install the required dependencies:
+For iOS, navigate to the `/ios/App` directory in your project and run the following command:
 
 ```
 pod install
 ```
 
-Open the iOS project in Xcode:
+Then, open the iOS project in Xcode using the following command:
 
 ```
-npx cap open iOS
+npx cap open ios
 ```
 
-## Step 4: Import the Plugin
+## Importing the Plugin
 
-In the file where you want to use the `capacitor-plugin-kommunicate` functions, import the plugin as shown below:
+To use the Kommunicate functions in your app, you need to import the plugin. Open the file where you want to call the Kommunicate functions and add the following line:
 
 ```js
-import { KommunicateCapacitorPlugin } from 'capacitor-plugin-kommunicate';
+import {KommunicateCapacitorPlugin} from 'capacitor-plugin-kommunicate';
 ```
 
-## Step 5: Launch Conversation
+Now you can start calling the functions from `KommunicateCapacitorPlugin`.
 
-To launch a conversation, create a conversation object and pass it to the `buildConversation` function. Here's an example for launching a conversation for a visitor:
+## Launching a Conversation
+
+Kommunicate provides a `conversationBuilder` function to create and launch a conversation directly without the need for extra steps. To launch a conversation, you need to create a conversation object and pass it to the `buildConversation` function.
+
+Here's an example of launching a conversation for a visitor:
 
 ```js
 let conversationObject = {
-  appId: '<Your-App-Id>'
+    appId: '<Your-App-Id>'
 };
 
-KommunicateCapacitorPlugin.buildConversation(conversationObject)
-  .then((res) => {
+KommunicateCapacitorPlugin.buildConversation(conversationObject).then((res) => {
     console.log("Conversation builder success: " + JSON.stringify(res));
-  })
-  .catch((error) => {
+}).catch((error) => {
     console.log("Conversation builder error: " + error);
-  });
+});
 ```
 
-Make sure to replace `<Your-App-Id>` with your actual application ID.
+Replace `<Your-App-Id>` with your actual Application ID obtained from the Kommunicate dashboard.
 
-## Step 6: Building and Running
+## Conclusion
 
-After making any changes to your `.ts` or `.js` files, run the following commands:
+In this tutorial, we learned how to install and use the capacitor-plugin-kommunicate package to add live chat and messaging capabilities to Ionic apps using Capacitor. We covered the installation process, importing the plugin, and launching a conversation. You can now integrate Kommunicate into your app and provide real-time customer support.
 
-```
-npm run build
-npx cap sync
-```
+Note: Make sure to follow the official documentation of the plugin for any updates or additional features.
 
-For Android and iOS, run the project from Android Studio and Xcode respectively. For web, use the command `ionic serve`.
+Happy coding!
 
-And that's it! You now have the `capacitor-plugin-kommunicate` package integrated into your Ionic app.
-
-Note: This tutorial assumes you have signed up for an Application ID on the Kommunicate dashboard. If you haven't, make sure to sign up at [https://dashboard.kommunicate.io/signup](https://dashboard.kommunicate.io/signup) to get your Application ID.

@@ -1,74 +1,83 @@
-# Using @falconeta/capacitor-plugin-idfa
+---
+title: "Using the @sparkfabrik/capacitor-plugin-idfa Package"
+description: "A tutorial on how to use the @sparkfabrik/capacitor-plugin-idfa package to access the Advertising ID in Capacitor apps."
+created_at: "2021-10-30"
+published: true
+slug: capacitor-plugin-idfa
+---
 
-## Introduction
+# Using the @sparkfabrik/capacitor-plugin-idfa Package
 
-[@falconeta/capacitor-plugin-idfa](https://www.npmjs.com/package/@falconeta/capacitor-plugin-idfa) is a Capacitor plugin that provides access to the Advertising Identifier (IDFA) on iOS and Android devices. The IDFA is a unique identifier used for advertising purposes and allows developers and marketers to track user activity.
-
-This tutorial will guide you through the installation and implementation of the @falconeta/capacitor-plugin-idfa package in your Capacitor project.
+In this tutorial, we will learn how to use the @sparkfabrik/capacitor-plugin-idfa package in Capacitor apps to access the Advertising ID. The Advertising ID (IDFA on iOS, AAID on Android) is a device-specific identifier used for advertising purposes.
 
 ## Prerequisites
 
-Before starting, make sure you have the following prerequisites:
+Before we begin, make sure you have the following installed and set up:
 
-- Capacitor project set up
-- Node.js and npm installed
+- Capacitor in your project
+- npm or yarn package manager
+- iOS and/or Android development environment
 
-## Step 1: Installation
+## Installation
 
-To install the @falconeta/capacitor-plugin-idfa package, open your terminal or command prompt and navigate to your project's root directory. Then, run the following command:
+To install the @sparkfabrik/capacitor-plugin-idfa package, run the following command:
 
+```bash
+npm install @sparkfabrik/capacitor-plugin-idfa
 ```
-npm install @falconeta/capacitor-plugin-idfa
+
+or
+
+```bash
+yarn add @sparkfabrik/capacitor-plugin-idfa
 ```
 
-## Step 2: Configuration
-
-### Android Configuration
+## Android Configuration
 
 There is no additional configuration required for Android.
 
-### iOS Configuration
+## iOS Configuration
 
-In your iOS project, locate the `info.plist` file and add the following key-value pair:
+In your `info.plist` file, add a description for the user permission request by inserting the following code:
 
-```
+```xml
 <key>NSUserTrackingUsageDescription</key>
 <string>...</string>
 ```
 
-Replace `...` with a description of why your app requires access to the user's advertising identifier.
+Replace `...` with the description of why you need to access the Advertising ID.
 
-## Step 3: Implementing the Plugin
+## Usage
 
-To use the @falconeta/capacitor-plugin-idfa package in your project, follow these steps:
+Once the package is installed and the configurations are in place, you can start using the @sparkfabrik/capacitor-plugin-idfa package in your Capacitor app.
 
-1. Open the file where you want to use the plugin (e.g., a TypeScript file).
-2. Import the necessary modules:
+### Import the Package
 
-```typescript
-import { Plugins } from '@capacitor/core';
+In the component where you want to use the Advertising ID, import the Idfa and AdvertisingInfoResponse from the @sparkfabrik/capacitor-plugin-idfa package:
 
-const { IDFA } = Plugins;
+```ts
+import { Idfa, AdvertisingInfoResponse } from '@sparkfabrik/capacitor-plugin-idfa';
 ```
 
-3. Call the `getAdvertisingInfo()` method to retrieve the Advertising ID:
+### Get the Advertising ID
 
-```typescript
-IDFA.getAdvertisingInfo()
-  .then((response) => {
-    console.log(response.id); // The Advertising ID
-    console.log(response.isAdTrackingLimited); // Whether ad tracking is limited by the user
+To retrieve the Advertising ID, call the `getAdvertisingInfo()` method from the Idfa class and handle the response:
+
+```ts
+Idfa.getAdvertisingInfo()
+  .then((response: AdvertisingInfoResponse) => {
+    if (response.isAdTrackingLimited === true) {
+      console.error('Ads tracking not allowed by user.');
+    }
+    console.log(response.id);
   })
-  .catch((error) => {
+  .catch((error: Error) => {
     console.error(error);
   });
 ```
 
-The `getAdvertisingInfo()` method returns a promise that resolves with an object containing the advertising ID and whether ad tracking is limited by the user.
+The `getAdvertisingInfo()` method returns a promise that resolves to an object of type `AdvertisingInfoResponse`. This object contains the Advertising ID (`id`) and a boolean flag (`isAdTrackingLimited`) indicating whether the user has allowed ad tracking.
 
 ## Conclusion
 
-In this tutorial, you've learned how to install and use the @falconeta/capacitor-plugin-idfa package in your Capacitor project. You can now access the Advertising Identifier (IDFA) on iOS and Android devices and track user activity for advertising purposes.
-
-For more information about this package, please refer to the official [documentation](https://www.npmjs.com/package/@falconeta/capacitor-plugin-idfa).
-
+In this tutorial, we have learned how to install and use the @sparkfabrik/capacitor-plugin-idfa package to access the Advertising ID in Capacitor apps. By following the steps outlined here, you can easily integrate this package into your project and retrieve the Advertising ID for tracking and advertising purposes.

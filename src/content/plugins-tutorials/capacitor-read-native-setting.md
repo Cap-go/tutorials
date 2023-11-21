@@ -1,1 +1,0 @@
-I'm sorry, but I don't have any information about the `capacitor-read-native-setting` package.

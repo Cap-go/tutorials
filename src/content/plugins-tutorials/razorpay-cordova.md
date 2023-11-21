@@ -1,103 +1,111 @@
-## Tutorial: Using @mogiio/capacitor-razorpay package
+---
+title: "Using Capacitor Razorpay Package"
+description: "A tutorial on integrating and using the Capacitor Razorpay package in your application."
+created_at: "2022-03-10"
+published: true
+slug: "razorpay-cordova"
+---
 
-In this tutorial, we will guide you on how to integrate the `@mogiio/capacitor-razorpay` package into your Capacitor project. This package allows you to integrate the Razorpay payment gateway into your mobile application.
+# Using Capacitor Razorpay Package
 
-### Prerequisites
+In this tutorial, we will learn how to integrate and use the Capacitor Razorpay package in your application. The Capacitor Razorpay package allows you to add payment functionality to your Capacitor-based app using the Razorpay payment gateway.
 
-Before starting, make sure you have the following:
+## Prerequisites
 
-- Node.js installed on your machine.
-- A Capacitor project set up and initialized.
+Before we begin, make sure you have the following prerequisites:
 
-### Step 1: Install the package
+- A Capacitor-based application set up
+- Node.js and npm installed on your machine
+- Basic knowledge of JavaScript and Capacitor
 
-Open your project in the terminal and run the following command to install the `@mogiio/capacitor-razorpay` package:
+## Step 1: Install the Capacitor Razorpay Package
 
+To get started, install the Capacitor Razorpay package in your project. Open your terminal and navigate to your project's root directory. Run the following command:
+
+```bash
+npm install capacitor-razorpay
 ```
-npm install @mogiio/capacitor-razorpay
-```
 
-### Step 2: Add the platform
+This will install the Capacitor Razorpay package and add it as a dependency in your project's `package.json` file.
 
-Next, add the platform for which you want to integrate Razorpay. For example, if you want to integrate with Android, run the following command:
+## Step 2: Configure Razorpay
 
-```
-npx cap add android
-```
+Next, we need to configure Razorpay in our application. Visit the Razorpay website and create an account if you don't have one already. Once logged in, navigate to the dashboard and find your API credentials.
 
-Replace `android` with `ios` if you want to integrate with iOS.
-
-### Step 3: Initialize Razorpay
-
-In your application code, import the `@mogiio/capacitor-razorpay` package and initialize Razorpay with your key. Here's an example:
+In your project, open the file where you initialize Capacitor (usually `capacitor.config.ts` or `capacitor.config.json`). Add the following configuration options:
 
 ```typescript
-import { CapacitorRazorpay } from '@mogiio/capacitor-razorpay';
+import { CapacitorRazorpayPlugin } from 'capacitor-razorpay';
 
-// Initialize Razorpay
-const razorpay = CapacitorRazorpay.initialize({
-  key: 'YOUR_RAZORPAY_KEY',
-});
+// Other imports and configurations...
+
+CapacitorRazorpayPlugin.setPublishableKey('YOUR_RAZORPAY_PUBLISHABLE_KEY');
 ```
 
-Replace `'YOUR_RAZORPAY_KEY'` with your actual Razorpay API key.
+Replace `YOUR_RAZORPAY_PUBLISHABLE_KEY` with your actual publishable key obtained from the Razorpay dashboard.
 
-### Step 4: Create a payment
+## Step 3: Create a Payment
 
-To create a payment, call the `createPayment` method on the initialized `razorpay` object. Here's an example:
+Now, let's create a payment using the Capacitor Razorpay package. Open the file where you want to initiate the payment (e.g., a checkout page). Add the following code:
 
 ```typescript
-// Create a payment
-const payment = await razorpay.createPayment({
-  amount: 50000,                 // Amount in paise
-  currency: 'INR',               // Currency code
-  description: 'Test Payment',   // Payment description
-  orderId: 'ORDER_ID',           // Unique order ID
-});
+import { Plugins } from '@capacitor/core';
+const { CapacitorRazorpayPlugin } = Plugins;
+
+// Other imports and code...
+
+async function handlePayment() {
+  try {
+    const paymentOptions = {
+      amount: 1000, // Amount in paise (e.g., 1000 paise = ₹10)
+      currency: 'INR',
+      receipt: 'order_123',
+      notes: {
+        description: 'My order description',
+        customer_name: 'John Doe',
+      },
+    };
+
+    const paymentResult = await CapacitorRazorpayPlugin.createPayment(paymentOptions);
+    
+    console.log(paymentResult); // The payment result object
+  } catch (error) {
+    console.error(error); // Handle any error that occurred during payment
+  }
+}
 ```
 
-Replace `'ORDER_ID'` with the unique order ID for the payment.
+In the above code, we create a payment using the `createPayment` method provided by the Capacitor Razorpay plugin. We pass the payment options like amount, currency, receipt, and notes. The `createPayment` method returns a promise, which resolves with the payment result object.
 
-### Step 5: Handle payment response
+You can customize the payment options based on your requirements.
 
-To handle the payment response, add an event listener to the `razorpay` object. Here's an example:
+## Step 4: Handle Payment Result
+
+Once the payment is completed or cancelled, you can handle the payment result using the `createPayment` method's response.
 
 ```typescript
-// Handle payment response
-razorpay.on('payment.success', (response) => {
-  console.log('Payment success:', response);
-  // Handle success logic
-});
+async function handlePayment() {
+  // Previous code...
 
-razorpay.on('payment.cancel', (response) => {
-  console.log('Payment canceled:', response);
-  // Handle cancel logic
-});
+  const paymentResult = await CapacitorRazorpayPlugin.createPayment(paymentOptions);
+
+  if (paymentResult.success === true) {
+    console.log('Payment successful');
+  } else if (paymentResult.cancelled === true) {
+    console.log('Payment cancelled');
+  } else {
+    console.log('Payment failed');
+  }
+}
 ```
 
-In the event listeners, you can implement your own logic for handling the payment success and cancel events.
+In the above code, we check the properties `success`, `cancelled`, and `error` of the payment result object to determine the payment status.
 
-### Step 6: Open Razorpay checkout
+## Conclusion
 
-To open the Razorpay checkout page in your application, call the `open` method on the `razorpay` object. Here's an example:
+In this tutorial, we learned how to integrate and use the Capacitor Razorpay package in your application. We covered the installation, configuration, creating payments, and handling payment results. Now you can easily add payment functionality to your Capacitor-based app using Razorpay.
 
-```typescript
-// Open Razorpay checkout
-razorpay.open();
-```
+For more information and advanced usage, refer to the official Capacitor Razorpay documentation.
 
-This will open the Razorpay checkout page in a WebView within your application.
+I hope this tutorial was helpful. Happy coding!
 
-### Step 7: Build and run the application
-
-Finally, build and run your Capacitor application on the target platform. For example, if you added the Android platform, run the following command to build and run the Android application:
-
-```
-npx cap run android
-```
-
-Replace `android` with `ios` if you added the iOS platform.
-
-That's it! You have successfully integrated the `@mogiio/capacitor-razorpay` package into your Capacitor project for Razorpay payment integration.
-
-Note: This tutorial assumes basic knowledge of Capacitor and TypeScript. Make sure to refer to the package documentation and official Capacitor documentation for more details on using the `@mogiio/capacitor-razorpay` package and configuring your Capacitor project.
