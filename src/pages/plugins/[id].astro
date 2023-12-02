@@ -11,7 +11,10 @@ export async function getStaticPaths() {
   let processTuts: Plugin[] = []
   let tuts = await Astro.glob('../../content/plugins-tutorials/**/*.md')
   tuts.forEach((i) => {
-    const slug = i.file.substring(i.file.lastIndexOf('/') + 1).replace('.md', '').toLowerCase()
+    const slug = i.file
+      .substring(i.file.lastIndexOf('/') + 1)
+      .replace('.md', '')
+      .toLowerCase()
     tutMap[slug] = i.rawContent()
     const findTut = actions.find((item) => item.href.substring(item.href.lastIndexOf('/') + 1).toLowerCase() === slug.replace('.md', ''))
     if (findTut) {
