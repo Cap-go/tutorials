@@ -1,6 +1,6 @@
 {
   "base_domain": {
-    "prod": "capgo.app",
+    "prod": "capacitor-tutorial.com",
     "development": "development.capgo.app",
     "local": "localhost:3000"
   }
