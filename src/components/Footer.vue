@@ -9,19 +9,19 @@ const year = new Date().getFullYear()
 
 const navigation = {
   solutions: [
-    { name: 'Register', href: '/register', target: '_blank' },
-    { name: 'App mobile', href: '/app_mobile/' },
+    { name: 'Register', href: 'https://capgo.app/register', target: '_blank' },
+    { name: 'App mobile', href: 'https://capgo.app/app_mobile/' },
     {
       name: 'Documentation',
-      href: '/docs',
+      href: 'https://capgo.app/docs',
     },
-    { name: 'Plugins', href: '/plugins/' },
+    { name: 'Plugins', href: 'https://capgo.app/plugins/' },
     {
       name: 'Awesome capacitor',
       href: 'https://github.com/riderx/awesome-capacitor',
       target: '_blank',
     },
-    { name: 'Top app by Framework', href: '/top_app/' },
+    { name: 'Top app by Framework', href: 'https://capgo.app/top_app/' },
     // { name: 'Top cordova app', href: '/top_cordova_app' },
     // { name: 'Top react native app', href: '/top_react_native_app' },
     // { name: 'Top flutter app', href: '/top_flutter_app' },
@@ -34,8 +34,8 @@ const navigation = {
       href: 'https://discord.gg/VnYRvBfgA6',
       target: '_blank',
     },
-    { name: 'Pricing', href: '/pricing/' },
-    { name: 'Guides', href: '/blog/' },
+    { name: 'Pricing', href: 'https://capgo.app/pricing/' },
+    { name: 'Guides', href: 'https://capgo.app/blog/' },
     { name: 'Status', href: 'https://status.capgo.app/', target: '_blank' },
     {
       name: 'Chat',
@@ -46,11 +46,11 @@ const navigation = {
   ],
   company: [
     // { name: 'About', href: '#' },
-    { name: 'Imprint', href: '/imprint/' },
+    { name: 'Imprint', href: 'https://capgo.app/imprint/' },
     { name: 'Jobs', href: 'https://console.algora.io/org/capgo/bounties?status=open' },
-    { name: 'Contributing', href: '/contributing/' },
-    { name: 'Security', href: '/trust/' },
-    { name: 'Consulting', href: '/consulting/' },
+    { name: 'Contributing', href: 'https://capgo.app/contributing/' },
+    { name: 'Security', href: 'https://capgo.app/trust/' },
+    { name: 'Consulting', href: 'https://capgo.app/consulting/' },
     {
       name: 'Affiliate',
       href: 'https://affiliates.reflio.com/invite/capgo',
@@ -59,8 +59,8 @@ const navigation = {
   ],
   legal: [
     // { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '/privacy/', rel: 'nofollow' },
-    { name: 'Terms', href: '/tos/', rel: 'nofollow' },
+    { name: 'Privacy', href: 'https://capgo.app/privacy/', rel: 'nofollow' },
+    { name: 'Terms', href: 'https://capgo.app/tos/', rel: 'nofollow' },
     {
       name: 'Privacy Board',
       href: 'https://www.privacyboard.co/company/capgo/',
