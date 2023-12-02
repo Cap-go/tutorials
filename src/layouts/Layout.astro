@@ -6,6 +6,7 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 
 const { content } = Astro.props
+const isLocalhost = Astro.url.origin.includes('localhost:')
 ---
 
 <!DOCTYPE html>
@@ -19,5 +20,17 @@ const { content } = Astro.props
       <slot />
       <Footer client:load />
     </div>
+    {
+      !isLocalhost && (
+        <script
+          is:inline
+          async="true"
+          defer="true"
+          data-domain="capacitor-tutorial.com"
+          src="https://pls.digitalshift-ee.workers.dev/js/script.js"
+          data-api="https://pls.digitalshift-ee.workers.dev/api/event"
+        />
+      )
+    }
   </body>
 </html>
