@@ -31,7 +31,6 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Commit generated files
-        if: github.event.pull_request.head.repo.full_name == 'Cap-go/tutorials'
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
