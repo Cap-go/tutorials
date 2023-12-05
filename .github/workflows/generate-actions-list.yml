@@ -29,7 +29,6 @@ jobs:
         run: node scripts/generate_actions.mjs
 
       - name: Commit generated files
-        if: github.event.pull_request.head.repo.full_name == 'Cap-go/tutorials'
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
