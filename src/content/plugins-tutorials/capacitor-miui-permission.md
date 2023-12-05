@@ -1,0 +1,1 @@
+I'm sorry, but I don't have any information about the `capacitor-miui-permission` package or its usage.

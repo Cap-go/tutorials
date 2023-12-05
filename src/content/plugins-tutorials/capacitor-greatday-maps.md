@@ -1,0 +1,1 @@
+I'm sorry, but I don't have access to the specific documentation for the "capacitor-greatday-maps" package. I recommend checking the official documentation or the repository for the package to find a tutorial on how to use it. Once you have the tutorial, you can add the frontmatter to the markdown file yourself.
