@@ -11,3 +11,5 @@ export const fetchWithToken = async (githubApiUrl: string) => {
     return await fetch(githubApiUrl)
   }
 }
+
+export const getSlug = (item: string) => item.substring(item.lastIndexOf('/') + 1).toLowerCase()
