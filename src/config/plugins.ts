@@ -5859,13 +5859,6 @@ export const actions = [
     author: 'asad-96',
   },
   {
-    name: 'cap-bluetooth-low-energy-client',
-    href: 'https://github.com/robmarti/cap-bluetooth-low-energy-client',
-    title: 'cap-bluetooth-low-energy-client',
-    description: 'Capacitor Bluetooth Low Energy Client Plugin',
-    author: 'robmarti',
-  },
-  {
     name: '@kduma-autoid/capacitor-bluetooth-printer',
     href: 'https://github.com/kduma-autoid/capacitor-bluetooth-printer',
     title: 'capacitor-bluetooth-printer',
@@ -5875,13 +5868,6 @@ export const actions = [
   { name: 'riskified-plugin', href: '', title: 'riskified-plugin', description: 'riskified beacon for capacitorJS', author: 'beksina' },
   { name: 'capacitor-shp', href: '', title: 'capacitor-shp', description: 'shp', author: 'Mqingyi' },
   { name: 'capacitor-get-google-account', href: '', title: 'capacitor-get-google-account', description: 'plugin for get google account', author: 'walbor' },
-  {
-    name: '@wattrainer/cap-bluetooth-low-energy-client',
-    href: 'https://github.com/robmarti/cap-bluetooth-low-energy-client',
-    title: 'cap-bluetooth-low-energy-client',
-    description: 'Capacitor Bluetooth Low Energy Client Plugin',
-    author: 'robmarti',
-  },
   { name: 'wxs-chris-wxsnetwork', href: '', title: 'wxs-chris-wxsnetwork', description: 'WXS Network', author: 'Chris Lo' },
   { name: '@vorujack/capacitor-filesystem', href: '', title: 'capacitor-filesystem', description: 'Capacitor File Access Plugin include electron', author: 'Vorujack' },
   {
