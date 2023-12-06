@@ -4,9 +4,11 @@ import { actions } from '../../config/plugins'
 import Layout from '../../layouts/Layout.astro'
 import type { Plugin } from '../../config/plugins'
 import { useRuntimeConfig } from '../../config/app'
+import { fetchWithToken } from '../../services/github'
 import VuePluginPDP from '../../vue-pages/plugins/[id].vue'
 
 export async function getStaticPaths() {
+  let ssrMetadataFetch = false
   let tutMap: any = {}
   let processTuts: Plugin[] = []
   let tuts = await Astro.glob('../../content/plugins-tutorials/**/*.md')
@@ -24,62 +26,65 @@ export async function getStaticPaths() {
   let plugins: Plugin[] = processTuts
   await Promise.all(
     processTuts.map(async (item, index) => {
-      const fetchWithToken = async (githubApiUrl: string) => {
-        if (import.meta.env.BEARER_TOKEN) {
-          return await fetch(githubApiUrl, {
-            headers: {
-              // Replace with your GitHub personal access token
-              Authorization: `Bearer ${import.meta.env.BEARER_TOKEN}`,
-            },
-          })
-        } else {
-          return await fetch(githubApiUrl)
-        }
-      }
       try {
         plugins[index].npmDownloads = 0
-        // Fetch npm package details to get npm downloads
-        const npmApiUrl = `https://api.npmjs.org/downloads/point/last-month/${item.name}`
-        const npmResponse = await fetch(npmApiUrl)
-        if (npmResponse.ok) {
-          const npmData = await npmResponse.json()
-          plugins[index].npmDownloads = npmData.downloads
-        }
+        try {
+          if (ssrMetadataFetch) {
+            // Fetch npm package details to get npm downloads
+            const npmApiUrl = `https://api.npmjs.org/downloads/point/last-month/${item.name}`
+            const npmResponse = await fetch(npmApiUrl)
+            if (npmResponse.ok) {
+              const npmData = await npmResponse.json()
+              plugins[index].npmDownloads = npmData.downloads
+            }
+          }
+        } catch (e) {}
 
         // Fetch npm package details to get npm modified
         const registryNpmApiUrl = `https://registry.npmjs.org/${item.name}`
-        const registrynpmResponse = await fetch(registryNpmApiUrl)
-        if (registrynpmResponse.ok) {
-          const npmData = await registrynpmResponse.json()
-          if (npmData.time) {
-            plugins[index].datePublished = npmData.time.created
-            plugins[index].dateModified = npmData.time.modified
+        try {
+          if (ssrMetadataFetch) {
+            const registrynpmResponse = await fetch(registryNpmApiUrl)
+            if (registrynpmResponse.ok) {
+              const npmData = await registrynpmResponse.json()
+              if (npmData.time) {
+                plugins[index].datePublished = npmData.time.created
+                plugins[index].dateModified = npmData.time.modified
+              }
+            }
           }
-        }
+        } catch (e) {}
 
         // Extract the GitHub repository owner and name from the URL
         const githubUrlParts = item.href.split('/')
         const githubOwner = githubUrlParts[3]
         const githubRepo = githubUrlParts[4]
 
-        plugins[index].githubStars = 0
         // Fetch GitHub repository details to get GitHub stars
-        const githubApiUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}`
-        const githubResponse = await fetchWithToken(githubApiUrl)
-        if (githubResponse.ok) {
-          const githubData = await githubResponse.json()
-          plugins[index].githubStars = githubData.stargazers_count
-        }
+        plugins[index].githubStars = 0
+        try {
+          if (ssrMetadataFetch) {
+            const githubApiUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}`
+            const githubResponse = await fetchWithToken(githubApiUrl)
+            if (githubResponse.ok) {
+              const githubData = await githubResponse.json()
+              plugins[index].githubStars = githubData.stargazers_count
+            }
+          }
+        } catch (e) {}
 
         // Update the item with fetched data
         plugins[index].readme = marked.parse(`# ${item.title}\n\n${item.description}`)
-        // Fetch README.md content from GitHub
-        const readmeApiUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/readme`
-        const readmeResponse = await fetchWithToken(readmeApiUrl)
-        if (readmeResponse.ok) {
-          const readmeData = await readmeResponse.json()
-          plugins[index].readme = marked.parse(Buffer.from(readmeData.content, 'base64').toString('utf-8'))
-        }
+        try {
+          if (ssrMetadataFetch) {
+            const readmeApiUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/readme`
+            const readmeResponse = await fetchWithToken(readmeApiUrl)
+            if (readmeResponse.ok) {
+              const readmeData = await readmeResponse.json()
+              plugins[index].readme = marked.parse(Buffer.from(readmeData.content, 'base64').toString('utf-8'))
+            }
+          }
+        } catch (e) {}
       } catch (e) {
         console.error(e)
       }
@@ -123,7 +128,7 @@ const config = useRuntimeConfig()
 const { id } = Astro.params
 
 // @ts-ignore
-content['ldJSON'] = JSON.stringify({
+content['ldJSON'] = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   mainEntityOfPage: {
@@ -142,7 +147,7 @@ content['ldJSON'] = JSON.stringify({
   },
   ...(plugin.hasOwnProperty('datePublished') && { datePublished: plugin.datePublished }),
   ...(plugin.hasOwnProperty('dateModified') && { dateModified: plugin.dateModified }),
-})
+}
 ---
 
 <Layout content={content}>
