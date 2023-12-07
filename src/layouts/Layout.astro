@@ -1,9 +1,9 @@
 ---
-import '../css/global.css'
-import SEO from '../components/SEO.astro'
+import '@/css/global.css'
+import SEO from '@/components/SEO.astro'
 // @ts-ignore
-import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 const { content } = Astro.props
 const isLocalhost = Astro.url.origin.includes('localhost:')
