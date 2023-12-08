@@ -40,8 +40,6 @@ or
 
 You can add this directly without coding with Xcode as following
 
-![Screen shot](./images/plugin_05.png)
-
 2. That's all
 
 ### Android

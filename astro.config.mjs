@@ -7,13 +7,14 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   compressHTML: true,
   site: `https://${config.base_domain.prod}`,
-  image: {
-    service: {
-      entrypoint: 'astro/assets/services/sharp',
-    },
-  },
   integrations: [
-    vue(),
+    vue({
+      template: {
+        transformAssetUrls: {
+          includeAbsolute: false,
+        },
+      },
+    }),
     UnoCSS({
       injectReset: true,
     }),
