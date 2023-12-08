@@ -60,8 +60,6 @@ For example:
 
 Alternatively, you can add the camera usage description directly in Xcode without changing the `info.plist` file. See the screenshot below for reference:
 
-![Screen shot](./images/plugin_05.png)
-
 3. That's all. The Capacitor QR Code Scanner is now ready to use on iOS.
 
 ### Android
