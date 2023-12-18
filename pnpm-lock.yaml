@@ -21,8 +21,8 @@ dependencies:
     specifier: ^4.0.3
     version: 4.0.3(@types/node@20.10.4)(typescript@5.3.3)
   astro-font:
-    specifier: ^0.0.16
-    version: 0.0.16
+    specifier: ^0.0.27
+    version: 0.0.27
   axios:
     specifier: ^1.5.0
     version: 1.6.2
@@ -1685,8 +1685,8 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro-font@0.0.16:
-    resolution: {integrity: sha512-WET3yGusIQRDNtmuwMvelgII/0A883iySv6O2KqgH2Qccs6Y5LNehFHpcI/dovyv3MVz28xOWUktRGf2DR10yA==}
+  /astro-font@0.0.27:
+    resolution: {integrity: sha512-ifS+U4mGpPjETvGFqCR3BCs7XdNU9RoX3aBbBje6eUwpO4taMMfp6aUaVzDFYcZ6sKm3yklyijeWBFARbya6Ig==}
     dependencies:
       fontkit: 2.0.2
       node-fetch: 3.3.2

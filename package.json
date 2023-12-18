@@ -16,7 +16,7 @@
     "@headlessui/vue": "^1.7.15",
     "@heroicons/vue": "^2.0.18",
     "astro": "^4.0.3",
-    "astro-font": "^0.0.16",
+    "astro-font": "^0.0.27",
     "axios": "^1.5.0",
     "cheerio": "1.0.0-rc.12",
     "faiss-node": "^0.3.0",
