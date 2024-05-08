@@ -8,7 +8,7 @@ slug: capacitor-updater
 
 # Using @capgo/capacitor-updater for Auto-updates in Capacitor Apps
 
-In this tutorial, we will learn how to use the `@capgo/capacitor-updater` package to enable auto-updates in Capacitor apps. Auto-updates allow you to deliver new features and bug fixes to your app without requiring manual updates from users.
+In this tutorial, we will learn how to use the `@capgo/capacitor-updater` package to enable auto-updates in Capacitor apps. Auto-updates allow you to deliver new features and bug fixes to your app without requiring natives manual updates from users.
 
 ## Prerequisites
 
@@ -17,16 +17,7 @@ Before getting started, make sure you have the following:
 - Node.js and npm installed on your machine
 - An existing Capacitor app
 
-## Installation
-
-To install the `@capgo/capacitor-updater` package, run the following command in your project directory:
-
-```bash
-npm install @capgo/capacitor-updater
-npx cap sync
-```
-
-## Auto-update Setup
+## Automatic update Setup
 
 To enable auto-updates in your Capacitor app, follow these steps:
 
@@ -38,9 +29,27 @@ To enable auto-updates in your Capacitor app, follow these steps:
    npx @capgo/cli@latest init API_KEY
    ```
 
-   Follow the prompts to complete the setup.
+  Follow the prompts to complete the setup.
 
-3. Edit your `capacitor.config.json` file and set the `autoUpdate` property to `false` under the `CapacitorUpdater` plugin:
+
+## Manual update Setup
+
+To install the `@capgo/capacitor-updater` package, run the following command in your project directory:
+
+```bash
+npm install @capgo/capacitor-updater
+npx cap sync
+```
+
+To enable auto-updates in your Capacitor app, follow these steps:
+
+1. Install the updater dependencies by running the following command:
+
+   ```bash
+   npm i @capgo/capacitor-updater
+   ```
+
+2. Edit your `capacitor.config.json` file and set the `autoUpdate` property to `false` under the `CapacitorUpdater` plugin:
 
    ```json
    // capacitor.config.json
@@ -53,7 +62,7 @@ To enable auto-updates in your Capacitor app, follow these steps:
    }
    ```
 
-4. In your main code file, import the `CapacitorUpdater` module and call the `notifyAppReady()` method:
+3. In your main code file, import the `CapacitorUpdater` module and call the `notifyAppReady()` method:
 
    ```javascript
    import { CapacitorUpdater } from '@capgo/capacitor-updater'
@@ -63,7 +72,26 @@ To enable auto-updates in your Capacitor app, follow these steps:
 
    This method informs the Capacitor Updater that the current update bundle has loaded successfully. Failing to call this method will cause your application to roll back to the previously successful version.
 
-5. To trigger an update, use the `download()` and `set()` methods. Here's an example:
+
+3. build your JavaScript bundle and sync it with the native project:
+
+  `npm run build`
+
+  And then sync it with the following command:
+
+  `npx cap sync`
+
+5. Bundle it with the following command:
+
+  `npx @capgo/cli@latest zip`
+
+  This will create a zip file in the `dist` folder. Upload this zip file to your server or S3 bucket.
+
+  You can upload to s3 directly with our CLI
+
+  `npx @capgo/cli@latest upload --s3-apikey [key] --s3-apisecret [secretkey] --s3-region [region]`
+
+6. To trigger an update, use the `download()` and `set()` methods. Here's an example:
 
    ```javascript
    import { CapacitorUpdater } from '@capgo/capacitor-updater'
@@ -82,7 +110,7 @@ To enable auto-updates in your Capacitor app, follow these steps:
 
 - You can use the `appStateChange` event from the `@capacitor/app` plugin and the `SplashScreen` plugin to control updates based on the application state. This can improve user experience and prevent interrupted updates.
 
-- If you prefer a secure and automated way to update your app, you can use [capgo.app](https://capgo.app), which provides a full-featured auto-update system.
+- If you prefer a secure and automated way to update your app, you can use our tutorial [Here](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/#auto-capgo-configuration), which provides a full-featured auto-update system.
 
 ## Conclusion
 
