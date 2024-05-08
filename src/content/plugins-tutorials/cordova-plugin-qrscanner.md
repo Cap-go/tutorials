@@ -55,8 +55,6 @@ To use the Capacitor QRScanner on iOS, follow these steps:
    - Add a new row with the key `Privacy - Camera Usage Description`.
    - Enter the camera usage description as the value.
 
-![Screen shot](./images/plugin_05.png)
-
 4. That's all! You can now use the Capacitor QRScanner in your iOS project.
 
 ### Android

@@ -1,7 +1,9 @@
 ---
-import { structuredData } from '../config/app'
-import { appDescription, appName } from '../constants'
-import { baseDomain, useRuntimeConfig } from '../config/app'
+import { join } from 'node:path'
+import { AstroFont } from 'astro-font'
+import { structuredData } from '@/config/app'
+import { appDescription, appName } from '@/constants'
+import { baseDomain, useRuntimeConfig } from '@/config/app'
 
 const {
   ldJSON = structuredData,
@@ -24,7 +26,56 @@ if (description.length > descSize) {
 
 const image_unsecure = image.replace('https://', 'http://')
 const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
+
+const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', name)
 ---
+
+<AstroFont
+  config={[
+    {
+      preload: false,
+      display: 'swap',
+      fallback: 'serif',
+      selector: '.font-light',
+      name: 'AirbnbCerealLight',
+      src: [
+        {
+          style: 'light',
+          weight: '300',
+          path: makeFontPath('AirbnbCerealLight.woff'),
+        },
+      ],
+    },
+    {
+      preload: false,
+      display: 'swap',
+      fallback: 'serif',
+      selector: '.font-medium',
+      name: 'AirbnbCerealMedium',
+      src: [
+        {
+          style: 'medium',
+          weight: '500',
+          path: makeFontPath('AirbnbCerealMedium.woff'),
+        },
+      ],
+    },
+    {
+      preload: true,
+      display: 'swap',
+      fallback: 'serif',
+      selector: '.font-bold',
+      name: 'AirbnbCerealBold',
+      src: [
+        {
+          style: 'bold',
+          weight: '800',
+          path: makeFontPath('AirbnbCerealBold.woff'),
+        },
+      ],
+    },
+  ]}
+/>
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
