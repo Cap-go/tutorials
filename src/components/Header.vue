@@ -71,9 +71,13 @@ const menuMobile = ref(false)
     <div :class="{ hidden: !menuMobile }">
       <div class="px-2 pt-2 mt-2 pb-3 space-y-1 bg-gray-700">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="https://capgo.app//pricing/" title="Pricing" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"> Pricing </a>
+        <a href="https://capgo.app//pricing/" title="Pricing" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          Pricing
+        </a>
         <a href="https://capgo.app//blog/" title="Blog" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"> Blog </a>
-        <a href="https://capgo.app//docs/" title="Documentation" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"> Documentation </a>
+        <a href="https://capgo.app//docs/" title="Documentation" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          Documentation
+        </a>
         <a
           href="https://web.capgo.app/login"
           target="_blank"
