@@ -1,0 +1,1 @@
+This is a modif of capacitor-calendar who fix permission on IOS 17
