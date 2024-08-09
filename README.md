@@ -6,7 +6,7 @@
 - `scripts`: containing the scripts that perform fetch and write of files and plugins's metadata
 - `src/content`: containing the tutorials that are shown on the website
 
-# Setup
+# Setup Local
 
 ```
 pnpm i
@@ -41,3 +41,21 @@ node scripts/generate_tutorials.mjs
 ```
 pnpm build && pnpm preview
 ```
+
+# Setup Github actions
+
+# Step 1. Generate Packages List from NPM
+
+https://github.com/Cap-go/tutorials/actions/workflows/generate-actions-list.yml
+
+# Step 2. Fetch and Create READMEs
+
+https://github.com/Cap-go/tutorials/actions/workflows/write-readmes.yml
+
+# Step 3. Train Model
+
+https://github.com/Cap-go/tutorials/actions/workflows/train-model.yml
+
+# Step 4. Write Tutorials
+
+https://github.com/Cap-go/tutorials/actions/workflows/write-tutorials.yml
