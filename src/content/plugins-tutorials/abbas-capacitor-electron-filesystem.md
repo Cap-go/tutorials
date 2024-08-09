@@ -1,10 +1,9 @@
-```markdown
 ---
 "title": "Using abbas-capacitor-electron-filesystem Package"
 "description": "Tutorial on how to use the abbas-capacitor-electron-filesystem package with Capacitor"
 "created_at": "2022-02-16"
 "published": true
-"slug": "abbas-capacitor-electron-filesystem"
+slug: abbas-capacitor-electron-filesystem
 ---
 
 # Using abbas-capacitor-electron-filesystem Package
@@ -37,5 +36,3 @@ const response = await echo({ value: 'Hello, File System!' });
 console.log(response); // Output: { value: 'Hello, File System!' }
 ```
 
-
-```

@@ -1,9 +1,9 @@
 ---
-"title": "Using capacitor-plugin-googleplayservices-check",
-"description": "This blog post will provide a step-by-step tutorial on how to use the capacitor-plugin-googleplayservices-check package to check whether Google Play Services is available on your Android device in a Capacitor project.",
-"created_at": "2022-01-26",
-"published": true,
-"slug": "capacitor-plugin-googleplayservices-check"
+title: Using capacitor-plugin-googleplayservices-check
+description: This blog post will provide a step-by-step tutorial on how to use the capacitor-plugin-googleplayservices-check package to check whether Google Play Services is available on your Android device in a Capacitor project.
+created_at: 2022-01-26
+published: true
+slug: capacitor-plugin-googleplayservices-check
 ---
 
 # Using capacitor-plugin-googleplayservices-check

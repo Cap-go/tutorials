@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Tutorial: Using cap-android-intents Package",
-"description": "This tutorial will guide you through using the cap-android-intents package in Capacitor for both Android and iOS platforms.",
-"created_at": "2022-01-03",
-"published": true,
-"slug": "capacitor-direct-intent-plugin"
+title: Tutorial: Using cap-android-intents Package
+description: This tutorial will guide you through using the cap-android-intents package in Capacitor for both Android and iOS platforms.
+created_at: 2022-01-03
+published: true
+slug: capacitor-direct-intent-plugin
 ---
 
 # Tutorial: Using cap-android-intents Package

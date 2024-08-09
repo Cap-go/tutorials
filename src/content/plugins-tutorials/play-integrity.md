@@ -1,9 +1,9 @@
 ---
-"title": "Using @capacitor-community/play-integrity Package",
-"description": "Tutorial on how to use the Play Integrity API with @capacitor-community/play-integrity package to verify the integrity of your app",
-"created_at": "2022-01-19",
-"published": true,
-"slug": "play-integrity"
+title: Using @capacitor-community/play-integrity Package
+description: Tutorial on how to use the Play Integrity API with @capacitor-community/play-integrity package to verify the integrity of your app
+created_at: 2022-01-19
+published: true
+slug: play-integrity
 ---
 
 # Using @capacitor-community/play-integrity Package

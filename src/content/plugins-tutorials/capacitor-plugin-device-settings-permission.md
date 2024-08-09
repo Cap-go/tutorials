@@ -1,9 +1,9 @@
 ---
-"title": "How to Use capacitor-plugin-device-settings-permission in your Capacitor App",
-"description": "This guide explains how to integrate and use the capacitor-plugin-device-settings-permission package in your Capacitor app to manage device settings and permissions.",
-"created_at": "March 20, 2023",
-"published": true,
-"slug": "capacitor-plugin-device-settings-permission"
+title: How to Use capacitor-plugin-device-settings-permission in your Capacitor App
+description: This guide explains how to integrate and use the capacitor-plugin-device-settings-permission package in your Capacitor app to manage device settings and permissions.
+created_at: March 20, 2023
+published: true
+slug: capacitor-plugin-device-settings-permission
 ---
 
 # Using capacitor-plugin-device-settings-permission

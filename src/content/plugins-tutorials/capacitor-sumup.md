@@ -4,7 +4,7 @@
 "description": "A tutorial on integrating the @globy-app/capacitor-sumup package into your Capacitor app to streamline SumUp payments."
 "created_at": "2023-07-29"
 "published": true
-"slug": "capacitor-sumup"
+slug: capacitor-sumup
 ---
 
 # Using @globy-app/capacitor-sumup Package Tutorial

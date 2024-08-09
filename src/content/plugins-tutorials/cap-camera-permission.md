@@ -1,9 +1,9 @@
 ---
-"title": "Using cap-camera-permission package",
-"description": "Tutorial on how to use the cap-camera-permission package with Capacitor",
-"created_at": "2022-01-21",
-"published": true,
-"slug": "cap-camera-permission"
+title: Using cap-camera-permission package
+description: Tutorial on how to use the cap-camera-permission package with Capacitor
+created_at: 2022-01-21
+published: true
+slug: cap-camera-permission
 ---
 
 ## Using cap-camera-permission Package

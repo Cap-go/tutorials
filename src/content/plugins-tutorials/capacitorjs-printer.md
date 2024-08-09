@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "How to Use capacitorjs-printer Package Tutorial",
-"description": "Learn how to use the capacitorjs-printer package to print HTML format values in iOS and Android apps.",
-"created_at": "2022-03-24",
-"published": true,
-"slug": "capacitorjs-printer"
+title: How to Use capacitorjs-printer Package Tutorial
+description: Learn how to use the capacitorjs-printer package to print HTML format values in iOS and Android apps.
+created_at: 2022-03-24
+published: true
+slug: capacitorjs-printer
 ---
 
 # How to Use capacitorjs-printer Package Tutorial

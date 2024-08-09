@@ -4,7 +4,7 @@
 "description": "Step-by-step guide on using the capacitor-community-nordic-dfu package to update Bluetooth LE devices with Nordic DFU service"
 "created_at": "2023-10-29"
 "published": true
-"slug": "nordic-dfu"
+slug: nordic-dfu
 ---
 
 # Tutorial: Using capacitor-community-nordic-dfu Package

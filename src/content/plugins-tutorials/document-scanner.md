@@ -1,9 +1,9 @@
 ---
-"title": "Using mdocument-scanner Package",
-"description": "Step-by-step guide on how to use the mdocument-scanner package in a Capacitor project for scanning documents on Android and iOS.",
-"created_at": "2023-01-12",
-"published": true,
-"slug": "document-scanner"
+title: Using mdocument-scanner Package
+description: Step-by-step guide on how to use the mdocument-scanner package in a Capacitor project for scanning documents on Android and iOS.
+created_at: 2023-01-12
+published: true
+slug: document-scanner
 ---
 
 # Using mdocument-scanner Package

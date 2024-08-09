@@ -4,7 +4,7 @@
 "description": "Step-by-step guide on installing and using the capacitor-install-apk-plugin package in your Capacitor project."
 "created_at": "2022-01-17"
 "published": true
-"slug": "apkinstaller"
+slug: apkinstaller
 ---
 
 # How to Use capacitor-install-apk-plugin Package

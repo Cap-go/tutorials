@@ -1,9 +1,9 @@
 ---
-"title": "Using Capacitor Keep Awake Plugin",
-"description": "A tutorial on how to use the @gachlab/capacitor-keep-awake-plugin package to keep the device screen awake.",
-"created_at": "2023-12-02",
-"published": true,
-"slug": "capacitor-keep-awake-plugin"
+title: Using Capacitor Keep Awake Plugin
+description: A tutorial on how to use the @gachlab/capacitor-keep-awake-plugin package to keep the device screen awake.
+created_at: 2023-12-02
+published: true
+slug: capacitor-keep-awake-plugin
 ---
 
 # Using Capacitor Keep Awake Plugin

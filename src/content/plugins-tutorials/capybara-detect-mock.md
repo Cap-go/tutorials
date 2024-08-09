@@ -4,7 +4,7 @@
 "description": "A tutorial on how to use the capybara-detect-mock package to detect mock locations."
 "created_at": "2023-10-15"
 "published": true
-"slug": "capybara-detect-mock"
+slug: capybara-detect-mock
 ---
 
 # Using Capybara Detect Mock Package Tutorial

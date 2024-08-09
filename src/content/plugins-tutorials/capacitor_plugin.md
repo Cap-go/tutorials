@@ -1,10 +1,10 @@
 ---
 
-"title": "Using Speedchecker Capacitor Plugin",
-"description": "A comprehensive guide on how to integrate and utilize the @speedchecker/capacitor-plugin package in a Capacitor project.",
-"created_at": "2022-01-13",
-"published": true,
-"slug": "capacitor_plugin"
+title: Using Speedchecker Capacitor Plugin
+description: A comprehensive guide on how to integrate and utilize the @speedchecker/capacitor-plugin package in a Capacitor project.
+created_at: 2022-01-13
+published: true
+slug: capacitor_plugin
 
 ---
 

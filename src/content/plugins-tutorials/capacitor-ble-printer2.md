@@ -1,10 +1,10 @@
 ```md
 ---
-"title": "How to Use Capacitor-BLE-Printer2 for Printing via Bluetooth",
-"description": "This tutorial will guide you on how to use the Capacitor-BLE-Printer2 package to print via Bluetooth.",
-"created_at": "2023-10-12",
-"published": true,
-"slug": "capacitor-ble-printer2"
+title: How to Use Capacitor-BLE-Printer2 for Printing via Bluetooth
+description: This tutorial will guide you on how to use the Capacitor-BLE-Printer2 package to print via Bluetooth.
+created_at: 2023-10-12
+published: true
+slug: capacitor-ble-printer2
 ---
 
 ## Getting Started

@@ -1,10 +1,10 @@
 ```md
 ---
-"title": "Using @capacitor-community/exif package Tutorial",
-"description": "This tutorial will guide you on how to use the @capacitor-community/exif package to interact with image EXIF metadata.",
-"created_at": "2022-04-06",
-"published": true,
-"slug": "exif"
+title: Using @capacitor-community/exif package Tutorial
+description: This tutorial will guide you on how to use the @capacitor-community/exif package to interact with image EXIF metadata.
+created_at: 2022-04-06
+published: true
+slug: exif
 ---
 
 # Using @capacitor-community/exif package Tutorial

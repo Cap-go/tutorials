@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using the Floating Window Cap Package",
-"description": "This blog tutorial will guide you on how to use the floating-window-cap package in your project step by step.",
-"created_at": "2022-02-15",
-"published": true,
-"slug": "floatingwindowcapacitor"
+title: Using the Floating Window Cap Package
+description: This blog tutorial will guide you on how to use the floating-window-cap package in your project step by step.
+created_at: 2022-02-15
+published: true
+slug: floatingwindowcapacitor
 ---
 
 # Using the Floating Window Cap Package

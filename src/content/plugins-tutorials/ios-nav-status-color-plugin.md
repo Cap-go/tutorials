@@ -1,10 +1,10 @@
 ```
 ---
-"title": "Using iOS Nav Status Color Plugin",
-"description": "This tutorial will guide you through the process of using the ios-nav-status-color-plugin package for setting the navigation bar status color on iOS applications.",
-"created_at": "2022-01-23",
-"published": true,
-"slug": "ios-nav-status-color-plugin"
+title: Using iOS Nav Status Color Plugin
+description: This tutorial will guide you through the process of using the ios-nav-status-color-plugin package for setting the navigation bar status color on iOS applications.
+created_at: 2022-01-23
+published: true
+slug: ios-nav-status-color-plugin
 ---
 
 # Using iOS Nav Status Color Plugin

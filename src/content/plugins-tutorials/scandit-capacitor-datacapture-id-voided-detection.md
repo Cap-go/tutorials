@@ -4,7 +4,7 @@
 "description": "This tutorial will walk you through how to integrate and use the scandit-capacitor-datacapture-id-voided-detection package to enable ID voided detection in your Capacitor applications."
 "created_at": "2022-02-03"
 "published": true
-"slug": "scandit-capacitor-datacapture-id-voided-detection"
+slug: scandit-capacitor-datacapture-id-voided-detection
 ---
 
 # Getting Started with scandit-capacitor-datacapture-id-voided-detection Package

@@ -1,10 +1,10 @@
 ```md
 ---
-"title": "Using the Docutain Capacitor Plugin",
-"description": "In this tutorial, we will learn how to integrate the @docutain/capacitor-plugin-docutain-sdk package into a Capacitor project.",
-"created_at": "2022-03-15",
-"published": true,
-"slug": "docutain-sdk-example-capacitor-ionic"
+title: Using the Docutain Capacitor Plugin
+description: In this tutorial, we will learn how to integrate the @docutain/capacitor-plugin-docutain-sdk package into a Capacitor project.
+created_at: 2022-03-15
+published: true
+slug: docutain-sdk-example-capacitor-ionic
 ---
 
 # Using the Docutain Capacitor Plugin

@@ -1,9 +1,9 @@
 ---
-"title": "Using @moovenda/capacitor-braintree Package",
-"description": "This tutorial provides a step-by-step guide on how to use the @moovenda/capacitor-braintree package for implementing 3D Secure-enabled payments using Capacitor.",
-"created_at": "2021-09-27",
-"published": true,
-"slug": "capacitor-braintree"
+title: Using @moovenda/capacitor-braintree Package
+description: This tutorial provides a step-by-step guide on how to use the @moovenda/capacitor-braintree package for implementing 3D Secure-enabled payments using Capacitor.
+created_at: 2021-09-27
+published: true
+slug: capacitor-braintree
 ---
 
 # Using @moovenda/capacitor-braintree Package Tutorial

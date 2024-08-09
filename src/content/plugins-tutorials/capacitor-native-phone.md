@@ -4,7 +4,7 @@
 "description": "In this tutorial, we will learn how to integrate and use the Capacitor Native Phone package in your Ionic app."
 "created_at": "October 25, 2021"
 "published": true
-"slug": "capacitor-native-phone"
+slug: capacitor-native-phone
 ---
 
 # Getting Started with Capacitor Native Phone Plugin

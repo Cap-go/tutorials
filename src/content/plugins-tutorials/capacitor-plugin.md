@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using barkoder-capacitor Package Guide",
-"description": "A comprehensive tutorial on how to use the barkoder-capacitor package in your Capacitor project, including installation, configuration, and usage.",
-"created_at": "2022-02-28",
-"published": true,
-"slug": "capacitor-plugin"
+title: Using barkoder-capacitor Package Guide
+description: A comprehensive tutorial on how to use the barkoder-capacitor package in your Capacitor project, including installation, configuration, and usage.
+created_at: 2022-02-28
+published: true
+slug: capacitor-plugin
 ---
 
 # Using barkoder-capacitor Package Guide

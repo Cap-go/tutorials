@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using Rootcheck Capacitor Plugin",
-"description": "Learn how to integrate and use the Rootcheck Capacitor Plugin in your Capacitor-powered applications.",
-"created_at": "October 1, 2021",
-"published": true,
-"slug": "rootcheck-capacitor-plugin"
+title: Using Rootcheck Capacitor Plugin
+description: Learn how to integrate and use the Rootcheck Capacitor Plugin in your Capacitor-powered applications.
+created_at: October 1, 2021
+published: true
+slug: rootcheck-capacitor-plugin
 ---
 
 # Using Rootcheck Capacitor Plugin

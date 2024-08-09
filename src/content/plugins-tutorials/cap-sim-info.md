@@ -4,11 +4,11 @@ You can create a front matter block with the required values for your blog as fo
 
 ```
 ---
-"title": "Your Blog Title",
-"description": "Summary of what will be in the blog",
-"created_at": "Date of this answer",
-"published": true,
-"slug": "cap-sim-info"
+title: Your Blog Title
+description: Summary of what will be in the blog
+created_at: Date of this answer
+published: true
+slug: cap-sim-info
 ---
 ```
 

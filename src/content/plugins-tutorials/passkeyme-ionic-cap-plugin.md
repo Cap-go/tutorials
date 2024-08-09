@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using passkeyme-ionic-cap-plugin Package",
-"description": "Step-by-step guide on integrating the passkeyme-ionic-cap-plugin package into your Ionic app",
-"created_at": "2023-08-14",
-"published": true,
-"slug": "passkeyme-ionic-cap-plugin"
+title: Using passkeyme-ionic-cap-plugin Package
+description: Step-by-step guide on integrating the passkeyme-ionic-cap-plugin package into your Ionic app
+created_at: 2023-08-14
+published: true
+slug: passkeyme-ionic-cap-plugin
 ---
 
 # Using passkeyme-ionic-cap-plugin Package

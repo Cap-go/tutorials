@@ -4,7 +4,7 @@
 "description": "Learn how to use the @intuiface/capacitor-plugin-screenshot package in your Capacitor project. This tutorial will guide you through the installation and usage of the screenshot functionality provided by the plugin."
 "created_at": "2021-09-16"
 "published": true
-"slug": "capacitor-plugin-screenshot"
+slug: capacitor-plugin-screenshot
 ---
 
 # How to Use @intuiface/capacitor-plugin-screenshot Package

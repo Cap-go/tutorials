@@ -4,7 +4,7 @@
 "description": "This tutorial will guide you on how to use the language-model-plugin package."
 "created_at": "2023-10-15"
 "published": true
-"slug": "language-model-plugin"
+slug: language-model-plugin
 ---
 
 # Language Model Plugin Tutorial

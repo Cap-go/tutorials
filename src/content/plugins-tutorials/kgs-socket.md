@@ -2,7 +2,7 @@
 ### "description": "A detailed guide on how to use the kgs-socket package for socket communication in your application."
 ### "created_at": "2022-01-19"
 ### "published": true
-### "slug": "kgs-socket"
+### slug: kgs-socket
 
 ```markdown
 ---
@@ -10,7 +10,7 @@
 "description": "A detailed guide on how to use the kgs-socket package for socket communication in your application."
 "created_at": "2022-01-19"
 "published": true
-"slug": "kgs-socket"
+slug: kgs-socket
 ---
 
 # Using kgs-socket Package Tutorial

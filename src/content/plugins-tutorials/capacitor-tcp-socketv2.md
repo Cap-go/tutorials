@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "TCP Socket Plugin Tutorial with Capacitor",
-"description": "A step-by-step tutorial on using the capacitor-tcp-socket2 package for TCP socket communication in a Capacitor app.",
-"created_at": "2022-02-17",
-"published": true,
-"slug": "capacitor-tcp-socketv2"
+title: TCP Socket Plugin Tutorial with Capacitor
+description: A step-by-step tutorial on using the capacitor-tcp-socket2 package for TCP socket communication in a Capacitor app.
+created_at: 2022-02-17
+published: true
+slug: capacitor-tcp-socketv2
 ---
 
 # Capacitor TCP Socket Plugin Tutorial

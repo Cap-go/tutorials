@@ -14,7 +14,7 @@ Add the following frontmatter at the top of your Markdown file:
 "description": "This tutorial explains how to use the capacitor-sms-sender-fork package in your Capacitor app."
 "created_at": "2022-04-07"
 "published": true
-"slug": "capacitor-sms-sender-fork"
+slug: capacitor-sms-sender-fork
 ---
 ```
 

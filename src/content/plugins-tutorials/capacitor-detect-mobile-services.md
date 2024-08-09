@@ -1,9 +1,9 @@
 ---
-"title": "Using capacitor-detect-mobile-services Package Tutorial",
-"description": "A step-by-step guide on how to utilize the capacitor-detect-mobile-services package in your Capacitor app.",
-"created_at": "2022-03-27",
-"published": true,
-"slug": "capacitor-detect-mobile-services"
+title: Using capacitor-detect-mobile-services Package Tutorial
+description: A step-by-step guide on how to utilize the capacitor-detect-mobile-services package in your Capacitor app.
+created_at: 2022-03-27
+published: true
+slug: capacitor-detect-mobile-services
 ---
 
 ## Installation

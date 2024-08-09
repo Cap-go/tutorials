@@ -4,7 +4,7 @@
 "description": "Learn how to integrate the capacitor-tcp-socket package in your Capacitor app for TCP socket communication."
 "created_at": "2023-10-05"
 "published": true
-"slug": "capacitor-tcp-socket"
+slug: capacitor-tcp-socket
 ---
 
 # Capacitor TCP Socket Plugin Tutorial

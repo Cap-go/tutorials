@@ -4,7 +4,7 @@
 "description": "Learn how to integrate and use the capacitor-plugin-walkme-sdk package in your Capacitor project. This tutorial provides step-by-step instructions and examples for implementing WalkMe SDK functionality in your Ionic application."
 "created_at": "2021-10-05"
 "published": true
-"slug": "capacitor-plugin-walkme-sdk"
+slug: capacitor-plugin-walkme-sdk
 ---
 
 # Tutorial: Using capacitor-plugin-walkme-sdk Package

@@ -1,9 +1,9 @@
 ---
-"title": "Using @developerswarehouse/notification-settings-opener Package",
-"description": "Markdown tutorial on how to use the @developerswarehouse/notification-settings-opener package in an Ionic Capacitor project.",
-"created_at": "2023-10-08",
-"published": true,
-"slug": "notification-settings-opener"
+title: Using @developerswarehouse/notification-settings-opener Package
+description: Markdown tutorial on how to use the @developerswarehouse/notification-settings-opener package in an Ionic Capacitor project.
+created_at: 2023-10-08
+published: true
+slug: notification-settings-opener
 ---
 
 ## Getting Started with @developerswarehouse/notification-settings-opener

@@ -1,10 +1,10 @@
 ```md
 ---
-"title": "Using @biso_gmbh/capacitor-plugin-rest-information-from-image Package",
-"description": "A step-by-step tutorial on how to use the @biso_gmbh/capacitor-plugin-rest-information-from-image package to get information from an image via a REST API in a Capacitor app.",
-"created_at": "2022-01-15",
-"published": true,
-"slug": "capacitor-plugin-rest-information-from-image"
+title: Using @biso_gmbh/capacitor-plugin-rest-information-from-image Package
+description: A step-by-step tutorial on how to use the @biso_gmbh/capacitor-plugin-rest-information-from-image package to get information from an image via a REST API in a Capacitor app.
+created_at: 2022-01-15
+published: true
+slug: capacitor-plugin-rest-information-from-image
 ---
 
 # Using @biso_gmbh/capacitor-plugin-rest-information-from-image Package

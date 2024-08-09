@@ -1,9 +1,9 @@
 ---
-"title": "Using Klaviyo SDK Capacitor Plugin",
-"description": "This tutorial will guide you through integrating the Klaviyo SDK Capacitor Plugin into your application to interact with Klaviyo services.",
-"created_at": "2022-03-17",
-"published": true,
-"slug": "klaviyo-sdk-capacitor-plugin"
+title: Using Klaviyo SDK Capacitor Plugin
+description: This tutorial will guide you through integrating the Klaviyo SDK Capacitor Plugin into your application to interact with Klaviyo services.
+created_at: 2022-03-17
+published: true
+slug: klaviyo-sdk-capacitor-plugin
 ---
 
 # Using Klaviyo SDK Capacitor Plugin

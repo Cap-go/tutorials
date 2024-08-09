@@ -1,9 +1,9 @@
 ---
-"title": "Using Android Image Picker with Capacitor",
-"description": "Step-by-step guide on implementing the androidimagepicker package in your Capacitor project for selecting multiple images and retrieving geo data.",
-"created_at": "2022-02-28",
-"published": true,
-"slug": "cap-android-image-picker"
+title: Using Android Image Picker with Capacitor
+description: Step-by-step guide on implementing the androidimagepicker package in your Capacitor project for selecting multiple images and retrieving geo data.
+created_at: 2022-02-28
+published": true
+slug: cap-android-image-picker
 ---
 
 # Using Android Image Picker with Capacitor

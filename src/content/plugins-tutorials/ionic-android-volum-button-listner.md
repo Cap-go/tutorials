@@ -3,7 +3,7 @@
 "description": "A tutorial on how to use the ionic-cap-volume-button-listener package to listen to volume button events in an Ionic app on Android"
 "created_at": "2021-10-07"
 "published": true
-"slug": "ionic-android-volume-button-listener"
+slug: ionic-android-volume-button-listener
 ---
 
 # Using the ionic-cap-volume-button-listener package

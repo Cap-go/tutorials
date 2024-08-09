@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using @sharryland/capacitor-calendar-plugin Package Tutorial",
-"description": "Step-by-step guide on how to use the Capacitor Calendar Plugin package from @sharryland in your Ionic applications.",
-"created_at": "2022-03-28",
-"published": true,
-"slug": "capacitor-calendar-plugin"
+title: Using @sharryland/capacitor-calendar-plugin Package Tutorial
+description: Step-by-step guide on how to use the Capacitor Calendar Plugin package from @sharryland in your Ionic applications.
+created_at: 2022-03-28
+published: true
+slug: capacitor-calendar-plugin
 ---
 
 # Using @sharryland/capacitor-calendar-plugin Package Tutorial

@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using capacitor-synology-documents Package",
-"description": "This tutorial will guide you on how to use the capacitor-synology-documents package to interact with Synology Documents API.",
-"created_at": "2023-10-30",
-"published": true,
-"slug": "capacitor-synology-documents"
+title: Using capacitor-synology-documents Package
+description: This tutorial will guide you on how to use the capacitor-synology-documents package to interact with Synology Documents API.
+created_at: 2023-10-30
+published: true
+slug: capacitor-synology-documents
 ---
 
 # Using capacitor-synology-documents Package

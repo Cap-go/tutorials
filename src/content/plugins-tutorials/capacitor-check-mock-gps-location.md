@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Tutorial: Using capacitor-plugin-mocklocation",
-"description": "Step-by-step guide on how to use the capacitor-plugin-mocklocation package in your Capacitor project.",
-"created_at": "2022-01-14",
-"published": true,
-"slug": "capacitor-check-mock-gps-location"
+title: Tutorial: Using capacitor-plugin-mocklocation
+description: Step-by-step guide on how to use the capacitor-plugin-mocklocation package in your Capacitor project.
+created_at: 2022-01-14
+published: true
+slug: capacitor-check-mock-gps-location
 ---
 
 # Tutorial: Using capacitor-plugin-mocklocation

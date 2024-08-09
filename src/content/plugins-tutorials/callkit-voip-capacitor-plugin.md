@@ -1,10 +1,9 @@
-```markdown
 ---
-"title": "Using callkit-voip-capacitor-plugin Package Tutorial",
-"description": "A step-by-step tutorial on how to use the callkit-voip-capacitor-plugin package for integrating VOIP notifications in an Ionic application.",
-"created_at": "2022-01-18",
-"published": true,
-"slug": "callkit-voip-capacitor-plugin"
+title: Using callkit-voip-capacitor-plugin Package Tutorial
+description: A step-by-step tutorial on how to use the callkit-voip-capacitor-plugin package for integrating VOIP notifications in an Ionic application.
+created_at: 2022-01-18
+published: true
+slug: callkit-voip-capacitor-plugin
 ---
 
 # Using callkit-voip-capacitor-plugin Package Tutorial
@@ -21,8 +20,6 @@ ionic cap sync
 ```
 
 2. In your Xcode project, navigate to the Capabilities pane and select the "Voice over IP" checkbox as shown in the image.
-
-![Xcode Capabilities](image_link)
 
 3. Register the required certificate on [developer.apple.com/certificates](https://developer.apple.com/certificates). Download and import the certificate into the Keychain Access app.
 

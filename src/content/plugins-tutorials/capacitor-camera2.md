@@ -4,7 +4,7 @@
 "description": "Learn how to use the @lihbr/capacitor-camera2 package with Capacitor for your mobile app development."
 "created_at": "2023-10-30"
 "published": true
-"slug": "capacitor-camera2"
+slug: capacitor-camera2
 ---
 
 # Using @lihbr/capacitor-camera2 Package Tutorial

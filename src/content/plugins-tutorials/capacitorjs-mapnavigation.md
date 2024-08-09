@@ -7,11 +7,11 @@ As for adding frontmatter to a markdown file, you can use the following structur
 
 ```markdown
 ---
-"title": "Insert Title Here",
-"description": "Insert Description Here",
-"created_at": "Insert Date Here",
-"published": true,
-"slug": "capacitorjs-mapnavigation"
+title: Insert Title Here
+description: Insert Description Here
+created_at: Insert Date Here
+published: true
+slug: capacitorjs-mapnavigation
 ---
 
 # Your tutorial content goes here

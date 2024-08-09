@@ -4,7 +4,7 @@
 "description": "Step-by-step tutorial on integrating and utilizing the capacitor-plugin-diagnostics package in your app"
 "created_at": "2022-04-11"
 "published": true
-"slug": "capacitor-plugin-diagnostics"
+slug: capacitor-plugin-diagnostics
 ---
 
 # Using capacitor-plugin-diagnostics Package

@@ -4,7 +4,7 @@
 "description": "Tutorial on how to use the cap-bluetooth-low-energy-client package in Capacitor"
 "created_at": "2022-02-22"
 "published": true
-"slug": "cap-bluetooth-low-energy-client"
+slug: cap-bluetooth-low-energy-client
 ---
 
 # Using cap-bluetooth-low-energy-client Package Tutorial

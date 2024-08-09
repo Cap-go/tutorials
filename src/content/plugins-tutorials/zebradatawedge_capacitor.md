@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using ZebraDataWedge Capacitor Plugin",
-"description": "A guide on integrating the ZebraDataWedge Capacitor Plugin in your Ionic Capacitor project.",
-"created_at": "2022-01-15",
-"published": true,
-"slug": "zebradatawedge_capacitor"
+title: Using ZebraDataWedge Capacitor Plugin
+description: A guide on integrating the ZebraDataWedge Capacitor Plugin in your Ionic Capacitor project.
+created_at: 2022-01-15
+published: true
+slug: zebradatawedge_capacitor
 ---
 
 # Using ZebraDataWedge Capacitor Plugin

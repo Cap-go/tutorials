@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using @teamschedule/capacitor-browser Package Tutorial",
-"description": "Learn how to integrate and use the @teamschedule/capacitor-browser package in your Capacitor project.",
-"created_at": "September 29, 2021",
-"published": true,
-"slug": "capacitor-plugins-team-schedule"
+title: Using @teamschedule/capacitor-browser Package Tutorial
+description: Learn how to integrate and use the @teamschedule/capacitor-browser package in your Capacitor project.
+created_at: September 29, 2021
+published: true
+slug: capacitor-plugins-team-schedule
 ---
 
 # Using @teamschedule/capacitor-browser Package Tutorial

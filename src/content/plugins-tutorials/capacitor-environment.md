@@ -1,9 +1,9 @@
 ---
-"title": "Using @mamillastre/capacitor-environment Package Tutorial",
-"description": "Tutorial on how to use the @mamillastre/capacitor-environment package to manage JSON based environment specific data in Capacitor apps.",
-"created_at": "2023-10-12",
-"published": true,
-"slug": "capacitor-environment"
+title: Using @mamillastre/capacitor-environment Package Tutorial
+description: Tutorial on how to use the @mamillastre/capacitor-environment package to manage JSON based environment specific data in Capacitor apps.
+created_at: 2023-10-12
+published: true
+slug: capacitor-environment
 ---
 
 # Using @mamillastre/capacitor-environment Package Tutorial

@@ -1,10 +1,10 @@
 ```md
 ---
-"title": "Using Link Navigation Plugin for Capacitor",
-"description": "This tutorial will guide you on how to use the Link Navigation Plugin package for Capacitor to create a system alert window overlay that allows user navigation through a list of links.",
-"created_at": "2021-10-26",
-"published": true,
-"slug": "link-navigation-plugin"
+title: Using Link Navigation Plugin for Capacitor
+description: This tutorial will guide you on how to use the Link Navigation Plugin package for Capacitor to create a system alert window overlay that allows user navigation through a list of links.
+created_at: 2021-10-26
+published: true
+slug: link-navigation-plugin
 ---
 
 # Using Link Navigation Plugin for Capacitor

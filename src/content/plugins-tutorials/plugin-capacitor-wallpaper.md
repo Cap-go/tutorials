@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using the Wallpaper Project Package in Capacitor",
-"description": "This tutorial will guide you through the steps of using the wallpaper-project package in a Capacitor project to manipulate the wallpaper on a user's device.",
-"created_at": "2022-01-10",
-"published": true,
-"slug": "plugin-capacitor-wallpaper"
+title: Using the Wallpaper Project Package in Capacitor
+description: This tutorial will guide you through the steps of using the wallpaper-project package in a Capacitor project to manipulate the wallpaper on a user's device.
+created_at: 2022-01-10
+published: true
+slug: plugin-capacitor-wallpaper
 ---
 
 # Using the Wallpaper Project Package in Capacitor

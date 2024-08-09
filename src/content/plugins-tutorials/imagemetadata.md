@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using @evikadar/imagemetadata Package",
-"description": "Tutorial on how to use the @evikadar/imagemetadata package to retrieve image metadata and creation dates from images stored on your phone.",
-"created_at": "2021-11-15T10:45:00",
-"published": true,
-"slug": "imagemetadata"
+title: Using @evikadar/imagemetadata Package
+description: Tutorial on how to use the @evikadar/imagemetadata package to retrieve image metadata and creation dates from images stored on your phone.
+created_at: 2021-11-15T10:45:00
+published: true
+slug: imagemetadata
 ---
 
 # Using @evikadar/imagemetadata Package

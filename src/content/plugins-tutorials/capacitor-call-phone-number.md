@@ -4,7 +4,7 @@
 "description": "This tutorial will guide you on how to use the capacitor-call-phone-number package to make phone calls in your Capacitor project."
 "created_at": "2023-10-26"
 "published": true
-"slug": "capacitor-call-phone-number"
+slug: capacitor-call-phone-number
 ---
 
 # Using capacitor-call-phone-number Package

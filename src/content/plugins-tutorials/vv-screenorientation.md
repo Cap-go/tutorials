@@ -4,7 +4,7 @@
 "description": "Step-by-step guide on integrating and utilizing the vv-screenorientation package in your Ionic Capacitor app for controlling screen orientations."
 "created_at": "2021-12-21"
 "published": true
-"slug": "vv-screenorientation"
+slug: vv-screenorientation
 ---
 
 # Using vv-screenorientation Package

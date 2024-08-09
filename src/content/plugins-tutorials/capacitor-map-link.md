@@ -2,11 +2,11 @@ Here is a markdown tutorial for using the `capacitor-map-link` package with a fr
 
 ```markdown
 ---
-"title": "Using capacitor-map-link Package",
-"description": "A tutorial on integrating and utilizing the capacitor-map-link package in your Capacitor project.",
-"created_at": "2022-09-28",
-"published": true,
-"slug": "capacitor-map-link"
+title: Using capacitor-map-link Package
+description: A tutorial on integrating and utilizing the capacitor-map-link package in your Capacitor project.
+created_at: 2022-09-28
+published: true
+slug: capacitor-map-link
 ---
 
 # Using capacitor-map-link Package

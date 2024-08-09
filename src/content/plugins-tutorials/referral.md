@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Guide to Using @vivendo/referral Package",
-"description": "This markdown tutorial provides a comprehensive guide on how to use the @vivendo/referral package in your Capacitor project to track app installs and handle open URLs.",
-"created_at": "2022-02-18",
-"published": true,
-"slug": "referral"
+title: Guide to Using @vivendo/referral Package
+description: This markdown tutorial provides a comprehensive guide on how to use the @vivendo/referral package in your Capacitor project to track app installs and handle open URLs.
+created_at: 2022-02-18
+published: true
+slug: referral
 ---
 
 # Using @vivendo/referral Package

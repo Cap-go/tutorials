@@ -1,9 +1,9 @@
 ---
-"title": "Using @mediagrid/capacitor-native-audio Package",
-"description": "This tutorial provides a step-by-step guide on how to utilize the @mediagrid/capacitor-native-audio package to play audio natively in a Capacitor app on Android and iOS platforms.",
-"created_at": "2023-09-05",
-"published": true,
-"slug": "capacitor-native-audio"
+title: Using @mediagrid/capacitor-native-audio Package
+description: This tutorial provides a step-by-step guide on how to utilize the @mediagrid/capacitor-native-audio package to play audio natively in a Capacitor app on Android and iOS platforms.
+created_at: 2023-09-05
+published: true
+slug: capacitor-native-audio
 ---
 
 # Using @mediagrid/capacitor-native-audio Package

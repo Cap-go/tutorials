@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using tcp-capacitor-plugin Package",
-"description": "Learn how to create and use a TCP Socket Plugin for Capacitor",
-"created_at": "2022-01-23",
-"published": true,
-"slug": "tcp-capacitor-plugin"
+title: Using tcp-capacitor-plugin Package
+description: Learn how to create and use a TCP Socket Plugin for Capacitor
+created_at: 2022-01-23
+published: true
+slug: tcp-capacitor-plugin
 ---
 
 # Using tcp-capacitor-plugin Package

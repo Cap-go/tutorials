@@ -4,7 +4,7 @@
 "description": "Learn how to integrate and utilize the capacitor-plugin-phone-well package in your Capacitor project."
 "created_at": "2021-11-15"
 "published": true
-"slug": "capacitor-plugin-phone-well"
+slug: capacitor-plugin-phone-well
 ---
 
 # Using capacitor-plugin-phone-well Package Tutorial

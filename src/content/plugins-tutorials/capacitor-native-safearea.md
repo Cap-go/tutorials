@@ -1,9 +1,9 @@
 ---
-"title": "Using capacitor-native-safearea Package in Capacitor Apps",
-"description": "Learn how to integrate and use the capacitor-native-safearea package in your Capacitor apps to handle safe area insets on iOS and Android devices.",
-"created_at": "2021-10-14",
-"published": true,
-"slug": "capacitor-native-safearea"
+title: Using capacitor-native-safearea Package in Capacitor Apps
+description: Learn how to integrate and use the capacitor-native-safearea package in your Capacitor apps to handle safe area insets on iOS and Android devices.
+created_at: 2021-10-14
+published: true
+slug: capacitor-native-safearea
 ---
 
 # Using capacitor-native-safearea Package in Capacitor Apps

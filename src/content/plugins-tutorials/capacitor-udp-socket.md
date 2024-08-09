@@ -1,9 +1,9 @@
 ---
-"title": "Using Capacitor UDP Socket Package",
-"description": "A step-by-step tutorial on how to use the capacitor-udp-socket package in CapacitorJS.",
-"created_at": "October 19, 2021",
-"published": true,
-"slug": "capacitor-udp-socket"
+title: Using Capacitor UDP Socket Package
+description: A step-by-step tutorial on how to use the capacitor-udp-socket package in CapacitorJS.
+created_at: October 19, 2021
+published: true
+slug: capacitor-udp-socket
 ---
 
 # Using Capacitor UDP Socket Package

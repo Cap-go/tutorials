@@ -4,7 +4,7 @@
 "description": "This tutorial will guide you on how to use the demo-device-info package in your app to gather information about the device."
 "created_at": "2022-03-12"
 "published": true
-"slug": "demo-plugins"
+slug: demo-plugins
 ---
 
 ## Using the Demo Device Info Package

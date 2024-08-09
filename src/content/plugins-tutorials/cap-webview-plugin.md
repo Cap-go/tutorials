@@ -4,7 +4,7 @@
 "summary": "This tutorial will guide you on how to use the cap-webview-plugin package in your Capacitor App."
 "created_at": "2021-11-10"
 "published": true
-"slug": "cap-webview-plugin"
+slug: cap-webview-plugin
 ---
 
 # Using cap-webview-plugin Package Tutorial

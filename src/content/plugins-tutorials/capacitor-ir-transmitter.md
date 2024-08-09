@@ -1,10 +1,10 @@
 ```md
 ---
-"title": "Using @andresayac/capacitor-ir-transmitter Package Tutorial",
-"description": "This markdown tutorial will guide you through using the @andresayac/capacitor-ir-transmitter package in your Capacitor project.",
-"created_at": "2023-09-25",
-"published": true,
-"slug": "capacitor-ir-transmitter"
+title: Using @andresayac/capacitor-ir-transmitter Package Tutorial
+description: This markdown tutorial will guide you through using the @andresayac/capacitor-ir-transmitter package in your Capacitor project.
+created_at: 2023-09-25
+published: true
+slug: capacitor-ir-transmitter
 ---
 
 # Using @andresayac/capacitor-ir-transmitter Package Tutorial

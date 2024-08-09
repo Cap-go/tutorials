@@ -4,7 +4,7 @@
 "summary": "This markdown tutorial will guide you on how to use the Capacitor Proximity Sensor Plugin in your Ionic application."
 "created_at": "2022-01-05"
 "published": true
-"slug": "capacitor-proximity-sensor"
+slug: capacitor-proximity-sensor
 ---
 
 # Using Capacitor Proximity Sensor Plugin

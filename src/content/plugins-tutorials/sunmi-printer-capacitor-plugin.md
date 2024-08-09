@@ -1,9 +1,9 @@
 ---
-"title": "Developing with Sunmi Printer Capacitor Plugin",
-"description": "In this tutorial, you will learn how to integrate and use the Sunmi Printer Capacitor Plugin in your Capacitor project for printing on Sunmi devices.",
-"created_at": "2023-09-28",
-"published": true,
-"slug": "sunmi-printer-capacitor-plugin"
+title: Developing with Sunmi Printer Capacitor Plugin
+description: In this tutorial, you will learn how to integrate and use the Sunmi Printer Capacitor Plugin in your Capacitor project for printing on Sunmi devices.
+created_at: 2023-09-28
+published: true
+slug: sunmi-printer-capacitor-plugin
 ---
 
 # Using Sunmi Printer Capacitor Plugin

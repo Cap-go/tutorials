@@ -1,9 +1,9 @@
 ---
-"title": "Using capacitor-plugin-gbvp-android-restricted-info package",
-"description": "This tutorial will guide you through the process of using the capacitor-plugin-gbvp-android-restricted-info package to handle information restriction in Android applications.",
-"created_at": "2023-10-11",
-"published": true,
-"slug": "capacitor-androidrestrictedinfo"
+title: Using capacitor-plugin-gbvp-android-restricted-info package
+description: This tutorial will guide you through the process of using the capacitor-plugin-gbvp-android-restricted-info package to handle information restriction in Android applications.
+created_at: 2023-10-11
+published: true
+slug: capacitor-androidrestrictedinfo
 ---
 
 ## Getting Started with capacitor-plugin-gbvp-android-restricted-info

@@ -4,7 +4,7 @@
 "description": "This tutorial covers how to utilize the @capacitor-trancee/app-language package in your Capacitor app."
 "created_at": "2023-10-06"
 "published": true
-"slug": "capacitor-app-language"
+slug: capacitor-app-language
 ---
 
 # Using @capacitor-trancee/app-language Package

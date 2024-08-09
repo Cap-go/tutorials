@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using the referrer-plugin Package Tutorial",
-"description": "A step-by-step guide on how to use the referrer-plugin package to retrieve and use the Google Play install referrer in your Capacitor project.",
-"created_at": "2022-01-28",
-"published": true,
-"slug": "referrer-plugin"
+title: Using the referrer-plugin Package Tutorial
+description: A step-by-step guide on how to use the referrer-plugin package to retrieve and use the Google Play install referrer in your Capacitor project.
+created_at: 2022-01-28
+published: true
+slug: referrer-plugin
 ---
 
 # Using the referrer-plugin Package Tutorial

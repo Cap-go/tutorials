@@ -1,9 +1,9 @@
 ---
-"title": "Using @capacitor-community/in-app-review Package",
-"description": "Tutorial on how to use the @capacitor-community/in-app-review package in a Capacitor project to prompt users to submit app store ratings and reviews without leaving the app.",
-"created_at": "2021-11-03",
-"published": true,
-"slug": "in-app-review"
+title: Using @capacitor-community/in-app-review Package
+description: Tutorial on how to use the @capacitor-community/in-app-review package in a Capacitor project to prompt users to submit app store ratings and reviews without leaving the app.
+created_at: 2021-11-03
+published: true
+slug: in-app-review
 ---
 
 ## Installation

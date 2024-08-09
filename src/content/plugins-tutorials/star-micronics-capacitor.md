@@ -4,7 +4,7 @@
 "description": "A tutorial on how to use the star-micronics-capacitor package with Capacitor"
 "created_at": "2023-12-31"
 "published": true
-"slug": "star-micronics-capacitor"
+slug: star-micronics-capacitor
 ---
 
 # Using star-micronics-capacitor package

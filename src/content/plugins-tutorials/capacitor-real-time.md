@@ -4,7 +4,7 @@
 "description": "A tutorial on integrating and using the capacitor-real-time package in your Capacitor app"
 "created_at": "2023-10-03"
 "published": true
-"slug": "capacitor-real-time"
+slug: capacitor-real-time
 ---
 
 # Using capacitor-real-time package

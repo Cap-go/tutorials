@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using @resgrid/local-notifications Package with Capacitor",
-"description": "This tutorial will guide you through using the @resgrid/local-notifications package with Capacitor to schedule local notifications on your device.",
-"created_at": "2023-10-10",
-"published": true,
-"slug": "capacitor-local-notifications"
+title: Using @resgrid/local-notifications Package with Capacitor
+description: This tutorial will guide you through using the @resgrid/local-notifications package with Capacitor to schedule local notifications on your device.
+created_at: 2023-10-10
+published: true
+slug: capacitor-local-notifications
 ---
 
 # Using @resgrid/local-notifications Package with Capacitor

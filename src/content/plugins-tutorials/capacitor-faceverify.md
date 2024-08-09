@@ -1,9 +1,9 @@
 ---
-"title": "Using Capacitor Face Verify Package Tutorial",
-"description": "Step-by-step guide on how to use the @erroba/capacitor-faceverify package with Capacitor in your project.",
-"created_at": "2022-01-25",
-"published": true,
-"slug": "capacitor-faceverify"
+title: Using Capacitor Face Verify Package Tutorial
+description: Step-by-step guide on how to use the @erroba/capacitor-faceverify package with Capacitor in your project.
+created_at: 2022-01-25
+published: true
+slug: capacitor-faceverify
 ---
 
 

@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using Fileintents Package in Capacitor",
-"description": "Learn how to utilize the Fileintents package in Capacitor to handle shared files in your Ionic app.",
-"created_at": "2023-09-29",
-"published": true,
-"slug": "fileintents"
+title: Using Fileintents Package in Capacitor
+description: Learn how to utilize the Fileintents package in Capacitor to handle shared files in your Ionic app.
+created_at: 2023-09-29
+published: true
+slug: fileintents
 ---
 
 # Using Fileintents Package in Capacitor

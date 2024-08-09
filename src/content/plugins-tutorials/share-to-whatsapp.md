@@ -4,7 +4,7 @@
 "description": "This blog post will guide you through using the share-to-whatsapp package to easily share images and PDF files directly to a specified WhatsApp number from your Ionic/Capacitor application."
 "created_at": "2022-02-12"
 "published": true
-"slug": "share-to-whatsapp"
+slug: share-to-whatsapp
 ---
 
 # Tutorial on Using share-to-whatsapp Package

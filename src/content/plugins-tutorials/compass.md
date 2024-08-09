@@ -4,7 +4,7 @@
 "description": "Learn how to integrate and use the capacitor-plugin-compass package to add compass functionality in your Capacitor apps."
 "created_at": "2023-10-06"
 "published": true
-"slug": "compass"
+slug: compass
 ---
 
 # Using capacitor-plugin-compass Package

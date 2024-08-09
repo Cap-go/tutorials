@@ -1,9 +1,9 @@
 ---
-"title": "Using Capacitor3-Kakao-Login Package",
-"description": "A tutorial on how to integrate and use the Capacitor3-Kakao-Login package in your Capacitor 3 project for implementing Kakao login functionality.",
-"created_at": "2023-05-04",
-"published": true,
-"slug": "capacitor3-kakao-login"
+title: Using Capacitor3-Kakao-Login Package
+description: A tutorial on how to integrate and use the Capacitor3-Kakao-Login package in your Capacitor 3 project for implementing Kakao login functionality.
+created_at: 2023-05-04
+published: true
+slug: capacitor3-kakao-login
 ---
 
 # Using Capacitor3-Kakao-Login Package

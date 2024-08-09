@@ -4,7 +4,7 @@
 "description": "A markdown tutorial on how to use the capacitor-browser-view package in your Capacitor project."
 "created_at": "2022-03-25"
 "published": true
-"slug": "capacitor-browser-view"
+slug: capacitor-browser-view
 ---
 
 # Using Capacitor Browser View Package

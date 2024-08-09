@@ -1,9 +1,9 @@
 ---
-"title": "Using capacitor-print-webview Package",
-"description": "This tutorial will guide you on how to use the capacitor-print-webview package to print the webview in a Capacitor App.",
-"created_at": "2022-01-21",
-"published": true,
-"slug": "capacitor-print-webview"
+title: Using capacitor-print-webview Package
+description: This tutorial will guide you on how to use the capacitor-print-webview package to print the webview in a Capacitor App.
+created_at: 2022-01-21
+published: true
+slug: capacitor-print-webview
 ---
 
 # Using capacitor-print-webview Package

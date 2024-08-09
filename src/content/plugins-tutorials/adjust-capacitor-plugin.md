@@ -4,7 +4,7 @@
 "description": "This blog tutorial will guide you through using the adjust-capacitor-plugin package in your Capacitor project."
 "created_at": "2022-02-24"
 "published": true
-"slug": "adjust-capacitor-plugin"
+slug: adjust-capacitor-plugin
 ---
 
 # Using the adjust-capacitor-plugin Package

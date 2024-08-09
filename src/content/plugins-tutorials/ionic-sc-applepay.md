@@ -4,7 +4,7 @@
 "description": "This tutorial will guide you on how to integrate the sc-applepay package within your Ionic app using Capacitor."
 "created_at": "2022-04-03"
 "published": true
-"slug": "ionic-sc-applepay"
+slug: ionic-sc-applepay
 ---
 
 # Using sc-applepay Package Tutorial

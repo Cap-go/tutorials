@@ -1,9 +1,9 @@
 ---
-"title": "How to Use Root Checker Package",
-"description": "Learn how to integrate and use the Root Checker package in your Ionic Capacitor app to detect rooted or jailbroken devices.",
-"created_at": "October 11, 2021",
-"published": true,
-"slug": "root-checker"
+title: How to Use Root Checker Package
+description: Learn how to integrate and use the Root Checker package in your Ionic Capacitor app to detect rooted or jailbroken devices.
+created_at: October 11, 2021
+published: true
+slug: root-checker
 ---
 
 # How to Use Root Checker Package

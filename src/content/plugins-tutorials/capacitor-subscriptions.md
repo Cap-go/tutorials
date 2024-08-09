@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using Capacitor Subscriptions Plugin",
-"description": "A tutorial on how to utilize the @squareetlabs/capacitor-subscriptions package for managing auto-renewing subscriptions in iOS and Android apps.",
-"created_at": "2022-01-02",
-"published": true,
-"slug": "capacitor-subscriptions"
+title: Using Capacitor Subscriptions Plugin
+description: A tutorial on how to utilize the @squareetlabs/capacitor-subscriptions package for managing auto-renewing subscriptions in iOS and Android apps.
+created_at: 2022-01-02
+published: true
+slug: capacitor-subscriptions
 ---
 
 # Using Capacitor Subscriptions Plugin

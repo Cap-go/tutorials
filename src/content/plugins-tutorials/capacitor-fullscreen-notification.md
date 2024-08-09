@@ -58,7 +58,7 @@ To trigger a push notification and launch your app, send a data push notificatio
 ```
 {
   "fullscreen": true,
-  "title": "Launch App",
+  title: Launch App
   "message": "Someone rang your doorbell!",
   "route": "doorbell"
 }

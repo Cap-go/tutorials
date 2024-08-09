@@ -3,7 +3,7 @@
 "description": "This tutorial will guide you on how to use the zc-plugin-alipay package in your Capacitor project."
 "created_at": "2021-02-28"
 "published": true
-"slug": "zc-plugin-alipay"
+slug: zc-plugin-alipay
 ---
 
 # zc-plugin-alipay Tutorial

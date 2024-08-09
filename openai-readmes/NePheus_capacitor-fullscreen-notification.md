@@ -95,7 +95,7 @@ Send a data push notification (leave the field notification empty!) with the fol
   "channelId": "fullscreen-channel",
   "channelName": "My Fullscreen Channel",
   "channelDescription": "Notifications in this channel will be displayed with a fullscreen intent",
-  "title": "Test notification",
+  title: Test notification
   "text": "Test description",
   "timeout": "10000",
   "vibrationPattern": "[500, 300, 500, 300, 500, 300, 500, 300]",

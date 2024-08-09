@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using the @couchbase-community/ionic-couchbase-lite Package",
-"description": "In this tutorial, we will explore how to use the @couchbase-community/ionic-couchbase-lite package in your Ionic applications.",
-"created_at": "2022-01-01",
-"published": true,
-"slug": "ionic-couchbase-lite"
+title: Using the @couchbase-community/ionic-couchbase-lite Package
+description: In this tutorial, we will explore how to use the @couchbase-community/ionic-couchbase-lite package in your Ionic applications.
+created_at: 2022-01-01
+published: true
+slug: ionic-couchbase-lite
 ---
 
 # Getting Started with @couchbase-community/ionic-couchbase-lite

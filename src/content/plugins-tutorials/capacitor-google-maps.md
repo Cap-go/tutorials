@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using Capacitor Google Maps Plugin",
-"description": "A guide on how to use the Capacitor Google Maps Plugin to add maps in your Ionic application using Capacitor.",
-"created_at": "2022-01-14",
-"published": true,
-"slug": "capacitor-google-maps"
+title: Using Capacitor Google Maps Plugin
+description: A guide on how to use the Capacitor Google Maps Plugin to add maps in your Ionic application using Capacitor.
+created_at: 2022-01-14
+published: true
+slug: capacitor-google-maps
 ---
 
 # Using Capacitor Google Maps Plugin

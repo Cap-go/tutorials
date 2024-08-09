@@ -1,9 +1,9 @@
 ---
-"title": "Using Capacitor Sunmi Camera Scanner",
-"description": "A tutorial on how to use the @kduma-autoid/capacitor-sunmi-camera-scanner package in your Capacitor project.",
-"created_at": "2022-01-21",
-"published": true,
-"slug": "capacitor-sunmi-camera-scanner"
+title: Using Capacitor Sunmi Camera Scanner
+description: A tutorial on how to use the @kduma-autoid/capacitor-sunmi-camera-scanner package in your Capacitor project.
+created_at: 2022-01-21
+published: true
+slug: capacitor-sunmi-camera-scanner
 ---
 
 ## Using Capacitor Sunmi Camera Scanner

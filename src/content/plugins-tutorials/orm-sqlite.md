@@ -1,9 +1,9 @@
 ---
-"title": "Tutorial on Using ORM SQLite Package with Capacitor",
-"description": "A guide on integrating and using the @guilhermeabreudev/capacitor-orm-sqlite package to work with SQLite databases in Capacitor applications.",
-"created_at": "2023-10-08",
-"published": true,
-"slug": "orm-sqlite"
+title: Tutorial on Using ORM SQLite Package with Capacitor
+description: A guide on integrating and using the @guilhermeabreudev/capacitor-orm-sqlite package to work with SQLite databases in Capacitor applications.
+created_at: 2023-10-08
+published: true
+slug: orm-sqlite
 ---
 
 # Tutorial on Using ORM SQLite Package with Capacitor

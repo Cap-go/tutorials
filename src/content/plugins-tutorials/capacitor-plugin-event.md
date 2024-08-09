@@ -4,7 +4,7 @@
 "description": "A step-by-step guide on how to utilize the capacitor-plugin-event package in your Ionic projects."
 "created_at": "Date of this answer"
 "published": true
-"slug": "capacitor-plugin-event"
+slug: capacitor-plugin-event
 ---
 
 # Using capacitor-plugin-event Package Tutorial

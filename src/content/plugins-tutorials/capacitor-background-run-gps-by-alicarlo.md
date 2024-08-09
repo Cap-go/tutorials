@@ -4,7 +4,7 @@
 "description": "Learn how to implement background tasks with the Background Runner package in Capacitor"
 "created_at": "2022-01-20"
 "published": true
-"slug": "capacitor-background-run-gps-by-alicarlo"
+slug: capacitor-background-run-gps-by-alicarlo
 ---
 
 # Background Runner Package Tutorial

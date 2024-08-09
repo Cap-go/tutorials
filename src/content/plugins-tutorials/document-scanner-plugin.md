@@ -4,7 +4,7 @@
 "description": "This blog post tutorial will guide you through using the capacitor-document-scanner-mod package to scan documents on Android and iOS."
 "created_at": "2023-10-05"
 "published": true
-"slug": "document-scanner-plugin"
+slug: document-scanner-plugin
 ---
 
 # Using Capacitor Document Scanner Mod Package

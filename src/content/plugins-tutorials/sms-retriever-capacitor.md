@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "How to Use the SMS-Retriever Package with Capacitor",
-"description": "Learn how to integrate and use the sms-retriever package in your Capacitor app to retrieve SMS messages without the need for permissions. This tutorial will guide you through the process step by step.",
-"created_at": "2022-02-24",
-"published": true,
-"slug": "sms-retriever-capacitor"
+title: How to Use the SMS-Retriever Package with Capacitor
+description: Learn how to integrate and use the sms-retriever package in your Capacitor app to retrieve SMS messages without the need for permissions. This tutorial will guide you through the process step by step.
+created_at: 2022-02-24
+published: true
+slug: sms-retriever-capacitor
 ---
 
 # Using the SMS-Retriever Package with Capacitor

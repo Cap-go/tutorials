@@ -4,7 +4,7 @@
 "description": "Learn how to integrate Autonomous Single App Mode in your iOS app using the Capacitor Plugin ASAM package."
 "created_at": "2022-01-31"
 "published": true
-"slug": "capacitor-plugin-asam"
+slug: capacitor-plugin-asam
 ---
 
 # Tutorial: Using the Capacitor Plugin ASAM Package

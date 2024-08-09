@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using Sunmi-Capacitor-Plugin Package Tutorial",
-"description": "This tutorial will guide you on how to use the Sunmi-Capacitor-Plugin package in your Capacitor projects.",
-"created_at": "2022-01-08",
-"published": true,
-"slug": "sunmi-capacitor-plugin"
+title: Using Sunmi-Capacitor-Plugin Package Tutorial
+description: This tutorial will guide you on how to use the Sunmi-Capacitor-Plugin package in your Capacitor projects.
+created_at: 2022-01-08
+published: true
+slug: sunmi-capacitor-plugin
 ---
 
 # Using Sunmi-Capacitor-Plugin Package

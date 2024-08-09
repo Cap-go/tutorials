@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "Using the Capacitor ByteDance CSJ Plugin in Typescript",
-"description": "Step-by-step tutorial on how to use the Capacitor ByteDance CSJ Plugin in a TypeScript project.",
-"created_at": "2022-03-07",
-"published": true,
-"slug": "capacitor-bytedance-csj-plugin"
+title: Using the Capacitor ByteDance CSJ Plugin in Typescript
+description: Step-by-step tutorial on how to use the Capacitor ByteDance CSJ Plugin in a TypeScript project.
+created_at: 2022-03-07
+published: true
+slug: capacitor-bytedance-csj-plugin
 ---
 
 # Using the Capacitor ByteDance CSJ Plugin in Typescript

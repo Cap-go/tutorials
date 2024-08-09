@@ -1,10 +1,10 @@
 ```markdown
 ---
-"title": "DEVICE CHECK",
-"description": "markdown tutorial for using @capacitor-community/device-check package",
-"created_at": "October 11, 2021",
-"published": true,
-"slug": "device-check"
+title: DEVICE CHECK
+description: markdown tutorial for using @capacitor-community/device-check package
+created_at: October 11, 2021
+published: true
+slug: device-check
 ---
 
 ## @capacitor-community/device-check Tutorial
