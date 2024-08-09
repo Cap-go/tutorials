@@ -2391,18 +2391,18 @@ export const actions = [
   { name: '@simplymobile/capacitor-godex-printer', href: '', title: 'capacitor-godex-printer', description: 'Capacitor GoDEX printer plugin', author: 'SimplyMobile' },
   { name: 'capacitor-info-device', href: 'https://github.com/juninhofer1/capacitor-info-app', title: 'capacitor-info-device', description: 'Teste', author: '' },
   {
-    name: 'adjust-capacitor-plugin',
-    href: 'https://github.com/fieprmxxwx83/adjust-capacitor-plugin',
-    title: 'adjust-capacitor-plugin',
-    description: 'Adjust SDK plugin for Capacitor',
-    author: 'fieprmxxwx83',
-  },
-  {
     name: '@athletic/capacitor-firebase-realtime',
     href: 'https://github.com/AthleticNet/capacitor-firebase-realtime',
     title: 'capacitor-firebase-realtime',
     description: 'Capacitor Firebase Realtime plugin',
     author: 'AthleticNet',
+  },
+  {
+    name: 'adjust-capacitor-plugin',
+    href: 'https://github.com/fieprmxxwx83/adjust-capacitor-plugin',
+    title: 'adjust-capacitor-plugin',
+    description: 'Adjust SDK plugin for Capacitor',
+    author: 'fieprmxxwx83',
   },
   {
     name: 'capacitor-ios-autofill-save-password',
@@ -3074,6 +3074,7 @@ export const actions = [
     description: 'Capacitor plugin v5 for toss payments',
     author: 'NF_DREEKY',
   },
+  { name: 'cap-voice-rec', href: '', title: 'cap-voice-rec', description: 'Capacitor plugin for voice recording', author: 'Yaraslau Stsetskevich' },
   {
     name: '@bytetrade/barcode-scanner',
     href: 'https://github.com/Above-Os/barcode-scanner',
@@ -3081,7 +3082,6 @@ export const actions = [
     description: 'A fast and efficient (QR) barcode scanner for Capacitor',
     author: 'tafelnl',
   },
-  { name: 'cap-voice-rec', href: '', title: 'cap-voice-rec', description: 'Capacitor plugin for voice recording', author: 'Yaraslau Stsetskevich' },
   {
     name: '@kduma-autoid/capacitor-sunmi-keyboard-handler',
     href: 'https://github.com/kduma-autoid/capacitor-sunmi-keyboard-handler',
@@ -3255,18 +3255,18 @@ export const actions = [
     author: 'Masahiko Sakakibara',
   },
   {
-    name: '@klippa/capacitor-klippa-scanner-sdk',
-    href: 'https://github.com/klippa-app/capacitor-klippa-scanner-sdk',
-    title: 'capacitor-klippa-scanner-sdk',
-    description: 'A Capacitor plugin for Ionic to use the Klippa Scanner SDK',
-    author: 'Robin Farmer',
-  },
-  {
     name: 'com-artemisoftnian-plugins-unityads3',
     href: '',
     title: 'com-artemisoftnian-plugins-unityads3',
     description: 'Monetize your cordova application using the UnityAds 4 API',
     author: 'Waldemar Medina',
+  },
+  {
+    name: '@klippa/capacitor-klippa-scanner-sdk',
+    href: 'https://github.com/klippa-app/capacitor-klippa-scanner-sdk',
+    title: 'capacitor-klippa-scanner-sdk',
+    description: 'A Capacitor plugin for Ionic to use the Klippa Scanner SDK',
+    author: 'Robin Farmer',
   },
   {
     name: 'capacitor-plugin-scanbot-barcode-scanner-sdk',
@@ -3727,18 +3727,18 @@ export const actions = [
     author: 'Scandit',
   },
   {
-    name: 'capacitor-plugin-googleplayservices-check',
-    href: 'https://github.com/kodyfanz/capacitor-plugin-googleplayservices-check',
-    title: 'capacitor-plugin-googleplayservices-check',
-    description: 'Capacitor Plugin Google Play Services Checker',
-    author: 'KodyFanz',
-  },
-  {
     name: 'scandit-capacitor-datacapture-text',
     href: 'https://github.com/Scandit/scandit-capacitor-datacapture-text',
     title: 'scandit-capacitor-datacapture-text',
     description: 'Scandit Data Capture SDK for Capacitor',
     author: 'Scandit',
+  },
+  {
+    name: 'capacitor-plugin-googleplayservices-check',
+    href: 'https://github.com/kodyfanz/capacitor-plugin-googleplayservices-check',
+    title: 'capacitor-plugin-googleplayservices-check',
+    description: 'Capacitor Plugin Google Play Services Checker',
+    author: 'KodyFanz',
   },
   {
     name: 'scandit-capacitor-datacapture-id',
@@ -4065,7 +4065,6 @@ export const actions = [
     author: 'asad96',
   },
   { name: 'capacitor-spy-tool', href: '', title: 'capacitor-spy-tool', description: 'CapacitorSpyTool Capacitor Plugin', author: 'me' },
-  { name: 'l4kids-capacitor-plugins', href: '', title: 'l4kids-capacitor-plugins', description: 'Plugins For Launcher4Kids App', author: 'JDevs' },
   {
     name: 'capacitor-vpn-detector',
     href: 'https://github.com/aljadan/capacitor-vpn-detector',
@@ -4073,6 +4072,7 @@ export const actions = [
     description: 'Capacitor plugin to detect VPN connections on Android and iOS.',
     author: 'Abdulaziz Aljadaan',
   },
+  { name: 'l4kids-capacitor-plugins', href: '', title: 'l4kids-capacitor-plugins', description: 'Plugins For Launcher4Kids App', author: 'JDevs' },
   {
     name: 'capacitor-healthkit-dojo',
     href: 'https://github.com/satyambnsal/capacitor-healthkit',
@@ -4469,18 +4469,18 @@ export const actions = [
     author: 'DarkEdges',
   },
   {
-    name: '@himeka/capacitor-ffmpeg-kit',
-    href: '',
-    title: 'capacitor-ffmpeg-kit',
-    description: 'A Capacitor plugin that provides FFmpeg capabilities, allowing video and audio processing operations directly within your Ionic app.',
-    author: 'RichardAWare',
-  },
-  {
     name: 'crowdhub-plugin-flurryanalytics',
     href: 'https://github.com/ajisakson/crowdhub-plugin-flurryanalytics',
     title: 'crowdhub-plugin-flurryanalytics',
     description: 'This plugin provides an interface for Capacitor apps to use the Flurry Analytics API',
     author: 'Austin Isakson',
+  },
+  {
+    name: '@himeka/capacitor-ffmpeg-kit',
+    href: '',
+    title: 'capacitor-ffmpeg-kit',
+    description: 'A Capacitor plugin that provides FFmpeg capabilities, allowing video and audio processing operations directly within your Ionic app.',
+    author: 'RichardAWare',
   },
   { name: '@cometchat/calls-sdk-ionic', href: '', title: 'calls-sdk-ionic', description: 'Calling plugin for CometChat', author: 'CometChat' },
   { name: 'capacitor-notificationhandler', href: '', title: 'capacitor-notificationhandler', description: 'Push notification Handler', author: '' },
@@ -5154,7 +5154,6 @@ export const actions = [
     description: 'A capacitor plugin that lets you get an unadultered image (in Base64)  using the platform specific identifier',
     author: 'Loki Taljaard',
   },
-  { name: '@uniquedj95/label-printer', href: '', title: 'label-printer', description: 'A capacitor plugin for integrating with any label printer', author: '' },
   {
     name: 'share-to-whatsapp',
     href: 'https://github.com/ruhiverse-official/share-to-whatsapp',
@@ -5162,6 +5161,7 @@ export const actions = [
     description: 'The share-to-whatsapp plugin allows you to easily share images and PDF files directly to a specified WhatsApp number from your Ionic/Capacitor application.',
     author: 'Paresh Gami',
   },
+  { name: '@uniquedj95/label-printer', href: '', title: 'label-printer', description: 'A capacitor plugin for integrating with any label printer', author: '' },
   {
     name: '@morphood/capacitor-plugin-azure-speech',
     href: '',
@@ -5327,6 +5327,7 @@ export const actions = [
     description: 'Create a line of communication with Incidence',
     author: '',
   },
+  { name: 'tuya-sdk-tools', href: '', title: 'tuya-sdk-tools', description: 'capcitor plugin', author: 'caohm5' },
   {
     name: 'capacitor-streaming-audio',
     href: '',
@@ -5335,7 +5336,6 @@ export const actions = [
       'This plugin implements PCM audio chunks playback specifically for elevenlabs websocket streaming. It makes it possible to seamlessly play Base64 PCM 24khz sample rate 16bit signed little endian audio data chunks in sequence. It uses AVQueuePlayer on IOS a',
     author: 'cybertron technologies',
   },
-  { name: 'tuya-sdk-tools', href: '', title: 'tuya-sdk-tools', description: 'capcitor plugin', author: 'caohm5' },
   {
     name: '@capgo/native-purchases',
     href: 'https://github.com/Cap-go/native-purchases',
@@ -5393,6 +5393,7 @@ export const actions = [
     author: 'Chengdu Mufan Technology Co., Ltd.',
   },
   { name: 'camerapro', href: '', title: 'camerapro', description: 'vue ios camera', author: 'https://gitee.com/ge_bo_zhen/npmcamera.git' },
+  { name: 'ionic-contextual-profiler', href: '', title: 'ionic-contextual-profiler', description: 'Contextual profiler library for ionic', author: 'Fivvy' },
   {
     name: '@albgen/capacitor-escpos-plugin',
     href: 'https://github.com/albgen/capacitor-escpos-plugin',
@@ -5400,7 +5401,6 @@ export const actions = [
     description: 'Send high level print commands to ESC/POS Printers',
     author: 'albgen',
   },
-  { name: 'ionic-contextual-profiler', href: '', title: 'ionic-contextual-profiler', description: 'Contextual profiler library for ionic', author: 'Fivvy' },
   { name: '@vorujack/echo', href: '', title: 'echo', description: 'No description', author: '' },
   {
     name: 'android-audio-files',
@@ -5445,18 +5445,18 @@ export const actions = [
     author: 'Yooga Tecnologia',
   },
   {
-    name: '@joinflux/capacitor-segment',
-    href: 'https://github.com/joinflux/capacitor-segment',
-    title: 'capacitor-segment',
-    description: 'A Capacitor plugin for Segment analytics',
-    author: '',
-  },
-  {
     name: 'pdtworki-google-drive',
     href: 'https://github.com/daniell0gda/pdtworki-google-drive-plugin',
     title: 'pdtworki-google-drive',
     description: 'Integration with Google Drive',
     author: 'pdtworki',
+  },
+  {
+    name: '@joinflux/capacitor-segment',
+    href: 'https://github.com/joinflux/capacitor-segment',
+    title: 'capacitor-segment',
+    description: 'A Capacitor plugin for Segment analytics',
+    author: '',
   },
   {
     name: 'vv-screenorientation',
@@ -5493,13 +5493,6 @@ export const actions = [
     description: 'capacitor plugin to get base64 string from file',
     author: 'xeyqe',
   },
-  {
-    name: 'capacitor-jd-udp',
-    href: 'https://github.com/jalixdesign/capacitor-jd-udp',
-    title: 'capacitor-jd-udp',
-    description: 'Capacitor plugin to send individual UDP requests. Has been developed for a special application and is not intended for reuse.',
-    author: 'jalixdesign',
-  },
   { name: 'barcode-scanner-ci-rx600', href: '', title: 'barcode-scanner-ci-rx600', description: 'Later', author: 'Saad Errazgouni' },
   {
     name: 'ionic-risk-sdk',
@@ -5507,6 +5500,13 @@ export const actions = [
     title: 'ionic-risk-sdk',
     description: 'Device Connect Ionic SDK is used to collect anonymised non-PII data from the devices of the users after taking explicit user consent.',
     author: 'FinBox',
+  },
+  {
+    name: 'capacitor-jd-udp',
+    href: 'https://github.com/jalixdesign/capacitor-jd-udp',
+    title: 'capacitor-jd-udp',
+    description: 'Capacitor plugin to send individual UDP requests. Has been developed for a special application and is not intended for reuse.',
+    author: 'jalixdesign',
   },
   { name: 'demo-device-info', href: 'https://github.com/sangbnCarMD/demo-plugins', title: 'demo-device-info', description: 'Info of device', author: '' },
   { name: 'zoom-text', href: '', title: 'zoom-text', description: 'You can zoom text using double click on screen.', author: 'Vishal Vanani' },
@@ -6412,18 +6412,18 @@ export const actions = [
   },
   { name: '@idscan/divesdk-plugin', href: '', title: 'divesdk-plugin', description: 'DIVE SDK from IDScan.net plugin for Ionic Capacitor', author: 'IDScan.net' },
   {
-    name: 'capacitor-plugin-docline-sdk',
-    href: 'https://github.com/docline-tech/capacitor-plugin-sdk',
-    title: 'capacitor-plugin-docline-sdk',
-    description: 'Capacitor Docline Video SDK Plugin',
-    author: 'Aplicaciones Salud SL',
-  },
-  {
     name: 'boru-barcode-scanner',
     href: 'https://github.com/boruappdev/borubarcodescanner',
     title: 'boru-barcode-scanner',
     description: 'Barcode scanner with camera zoom',
     author: 'Rahul Prajapati',
+  },
+  {
+    name: 'capacitor-plugin-docline-sdk',
+    href: 'https://github.com/docline-tech/capacitor-plugin-sdk',
+    title: 'capacitor-plugin-docline-sdk',
+    description: 'Capacitor Docline Video SDK Plugin',
+    author: 'Aplicaciones Salud SL',
   },
   { name: 'qz-utility', href: 'https://github.com/burrakranthikiran/QZ-Utility', title: 'qz-utility', description: 'NA', author: 'Burra Kranthi Kiran' },
   {
@@ -6944,6 +6944,7 @@ export const actions = [
   { name: 'cap-fingerprint', href: '', title: 'cap-fingerprint', description: 'Implement FingerprintJS', author: 'Prafull Sakpal' },
   { name: '@notiz/capacitor-plugin-android-safe-area', href: '', title: 'capacitor-plugin-android-safe-area', description: 'Safe area for Android', author: '' },
   { name: 'cyranomini', href: 'https://github.com/SyedSaadUrRehman-MAD/CyranoMini', title: 'cyranomini', description: 'This minimises the Cyrano App', author: 'Saad' },
+  { name: 'myfirstionicplugin', href: 'https://github.com/RamCharanKola/IonicPlugins', title: 'myfirstionicplugin', description: 'My Interest', author: 'RamCharanKola' },
   {
     name: 'native-purchases',
     href: 'https://github.com/Cap-go/native-purchases',
@@ -6951,7 +6952,6 @@ export const actions = [
     description: 'In-app Subscriptions Made Easy',
     author: 'Martin donadieu',
   },
-  { name: 'myfirstionicplugin', href: 'https://github.com/RamCharanKola/IonicPlugins', title: 'myfirstionicplugin', description: 'My Interest', author: 'RamCharanKola' },
   { name: '@getdot/admit', href: '', title: 'admit', description: 'admit', author: 'Allen' },
   { name: '@shashidhar014/decoder', href: '', title: 'decoder', description: 'Testing', author: '' },
   {
@@ -8207,18 +8207,18 @@ export const actions = [
     author: 'Ionic',
   },
   {
-    name: 'lpapi-ionic-plugin',
-    href: 'https://github.com/Guigass/lpapi-ionic-plugin',
-    title: 'lpapi-ionic-plugin',
-    description: 'LPAPI - Plugin de Ionic para comunicar com impressora importadas do aliexpress InniFun',
-    author: 'Guilherme Gentile',
-  },
-  {
     name: '@textable-app/fcm',
     href: 'https://github.com/capacitor-community/fcm',
     title: 'fcm',
     description: 'Enable Firebase Cloud Messaging features for Capacitor apps',
     author: 'Stewan Silva',
+  },
+  {
+    name: 'lpapi-ionic-plugin',
+    href: 'https://github.com/Guigass/lpapi-ionic-plugin',
+    title: 'lpapi-ionic-plugin',
+    description: 'LPAPI - Plugin de Ionic para comunicar com impressora importadas do aliexpress InniFun',
+    author: 'Guilherme Gentile',
   },
   {
     name: 'capacitor-textinteraction',
@@ -9228,7 +9228,6 @@ export const actions = [
     description: 'Stripe SDK bindings for Capacitor Applications',
     author: 'Zyra Media Inc.',
   },
-  { name: 'capacitor-aria-print', href: '', title: 'capacitor-aria-print', description: 'Aria Point of Sale Print Plugin', author: 'Codeus' },
   {
     name: 'capacitor-zeroconf-lt',
     href: 'https://github.com/matallui/capacitor-zeroconf',
@@ -9236,6 +9235,7 @@ export const actions = [
     description: 'Capacitor ZeroConf plugin',
     author: 'Luis Tanica',
   },
+  { name: 'capacitor-aria-print', href: '', title: 'capacitor-aria-print', description: 'Aria Point of Sale Print Plugin', author: 'Codeus' },
   { name: 'capacitor-plugin-dingtalk', href: '', title: 'capacitor-plugin-dingtalk', description: 'a ionic dingding plugin', author: 'leone456@163.com' },
   {
     name: '@santosbj/capacitor-firebase-auth',
@@ -10176,6 +10176,13 @@ export const actions = [
     description: 'To support FCM capabilities for Capacitor Applications using WebEngage.',
     author: 'WebEngage',
   },
+  {
+    name: 'barcode-scanner-community',
+    href: 'https://github.com/capacitor-community/barcode-scanner',
+    title: 'barcode-scanner-community',
+    description: 'A fast and efficient (QR) barcode scanner for Capacitor',
+    author: 'tafelnl',
+  },
   { name: '@squiseat/firebase-analytics', href: '', title: 'firebase-analytics', description: 'A native plugin for firebase analytics.', author: 'mesur.io' },
   {
     name: '@theethawat/fb8-capacitor-firebase-auth',
@@ -10325,6 +10332,7 @@ export const actions = [
     author: 'Gaurav Vachhani',
   },
   { name: 'barcode-plugin', href: '', title: 'barcode-plugin', description: 'Obtener codigo de barras', author: 'Inerttia' },
+  { name: 'uclean-location-plugin', href: '', title: 'uclean-location-plugin', description: 'gaode location', author: 'jade' },
   {
     name: '@unicorns-and-unicorns/capacitor-sensors',
     href: 'https://github.com/Unicorns-and-Unicorns/capacitor-sensors',
@@ -10392,7 +10400,6 @@ export const actions = [
     author: 'Laszlo Kiss',
   },
   { name: '@ocionic/http', href: '', title: 'http', description: 'A native HTTP plugin for CORS-free requests and file transfers', author: 'Max Lynch' },
-  { name: 'uclean-location-plugin', href: '', title: 'uclean-location-plugin', description: 'gaode location', author: 'jade' },
   {
     name: 'capacitor-plugin-market',
     href: '',
@@ -11084,8 +11091,8 @@ export const actions = [
   },
   { name: 'ppi-device-subscription-id', href: '', title: 'ppi-device-subscription-id', description: 'Get mobile device subscription id', author: '' },
   { name: 'capacitor-plugin-getui', href: '', title: 'capacitor-plugin-getui', description: '个推', author: 'yufu' },
-  { name: 'capacitor-plugin-sina', href: '', title: 'capacitor-plugin-sina', description: '新浪微博', author: 'yufu' },
   { name: 'capacitor-plugin-example', href: '', title: 'capacitor-plugin-example', description: 'my first', author: 'jaga' },
+  { name: 'capacitor-plugin-sina', href: '', title: 'capacitor-plugin-sina', description: '新浪微博', author: 'yufu' },
   {
     name: 'capacitor-plugin-zendesk-chat',
     href: '',
@@ -11604,18 +11611,18 @@ export const actions = [
   },
   { name: 'capacitor-ironsource-wrapper', href: '', title: 'capacitor-ironsource-wrapper', description: 'Wrapper Capacitor SDK for Ironsource Native SDKs', author: 'Eregar Ltd' },
   {
-    name: 'capacitor-notification-extensions',
-    href: 'https://github.com/no-dap/capacitor-notification-extensions',
-    title: 'capacitor-notification-extensions',
-    description: 'Extends capacitor PushNotifications plugin to handle received data notification',
-    author: 'woot',
-  },
-  {
     name: 'rstar-sqlite',
     href: 'https://github.com/AshishSoam/sqlite-electron',
     title: 'rstar-sqlite',
     description: 'Community Plugin for Native & electron SQLite databases',
     author: 'Aashish Soam',
+  },
+  {
+    name: 'capacitor-notification-extensions',
+    href: 'https://github.com/no-dap/capacitor-notification-extensions',
+    title: 'capacitor-notification-extensions',
+    description: 'Extends capacitor PushNotifications plugin to handle received data notification',
+    author: 'woot',
   },
   { name: 'capacitor-volume-control', href: '', title: 'capacitor-volume-control', description: 'Adjust system-level volume in your Capacitor Apps.', author: 'NoCrypt' },
   {
@@ -12071,18 +12078,18 @@ export const actions = [
     author: 'Eder Santa Cruz',
   },
   {
-    name: 'capacitor-healthkit',
-    href: 'https://github.com/Ad-Scientiam/capacitor-healthkit',
-    title: 'capacitor-healthkit',
-    description: 'Capacitor plugin to retrieve data from Healthkit',
-    author: 'Ad Scientiam',
-  },
-  {
     name: 'love-alarm-ble',
     href: 'https://github.com/tiendat77/love-alarm-ble',
     title: 'love-alarm-ble',
     description: 'Bluetooth Low Energy (BLE) Plugin for Love Alarm app',
     author: 'huynhztienzdat@gmail.com',
+  },
+  {
+    name: 'capacitor-healthkit',
+    href: 'https://github.com/Ad-Scientiam/capacitor-healthkit',
+    title: 'capacitor-healthkit',
+    description: 'Capacitor plugin to retrieve data from Healthkit',
+    author: 'Ad Scientiam',
   },
   { name: 'uclean-auth-plugin', href: '', title: 'uclean-auth-plugin', description: '企业微信授权插件', author: 'xsk' },
   { name: '@atomlessmind/myauth', href: 'https://github.com/iamkanishka/myauthcapplugin', title: 'myauth', description: 'login plugin', author: 'kanishka' },
@@ -12204,7 +12211,6 @@ export const actions = [
   { name: 'capacitor-image-crop', href: '', title: 'capacitor-image-crop', description: '', author: 'Osei Fortune' },
   { name: '@warpsoft/realmonitor', href: '', title: 'realmonitor', description: '集成海康大华视频监控', author: 'Carson Wong' },
   { name: 'facebook-app-events', href: '', title: 'facebook-app-events', description: 'Log app events to facebook app', author: 'Xcapit' },
-  { name: 'capacitor-feed-fm', href: '', title: 'capacitor-feed-fm', description: 'Feed FM Capacitor plugin', author: 'Anne Tomassoni' },
   {
     name: '@johnbraum/acs-nfc-scanner',
     href: 'https://bitbucket.org/golbros/acs-nfc-scanner',
@@ -12212,6 +12218,7 @@ export const actions = [
     description: 'Scans NFC cards with the acs scanners for iOS',
     author: 'Marcel Golob',
   },
+  { name: 'capacitor-feed-fm', href: '', title: 'capacitor-feed-fm', description: 'Feed FM Capacitor plugin', author: 'Anne Tomassoni' },
   { name: 'pstv-utils', href: '', title: 'pstv-utils', description: 'A set of toools to interface with hardware sensors', author: 'Brian Odida' },
   { name: 'sbetexttospeech', href: '', title: 'sbetexttospeech', description: 'Not available', author: 'Serge Bryan Estoquia' },
   { name: '@deskcode/testplugin', href: 'https://github.com/DeskCodeSolution/testplugin', title: 'testplugin', description: 'testing', author: 'Deskcode' },
@@ -13663,8 +13670,8 @@ export const actions = [
   },
   { name: '@ahollandusc/capacitor-zip', href: '', title: 'capacitor-zip', description: 'Zip and Unzip', author: 'Adrian Holland' },
   { name: 'ios-reminders', href: '', title: 'ios-reminders', description: 'Capacitor plugin for using EventKit to create IOS reminders.', author: 'Kevin Jones' },
-  { name: 'zx-cap', href: 'https://github.com/crossz/demo-ionicCapPlugin', title: 'zx-cap', description: 'Zx capacitor plugin demo', author: 'zx' },
   { name: 'geofencing-capacitor-cw', href: '', title: 'geofencing-capacitor-cw', description: 'A geofencing for the ClockWise mobile application', author: 'Martijn Bakker' },
+  { name: 'zx-cap', href: 'https://github.com/crossz/demo-ionicCapPlugin', title: 'zx-cap', description: 'Zx capacitor plugin demo', author: 'zx' },
   {
     name: '@cesarbarone/capacitor-pusher-beams',
     href: 'https://github.com/cesarbarone/capacitor-pusher-beams',
@@ -14137,13 +14144,13 @@ export const actions = [
   { name: 'chfblinks', href: '', title: 'chfblinks', description: 'chfblinks', author: 'channa' },
   { name: 'cap-test-again', href: '', title: 'cap-test-again', description: 'dasa', author: 'jcesarmobile' },
   { name: 'semi-kiosk', href: '', title: 'semi-kiosk', description: 'partial kiosk', author: 'The College Board' },
-  { name: 'test-dd', href: '', title: 'test-dd', description: 'test', author: 'hanstheman872' },
+  { name: 'wangzhitestmyplugin', href: '', title: 'wangzhitestmyplugin', description: 'test', author: 'wz' },
   { name: 'teste-igao', href: 'https://bitbucket.org/gdii/teste-igao', title: 'teste-igao', description: 'Teste do Igao', author: 'IgOr' },
   { name: 'screenshot-alert', href: '', title: 'screenshot-alert', description: 'Show an overlay screen when a Screenshot is taken', author: 'Thiago Prado' },
+  { name: 'test-dd', href: '', title: 'test-dd', description: 'test', author: 'hanstheman872' },
   { name: 'srk-mfp', href: '', title: 'srk-mfp', description: '-', author: '-' },
-  { name: 'wangzhitestmyplugin', href: '', title: 'wangzhitestmyplugin', description: 'test', author: 'wz' },
-  { name: 'device-temp', href: '', title: 'device-temp', description: 'Temperature Plugins', author: 'Nisha' },
   { name: 'c-get-latest-photo', href: '', title: 'c-get-latest-photo', description: 'get latest photo', author: 'none' },
+  { name: 'device-temp', href: '', title: 'device-temp', description: 'Temperature Plugins', author: 'Nisha' },
   { name: 'neptune-2', href: '', title: 'neptune-2', description: 'Test Neptune', author: 'Ruben Fitó' },
   { name: 'up-push-notification', href: 'https://github.com/amsoteki/pushnotification', title: 'up-push-notification', description: 'Push notification', author: 'Upyourgame' },
   { name: 'darkmode-ba', href: '', title: 'darkmode-ba', description: 'returns whether device has darkmode enabled or not', author: 'Fabiola Dums' },
@@ -14151,7 +14158,6 @@ export const actions = [
   { name: 'sapio', href: '', title: 'sapio', description: 'to collect data', author: 'thomas' },
   { name: 'wifi-connect', href: 'https://bitbucket.org/achirat/wifi-connect', title: 'wifi-connect', description: 'Wifi connect', author: 'achira' },
   { name: 'tbs-nmb-alpha', href: '', title: 'tbs-nmb-alpha', description: 'tbs-nmb-alpha', author: 'tbswalter' },
-  { name: 'toaster-custom', href: '', title: 'toaster-custom', description: 'toaster', author: 'rizwan' },
   {
     name: 'vipcrowd-social-sharing',
     href: '',
@@ -14159,6 +14165,7 @@ export const actions = [
     description: 'Share on social sites such as Facebook, Twitter, and LinkedIn',
     author: 'Pat Murray',
   },
+  { name: 'toaster-custom', href: '', title: 'toaster-custom', description: 'toaster', author: 'rizwan' },
   { name: 'custom-view', href: '', title: 'custom-view', description: 'This is a CustomView', author: 'LennartHakker' },
   { name: 'last-photo-taken', href: '', title: 'last-photo-taken', description: 'Lorem ipsum', author: 'Ruben Afonso' },
   { name: 'trav-comet-chat', href: '', title: 'trav-comet-chat', description: 'USes comet', author: 'Trav' },
