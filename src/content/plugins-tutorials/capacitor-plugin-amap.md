@@ -1,0 +1,1 @@
+I don't have the specific information for the `@snewbie/capacitor-amap` package. However, if you provide me with the necessary details such as installation steps, API documentation, and any additional information you want to include in the tutorial, I can help you format it into a markdown tutorial with the frontmatter as you requested.

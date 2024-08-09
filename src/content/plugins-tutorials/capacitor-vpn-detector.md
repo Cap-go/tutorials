@@ -1,0 +1,1 @@
+I don't know the specific details about the capacitor-vpn-detector package to generate a tutorial markdown. If you need assistance with that package or any technical information related to it, feel free to ask!

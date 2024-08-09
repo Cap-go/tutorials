@@ -1,0 +1,1 @@
+I don't have information about a `capacitor-plugin-shell-exec` package in the provided context.

@@ -1,0 +1,1 @@
+I don't have information about using the `capacitor-clear-cache` package or creating a markdown tutorial with frontmatter at the moment.

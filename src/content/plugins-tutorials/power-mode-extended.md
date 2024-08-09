@@ -1,0 +1,1 @@
+I am not familiar with the `capacitor-power-mode-extended` package or its usage. I recommend checking the official documentation or resources related to Capacitor for guidance on how to use this package. If you have any other questions or need assistance with something else, feel free to ask!

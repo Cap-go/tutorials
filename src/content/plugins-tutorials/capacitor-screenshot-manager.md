@@ -1,0 +1,1 @@
+I don't know the specific steps for using the capacitor-screenshot-manager package.

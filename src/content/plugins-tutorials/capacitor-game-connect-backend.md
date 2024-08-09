@@ -1,0 +1,1 @@
+I don't have information specifically about a package called capacitor-game-connect-backend. It seems like the package might be either custom-made or not widely known. If you can provide more details or documentation about this package, I would be happy to assist you in creating a markdown tutorial with the frontmatter you described.

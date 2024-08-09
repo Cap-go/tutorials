@@ -1,0 +1,1 @@
+I don't have specific information on the `simple-spotify-capacitor` package. You may want to refer to the official documentation or resources related to the package to create a tutorial. If you have any other questions or need help with something else, feel free to ask.

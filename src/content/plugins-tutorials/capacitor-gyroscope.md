@@ -1,0 +1,1 @@
+I don't know, I do not have enough information to provide a detailed tutorial with front matter for using the capacitor-gyroscope package.

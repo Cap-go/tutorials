@@ -1,0 +1,1 @@
+I don't have information about the `@albgen/capacitor-escpos-plugin` package to generate a tutorial.

@@ -1,0 +1,1 @@
+I don't have information about a package called `capacitor-installer-info` in the provided context.

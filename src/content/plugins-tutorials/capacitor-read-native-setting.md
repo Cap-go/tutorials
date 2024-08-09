@@ -1,0 +1,1 @@
+I don't have information about the "capacitor-read-native-setting" package or the specifics of generating a markdown tutorial with a frontmatter in the format you described.

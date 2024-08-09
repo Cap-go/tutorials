@@ -1,0 +1,1 @@
+I don't have information specifically about the `@wearemothership/capacitor-native-webauthn` package.

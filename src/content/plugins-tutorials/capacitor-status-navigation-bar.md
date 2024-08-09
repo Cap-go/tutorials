@@ -1,0 +1,1 @@
+I don't have information specifically about the `capacitor-status-navigation-bar` package.

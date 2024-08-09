@@ -1,0 +1,1 @@
+I don't have information on the "@capacitor-community/tap-jacking" package and its usage. You might want to refer to the official documentation or community resources for creating a tutorial.

@@ -1,0 +1,1 @@
+I'm not familiar with the "app-tracking-transparency-capacitor-ionic" package.

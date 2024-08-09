@@ -1,0 +1,1 @@
+I don't have information on the specific package `capacitor-voice-recorder-wav` at the moment.

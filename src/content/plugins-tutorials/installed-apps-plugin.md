@@ -1,0 +1,1 @@
+I don't have information about an "installed-apps package" in the given context. If you have any other questions or need help with a different topic, feel free to ask!
