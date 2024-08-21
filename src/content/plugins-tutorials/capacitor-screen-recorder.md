@@ -27,6 +27,13 @@ For iOS, you need to add the `NSPhotoLibraryUsageDescription` key to your `info.
 
 For Android, you need to increase the project's `minSdk` version to 23. This is required by the `scrcast` dependency used by the screen recorder plugin.
 
+Add this permissions
+```xml
+  <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+```
+
+
 ### Variables
 
 The screen recorder plugin relies on the following project variables defined in your app's `variables.gradle` file:
