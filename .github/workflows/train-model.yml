@@ -27,7 +27,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm approve-builds --force && sudo apt-get install -y build-essential && pnpm install && pnpm rebuild faiss-node
+        run: pnpm approve-builds && sudo apt-get install -y build-essential && pnpm install && pnpm rebuild faiss-node
 
       - name: Train model from READMEs
         run: node scripts/train_model.mjs
