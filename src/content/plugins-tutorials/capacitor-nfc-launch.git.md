@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about the `capacitor-nfc-launch` package. I recommend checking the package's documentation or specific guides for creating a tutorial using it.

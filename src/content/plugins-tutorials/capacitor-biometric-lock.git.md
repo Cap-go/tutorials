@@ -1,0 +1,1 @@
+I'm sorry, but as of my last update, I don't have information on the specific package `capacitor-biometric-lock`. I recommend checking the package's official documentation or community forums for a tutorial covering the usage of the `capacitor-biometric-lock` package.

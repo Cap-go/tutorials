@@ -1,0 +1,1 @@
+I don't know the specific details about the `capacitor-subscriptions` package or how to use it.

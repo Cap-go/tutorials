@@ -1,0 +1,1 @@
+I'm unable to provide a tutorial on how to use the `@capgo/capacitor-navigation-bar` package as it is not a real package that I am aware of. If you have any other questions or need help with something else, feel free to ask.

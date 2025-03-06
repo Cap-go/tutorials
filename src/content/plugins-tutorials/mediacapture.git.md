@@ -1,0 +1,1 @@
+I'm sorry, but the package mentioned is called `@capacitor-community/media`, not `media-captura`. If you'd like, I can provide you with a markdown tutorial for using the `@capacitor-community/media` package and help you create the frontmatter for the file. Would you like me to proceed with that?

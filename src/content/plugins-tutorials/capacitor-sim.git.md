@@ -1,0 +1,1 @@
+I don't know how to interact with the `@jonz94/capacitor-sim` package or generate Markdown tutorials.

@@ -1,0 +1,1 @@
+I don't have information about the "@fresha/capacitor-plugin-applepay" package.

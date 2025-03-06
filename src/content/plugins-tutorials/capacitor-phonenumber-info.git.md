@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the `capacitor-sim-pro` package to generate a tutorial. It's best to refer to the official documentation or specific resources related to that package for accurate guidance.

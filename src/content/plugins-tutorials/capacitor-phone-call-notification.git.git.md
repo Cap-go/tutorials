@@ -1,0 +1,1 @@
+I'm afraid I can't provide details about the `@anuradev/capacitor-phone-call-notification` package as the context information you provided concerns a different package called `capacitor-plugin-callkit-voip`, not `capacitor-phone-call-notification`. If you need information on `capacitor-plugin-callkit-voip`, please let me know.

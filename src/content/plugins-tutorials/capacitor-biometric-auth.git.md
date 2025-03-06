@@ -1,0 +1,1 @@
+I'm unable to generate the markdown tutorial with the frontmatter as requested because the context provided doesn't include information on how to use the `@aparajita/capacitor-biometric-auth` package. If you can provide the necessary steps or information, I would be happy to assist in creating the tutorial with the frontmatter.

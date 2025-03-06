@@ -1,0 +1,1 @@
+I'm unable to provide a markdown tutorial for the `@pantrist/capacitor-plugin-ml-kit-text-recognition` package as it is not part of the context provided. If you have any other questions or need assistance with something else, feel free to ask!

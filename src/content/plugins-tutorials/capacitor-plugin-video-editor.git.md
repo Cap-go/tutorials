@@ -1,0 +1,1 @@
+I don't have information on the specific package "@whiteguru/capacitor-plugin-video-editor" mentioned.

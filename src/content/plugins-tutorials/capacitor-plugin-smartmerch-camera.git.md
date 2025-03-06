@@ -1,0 +1,1 @@
+I don't know the specific details of the `@nitra/capacitor-plugin-smartmerch-camera` package and its usage. Would you like general guidance on creating a tutorial for a Capacitor plugin instead?

@@ -1,0 +1,1 @@
+I don't know the specific details of using the `@aalzehla/capacitor-jailbreak-root-detection` package. I recommend checking the package's official documentation or GitHub repository for a tutorial on how to use it.

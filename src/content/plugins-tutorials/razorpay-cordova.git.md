@@ -1,0 +1,1 @@
+I don't know how to generate a markdown tutorial for using the capacitor-razorpay package.

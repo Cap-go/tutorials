@@ -1,0 +1,1 @@
+I can't provide a detailed markdown tutorial on using "@hotend/capacitor-file-picker" package as the information you provided is about the "capacitor-file-selector" plugin, not the package you requested. If you have any other questions or need information on the "capacitor-file-selector" plugin, feel free to ask!

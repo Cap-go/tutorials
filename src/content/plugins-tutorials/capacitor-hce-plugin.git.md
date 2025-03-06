@@ -1,0 +1,1 @@
+I don't have information about a package called `capacitor-hce-plugin` in the provided context.

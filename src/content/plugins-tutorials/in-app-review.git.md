@@ -1,0 +1,1 @@
+I don't have specific information about the `@capacitor-community/in-app-review` package.

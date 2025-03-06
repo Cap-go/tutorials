@@ -1,0 +1,1 @@
+I don't have information on a Capacitor plugin named `capacitor-plugin-silent-notifications`. I provided details about `capacitor-ios-silent-notifications`. If you have any questions related to this plugin or another topic, feel free to ask!

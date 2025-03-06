@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information specific to the `capacitor-appmetrica-plugin` package to generate a markdown tutorial for it at the moment.
