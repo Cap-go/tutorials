@@ -1,5 +1,5 @@
+import '@dotenvx/dotenvx/config'
 import { join } from 'node:path'
-import * as dotenv from 'dotenv'
 import { exit } from 'node:process'
 import { existsSync } from 'node:fs'
 import { actions } from './action.mjs'
@@ -10,8 +10,6 @@ import { TextLoader } from 'langchain/document_loaders/fs/text'
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
 
 const appDir = process.cwd()
-
-dotenv.config()
 
 async function loadVectorStore() {
   const directory = join(appDir, 'loadedVectorStore')

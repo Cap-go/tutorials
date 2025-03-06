@@ -5,9 +5,12 @@ import sitemap from '@astrojs/sitemap'
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  compressHTML: true,
   site: `https://${config.base_domain.prod}`,
   integrations: [
+    sitemap(),
+    UnoCSS({
+      injectReset: true,
+    }),
     vue({
       template: {
         transformAssetUrls: {
@@ -15,9 +18,15 @@ export default defineConfig({
         },
       },
     }),
-    UnoCSS({
-      injectReset: true,
-    }),
-    sitemap(),
   ],
+  vite: {
+    server: {
+      port: 3000,
+      host: '0.0.0.0',
+    },
+    preview: {
+      port: 3000,
+      host: '0.0.0.0',
+    },
+  },
 })

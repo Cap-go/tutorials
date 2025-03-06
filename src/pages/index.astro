@@ -2,24 +2,19 @@
 import Layout from '@/layouts/Layout.astro'
 import { useRuntimeConfig } from '@/config/app'
 import VueBlogIndex from '@/vue-pages/plugins/tutorials.vue'
+import { getCollection } from 'astro:content'
 
-let posts = await Astro.glob('../content/plugins-tutorials/**/*.md')
-
-posts = posts.filter((i) => i.frontmatter.published).sort((a, b) => (new Date(a.frontmatter.created_at) > new Date(b.frontmatter.created_at) ? -1 : 1))
+const posts = await getCollection('blog', ({ data }) => {
+  return data.published === true
+})
 
 const config = useRuntimeConfig()
 
 const content = {}
 
-if (config.public.blog_title) {
-  // @ts-ignore
-  content['title'] = config.public.blog_title
-}
+if (config.public.blog_title) content['title'] = config.public.blog_title
 
-if (config.public.blog_description) {
-  // @ts-ignore
-  content['description'] = config.public.blog_description
-}
+if (config.public.blog_description) content['description'] = config.public.blog_description
 ---
 
 <Layout content={content}>

@@ -1,6 +1,6 @@
+import '@dotenvx/dotenvx/config'
 import { z } from 'zod'
 import { join } from 'node:path'
-import * as dotenv from 'dotenv'
 import { actions } from './action.mjs'
 import { Document } from 'langchain/document'
 import { PromptTemplate } from 'langchain/prompts'
@@ -10,8 +10,6 @@ import { ChatOpenAI } from 'langchain/chat_models/openai'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { OutputFixingParser, StructuredOutputParser } from 'langchain/output_parsers'
-
-dotenv.config()
 
 async function loadVectorStore() {
   const directory = join(process.cwd(), 'loadedVectorStore')

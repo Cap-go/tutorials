@@ -29,9 +29,9 @@ export function baseDomain(branch = '') {
   else return getRightKey('prod', 'base_domain')
 }
 
-export function formatTime(s: string) {
-  // use dayjs to parse dd-mm-yyyy
-  const d = dayjs(s, 'YYYY-MM-DD')
+export function formatTime(s: string | Date) {
+  // Handle both string and Date inputs
+  const d = typeof s === 'string' ? dayjs(s, 'YYYY-MM-DD') : dayjs(s)
   return d.format('MMMM DD, YYYY')
 }
 

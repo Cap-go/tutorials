@@ -2,7 +2,7 @@
 title: Using capacitor-webview-cache-cleaner-plugin Package
 description: Learn how to utilize the capacitor-webview-cache-cleaner-plugin package to clean the cache of a webview in your Capacitor plugin.
 created_at: 2022-01-20
-published: true,
+published: true
 slug: "capacitor-webview-cache-cleaner-plugin"
 ---
 

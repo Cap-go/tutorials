@@ -156,7 +156,7 @@ const navigation = {
 <template>
   <footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
           <!-- <img class="h-10" src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300" alt="Company name"> -->
@@ -166,9 +166,7 @@ const navigation = {
               <a :href="item.href" target="_blank" rel="noreferrer" class="flex">
                 <div v-if="typeof item.icon === 'string'" class="h-6 w-6" aria-hidden="true" v-html="item.icon" />
                 <component v-else :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                <span
-                  class="ml-3 text-base font-bold text-gray-400 duration-200 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
-                >
+                <span class="ml-3 border-b-2 border-transparent text-base font-bold text-gray-400 transition-all duration-200 hover:border-blue-600 focus:border-blue-600">
                   {{ item.name }}
                 </span>
               </a>
@@ -185,7 +183,7 @@ const navigation = {
                     :href="item.href"
                     rel="noreferrer"
                     :target="item.target"
-                    class="text-base text-gray-500 hover:text-gray-900 duration-200 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
+                    class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
                   >
                     {{ item.name }}
                   </a>
@@ -200,7 +198,7 @@ const navigation = {
                     :rel="item.rel"
                     :href="item.href"
                     :target="item.target"
-                    class="text-base text-gray-500 hover:text-gray-900 duration-200 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
+                    class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
                     @click="item.execute && item.execute()"
                   >
                     {{ item.name }}
@@ -216,7 +214,7 @@ const navigation = {
                 <li v-for="item in navigation.company" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-500 hover:text-gray-900 duration-200 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
+                    class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
                   >
                     {{ item.name }}
                   </a>
@@ -230,7 +228,7 @@ const navigation = {
                   <a
                     :href="item.href"
                     :rel="item.rel"
-                    class="text-base text-gray-500 hover:text-gray-900 duration-200 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
+                    class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
                   >
                     {{ item.name }}
                   </a>

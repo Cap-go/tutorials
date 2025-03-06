@@ -1,7 +1,6 @@
 ---
 title: "Using cap-pdf-file-opener: A Tutorial"
 description: "In this tutorial, we will learn how to use the cap-pdf-file-opener package to open PDF files on Android devices. We will explore the usage of the package and provide step-by-step instructions on how to generate a PDF using pdfmake and open it using the cap-pdf-file-opener plugin. This tutorial is created on [current date]."
-created_at: [current date]
 published: true
 slug: cap-pdf-file-opener
 ---

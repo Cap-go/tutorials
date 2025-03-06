@@ -6,18 +6,22 @@ import type { Plugin } from '@/config/plugins'
 import { useRuntimeConfig } from '@/config/app'
 import VuePluginPDP from '@/vue-pages/plugins/[id].vue'
 import { fetchWithToken, getSlug } from '@/services/github'
+import { getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
   let tutMap: any = {}
   const promises: any[] = []
   let processTuts: Plugin[] = []
-  let tuts = await Astro.glob('../../content/plugins-tutorials/**/*.md')
+  let tuts = await getCollection('blog', ({ data }) => {
+    return data.published === true
+  })
   for (let i of tuts) {
-    const slug = i.file
-      .substring(i.file.lastIndexOf('/') + 1)
+    if (!i.filePath) continue
+    const slug = i.filePath
+      .substring(i.filePath.lastIndexOf('/') + 1)
       .replace('.md', '')
       .toLowerCase()
-    tutMap[slug] = i.rawContent()
+    tutMap[slug] = i.body
     const findTut = actions.find((item) => getSlug(item.href) === slug.replace('.md', ''))
     if (findTut) processTuts.push(findTut)
   }
@@ -77,7 +81,7 @@ export async function getStaticPaths() {
         .catch((e) => {}),
     )
   }
-  await Promise.all(promises)
+  // await Promise.allSettled(promises)
   return plugins.map((item) => {
     let slug = getSlug(item.href)
     return {
@@ -95,21 +99,13 @@ export async function getStaticPaths() {
 const plugin = Astro.props.item
 let tutorial = Astro.props.tutorial
 
-if (tutorial) {
-  plugin['tutorial'] = marked.parse(tutorial)
-}
+if (tutorial) plugin['tutorial'] = marked.parse(tutorial)
 
 const content = {}
 
-if (plugin.title) {
-  // @ts-ignore
-  content['title'] = plugin.title
-}
+if (plugin.title) content['title'] = plugin.title
 
-if (plugin.description) {
-  // @ts-ignore
-  content['description'] = plugin.description
-}
+if (plugin.description) content['description'] = plugin.description
 
 const config = useRuntimeConfig()
 

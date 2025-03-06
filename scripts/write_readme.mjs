@@ -1,32 +1,37 @@
-import axios from 'axios'
-import * as dotenv from 'dotenv'
+import '@dotenvx/dotenvx/config'
 import { join } from 'node:path'
 import { actions } from './action.mjs'
+import { Octokit } from '@octokit/rest'
 import { existsSync, writeFileSync } from 'node:fs'
 
-const appDir = process.cwd()
+const auth = process.env.BEARER_TOKEN
 
-dotenv.config()
+if (!auth) throw new Error(`process.env.BEARER_TOKEN not found.`)
+
+const appDir = process.cwd()
+const octokit = new Octokit({
+  auth,
+})
 
 let readmeCodes = {}
 let readmeFailed = 0
 
 async function fetchReadme(owner, repo) {
-  let url = `https://api.github.com/repos/${owner}/${repo}/readme`
   try {
-    const response = await axios.get(url, {
-      headers: {
-        Accept: 'application/vnd.github.v3.raw',
-        Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+    const response = await octokit.repos.getReadme({
+      owner,
+      repo,
+      mediaType: {
+        format: 'raw',
       },
     })
     return response.data
   } catch (error) {
     readmeFailed += 1
-    if (error.response) {
-      readmeCodes[error.response.status] = readmeCodes[error.response.status] ? readmeCodes[error.response.status] + 1 : 1
+    if (error.status) {
+      readmeCodes[error.status] = readmeCodes[error.status] ? readmeCodes[error.status] + 1 : 1
     } else {
-      console.error(`Error fetching [${url}]: ${error.message}`)
+      console.error(`Error fetching ${owner}/${repo}: ${error.message}`)
     }
   }
 }
