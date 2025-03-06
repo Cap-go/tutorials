@@ -43,10 +43,9 @@ async function loadREADMEs(list) {
         try {
           const filePath = join(appDir, 'openai-readmes', `${element[3]}_${element[4]}.md`)
           if (!existsSync(filePath)) {
-            const data = await fetchReadme(element[3], element[4])
-            if (data) {
+            const data = await fetchReadme(element[3], element[4].replace('.git', ''))
+            if (data) 
               writeFileSync(filePath, data)
-            }
           }
         } catch (e) {
           console.log(e)
