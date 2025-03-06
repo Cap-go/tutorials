@@ -27,11 +27,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run:
-          pnpm install
-          pnpm approve-builds
-          pnpm add faiss-node --allow-build=faiss-node
-          pnpm rebuild faiss-node
+        run: pnpm install && pnpm approve-builds && pnpm add faiss-node --allow-build=faiss-node && pnpm rebuild faiss-node
 
       - name: Train model from READMEs
         run: node scripts/train_model.mjs
