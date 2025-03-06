@@ -236,18 +236,18 @@ export const actions = [
     author: 'jcesarmobile',
   },
   {
-    name: '@capacitor-community/screen-brightness',
-    href: 'git+https://github.com/capacitor-community/screen-brightness.git',
-    title: 'screen-brightness',
-    description: 'control screen brightness on ios and android',
-    author: 'jcesarmobile',
-  },
-  {
     name: '@capacitor/filesystem',
     href: 'git+https://github.com/ionic-team/capacitor-plugins.git',
     title: 'filesystem',
     description: 'The Filesystem API provides a NodeJS-like API for working with files on the device.',
     author: 'itschaced',
+  },
+  {
+    name: '@capacitor-community/screen-brightness',
+    href: 'git+https://github.com/capacitor-community/screen-brightness.git',
+    title: 'screen-brightness',
+    description: 'control screen brightness on ios and android',
+    author: 'jcesarmobile',
   },
   {
     name: '@capacitor-firebase/app',
@@ -383,18 +383,18 @@ export const actions = [
     author: 'jcesarmobile',
   },
   {
-    name: '@sentry/capacitor',
-    href: 'git+https://github.com/getsentry/sentry-capacitor.git',
-    title: 'capacitor',
-    description: 'Official Sentry SDK for Capacitor',
-    author: 'billyvg',
-  },
-  {
     name: '@capawesome/capacitor-screen-orientation',
     href: 'git+https://github.com/capawesome-team/capacitor-plugins.git',
     title: 'capacitor-screen-orientation',
     description: 'Capacitor plugin to lock/unlock the screen orientation.',
     author: 'robingenz',
+  },
+  {
+    name: '@sentry/capacitor',
+    href: 'git+https://github.com/getsentry/sentry-capacitor.git',
+    title: 'capacitor',
+    description: 'Official Sentry SDK for Capacitor',
+    author: 'billyvg',
   },
   {
     name: '@capgo/capacitor-updater',
@@ -489,18 +489,18 @@ export const actions = [
     author: 'itschaced',
   },
   {
-    name: '@ua/capacitor-airship',
-    href: 'git+https://github.com/urbanairship/capacitor-airship.git',
-    title: 'capacitor-airship',
-    description: 'Airship capacitor plugin',
-    author: 'urbanairship',
-  },
-  {
     name: '@capacitor/camera',
     href: 'git+https://github.com/ionic-team/capacitor-plugins.git',
     title: 'camera',
     description: 'The Camera API provides the ability to take a photo with the camera or choose an existing one from the photo album.',
     author: 'itschaced',
+  },
+  {
+    name: '@ua/capacitor-airship',
+    href: 'git+https://github.com/urbanairship/capacitor-airship.git',
+    title: 'capacitor-airship',
+    description: 'Airship capacitor plugin',
+    author: 'urbanairship',
   },
   {
     name: 'capacitor-rate-app',
@@ -588,6 +588,13 @@ export const actions = [
     author: 'hugotomazi',
   },
   {
+    name: '@capacitor-community/firebase-crashlytics',
+    href: 'git+https://github.com/capacitor-community/firebase-crashlytics.git',
+    title: 'firebase-crashlytics',
+    description: 'Capacitor plugin for Firebase Crashlytics.',
+    author: 'jcesarmobile',
+  },
+  {
     name: 'capacitor-radar',
     href: 'git+https://github.com/radarlabs/capacitor-radar.git',
     title: 'capacitor-radar',
@@ -609,11 +616,11 @@ export const actions = [
     author: 'itschaced',
   },
   {
-    name: '@capacitor-community/firebase-crashlytics',
-    href: 'git+https://github.com/capacitor-community/firebase-crashlytics.git',
-    title: 'firebase-crashlytics',
-    description: 'Capacitor plugin for Firebase Crashlytics.',
-    author: 'jcesarmobile',
+    name: 'capacitor-video-player',
+    href: 'git+https://github.com/harmonwood/capacitor-video-player.git',
+    title: 'capacitor-video-player',
+    description: 'custom Native Capacitor plugin to play a video',
+    author: 'jeepq',
   },
   {
     name: '@capacitor/inappbrowser',
@@ -622,13 +629,6 @@ export const actions = [
     description:
       "The InAppBrowser Plugin provides a web browser view that allows you to load any web page externally. It behaves as a standard web browser and is useful to load untrusted content without risking your application's security. It offers three different ways t",
     author: 'itschaced',
-  },
-  {
-    name: 'capacitor-video-player',
-    href: 'git+https://github.com/harmonwood/capacitor-video-player.git',
-    title: 'capacitor-video-player',
-    description: 'custom Native Capacitor plugin to play a video',
-    author: 'jeepq',
   },
   {
     name: '@capacitor/haptics',
@@ -666,18 +666,18 @@ export const actions = [
     author: 'robingenz',
   },
   {
-    name: '@capgo/capacitor-mute',
-    href: 'git+https://github.com/Cap-go/capacitor-mute.git',
-    title: 'capacitor-mute',
-    description: 'Detect if the mute switch is enabled/disabled on a device',
-    author: 'riderx',
-  },
-  {
     name: 'capacitor-ios-autofill-save-password',
     href: 'git+https://github.com/cuongpl/capacitor-ios-autofill-save-password.git',
     title: 'capacitor-ios-autofill-save-password',
     description: 'Prompt to display dialog for saving password to keychain for iOS webview app.',
     author: 'cuongpl',
+  },
+  {
+    name: '@capgo/capacitor-mute',
+    href: 'git+https://github.com/Cap-go/capacitor-mute.git',
+    title: 'capacitor-mute',
+    description: 'Detect if the mute switch is enabled/disabled on a device',
+    author: 'riderx',
   },
   {
     name: '@capacitor/network',
@@ -701,6 +701,13 @@ export const actions = [
     author: 'virusv',
   },
   {
+    name: '@aparajita/capacitor-dark-mode',
+    href: 'git+https://github.com/aparajita/capacitor-dark-mode.git',
+    title: 'capacitor-dark-mode',
+    description: 'Universal dark mode support for Ionic web and native apps',
+    author: 'ckgaparajita',
+  },
+  {
     name: '@appcues/capacitor',
     href: 'git+https://github.com/appcues/appcues-capacitor-plugin.git',
     title: 'capacitor',
@@ -713,13 +720,6 @@ export const actions = [
     title: 'capacitor-start-navigation',
     description: 'Starts navigation in the native maps application',
     author: 'cwoebker',
-  },
-  {
-    name: '@aparajita/capacitor-dark-mode',
-    href: 'git+https://github.com/aparajita/capacitor-dark-mode.git',
-    title: 'capacitor-dark-mode',
-    description: 'Universal dark mode support for Ionic web and native apps',
-    author: 'ckgaparajita',
   },
   {
     name: 'capacitor-plugin-audiosession-bluetooth',
@@ -737,13 +737,6 @@ export const actions = [
     author: 'diachedelic',
   },
   {
-    name: '@capacitor-community/admob',
-    href: 'git+ssh://git@github.com/capacitor-community/admob.git',
-    title: 'admob',
-    description: 'A native plugin for AdMob',
-    author: 'jcesarmobile',
-  },
-  {
     name: '@capgo/nativegeocoder',
     href: 'git+https://github.com/Cap-go/capacitor-nativegeocoder.git',
     title: 'nativegeocoder',
@@ -756,6 +749,13 @@ export const actions = [
     title: 'capacitor-live-update',
     description: 'Capacitor plugin to update your app remotely in real-time.',
     author: 'robingenz',
+  },
+  {
+    name: '@capacitor-community/admob',
+    href: 'git+ssh://git@github.com/capacitor-community/admob.git',
+    title: 'admob',
+    description: 'A native plugin for AdMob',
+    author: 'jcesarmobile',
   },
   {
     name: '@capacitor-community/advertising-id',
@@ -809,17 +809,17 @@ export const actions = [
   },
   { name: 'send-intent', href: 'git+https://github.com/carsten-klaffke/send-intent.git', title: 'send-intent', description: 'SendIntent', author: 'cklaffke' },
   {
-    name: '@capacitor/clipboard',
-    href: 'git+https://github.com/ionic-team/capacitor-plugins.git',
-    title: 'clipboard',
-    description: 'The Clipboard API enables copy and pasting to/from the system clipboard.',
-    author: 'itschaced',
-  },
-  {
     name: '@capacitor/push-notifications',
     href: 'git+https://github.com/ionic-team/capacitor-plugins.git',
     title: 'push-notifications',
     description: 'The Push Notifications API provides access to native push notifications.',
+    author: 'itschaced',
+  },
+  {
+    name: '@capacitor/clipboard',
+    href: 'git+https://github.com/ionic-team/capacitor-plugins.git',
+    title: 'clipboard',
+    description: 'The Clipboard API enables copy and pasting to/from the system clipboard.',
     author: 'itschaced',
   },
   {
@@ -837,18 +837,18 @@ export const actions = [
     author: 'dragermrb',
   },
   {
-    name: 'capacitor-screenshot',
-    href: 'git+https://github.com/ludufre/capacitor-screenshot.git',
-    title: 'capacitor-screenshot',
-    description: 'This plugin take screenshot of the app or webpage',
-    author: 'ludufre',
-  },
-  {
     name: '@capacitor-community/photoviewer',
     href: 'git+https://github.com/capacitor-community/photoviewer.git',
     title: 'photoviewer',
     description: 'PhotoViewer table images with fullscreen and sharing capabilities',
     author: 'jcesarmobile',
+  },
+  {
+    name: 'capacitor-screenshot',
+    href: 'git+https://github.com/ludufre/capacitor-screenshot.git',
+    title: 'capacitor-screenshot',
+    description: 'This plugin take screenshot of the app or webpage',
+    author: 'ludufre',
   },
   {
     name: 'capacitor-plugin-developer-options',
@@ -872,13 +872,6 @@ export const actions = [
     author: 'itschaced',
   },
   {
-    name: 'capacitor-branch-deep-links',
-    href: 'git+https://github.com/BranchMetrics/capacitor-branch-deep-links.git',
-    title: 'capacitor-branch-deep-links',
-    description: 'Capacitor plugin for Branch.io deep links',
-    author: 'echo_branch',
-  },
-  {
     name: '@evva/capacitor-secure-storage-plugin',
     href: 'git+https://github.com/evva-sfw/capacitor-secure-storage-plugin.git',
     title: 'capacitor-secure-storage-plugin',
@@ -886,11 +879,11 @@ export const actions = [
     author: 'sfw-evva',
   },
   {
-    name: 'capacitor-document-scanner',
-    href: 'git+https://github.com/WebsiteBeaver/capacitor-document-scanner.git',
-    title: 'capacitor-document-scanner',
-    description: 'A Capacitor plugin that lets you scan documents using Android and iOS',
-    author: 'dmarcus',
+    name: 'capacitor-branch-deep-links',
+    href: 'git+https://github.com/BranchMetrics/capacitor-branch-deep-links.git',
+    title: 'capacitor-branch-deep-links',
+    description: 'Capacitor plugin for Branch.io deep links',
+    author: 'echo_branch',
   },
   {
     name: '@capawesome/capacitor-torch',
@@ -898,6 +891,13 @@ export const actions = [
     title: 'capacitor-torch',
     description: 'Capacitor plugin for switching the flashlight on and off.',
     author: 'robingenz',
+  },
+  {
+    name: 'capacitor-document-scanner',
+    href: 'git+https://github.com/WebsiteBeaver/capacitor-document-scanner.git',
+    title: 'capacitor-document-scanner',
+    description: 'A Capacitor plugin that lets you scan documents using Android and iOS',
+    author: 'dmarcus',
   },
   {
     name: '@capacitor-community/device-security-detect',
@@ -934,6 +934,13 @@ export const actions = [
     title: 'capacitor-plugin-facebook-login',
     description: 'Capacitor plugin to login with Facebook',
     author: 'dragermrb',
+  },
+  {
+    name: '@capacitor-community/image-to-text',
+    href: 'git+ssh://git@github.com/capacitor-community/image-to-text.git',
+    title: 'image-to-text',
+    description: 'Image to Text (OCR) Plugin for Capacitor',
+    author: 'jcesarmobile',
   },
   {
     name: '@revenuecat/purchases-capacitor',
