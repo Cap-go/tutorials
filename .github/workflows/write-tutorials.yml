@@ -11,19 +11,23 @@ jobs:
     name: Write Tutorials
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 18
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: |
-          npm install -g pnpm
-          pnpm install --frozen-lockfile
+        run: pnpm install && pnpm approve-builds && pnpm add faiss-node --allow-build=faiss-node && pnpm rebuild faiss-node
 
       - name: Generate tutorials
         run: node scripts/generate_tutorials.mjs
