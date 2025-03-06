@@ -29,8 +29,8 @@ jobs:
       - name: Install dependencies
         run:
           pnpm install
-          echo -e "a\n" | pnpm approve-builds
-          pnpm install
+          pnpm approve-builds
+          pnpm add faiss-node --allow-build=faiss-node
           pnpm rebuild faiss-node
 
       - name: Train model from READMEs
