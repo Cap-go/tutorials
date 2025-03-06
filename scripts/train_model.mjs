@@ -3,11 +3,11 @@ import { join } from 'node:path'
 import { exit } from 'node:process'
 import { existsSync } from 'node:fs'
 import { actions } from './action.mjs'
-import { Document } from 'langchain/document'
-import { FaissStore } from 'langchain/vectorstores/faiss'
-import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
+import { Document } from '@langchain/core/documents'
+import { FaissStore } from '@langchain/community/vectorstores/faiss'
+import { OpenAIEmbeddings } from '@langchain/openai'
 import { TextLoader } from 'langchain/document_loaders/fs/text'
-import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
+import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
 
 const appDir = process.cwd()
 
