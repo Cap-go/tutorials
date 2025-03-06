@@ -26,8 +26,7 @@ async function fetchPackages() {
         from: page * PAGE_SIZE,
       })
       // No more results
-      if (!packageData.length)
-        break
+      if (!packageData.length) break
       const packagesWithKeywords = packageData.filter((pkg) => {
         const packageKeywords = pkg.keywords || []
         return searchKeywords.every((keyword) => packageKeywords.includes(keyword))
