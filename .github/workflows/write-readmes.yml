@@ -2,6 +2,8 @@ name: Fetch and Create READMEs
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 0' # Run at 1AM UTC every Sunday
 
 jobs:
   deploy:

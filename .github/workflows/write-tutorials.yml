@@ -2,6 +2,8 @@ name: Write Tutorials
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 0' # Run at 3AM UTC every Sunday
 
 jobs:
   deploy:

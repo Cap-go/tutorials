@@ -2,6 +2,8 @@ name: Generate Packages List from NPM
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # Run at midnight UTC every Sunday
 
 jobs:
   deploy:

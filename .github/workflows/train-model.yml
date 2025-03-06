@@ -2,6 +2,8 @@ name: Train Model
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 0' # Run at 2AM UTC every Sunday
 
 jobs:
   deploy:
