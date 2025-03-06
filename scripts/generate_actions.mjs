@@ -5,35 +5,48 @@ import { writeFileSync, existsSync, mkdirSync } from 'fs'
 import search from 'libnpmsearch'
 
 const searchKeywords = ['plugin', 'capacitor']
+const PAGE_SIZE = 100 // npm search API page size
+const MAX_RESULTS = 1000
 
 async function fetchPackages() {
   let count = 0
-  let totalLimit = 10 ** 10
+  let totalLimit = MAX_RESULTS
   try {
     // Parse command-line arguments for start and end limits
-    if (!isNaN(parseInt(process.argv[2]))) totalLimit = parseInt(process.argv[2])
+    if (!isNaN(parseInt(process.argv[2]))) totalLimit = Math.min(parseInt(process.argv[2]), MAX_RESULTS)
   } catch (e) {
-    totalLimit = 10 ** 10
+    totalLimit = MAX_RESULTS
   }
   try {
     const resultArray = []
-    const packageData = await search(searchKeywords.join(' '), {
-      limit: totalLimit,
-    })
-    const packagesWithKeywords = packageData.filter((pkg) => {
-      const packageKeywords = pkg.keywords || []
-      return searchKeywords.every((keyword) => packageKeywords.includes(keyword))
-    })
-    count = packagesWithKeywords.length
-    resultArray.push(
-      ...packagesWithKeywords.map((pkg) => ({
-        name: pkg.name,
-        href: pkg.links?.repository || '',
-        title: pkg.name.split('/').pop(),
-        description: pkg.description || '',
-        author: pkg.maintainers?.[0]?.username || '',
-      })),
-    )
+    const numPages = Math.ceil(totalLimit / PAGE_SIZE)
+    for (let page = 0; page < numPages; page++) {
+      const packageData = await search(searchKeywords.join(' '), {
+        limit: PAGE_SIZE,
+        from: page * PAGE_SIZE,
+      })
+      // No more results
+      if (!packageData.length)
+        break
+      const packagesWithKeywords = packageData.filter((pkg) => {
+        const packageKeywords = pkg.keywords || []
+        return searchKeywords.every((keyword) => packageKeywords.includes(keyword))
+      })
+      resultArray.push(
+        ...packagesWithKeywords.map((pkg) => ({
+          name: pkg.name,
+          href: pkg.links?.repository || '',
+          title: pkg.name.split('/').pop(),
+          description: pkg.description || '',
+          author: pkg.maintainers?.[0]?.username || '',
+        })),
+      )
+      count += packagesWithKeywords.length
+      if (resultArray.length >= totalLimit) {
+        resultArray.length = totalLimit // Trim to limit
+        break
+      }
+    }
     console.table({ 'Total Packages': count })
     console.log(`Writing to scripts/action.mjs...`)
     if (!existsSync(join(process.cwd(), 'scripts', 'action.mjs'))) {
