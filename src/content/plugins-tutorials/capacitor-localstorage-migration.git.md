@@ -1,0 +1,1 @@
+I don't know the details of using the capacitor-localstorage-migration package and generating a markdown tutorial for it.
