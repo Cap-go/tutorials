@@ -1,0 +1,1 @@
+I don't know how to use the capacitor-plugin-speaker-toggle-ios-android package.
