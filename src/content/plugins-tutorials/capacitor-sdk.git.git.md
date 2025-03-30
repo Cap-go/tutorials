@@ -1,0 +1,1 @@
+I don't have the specific details or commands to generate a markdown tutorial for using the capacitor-moengage-core package with a frontmatter as described. If you need further assistance or more specific instructions, feel free to ask!

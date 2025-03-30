@@ -1,0 +1,1 @@
+I don't have information on a package named `capacitor-plugin-octopulse` in the provided context.
