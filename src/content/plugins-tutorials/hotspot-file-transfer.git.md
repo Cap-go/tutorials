@@ -1,0 +1,1 @@
+I don't know how to generate a markdown tutorial with the specific frontmatter values you mentioned for the @idpass/hotspot-file-transfer-capacitor package.
