@@ -1,0 +1,1 @@
+I don't know the specific details or usage instructions for the "@frontall/capacitor-udp" package. It would be best to refer to the official documentation or resources provided by the package creators for a tutorial on using it.
