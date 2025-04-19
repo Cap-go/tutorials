@@ -1,0 +1,1 @@
+I'm sorry, but I don't have the specific details or documentation for the `@whiteguru/capacitor-plugin-media-capture` package. If you can provide me with the details, I can help guide you on how to create a markdown tutorial with the frontmatter as you described.

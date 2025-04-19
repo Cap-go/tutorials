@@ -1,0 +1,1 @@
+I don't have information on the `@whiteguru/capacitor-plugin-media` package in the provided context.

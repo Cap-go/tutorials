@@ -1,0 +1,1 @@
+I'm unable to provide a markdown tutorial for the "adjust-capacitor-plugin" package as it seems there is no information available on the "adjust-capacitor-plugin" in the context provided.

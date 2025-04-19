@@ -1,0 +1,1 @@
+I'm sorry, but I don't have the specific details or context for the package "capacitor-facebook-events" to create a tutorial and provide the front matter values for a markdown file. If you could provide more information or context about the package and what it does, I'd be happy to help you create the markdown tutorial with the front matter.

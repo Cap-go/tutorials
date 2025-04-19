@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about a package called `@pantrist/capacitor-date-picker`. My knowledge is limited to the Capacitor Date Picker plugin provided by `@capacitor-community/date-picker`. If you have any questions or need help with that specific package, feel free to ask!

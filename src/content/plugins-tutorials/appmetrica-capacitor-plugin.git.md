@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the "@soroka282/appmetrica-capacitor-plugin" package to provide a tutorial.

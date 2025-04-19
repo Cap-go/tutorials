@@ -1,0 +1,1 @@
+I don't have the specific details or documentation for a package called `cap-pulse` in the provided context. If you provide more information or documentation about the `cap-pulse` package, I would be happy to help you generate the markdown tutorial with the specified frontmatter.
