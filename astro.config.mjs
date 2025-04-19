@@ -1,8 +1,8 @@
+import sitemap from '@astrojs/sitemap'
 import vue from '@astrojs/vue'
 import UnoCSS from '@unocss/astro'
-import config from './configs.json'
-import sitemap from '@astrojs/sitemap'
 import { defineConfig } from 'astro/config'
+import config from './configs.json'
 
 export default defineConfig({
   site: `https://${config.base_domain.prod}`,

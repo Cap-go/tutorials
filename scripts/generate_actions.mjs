@@ -1,8 +1,8 @@
+import { spawnSync } from 'child_process'
+import { existsSync, mkdirSync, writeFileSync } from 'fs'
+import search from 'libnpmsearch'
 import { join } from 'path'
 import { exit } from 'process'
-import { spawnSync } from 'child_process'
-import { writeFileSync, existsSync, mkdirSync } from 'fs'
-import search from 'libnpmsearch'
 import { actions as existingActions } from './action.mjs'
 
 const searchKeywords = ['plugin', 'capacitor']
