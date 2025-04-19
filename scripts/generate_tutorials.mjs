@@ -21,7 +21,9 @@ async function loadVectorStore() {
 let createTuts = {}
 
 async function chat(input, pluginPath) {
-  const tutorialsDir = join(process.cwd(), 'src', 'content', 'plugins-tutorials')
+  const contentDir = join(process.cwd(), 'src', 'content')
+  if (!existsSync(contentDir)) mkdirSync(contentDir)
+  const tutorialsDir = join(contentDir, 'plugins-tutorials')
   if (!existsSync(tutorialsDir)) mkdirSync(tutorialsDir)
   const outputFile = join(tutorialsDir, `${pluginPath}.md`)
   const currentContent = existsSync(outputFile) ? readFileSync(outputFile, 'utf8') : null
