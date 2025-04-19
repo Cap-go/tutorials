@@ -1,8 +1,8 @@
 import '@dotenvx/dotenvx/config'
-import { join } from 'node:path'
-import { actions } from './action.mjs'
 import { Octokit } from '@octokit/rest'
 import { existsSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { actions } from './action.mjs'
 
 const auth = process.env.BEARER_TOKEN
 

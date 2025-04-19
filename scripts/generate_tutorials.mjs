@@ -1,15 +1,16 @@
 import '@dotenvx/dotenvx/config'
-import { z } from 'zod'
-import { join } from 'node:path'
-import { actions } from './action.mjs'
-import { Document } from '@langchain/core/documents'
-import { PromptTemplate } from '@langchain/core/prompts'
-import { RetrievalQAChain } from 'langchain/chains'
 import { FaissStore } from '@langchain/community/vectorstores/faiss'
-import { OpenAIEmbeddings, ChatOpenAI } from '@langchain/openai'
-import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { Document } from '@langchain/core/documents'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
+import { PromptTemplate } from '@langchain/core/prompts'
+import { ChatOpenAI, OpenAIEmbeddings } from '@langchain/openai'
+import { execSync } from 'child_process'
+import { RetrievalQAChain } from 'langchain/chains'
 import { OutputFixingParser } from 'langchain/output_parsers'
+import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { z } from 'zod'
+import { actions } from './action.mjs'
 
 async function loadVectorStore() {
   const directory = join(process.cwd(), 'loadedVectorStore')
@@ -62,10 +63,8 @@ async function chat(input, pluginPath) {
     await chain.call({ query: input })
     createTuts[pluginPath] = '✅'
     processedCount++
-    
     if (processedCount % 100 === 0) {
       console.log('Committing changes after processing 100 items...')
-      const { execSync } = require('child_process')
       execSync('git config --global user.name "Martin DONADIEU"')
       execSync('git config --global user.email "martindonadieu@gmail.com"')
       execSync('git lfs track "loadedVectorStore/*.json"')

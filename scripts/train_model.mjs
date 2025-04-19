@@ -1,13 +1,13 @@
 import '@dotenvx/dotenvx/config'
+import { FaissStore } from '@langchain/community/vectorstores/faiss'
+import { Document } from '@langchain/core/documents'
+import { OpenAIEmbeddings } from '@langchain/openai'
+import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
+import { TextLoader } from 'langchain/document_loaders/fs/text'
+import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { exit } from 'node:process'
-import { existsSync } from 'node:fs'
 import { actions } from './action.mjs'
-import { Document } from '@langchain/core/documents'
-import { FaissStore } from '@langchain/community/vectorstores/faiss'
-import { OpenAIEmbeddings } from '@langchain/openai'
-import { TextLoader } from 'langchain/document_loaders/fs/text'
-import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
 
 const appDir = process.cwd()
 
