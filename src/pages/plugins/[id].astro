@@ -13,15 +13,20 @@ export async function getStaticPaths() {
   const promises: any[] = []
   let processTuts: Plugin[] = []
   let tuts = await getCollection('blog', ({ data }) => data.published !== false)
+  tuts = tuts.map((i) => ({
+    ...i,
+    data: {
+      ...i.data,
+      slug: i.filePath
+        .substring(i.filePath.lastIndexOf('/') + 1)
+        .replaceAll('.md', '')
+        .replaceAll('.git', '')
+        .toLowerCase(),
+    },
+  }))
   for (let i of tuts) {
-    if (!i.filePath) continue
-    const slug = i.filePath
-      .substring(i.filePath.lastIndexOf('/') + 1)
-      .replaceAll('.md', '')
-      .replaceAll('.git', '')
-      .toLowerCase()
-    tutMap[slug] = i.body
-    const findTut = actions.find((item) => getSlug(item.href).replaceAll('.git', '').replaceAll('.md', '') === slug)
+    tutMap[i.data.slug] = i.body
+    const findTut = actions.find((item) => getSlug(item.href).replaceAll('.git', '').replaceAll('.md', '') === i.data.slug)
     if (findTut) processTuts.push(findTut)
   }
   let plugins: Plugin[] = processTuts
@@ -80,7 +85,7 @@ export async function getStaticPaths() {
         .catch((e) => {}),
     )
   }
-  // await Promise.allSettled(promises)
+  await Promise.allSettled(promises)
   return plugins.map((item) => {
     const slug = getSlug(item.href).replaceAll('.git', '').replaceAll('.md', '')
     return {
@@ -110,7 +115,6 @@ const config = useRuntimeConfig()
 
 const { id } = Astro.params
 
-// @ts-ignore
 content['ldJSON'] = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'WebPage',
