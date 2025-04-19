@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/photoviewer Package",
-"description": "A step-by-step tutorial on how to use the @capacitor-community/photoviewer package for Capacitor in your Ionic application.",
-"created_at": "2023-10-10",
-"published": true,
+"title": "Using @capacitor-community/photoviewer Package"
+"description": "A step-by-step tutorial on how to use the @capacitor-community/photoviewer package for Capacitor in your Ionic application."
+"created_at": "2023-10-10"
+"published": true
 "slug": "photoviewer.git"
 ---
 

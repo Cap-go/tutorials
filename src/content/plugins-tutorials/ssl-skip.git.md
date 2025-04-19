@@ -1,8 +1,8 @@
 ---
-"title": "Using @jcesarmobile/ssl-skip Package Tutorial",
-"description": "Learn how to use the @jcesarmobile/ssl-skip package to skip SSL checks in a Capacitor app during development.",
-"created_at": "2022-01-05",
-"published": true,
+"title": "Using @jcesarmobile/ssl-skip Package Tutorial"
+"description": "Learn how to use the @jcesarmobile/ssl-skip package to skip SSL checks in a Capacitor app during development."
+"created_at": "2022-01-05"
+"published": true
 "slug": "ssl-skip.git"
 ---
 

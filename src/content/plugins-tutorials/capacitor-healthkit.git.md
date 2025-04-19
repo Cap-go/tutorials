@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "A Guide to Using @perfood/capacitor-healthkit Package"
 "description": "Step-by-step tutorial on how to integrate and utilize the @perfood/capacitor-healthkit package in your Capacitor app."

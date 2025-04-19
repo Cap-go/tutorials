@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/image-to-text Package",
-"description": "A tutorial on how to use the @capacitor-community/image-to-text package to convert images to text in a Capacitor project.",
-"created_at": "2022-01-31",
-"published": true,
+"title": "Using @capacitor-community/image-to-text Package"
+"description": "A tutorial on how to use the @capacitor-community/image-to-text package to convert images to text in a Capacitor project."
+"created_at": "2022-01-31"
+"published": true
 "slug": "image-to-text"
 
 ## Installation

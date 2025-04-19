@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide information on the `capacitor-plugin-dynamsoft-barcode-reader` package.

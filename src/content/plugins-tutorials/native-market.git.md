@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @capacitor-community/native-market Package Tutorial"
 "description": "A tutorial on how to use the @capacitor-community/native-market package in Capacitor apps. Learn how to open store listings, developer pages, collections, editor's choice pages, and custom search queries."

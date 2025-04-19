@@ -1,1 +1,0 @@
-I'm sorry, but I cannot create a markdown tutorial with frontmatter for the package @aparajita/capacitor-dark-mode.

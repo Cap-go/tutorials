@@ -1,8 +1,8 @@
-I can provide you with the markdown tutorial for using the capacitor-file-chunk package, but I'm unable to control the file creation process or manipulate front matter in real-time. Here is the markdown tutorial for using the capacitor-file-chunk package:
-
+---
+title: "Using Capacitor-File-Chunk Package"
 ---
 
-# Tutorial: Using Capacitor-File-Chunk Package
+# Using Capacitor-File-Chunk Package
 
 ## Introduction
 This tutorial will guide you through using the Capacitor File Chunk plugin, designed for iOS and Android. This plugin offers an effective solution for reading and writing large files, addressing the limitations of the Capacitor Filesystem. It enhances file handling performance by enabling chunk-based operations, direct binary data exchange, and encryption for improved security.

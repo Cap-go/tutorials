@@ -1,11 +1,9 @@
-```markdown
 ---
 "title": "Using capacitor-android-webview-cache Package Tutorial"
 "description": "In this tutorial, you will learn how to integrate and utilize the capacitor-android-webview-cache package in your Capacitor Android project."
 "created_at": "October 17, 2021"
 "published": true
 "slug": "capacitor-android-webview-cache"
-
 ---
 
 ## Steps to Use capacitor-android-webview-cache Package

@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Facebook Login Plugin",
-"description": "A step-by-step guide on how to add Facebook Login functionality to your Capacitor app using the @capacitor-community/facebook-login plugin.",
-"created_at": "2023-10-31",
-"published": true,
+"title": "Using Capacitor Facebook Login Plugin"
+"description": "A step-by-step guide on how to add Facebook Login functionality to your Capacitor app using the @capacitor-community/facebook-login plugin."
+"created_at": "2023-10-31"
+"published": true
 "slug": "facebook-login.git"
 ---
 

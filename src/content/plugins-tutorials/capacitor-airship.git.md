@@ -1,1 +1,0 @@
-I'm sorry, but I don't have the specific information about the `@ua/capacitor-airship` package to generate a tutorial for it. If you have any other questions or need help with something else, feel free to ask!

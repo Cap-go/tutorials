@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capgo/home-indicator Package Tutorial",
-"description": "This tutorial will guide you through using the @capgo/home-indicator package to hide and show the home button indicator in your Capacitor app on Android",
-"created_at": "2022-02-14",
-"published": true,
+"title": "Using @capgo/home-indicator Package Tutorial"
+"description": "This tutorial will guide you through using the @capgo/home-indicator package to hide and show the home button indicator in your Capacitor app on Android"
+"created_at": "2022-02-14"
+"published": true
 "slug": "home-indicator.git"
 ---
 

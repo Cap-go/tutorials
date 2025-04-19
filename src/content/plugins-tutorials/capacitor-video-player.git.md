@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor Video Player Package Tutorial",
-"description": "This tutorial will guide you on how to use the capacitor-video-player package for Capacitor in your app.",
-"created_at": "2022-02-24",
-"published": true,
+"title": "Using Capacitor Video Player Package Tutorial"
+"description": "This tutorial will guide you on how to use the capacitor-video-player package for Capacitor in your app."
+"created_at": "2022-02-24"
+"published": true
 "slug": "capacitor-video-player.git"
 ---
 

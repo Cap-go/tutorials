@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "CAPACITOR 5 VIDEO RECORDER TUTORIAL",
-"description": "This tutorial will guide you through using the @capacitor-community/video-recorder package to record video with Capacitor 5.",
-"created_at": "2022-01-31",
-"published": true,
+"title": "CAPACITOR 5 VIDEO RECORDER TUTORIAL"
+"description": "This tutorial will guide you through using the @capacitor-community/video-recorder package to record video with Capacitor 5."
+"created_at": "2022-01-31"
+"published": true
 "slug": "video-recorder.git"
 ---
 

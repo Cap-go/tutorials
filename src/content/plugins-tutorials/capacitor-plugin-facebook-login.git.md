@@ -1,8 +1,8 @@
 ---
-"title": "Tutorial on Using @whiteguru/capacitor-plugin-facebook-login Package",
-"description": "A step-by-step guide on integrating and utilizing the @whiteguru/capacitor-plugin-facebook-login package in your Capacitor project.",
-"created_at": "2022-01-25",
-"published": true,
+"title": "Tutorial on Using @whiteguru/capacitor-plugin-facebook-login Package"
+"description": "A step-by-step guide on integrating and utilizing the @whiteguru/capacitor-plugin-facebook-login package in your Capacitor project."
+"created_at": "2022-01-25"
+"published": true
 "slug": "capacitor-plugin-facebook-login.git"
 ---
 

@@ -1,4 +1,3 @@
-```md
 ---
 "title": "Using capacitor-plugin-camera Package"
 "description": "A tutorial on how to integrate and use the capacitor-plugin-camera package in your Ionic application."

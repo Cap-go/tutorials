@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Background Geolocation Plugin",
-"description": "A markdown tutorial on how to use the @transistorsoft/capacitor-background-geolocation package in a Capacitor project.",
-"created_at": "2023-10-22",
-"published": true,
+"title": "Using Capacitor Background Geolocation Plugin"
+"description": "A markdown tutorial on how to use the @transistorsoft/capacitor-background-geolocation package in a Capacitor project."
+"created_at": "2023-10-22"
+"published": true
 "slug": "capacitor-background-geolocation.git"
 ---
 

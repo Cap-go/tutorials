@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use Capacitor Geofence Box Tracker Plugin in Your Capacitor Applications",
-"description": "Learn how to implement geofencing in your Capacitor applications using the capacitor-geofence-box-tracker package.",
-"created_at": "2022-01-21",
-"published": true,
+"title": "How to Use Capacitor Geofence Box Tracker Plugin in Your Capacitor Applications"
+"description": "Learn how to implement geofencing in your Capacitor applications using the capacitor-geofence-box-tracker package."
+"created_at": "2022-01-21"
+"published": true
 "slug": "capacitor-geofence-box-tracker.git"
 ---
 

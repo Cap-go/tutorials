@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using @capgo/capacitor-native-biometric Package",
-"description": "A tutorial on integrating biometric functionality using the @capgo/capacitor-native-biometric package in Capacitor applications.",
-"created_at": "September 28, 2021",
-"published": true,
+"title": "Using @capgo/capacitor-native-biometric Package"
+"description": "A tutorial on integrating biometric functionality using the @capgo/capacitor-native-biometric package in Capacitor applications."
+"created_at": "September 28, 2021"
+"published": true
 "slug": "capacitor-native-biometric.git"
 ---
 

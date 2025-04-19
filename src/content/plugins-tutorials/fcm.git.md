@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/fcm Package",
-"description": "A comprehensive guide on incorporating the @capacitor-community/fcm package into your Capacitor project for push notifications.",
-"created_at": "2022-02-26",
-"published": true,
+"title": "Using @capacitor-community/fcm Package"
+"description": "A comprehensive guide on incorporating the @capacitor-community/fcm package into your Capacitor project for push notifications."
+"created_at": "2022-02-26"
+"published": true
 "slug": "fcm.git"
 ---
 

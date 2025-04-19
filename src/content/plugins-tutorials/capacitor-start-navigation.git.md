@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @cwoebker/capacitor-start-navigation Package"
 "description": "A tutorial on how to use the @cwoebker/capacitor-start-navigation package to implement navigation in a Capacitor app."

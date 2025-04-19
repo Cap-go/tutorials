@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor-Email-Composer Package",
-"description": "Tutorial on how to use the capacitor-email-composer package for opening a native E-mail Composer within a Capacitor app.",
-"created_at": "2023-11-03",
-"published": true,
+"title": "Using Capacitor-Email-Composer Package"
+"description": "Tutorial on how to use the capacitor-email-composer package for opening a native E-mail Composer within a Capacitor app."
+"created_at": "2023-11-03"
+"published": true
 "slug": "capacitor-email-composer.git"
 ---
 

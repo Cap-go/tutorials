@@ -1,1 +1,0 @@
-I'm not familiar with the `@basecom-gmbh/capacitor-jailbreak-root-detection` package.

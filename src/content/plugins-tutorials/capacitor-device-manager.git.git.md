@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @rolster/capacitor-device-manager Package"
 "description": "A tutorial on how to use the @rolster/capacitor-device-manager package in Capacitor apps."

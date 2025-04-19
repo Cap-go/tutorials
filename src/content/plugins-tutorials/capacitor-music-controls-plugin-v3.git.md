@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use Capacitor Music Controls Plugin V3",
-"description": "A step-by-step guide on integrating and using the Capacitor Music Controls Plugin V3 in your Capacitor applications.",
-"created_at": "2022-01-30",
-"published": true,
+"title": "How to Use Capacitor Music Controls Plugin V3"
+"description": "A step-by-step guide on integrating and using the Capacitor Music Controls Plugin V3 in your Capacitor applications."
+"created_at": "2022-01-30"
+"published": true
 "slug": "capacitor-music-controls-plugin-v3.git"
 ---
 

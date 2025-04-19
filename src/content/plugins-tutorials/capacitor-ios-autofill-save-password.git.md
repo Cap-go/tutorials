@@ -1,8 +1,8 @@
 ---
-"title": "Using capacitor-ios-autofill-save-password Package",
-"description": "Guide on integrating and using the capacitor-ios-autofill-save-password package in your Capacitor project.",
-"created_at": "2022-01-25",
-"published": true,
+"title": "Using capacitor-ios-autofill-save-password Package"
+"description": "Guide on integrating and using the capacitor-ios-autofill-save-password package in your Capacitor project."
+"created_at": "2022-01-25"
+"published": true
 "slug": "capacitor-ios-autofill-save-password.git"
 ---
 

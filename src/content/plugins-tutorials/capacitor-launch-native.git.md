@@ -1,8 +1,8 @@
 ---
-"title": "Using capacitor-launch-native Package Tutorial",
-"description": "Learn how to utilize the capacitor-launch-native package to launch native functionality in Capacitor apps.",
-"created_at": "2022-08-17",
-"published": true,
+"title": "Using capacitor-launch-native Package Tutorial"
+"description": "Learn how to utilize the capacitor-launch-native package to launch native functionality in Capacitor apps."
+"created_at": "2022-08-17"
+"published": true
 "slug": "capacitor-launch-native.git"
 ---
 

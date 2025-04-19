@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using capacitor-share-safari package"
 "description": "A tutorial on how to use the capacitor-share-safari package in your Capacitor project."

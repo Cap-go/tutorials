@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @capacitor-community/contacts Package"
 "description": "A comprehensive guide on integrating @capacitor-community/contacts package in your Capacitor project."

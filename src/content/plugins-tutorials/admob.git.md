@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using AdMob Plugin with Capacitor in Your Ionic App",
-"description": "Learn how to integrate the @capacitor-community/admob package in your Ionic app to display various types of ads.",
-"created_at": "2022-04-07",
-"published": true,
+"title": "Using AdMob Plugin with Capacitor in Your Ionic App"
+"description": "Learn how to integrate the @capacitor-community/admob package in your Ionic app to display various types of ads."
+"created_at": "2022-04-07"
+"published": true
 "slug": "admob-git"
 ---
 

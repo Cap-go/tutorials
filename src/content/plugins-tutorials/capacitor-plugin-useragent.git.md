@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using capacitor-plugin-useragent Package Tutorial",
-"description": "A step-by-step guide on how to utilize the capacitor-plugin-useragent package in your Capacitor project.",
-"created_at": "2022-04-10",
-"published": true,
+"title": "Using capacitor-plugin-useragent Package Tutorial"
+"description": "A step-by-step guide on how to utilize the capacitor-plugin-useragent package in your Capacitor project."
+"created_at": "2022-04-10"
+"published": true
 "slug": "capacitor-plugin-useragent.git"
 ---
 

@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/native-audio Package",
-"description": "This tutorial will guide you through the steps of using the @capacitor-community/native-audio package to play sounds natively in your Capacitor apps.",
-"created_at": "2023-10-14",
-"published": true,
+"title": "Using @capacitor-community/native-audio Package"
+"description": "This tutorial will guide you through the steps of using the @capacitor-community/native-audio package to play sounds natively in your Capacitor apps."
+"created_at": "2023-10-14"
+"published": true
 "slug": "native-audio-git"
 ---
 

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Using capacitor-read-native-setting package"
 description: "Learn how to utilize the capacitor-read-native-setting package in your Capacitor project."

@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor/watch Package Tutorial",
-"description": "This tutorial will guide you through setting up and using the @capacitor/watch package to develop watch applications in Capacitor.",
-"created_at": "2023-10-05",
-"published": true,
+"title": "Using @capacitor/watch Package Tutorial"
+"description": "This tutorial will guide you through setting up and using the @capacitor/watch package to develop watch applications in Capacitor."
+"created_at": "2023-10-05"
+"published": true
 "slug": "capacitorwatch.git"
 ---
 

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor Plugin Cookies Package Tutorial",
-"description": "Step-by-step guide on how to use the capacitor-plugin-cookies package in your Ionic project.",
-"created_at": "2023-10-15",
-"published": true,
+"title": "Using Capacitor Plugin Cookies Package Tutorial"
+"description": "Step-by-step guide on how to use the capacitor-plugin-cookies package in your Ionic project."
+"created_at": "2023-10-15"
+"published": true
 "slug": "capacitor-plugin-cookies.git"
 ---
 

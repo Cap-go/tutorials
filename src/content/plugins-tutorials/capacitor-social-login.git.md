@@ -1,8 +1,8 @@
 ---
-"title": "Using @capgo/capacitor-social-login Package",
-"description": "This markdown tutorial will guide you on how to use the @capgo/capacitor-social-login package for social logins including Google, Apple, and Facebook. It includes installation instructions, configuration steps for Android and iOS, and additional resources for setting up the social logins.",
-"created_at": "2023-10-12",
-"published": true,
+"title": "Using @capgo/capacitor-social-login Package"
+"description": "This markdown tutorial will guide you on how to use the @capgo/capacitor-social-login package for social logins including Google, Apple, and Facebook. It includes installation instructions, configuration steps for Android and iOS, and additional resources for setting up the social logins."
+"created_at": "2023-10-12"
+"published": true
 "slug": "capacitor-social-login.git"
 ---
 

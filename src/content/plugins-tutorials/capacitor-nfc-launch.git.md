@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Capacitor-NFC-Launch Tutorial",
-"description": "This tutorial will guide you on how to use the capacitor-nfc-launch package in your Capacitor project.",
-"created_at": "2023-01-15",
-"published": true,
+"title": "Capacitor-NFC-Launch Tutorial"
+"description": "This tutorial will guide you on how to use the capacitor-nfc-launch package in your Capacitor project."
+"created_at": "2023-01-15"
+"published": true
 "slug": "capacitor-nfc-launch.git"
 ---
 

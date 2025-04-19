@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Wsmm Couchbase Capacitor Plugin",
-"description": "This tutorial will guide you through the installation and usage of the wsmm-couchbase-capacitor-plugin package in your Capacitor project.",
-"created_at": "October 19, 2021",
-"published": true,
+"title": "Using Wsmm Couchbase Capacitor Plugin"
+"description": "This tutorial will guide you through the installation and usage of the wsmm-couchbase-capacitor-plugin package in your Capacitor project."
+"created_at": "October 19, 2021"
+"published": true
 "slug": "wsmm-couchbase-capacitor-plugin.git"
 ---
 

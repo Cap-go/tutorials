@@ -5,9 +5,9 @@
 ```yaml
 ---
 "title": "How to Use @aalzehla/capacitor-sms-retriever Package"
-"description": "This tutorial will guide you through the process of using the @aalzehla/capacitor-sms-retriever package to retrieve SMS without the need for any permission. It includes setup instructions and code snippets for both Android and iOS.",
-"created_at": "2022-02-20",
-"published": true,
+"description": "This tutorial will guide you through the process of using the @aalzehla/capacitor-sms-retriever package to retrieve SMS without the need for any permission. It includes setup instructions and code snippets for both Android and iOS."
+"created_at": "2022-02-20"
+"published": true
 "slug": "capacitor-sms-retriever.git"
 ---
 ```

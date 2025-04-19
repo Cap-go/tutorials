@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using capacitor-webview-print Package Tutorial",
-"description": "This tutorial will guide you on how to use the capacitor-webview-print plugin in your Capacitor project to print the webview in Web, iOS, and Android platforms.",
-"created_at": "2021-12-27",
-"published": true,
+"title": "Using capacitor-webview-print Package Tutorial"
+"description": "This tutorial will guide you on how to use the capacitor-webview-print plugin in your Capacitor project to print the webview in Web, iOS, and Android platforms."
+"created_at": "2021-12-27"
+"published": true
 "slug": "capacitor-webview-print"
 ---
 

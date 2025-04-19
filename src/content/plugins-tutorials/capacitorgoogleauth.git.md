@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor Google Auth Package Tutorial",
-"description": "Step-by-step guide on how to use the @codetrix-studio/capacitor-google-auth package for Google authentication in Capacitor apps.",
-"created_at": "2023-11-22",
-"published": true,
+"title": "Using Capacitor Google Auth Package Tutorial"
+"description": "Step-by-step guide on how to use the @codetrix-studio/capacitor-google-auth package for Google authentication in Capacitor apps."
+"created_at": "2023-11-22"
+"published": true
 "slug": "capacitorgoogleauth.git"
 ---
 

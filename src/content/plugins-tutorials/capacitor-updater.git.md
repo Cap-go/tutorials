@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @capgo/capacitor-updater Package Tutorial"
 "description": "A step-by-step guide on how to use the @capgo/capacitor-updater package for updating Capacitor applications."

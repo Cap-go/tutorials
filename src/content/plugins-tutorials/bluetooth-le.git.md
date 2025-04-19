@@ -1,11 +1,8 @@
-I can help you generate the markdown tutorial for using the `@capacitor-community/bluetooth-le` package along with the frontmatter for the blog. Below is the content you asked for:
-
-```markdown
 ---
-"title": "Getting Started with @capacitor-community/bluetooth-le Package",
-"description": "A comprehensive tutorial on using the @capacitor-community/bluetooth-le package for Bluetooth Low Energy in Capacitor.",
-"created_at": "2022-03-18",
-"published": true,
+"title": "Getting Started with @capacitor-community/bluetooth-le Package"
+"description": "A comprehensive tutorial on using the @capacitor-community/bluetooth-le package for Bluetooth Low Energy in Capacitor."
+"created_at": "2022-03-18"
+"published": true
 "slug": "bluetooth-le.git"
 ---
 

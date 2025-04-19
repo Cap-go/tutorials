@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use capacitor-android-shortcuts Plugin in Your Android App",
-"description": "This blog post will guide you through the process of using the capacitor-android-shortcuts plugin in your Android app to add dynamic and pinned shortcuts.",
-"created_at": "2022-01-05",
-"published": true,
+"title": "How to Use capacitor-android-shortcuts Plugin in Your Android App"
+"description": "This blog post will guide you through the process of using the capacitor-android-shortcuts plugin in your Android app to add dynamic and pinned shortcuts."
+"created_at": "2022-01-05"
+"published": true
 "slug": "capacitor-android-shortcuts.git"
 ---
 

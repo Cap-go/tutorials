@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to Use capacitor-mock-location-checker Package"
 description: "A tutorial on how to use the capacitor-mock-location-checker package for mocking locations using Capacitor Plugin."

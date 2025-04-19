@@ -1,1 +1,0 @@
-I don't have information regarding the package `@blue-performance/capacitor-contact-sync` or its usage.

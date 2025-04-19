@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/appcenter Package in Your Capacitor Project",
-"description": "Learn how to integrate the @capacitor-community/appcenter package in your Capacitor project for analytics and crash reporting.",
-"created_at": "2022-04-01",
-"published": true,
+"title": "Using @capacitor-community/appcenter Package in Your Capacitor Project"
+"description": "Learn how to integrate the @capacitor-community/appcenter package in your Capacitor project for analytics and crash reporting."
+"created_at": "2022-04-01"
+"published": true
 "slug": "appcenter-sdk-capacitor.git"
 ---
 

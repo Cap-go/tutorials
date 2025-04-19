@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using @evva/abrevva-capacitor Package Tutorial",
-"description": "Step-by-step guide on using the @evva/abrevva-capacitor package for working with electronical EVVA access components.",
-"created_at": "2023-10-01",
-"published": true,
+"title": "Using @evva/abrevva-capacitor Package Tutorial"
+"description": "Step-by-step guide on using the @evva/abrevva-capacitor package for working with electronical EVVA access components."
+"created_at": "2023-10-01"
+"published": true
 "slug": "abrevva-capacitor-git"
 ---
 

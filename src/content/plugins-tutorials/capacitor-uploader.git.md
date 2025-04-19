@@ -1,8 +1,8 @@
 ---
-"title": "Using @capgo/capacitor-uploader Package Tutorial",
-"description": "This tutorial will guide you through the process of using the @capgo/capacitor-uploader package to assist with file uploads in your Capacitor app.",
-"created_at": "2022-01-27",
-"published": true,
+"title": "Using @capgo/capacitor-uploader Package Tutorial"
+"description": "This tutorial will guide you through the process of using the @capgo/capacitor-uploader package to assist with file uploads in your Capacitor app."
+"created_at": "2022-01-27"
+"published": true
 "slug": "capacitor-uploader.git"
 ---
 

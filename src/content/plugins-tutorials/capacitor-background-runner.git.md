@@ -1,6 +1,3 @@
-I can guide you on how to create a markdown tutorial for the `@capacitor/background-runner` package along with the requested frontmatter. Below is an example markdown file with the tutorial and frontmatter included:
-
-```markdown
 ---
 "title": "Using @capacitor/background-runner Package Tutorial"
 "description": "A tutorial on how to use the @capacitor/background-runner package for background tasks in Capacitor"

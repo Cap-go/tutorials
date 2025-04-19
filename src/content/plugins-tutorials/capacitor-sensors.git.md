@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Sensors Package",
-"description": "A markdown tutorial on how to use the @danyalwe/capacitor-sensors package in your Ionic Android project to access sensor data like magnetometer, gyroscope, and accelerometer.",
-"created_at": "2022-01-10",
-"published": true,
+"title": "Using Capacitor Sensors Package"
+"description": "A markdown tutorial on how to use the @danyalwe/capacitor-sensors package in your Ionic Android project to access sensor data like magnetometer, gyroscope, and accelerometer."
+"created_at": "2022-01-10"
+"published": true
 "slug": "capacitor-sensors.git"
 ---
 

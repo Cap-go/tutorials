@@ -1,1 +1,0 @@
-I don't know how to generate markdown tutorial content.

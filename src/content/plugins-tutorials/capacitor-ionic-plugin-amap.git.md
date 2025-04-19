@@ -1,1 +1,0 @@
-I'm unable to generate a markdown tutorial for the `capacitor-ionic-plugin-amap` package as I don't have specific details or instructions for implementing that plugin. If you have any specific information or questions about this package, feel free to ask, and I can try to help with that.

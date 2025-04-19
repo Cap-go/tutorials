@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using capacitor-statusbar-safe-area Package",
-"description": "A comprehensive tutorial on how to utilize the @aashu-dubey/capacitor-statusbar-safe-area package to get status bar height and safe area insets on Android & iOS.",
-"created_at": "2022-03-20",
-"published": true,
+"title": "Using capacitor-statusbar-safe-area Package"
+"description": "A comprehensive tutorial on how to utilize the @aashu-dubey/capacitor-statusbar-safe-area package to get status bar height and safe area insets on Android & iOS."
+"created_at": "2022-03-20"
+"published": true
 "slug": "capacitor-statusbar-safe-area"
 
 ---

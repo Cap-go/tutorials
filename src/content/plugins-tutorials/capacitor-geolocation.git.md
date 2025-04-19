@@ -1,9 +1,10 @@
 ---
-"title": "Using Capacitor Geolocation Package",
-"description": "Learn how to use the Capacitor Geolocation package to add location tracking functionality to your Capacitor app.",
-"created_at": "2023-09-15",
-"published": true,
+"title": "Using Capacitor Geolocation Package"
+"description": "Learn how to use the Capacitor Geolocation package to add location tracking functionality to your Capacitor app."
+"created_at": "2023-09-15"
+"published": true
 "slug": "capacitor-geolocation"
+---
 
 ## Installing the Plugin
 

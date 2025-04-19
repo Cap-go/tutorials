@@ -1,8 +1,8 @@
 ---
-"title": "Using @e-is/capacitor-bluetooth-serial Package",
-"description": "Tutorial on how to use the @e-is/capacitor-bluetooth-serial package for Bluetooth serial communication in Capacitor",
-"created_at": "2022-02-22",
-"published": true,
+"title": "Using @e-is/capacitor-bluetooth-serial Package"
+"description": "Tutorial on how to use the @e-is/capacitor-bluetooth-serial package for Bluetooth serial communication in Capacitor"
+"created_at": "2022-02-22"
+"published": true
 "slug": "capacitor-bluetooth-serial-git"
 ---
 # Using @e-is/capacitor-bluetooth-serial Package

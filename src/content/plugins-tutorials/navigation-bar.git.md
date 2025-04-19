@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Navigation Bar Plugin",
-"description": "Tutorial on how to use @hugotomazi/capacitor-navigation-bar package for Navigation Bar manipulation in Capacitor apps",
-"created_at": "2022-01-02",
-"published": true,
+"title": "Using Capacitor Navigation Bar Plugin"
+"description": "Tutorial on how to use @hugotomazi/capacitor-navigation-bar package for Navigation Bar manipulation in Capacitor apps"
+"created_at": "2022-01-02"
+"published": true
 "slug": "navigation-bar-git"
 ---
 

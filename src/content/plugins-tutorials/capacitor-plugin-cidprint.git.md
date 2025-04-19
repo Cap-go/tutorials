@@ -1,1 +1,0 @@
-I don't have information on a capacitor-cidprint package to generate a markdown tutorial for you.

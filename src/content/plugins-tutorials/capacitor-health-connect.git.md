@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using Capacitor Health Connect Package Tutorial"
 "description": "Guide on how to use the capacitor-health-connect package for health-related app development."

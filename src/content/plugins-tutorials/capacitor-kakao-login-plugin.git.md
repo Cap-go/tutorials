@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor Kakao Login Plugin",
-"description": "A tutorial on implementing Kakao login functionality in Capacitor 3 applications",
-"created_at": "2022-01-28",
-"published": true,
+"title": "Using Capacitor Kakao Login Plugin"
+"description": "A tutorial on implementing Kakao login functionality in Capacitor 3 applications"
+"created_at": "2022-01-28"
+"published": true
 "slug": "capacitor-kakao-login-plugin.git"
 ---
 

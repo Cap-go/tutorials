@@ -1,8 +1,8 @@
 ---
-"title": "Using @mindly/capacitor-android-edge-to-edge-support Package",
-"description": "Learn how to implement edge-to-edge support in your Capacitor Android application with @mindly/capacitor-android-edge-to-edge-support package.",
-"created_at": "2022-01-20",
-"published": true,
+"title": "Using @mindly/capacitor-android-edge-to-edge-support Package"
+"description": "Learn how to implement edge-to-edge support in your Capacitor Android application with @mindly/capacitor-android-edge-to-edge-support package."
+"created_at": "2022-01-20"
+"published": true
 "slug": "capacitor-android-edge-to-edge-support.git"
 ---
 

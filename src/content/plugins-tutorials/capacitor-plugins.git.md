@@ -1,8 +1,6 @@
-```markdown
 ---
 "title": "Using @capawesome/capacitor-app-update Package"
-"description": "Step-by-step guide on integrating```markdown
----
+"description": "Step-by-step guide on integrating---
  and utilizing"title": the @ "Usingcapawesome/cap @capacitoracitor-app-update/preferences Package Tutorial"
  package for your Capac"description":itor project "A."
 " step-by-step guidecreated_at on how": "2022 to use-03 the @-24capac"

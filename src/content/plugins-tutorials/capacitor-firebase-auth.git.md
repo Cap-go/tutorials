@@ -1,9 +1,10 @@
 ---
-"title": "How to Use Capacitor Firebase Auth",
-"description": "Learn how to integrate Capacitor Firebase Auth plugin with Ionic apps for user authentication.",
-"created_at": "2022-04-12",
-"published": true,
+"title": "How to Use Capacitor Firebase Auth"
+"description": "Learn how to integrate Capacitor Firebase Auth plugin with Ionic apps for user authentication."
+"created_at": "2022-04-12"
+"published": true
 "slug": "capacitor-firebase-auth"
+---
 
 ## Introduction
 Capacitor Firebase Auth is an authentication package that allows you to authenticate users in your Ionic applications using Firebase services. This tutorial will guide you through the process of setting up and using Capacitor Firebase Auth with your Capacitor and Ionic projects.

@@ -1,8 +1,8 @@
 ---
-"title": "How to Use @capgo/native-audio Package in Your Capacitor Project",
-"description": "A step-by-step tutorial on integrating and utilizing the @capgo/native-audio package in your Capacitor project to play sounds.",
-"created_at": "2023-10-12",
-"published": true,
+"title": "How to Use @capgo/native-audio Package in Your Capacitor Project"
+"description": "A step-by-step tutorial on integrating and utilizing the @capgo/native-audio package in your Capacitor project to play sounds."
+"created_at": "2023-10-12"
+"published": true
 "slug": "capacitor-native-audio.git"
 ---
 

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @rollershop/capacitor-emarsys-sdk Package",
-"description": "This tutorial will guide you through the process of using the @rollershop/capacitor-emarsys-sdk package to integrate Emarsys SDK with your Capacitor project.",
-"created_at": "2022-05-04",
-"published": true,
+"title": "Using @rollershop/capacitor-emarsys-sdk Package"
+"description": "This tutorial will guide you through the process of using the @rollershop/capacitor-emarsys-sdk package to integrate Emarsys SDK with your Capacitor project."
+"created_at": "2022-05-04"
+"published": true
 "slug": "capacitor-emarsys-sdk.git"
 ---
 

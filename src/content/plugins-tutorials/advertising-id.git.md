@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/advertising-id Package",
-"description": "This blog tutorial provides a step-by-step guide on how to use the @capacitor-community/advertising-id package to retrieve the Advertising ID in Capacitor projects. It covers installation, configuration for Android and iOS, and implementation in an Ionic app.",
-"created_at": "2022-02-15",
-"published": true,
+"title": "Using @capacitor-community/advertising-id Package"
+"description": "This blog tutorial provides a step-by-step guide on how to use the @capacitor-community/advertising-id package to retrieve the Advertising ID in Capacitor projects. It covers installation, configuration for Android and iOS, and implementation in an Ionic app."
+"created_at": "2022-02-15"
+"published": true
 "slug": "advertising-id.git"
 ---
 

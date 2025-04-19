@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Volume Buttons Plugin in Capacitor",
-"description": "Learn how to integrate and use the @capacitor-community/volume-buttons package in your Capacitor projects.",
-"created_at": "August 4, 2022",
-"published": true,
+"title": "Using Volume Buttons Plugin in Capacitor"
+"description": "Learn how to integrate and use the @capacitor-community/volume-buttons package in your Capacitor projects."
+"created_at": "August 4, 2022"
+"published": true
 "slug": "volume-buttons.git"
 ---
 

@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using Capacitor Custom Google Maps Package",
-"description": "A detailed tutorial on how to integrate the Capacitor Custom Google Maps package into your application.",
-"created_at": "2022-01-28",
-"published": true,
+"title": "Using Capacitor Custom Google Maps Package"
+"description": "A detailed tutorial on how to integrate the Capacitor Custom Google Maps package into your application."
+"created_at": "2022-01-28"
+"published": true
 "slug": "capacitor-custom-google-maps.git"
 ---
 

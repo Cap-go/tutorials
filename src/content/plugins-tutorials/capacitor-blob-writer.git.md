@@ -1,8 +1,8 @@
 ---
-"title": "Using capacitor-blob-writer Package",
-"description": "This tutorial demonstrates how to utilize the capacitor-blob-writer package for writing Blobs to the filesystem in a more efficient manner.",
-"created_at": "2022-03-10",
-"published": true,
+"title": "Using capacitor-blob-writer Package"
+"description": "This tutorial demonstrates how to utilize the capacitor-blob-writer package for writing Blobs to the filesystem in a more efficient manner."
+"created_at": "2022-03-10"
+"published": true
 "slug": "capacitor-blob-writer.git"
 ---
 

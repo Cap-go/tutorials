@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using the OctoPulse Capacitor Plugin for Ionic",
-"description": "Learn how to utilize the capacitor-plugin-octopulse package to enhance your Ionic applications with GitHub functionalities.",
-"created_at": "September 24, 2021",
-"published": true,
+"title": "Using the OctoPulse Capacitor Plugin for Ionic"
+"description": "Learn how to utilize the capacitor-plugin-octopulse package to enhance your Ionic applications with GitHub functionalities."
+"created_at": "September 24, 2021"
+"published": true
 "slug": "octopulse-ionic-plugin.git"
 ---
 

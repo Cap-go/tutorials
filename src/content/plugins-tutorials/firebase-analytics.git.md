@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/firebase-analytics Package Tutorial",
-"description": "This markdown tutorial will guide you on how to utilize the @capacitor-community/firebase-analytics package in your Capacitor project.",
-"created_at": "2021-09-28",
-"published": true,
+"title": "Using @capacitor-community/firebase-analytics Package Tutorial"
+"description": "This markdown tutorial will guide you on how to utilize the @capacitor-community/firebase-analytics package in your Capacitor project."
+"created_at": "2021-09-28"
+"published": true
 "slug": "firebase-analytics.git"
 ---
 

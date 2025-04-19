@@ -1,1 +1,0 @@
-I don't have information about the "capacitor-face-id" package or its usage tutorial in markdown format.

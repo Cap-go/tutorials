@@ -1,8 +1,8 @@
 ---
-"title": "Tutorial on Using @capgo/native-purchases Package",
-"description": "A markdown tutorial on how to implement in-app purchases and subscriptions in a Capacitor app using the @capgo/native-purchases package.",
-"created_at": "2022-01-31",
-"published": true,
+"title": "Tutorial on Using @capgo/native-purchases Package"
+"description": "A markdown tutorial on how to implement in-app purchases and subscriptions in a Capacitor app using the @capgo/native-purchases package."
+"created_at": "2022-01-31"
+"published": true
 "slug": "native-purchases.git"
 ---
 

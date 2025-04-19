@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use @aparajita/capacitor-logger Package",
-"description": "A step-by-step guide on using the @aparajita/capacitor-logger package in your Capacitor apps.",
-"created_at": "2022-01-15",
-"published": true,
+"title": "How to Use @aparajita/capacitor-logger Package"
+"description": "A step-by-step guide on using the @aparajita/capacitor-logger package in your Capacitor apps."
+"created_at": "2022-01-15"
+"published": true
 "slug": "capacitor-logger.git"
 ---
 

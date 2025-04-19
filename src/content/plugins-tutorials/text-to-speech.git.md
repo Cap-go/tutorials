@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @capacitor-community/text-to-speech Package Tutorial"
 "description": "A tutorial on integrating the @capacitor-community/text-to-speech package for synthesizing speech from text in Capacitor."

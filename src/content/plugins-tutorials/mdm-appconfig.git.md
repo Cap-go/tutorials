@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/mdm-appconfig Package",
-"description": "This tutorial will guide you on how to use the @capacitor-community/mdm-appconfig package to read app configurations written by a MDM, such as VMWare Workspace One, in your Capacitor project.",
-"created_at": "2023-10-06",
-"published": true,
+"title": "Using @capacitor-community/mdm-appconfig Package"
+"description": "This tutorial will guide you on how to use the @capacitor-community/mdm-appconfig package to read app configurations written by a MDM, such as VMWare Workspace One, in your Capacitor project."
+"created_at": "2023-10-06"
+"published": true
 "slug": "mdm-appconfig-git"
 ---
 

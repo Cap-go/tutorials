@@ -1,9 +1,10 @@
 ---
-"title": "Using @capacitor-community/apple-sign-in Package Tutorial",
-"description": "This tutorial will guide you on how to use the @capacitor-community/apple-sign-in package for implementing Sign in With Apple feature in your Capacitor application. It includes step-by-step instructions and code examples for installation and usage.",
-"created_at": "2022-01-07",
-"published": true,
+"title": "Using @capacitor-community/apple-sign-in Package Tutorial"
+"description": "This tutorial will guide you on how to use the @capacitor-community/apple-sign-in package for implementing Sign in With Apple feature in your Capacitor application. It includes step-by-step instructions and code examples for installation and usage."
+"created_at": "2022-01-07"
+"published": true
 "slug": "apple-sign-in"
+---
 
 # Using @capacitor-community/apple-sign-in Package Tutorial
 

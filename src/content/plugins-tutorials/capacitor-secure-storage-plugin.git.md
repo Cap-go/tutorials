@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using Capacitor Secure Storage Plugin Tutorial"
 "description": "A comprehensive guide on how to use the capacitor-secure-storage-plugin package to securely store data in Capacitor apps."

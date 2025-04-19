@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "@hotend/capacitor-file-picker Tutorial"
 "description": "This markdown tutorial provides a detailed guide on how to use the @hotend/capacitor-file-picker package in your Capacitor project, including setup instructions and usage examples."

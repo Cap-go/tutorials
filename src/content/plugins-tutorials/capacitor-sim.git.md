@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Tutorial on Using @jonz94/capacitor-sim Package"
 "description": "Learn how to use the @jonz94/capacitor-sim package to simulate Capacitor plugins in your app."

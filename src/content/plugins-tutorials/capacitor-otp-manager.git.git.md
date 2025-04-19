@@ -1,1 +1,0 @@
-I'm sorry, I cannot provide a markdown tutorial for the `@rolster/capacitor-otp-manager` package as it is not the package specified in the provided context. If you have any other questions or need assistance with a different package, feel free to ask!

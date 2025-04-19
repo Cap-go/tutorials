@@ -1,9 +1,10 @@
 ---
-"title": "Using Capacitor Native Google One Tap Signin Package Tutorial",
-"description": "Step-by-step guide on using the capacitor-native-google-one-tap-signin package to implement Google Sign-In in your Ionic Capacitor app.",
-"created_at": "2023-10-04",
-"published": true,
+"title": "Using Capacitor Native Google One Tap Signin Package Tutorial"
+"description": "Step-by-step guide on using the capacitor-native-google-one-tap-signin package to implement Google Sign-In in your Ionic Capacitor app."
+"created_at": "2023-10-04"
+"published": true
 "slug": "capacitor-native-google-one-tap-signin"
+---
 
 ## How to Use Capacitor Native Google One Tap Signin Plugin
 

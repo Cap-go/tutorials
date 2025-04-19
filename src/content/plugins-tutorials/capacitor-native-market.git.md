@@ -1,8 +1,8 @@
 ---
-"title": "Using @capgo/native-market Package",
-"description": "A markdown tutorial on how to use the @capgo/native-market package, providing step-by-step instructions and code snippets for integrating and utilizing its features in a Capacitor project.",
-"created_at": "2022-01-23",
-"published": true,
+"title": "Using @capgo/native-market Package"
+"description": "A markdown tutorial on how to use the @capgo/native-market package, providing step-by-step instructions and code snippets for integrating and utilizing its features in a Capacitor project."
+"created_at": "2022-01-23"
+"published": true
 "slug": "capacitor-native-market-git"
 ---
 
