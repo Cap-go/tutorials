@@ -19,6 +19,7 @@ async function loadVectorStore() {
 }
 
 let createTuts = {}
+let processedCount = 0
 
 async function chat(input, pluginPath) {
   const contentDir = join(process.cwd(), 'src', 'content')
@@ -60,6 +61,21 @@ async function chat(input, pluginPath) {
     const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever(), prompt)
     await chain.call({ query: input })
     createTuts[pluginPath] = '✅'
+    processedCount++
+    
+    if (processedCount % 100 === 0) {
+      console.log('Committing changes after processing 100 items...')
+      const { execSync } = require('child_process')
+      execSync('git config --global user.name "Martin DONADIEU"')
+      execSync('git config --global user.email "martindonadieu@gmail.com"')
+      execSync('git lfs track "loadedVectorStore/*.json"')
+      execSync('git lfs track "loadedVectorStore/*.index"')
+      execSync('git add .gitattributes')
+      execSync('git add loadedVectorStore/*.json loadedVectorStore/*.index')
+      execSync('git add -A')
+      execSync('git commit -m "Commit generated files"')
+      execSync('git push origin main -f')
+    }
   } catch (error) {
     createTuts[pluginPath] = '❌'
     if (currentContent) {
