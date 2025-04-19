@@ -1,0 +1,2 @@
+loadedVectorStore/*.json filter=lfs diff=lfs merge=lfs -text
+loadedVectorStore/*.index filter=lfs diff=lfs merge=lfs -text
