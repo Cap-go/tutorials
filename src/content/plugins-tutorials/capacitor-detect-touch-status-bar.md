@@ -1,1 +1,0 @@
-I don't have the specific tutorial on using `@nemorize/capacitor-detect-touch-status-bar` package at the moment, but if you have any details or questions related to the package, feel free to ask!

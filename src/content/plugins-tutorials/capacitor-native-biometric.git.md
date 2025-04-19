@@ -1,1 +1,0 @@
-I don't have the specific knowledge about using the `@capgo/capacitor-native-biometric` package to generate a markdown tutorial.

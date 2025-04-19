@@ -1,1 +1,0 @@
-I don't have information about the `appsflyer-capacitor-plugin` package to provide you with a markdown tutorial for it or create a frontmatter based on it.

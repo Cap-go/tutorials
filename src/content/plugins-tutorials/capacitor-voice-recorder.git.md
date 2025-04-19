@@ -1,1 +1,0 @@
-I don't have the specific details of using the `capacitor-voice-recorder` package at the moment, would you like me to help with something else?

@@ -1,1 +1,0 @@
-I'm sorry, but I don't have access to the "@roelandtsw/cookie-master" package or its documentation. Please refer to the official documentation or tutorials provided by the package's author for guidance on how to use it.

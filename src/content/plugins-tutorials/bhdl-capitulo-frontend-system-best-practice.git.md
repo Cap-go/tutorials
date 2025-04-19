@@ -1,1 +1,0 @@
-I am not familiar with the `bhd-capacitor-nfc-tag` package.

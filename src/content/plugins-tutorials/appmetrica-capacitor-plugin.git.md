@@ -1,1 +1,0 @@
-I'm sorry, but I cannot fulfill your request as there is no information or details provided for using the "@soroka282/appmetrica-capacitor-plugin" package. If you provide me with the necessary details or documentation for the package, I can help you generate a markdown tutorial.

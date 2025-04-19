@@ -1,1 +1,0 @@
-I don't know how to generate a markdown tutorial of using the `capacitor-presentation-api` package with the specific requirements for the frontmatter.

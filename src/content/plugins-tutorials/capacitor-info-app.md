@@ -1,1 +1,0 @@
-I'm unable to generate a markdown tutorial with frontmatter values as requested because the **capacitor-info-device** package does not exist.

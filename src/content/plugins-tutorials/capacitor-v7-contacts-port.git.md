@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide a tutorial for using the `@skektec/capacitor-contacts` package as it was not mentioned in the context provided. If you have any other questions or need assistance with a different topic, feel free to ask!

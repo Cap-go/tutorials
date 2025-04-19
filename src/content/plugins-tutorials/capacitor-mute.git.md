@@ -1,1 +1,0 @@
-I'm not sure about the specific details or usage of the `@capgo/capacitor-mute` package. Would you like me to help you find general information on creating and publishing a Capacitor plugin instead?

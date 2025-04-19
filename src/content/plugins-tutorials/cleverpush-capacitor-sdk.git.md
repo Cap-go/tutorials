@@ -1,1 +1,0 @@
-I don't have information on the exact frontmatter structure you are requesting for the markdown tutorial. This is beyond the context provided to me. It's best to double-check specific requirements for frontmatter in the markdown file within your project's documentation or consult the CleverPush Capacitor SDK documentation for a standard structure they recommend.

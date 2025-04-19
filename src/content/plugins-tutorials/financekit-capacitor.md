@@ -1,1 +1,0 @@
-I don't have information specifically about the `@johnpc/financekit-capacitor` package. You may need to refer to the documentation of that package for the tutorial.

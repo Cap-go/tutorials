@@ -1,1 +1,0 @@
-I don't have information on how to use the `capacitor-ssl-pinning` package and the specifics of its implementation. For a markdown tutorial on using the package, you may refer to the official documentation or community resources related to the `capacitor-ssl-pinning` package.

@@ -1,1 +1,0 @@
-I don't have information about the `capacitor-pdf-helper` package.

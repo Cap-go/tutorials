@@ -1,1 +1,0 @@
-I don't know the specifics of how to use the capacitor-imessage package or the exact frontmatter syntax for markdown files.

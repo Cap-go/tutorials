@@ -1,1 +1,0 @@
-I'm sorry, but I do not have information about the `@gws20/capacitor-developer-options` package.

@@ -1,1 +1,0 @@
-I don't have specific information about the capacitor-jitsi-meet package. You might want to refer to the official documentation for the package or check any online tutorials that cover its usage.

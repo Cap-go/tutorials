@@ -1,1 +1,0 @@
-I don't have information about the specific package `capacitor-incoming-call-kit`. You may want to refer to the package's documentation or README file for instructions on how to use it.

@@ -1,1 +1,0 @@
-I don't have information specific to the `capacitor-play-audio-from-url` package or the frontmatter you're mentioning.

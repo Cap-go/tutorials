@@ -1,1 +1,0 @@
-I don't have enough information about the cap-pulse package or its usage to generate a markdown tutorial.

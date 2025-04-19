@@ -1,1 +1,0 @@
-I can't provide the markdown tutorial for the `@docutain/capacitor-plugin-docutain-sdk` package as it's not the package mentioned in the context provided.

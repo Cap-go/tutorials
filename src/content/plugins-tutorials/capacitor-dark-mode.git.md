@@ -1,1 +1,0 @@
-I'm unable to generate the exact markdown tutorial for using @aparajita/capacitor-dark-mode package or update the markdown tutorial because the plugin documentation is not available, and I can't make up the instructions on how to use an external plugin. If you have specific questions or need help with anything else, feel free to ask!

@@ -1,1 +1,0 @@
-I'm sorry, but I cannot generate the markdown tutorial of using the mentioned `@aparajita/capacitor-ios-silent-notifications` package with frontmatter for the blog.

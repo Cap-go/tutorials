@@ -1,1 +1,0 @@
-I don't know the specifics of using the package `capacitor-espersetting` or its frontmatter structure.

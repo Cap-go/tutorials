@@ -1,1 +1,0 @@
-I don't have information on the "jack-detection" package or the specific tutorial you are referring to.
