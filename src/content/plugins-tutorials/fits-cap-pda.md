@@ -1,1 +1,0 @@
-I apologize for the confusion, but I don't have the information about the "fits-cap-pda" package or its usage. Therefore, I am unable to generate a markdown tutorial for it.

@@ -1,1 +1,0 @@
-I don't have the specific knowledge on how to use the `capacitor-jd-apple-pay` package. I recommend referring to the official documentation of the package for a detailed tutorial. If you have any other questions or need further assistance, feel free to ask.

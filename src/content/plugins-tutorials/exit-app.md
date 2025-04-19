@@ -1,1 +1,0 @@
-I'm not familiar with the `capacitor-exit-app` package.

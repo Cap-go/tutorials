@@ -1,1 +1,0 @@
-I don't have information on the `@harshallcode/tamper-protection` package.

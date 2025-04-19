@@ -1,1 +1,0 @@
-I'm not familiar with the `capacitor-chunk-upload` package.

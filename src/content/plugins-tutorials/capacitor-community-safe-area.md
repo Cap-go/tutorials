@@ -1,1 +1,0 @@
-I don't know how to generate a markdown tutorial for the `@hiloenergie/capacitor-plugin-safe-area` package with frontmatter in the way you described.

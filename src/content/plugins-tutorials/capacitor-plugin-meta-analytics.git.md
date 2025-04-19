@@ -1,1 +1,0 @@
-I'm sorry, but I don't have the specific information on using the `@silvermaster-gt/capacitor-plugin-meta-analytics` package to generate a markdown tutorial. You can check the official documentation or resources related to that package for more detailed instructions. If you have any other questions or need assistance with something else, feel free to ask!

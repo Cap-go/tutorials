@@ -1,1 +1,0 @@
-I don't have information on the specific tutorial for using the `capacitor-linking` package. If you need assistance with Capacitor or any other related topic, feel free to ask!

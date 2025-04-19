@@ -1,1 +1,0 @@
-I don't have information about the `barkoder-capacitor` package in the provided context.

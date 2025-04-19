@@ -1,1 +1,0 @@
-I don't have information about any `@olo/pay-capacitor` package or plugin involving releases. It seems like there might be a misunderstanding or an incorrect reference. It's always best to refer to the official documentation or source of the package for accurate details. If you have any other questions or need assistance with something else, feel free to ask!

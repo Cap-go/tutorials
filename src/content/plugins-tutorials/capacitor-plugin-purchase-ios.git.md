@@ -1,1 +1,0 @@
-I don't have the specific details for the `capacitor-plugin-purchase-ios` package to generate a markdown tutorial. You may need to refer to the documentation or resources specific to that package for the tutorial.

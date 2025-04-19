@@ -1,1 +1,0 @@
-I'm unable to generate a markdown tutorial for the `capacitor-widgetsbridge-plugin` package as there is no specific information or documentation provided for that package in the context provided.

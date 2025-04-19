@@ -1,1 +1,0 @@
-I'm not familiar with the `@mozartec/capacitor-microphone` package and its usage to provide accurate guidance for a tutorial.

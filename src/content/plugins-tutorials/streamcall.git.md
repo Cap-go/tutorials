@@ -1,1 +1,0 @@
-I'm unable to provide a markdown tutorial for the `@capgo/capacitor-stream-call` package as it is not a real package. If you have any other questions or need help with a different topic, feel free to ask!

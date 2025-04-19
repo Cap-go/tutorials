@@ -1,1 +1,0 @@
-I'm sorry, I don't have information on the `@tqman/capacitor-system-colors` package.

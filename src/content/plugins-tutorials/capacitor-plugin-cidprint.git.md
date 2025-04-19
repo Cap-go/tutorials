@@ -1,1 +1,0 @@
-I'm unable to find information on a package called `capacitor-cidprint` or any related tutorials in the given context. If you need further assistance or have a different question, feel free to ask!

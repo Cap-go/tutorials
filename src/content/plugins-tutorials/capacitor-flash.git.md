@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information regarding a package named `@capgo/capacitor-flash`.

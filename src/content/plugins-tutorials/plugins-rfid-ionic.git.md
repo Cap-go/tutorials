@@ -1,1 +1,0 @@
-I’m unable to generate a markdown tutorial for the capacitor-plugin-rfid package at the moment.

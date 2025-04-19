@@ -1,1 +1,0 @@
-I don't have information on the specific package "@pangiam/capacitor-face-detection" to generate a tutorial for it.

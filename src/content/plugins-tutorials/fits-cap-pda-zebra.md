@@ -1,1 +1,0 @@
-I don't know how to use the `fits-cap-pda-zebra` package.

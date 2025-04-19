@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on the `therminal-print` package. If you have any other questions or need help with different topics, feel free to ask!

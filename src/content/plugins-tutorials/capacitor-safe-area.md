@@ -1,1 +1,0 @@
-I'm sorry, but I can't provide a tutorial on using the `@untiny/capacitor-safe-area` package as it is not included in the given context. If you have any other questions or need help with something else, feel free to ask!

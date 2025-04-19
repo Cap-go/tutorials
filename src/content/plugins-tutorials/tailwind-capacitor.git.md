@@ -1,1 +1,0 @@
-I don't know how to generate a markdown tutorial for the `tailwind-capacitor` package with the specified frontmatter values.

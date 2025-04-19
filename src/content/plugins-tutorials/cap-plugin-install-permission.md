@@ -1,1 +1,0 @@
-I do not have information on the package "@zlyfer/cap-plugin-install-permission" to create a markdown tutorial.

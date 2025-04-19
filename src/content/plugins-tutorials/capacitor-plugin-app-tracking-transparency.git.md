@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on the `capacitor-plugin-app-tracking-transparency` package required to generate the markdown tutorial as described in your question.

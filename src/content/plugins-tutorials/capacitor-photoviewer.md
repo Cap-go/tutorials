@@ -1,1 +1,0 @@
-I'm unable to provide the exact markdown tutorial you are asking for since I do not have information on the @matfantinel/capacitor-photoviewer package. If you provide more details or specific instructions about this package, I can help you create the tutorial with the frontmatter as requested.

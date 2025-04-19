@@ -1,1 +1,0 @@
-I don't have information on the "@rolster/capacitor-otp-manager" package to generate a tutorial markdown.

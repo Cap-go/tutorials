@@ -1,1 +1,0 @@
-I don't have information on the "capacitor-speaker-phone-toggle" package or its usage in this context.

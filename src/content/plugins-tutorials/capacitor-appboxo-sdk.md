@@ -1,1 +1,0 @@
-I'm sorry, but I do not have information on the specific `@appboxo/capacitor-boxo-sdk` package or the detailed steps to generate a markdown tutorial for it. I recommend checking the documentation of the package for instructions on how to use it and then creating a markdown tutorial based on that information. If you need any other type of help, feel free to ask!

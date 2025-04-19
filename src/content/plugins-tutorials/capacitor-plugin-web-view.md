@@ -1,1 +1,0 @@
-I don't have information about the "@snewbie/capacitor-web-view" package that you mentioned.

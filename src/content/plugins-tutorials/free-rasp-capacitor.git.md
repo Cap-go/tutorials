@@ -1,1 +1,0 @@
-I don't have specific information about the `capacitor-freerasp` package, frontmatter values, or the tutorial content you're asking about. You might need to refer to the documentation of the `capacitor-freerasp` package or reach out to its maintainers for more specific guidance.

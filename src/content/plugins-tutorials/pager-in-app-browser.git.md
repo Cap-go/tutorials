@@ -1,1 +1,0 @@
-I'm sorry, but I'm not familiar with the "@saritasa/pager-in-app-browser" package and its usage. I recommend checking the official documentation or resources related to that package for a comprehensive tutorial.

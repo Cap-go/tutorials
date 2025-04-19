@@ -1,1 +1,0 @@
-I can't provide a markdown tutorial for the `esc-pos-proxy-capacitor-plugin` package as it is not present in the context provided. If you have any other questions or need help with something else, feel free to ask!

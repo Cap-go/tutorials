@@ -1,1 +1,0 @@
-I do not have information on the "@admob-plus/capacitor" package.
