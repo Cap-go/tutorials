@@ -1,5 +1,3 @@
-I'm unable to provide a tutorial specific to using the `@netacoltd/capacitor-system-stats` package, but I can guide you on adding the frontmatter to a markdown file:
-
 ---
 "title": "Using the @netacoltd/capacitor-system-stats Package"
 "description": "This tutorial will guide you on how to utilize the @netacoltd/capacitor-system-stats package in your Capacitor app."

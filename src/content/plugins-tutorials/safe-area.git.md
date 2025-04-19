@@ -1,1 +1,0 @@
-I'm unable to generate frontmatter with double quotes and other requirements that you mentioned.

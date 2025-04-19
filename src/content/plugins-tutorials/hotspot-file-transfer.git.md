@@ -1,1 +1,0 @@
-I'm unable to provide a markdown tutorial with the specific frontmatter values you've requested for the `@idpass/hotspot-file-transfer-capacitor` package.

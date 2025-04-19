@@ -1,1 +1,0 @@
-I'm sorry, but I couldn't find any information regarding an `@olo/pay-capacitor` package or plugin in the provided context. Therefore, I don't have the necessary details to create a markdown tutorial and frontmatter for it. If you have any other questions or need help with different topics, feel free to ask!

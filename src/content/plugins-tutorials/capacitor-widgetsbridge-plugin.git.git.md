@@ -1,1 +1,0 @@
-I'm unable to provide a markdown tutorial for the `capacitor-widgetsbridge-plugin` package at the moment because the content available is related to the `learn-helloworld-capacitor` package. If you have any questions about the `learn-helloworld-capacitor` package, feel free to ask!

@@ -1,1 +1,0 @@
-I don't have the specific tutorial for using the `@newrelic/newrelic-capacitor-plugin` package at the moment.

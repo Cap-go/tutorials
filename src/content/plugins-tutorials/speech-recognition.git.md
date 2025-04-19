@@ -1,1 +1,0 @@
-I don't have information on the `@capacitor-community/speech-recognition` package, so I can't provide a markdown tutorial for it.
