@@ -7,7 +7,7 @@ import { PromptTemplate } from '@langchain/core/prompts'
 import { RetrievalQAChain } from 'langchain/chains'
 import { FaissStore } from '@langchain/community/vectorstores/faiss'
 import { OpenAIEmbeddings, ChatOpenAI } from '@langchain/openai'
-import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
 import { OutputFixingParser } from 'langchain/output_parsers'
 
@@ -21,7 +21,9 @@ async function loadVectorStore() {
 let createTuts = {}
 
 async function chat(input, pluginPath) {
-  const outputFile = join(process.cwd(), 'src', 'content', 'plugins-tutorials', `${pluginPath}.md`)
+  const tutorialsDir = join(process.cwd(), 'src', 'content', 'plugins-tutorials')
+  if (!existsSync(tutorialsDir)) mkdirSync(tutorialsDir)
+  const outputFile = join(tutorialsDir, `${pluginPath}.md`)
   const currentContent = existsSync(outputFile) ? readFileSync(outputFile, 'utf8') : null
   // if file exists
   if (currentContent && currentContent.length > 10) {
