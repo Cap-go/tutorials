@@ -1,0 +1,1 @@
+I'm not able to provide a tutorial for the `@capacitor/inappbrowser` package at the moment. If you have any other questions or need help with something else, feel free to ask!

@@ -1,0 +1,1 @@
+I don't have specific information about the `@mozartec/capacitor-microphone` package or its API to generate a markdown tutorial. It's recommended to refer to the official documentation of the package for detailed instructions on how to use it.
