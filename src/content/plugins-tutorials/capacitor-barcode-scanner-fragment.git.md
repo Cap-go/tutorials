@@ -52,7 +52,7 @@ npx cap open android
 
 In the build.gradle file of your Android project, add the following dependency repository under the `allprojects > repositories` section:
 
-```gradle
+```java
 maven { url 'https://jitpack.io' }
 ```
 

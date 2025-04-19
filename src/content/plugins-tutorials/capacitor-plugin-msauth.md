@@ -96,7 +96,7 @@ Replace `<package name>` with the package name from your app registration and `<
 
 2. Add the following code to the `build.gradle` file in the `android/` folder:
 
-```gradle
+```java
 allprojects {
     repositories {
         maven {

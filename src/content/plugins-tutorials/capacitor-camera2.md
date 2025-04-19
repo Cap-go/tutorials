@@ -44,7 +44,7 @@ For Android, you might need to enable data binding and add repositories.
 
 1. Enable data binding in your project's gradle file.
 
-```gradle
+```java
 android {
     ...
     buildFeatures {
@@ -55,7 +55,7 @@ android {
 
 2. Add the following repositories to your app's top-level gradle file:
 
-```gradle
+```java
 allprojects {
     repositories {
         maven { url "https://nexus.docline.com/repository/maven-public/" }

@@ -25,7 +25,7 @@ npx cap sync
 
 Add the Kakao repository to the list of repositories in the root `build.gradle` file:
 
-```gradle
+```java
 
 allprojects {
     repositories {

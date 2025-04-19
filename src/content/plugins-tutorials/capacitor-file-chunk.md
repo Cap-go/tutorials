@@ -52,7 +52,7 @@ To configure the capacitor-file-chunk package for Android, you need to make a fe
 
 2. In your project's `build.gradle` file, add the capacitor-file-chunk library to the dependencies section:
 
-```gradle
+```java
 dependencies {
     ...
     implementation 'com.github.joshjdevl.libsodiumjni:libsodium-jni-aar:2.0.1'

@@ -44,7 +44,7 @@ To set up the Emarsys SDK on Android, follow these steps:
 
 1. Open your project's `build.gradle` file.
 2. Add the following dependency:
-```gradle
+```java
 implementation 'com.salurusrinivasarao:emarsys-sdk-wrapper:1.0.0'
 ```
 3. Sync your project to add the dependency to your project.

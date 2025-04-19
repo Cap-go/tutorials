@@ -140,14 +140,14 @@ Add this plugin as a peer dependency in your plugin’s `package.json`.
 
 1. Add a reference to this plugin in your plugin’s `settings.gradle (android)`.
 
-```gradle
+```java
 include ':aparajita-capacitor-logger'
 project(':aparajita-capacitor-logger').projectDir = new File('../node_modules/@aparajita/capacitor-logger')
 ```
 
 2. Add a reference to this plugin in your plugin’s `build.gradle (android)`.
 
-```gradle
+```java
 dependencies {
   implementation ':aparajita-capacitor-logger'
 }

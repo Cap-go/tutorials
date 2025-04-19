@@ -17,7 +17,7 @@ To run this sample, you'll need:
 
 From Terminal:
 
-```terminal
+```bash
 npm install adal-azure-ios-plugin --save
 git clone https://github.com/bhandaribhumin/azure-capacitor-ms-identity-mobile-apple-swift-objc
 ```

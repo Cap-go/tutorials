@@ -40,7 +40,7 @@ MAPBOX_DOWNLOADS_TOKEN=YOUR_MAPBOX_DOWNLOADS_TOKEN
 
 - 在工程的 **build.gradle** 文件中增加maven仓库，参考如下（主要是*maven*部分的内容）
 
-```gradle
+```java
 allprojects {
     repositories {
         google()

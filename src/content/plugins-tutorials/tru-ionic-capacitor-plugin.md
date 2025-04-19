@@ -22,7 +22,7 @@ ionic cap sync
 
 Next, you need to update the Android configuration. Open the `android/build.gradle` file and modify the `allprojects.repositories` section as follows:
 
-```gradle
+```java
 allprojects {
     repositories {
         google()
@@ -36,7 +36,7 @@ allprojects {
 
 Then, open the `android/app/build.gradle` file and update the dependencies section:
 
-```gradle
+```java
 dependencies {
     implementation "com.squareup.okhttp3:okhttp:4.9.0"
     implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2"

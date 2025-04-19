@@ -25,7 +25,7 @@ npx cap sync
 
 To ensure the Android lib is downloadable when building the app, you can add the following to the repositories section of your project's build.gradle file:
 
-```gradle
+```java
 repositories {
   google()
   mavenCentral()

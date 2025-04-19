@@ -12,7 +12,7 @@ For AppTrackingTransparency, be sure to update your project `.plist` file and ad
 On Android:
 You will need to add [Google's Install Referrer Library](https://developer.android.com/google/play/installreferrer/library.html) to your gradle dependencies. If you haven’t already installed the [Google Play Services](https://developers.google.com/android/guides/setup) you also need to add it
 
-```gradle
+```java
 dependencies {
   classpath("com.android.installreferrer:installreferrer:1.1.2")
   classpath("com.google.android.gms:play-services-analytics:17.0.0")

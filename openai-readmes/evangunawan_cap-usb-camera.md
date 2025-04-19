@@ -30,7 +30,7 @@ usually on `/android/build.gradle` path if you are developing ionic-capacitor pr
 
 Add new maven repository line to your `allprojects` -> `repositories` body.
 
-```gradle
+```java
 allprojects {
   repositories {
       google()

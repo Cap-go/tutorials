@@ -57,7 +57,7 @@ SharingOptions
 
 Decalre AndroidX Core Library dependency in your apps build.gradle if not already declared:
 
-```gradle
+```java
 dependencies {
   implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
 }
@@ -65,7 +65,7 @@ dependencies {
 
 or
 
-```gradle
+```java
 dependencies {
   implementation "androidx.core:core:$core_version"
 }

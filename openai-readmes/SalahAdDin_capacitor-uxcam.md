@@ -38,7 +38,7 @@ On Android:
 
 - Add the `UXCam` _maven_ repository to your projects build's _graddle_ script:
 
-  ```gradle
+  ```java
   maven {
   	url 'https://sdk.uxcam.com/android/'
   }

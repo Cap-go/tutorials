@@ -37,7 +37,7 @@ npx cap sync
 
 5. For Android projects, open the Android project in Android Studio. In the `build.gradle` file, add the following repository under the `allprojects > repositories` section:
 
-```gradle
+```java
 maven { url 'https://jitpack.io' }
 ```
 

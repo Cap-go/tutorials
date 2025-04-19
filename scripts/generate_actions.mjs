@@ -3,16 +3,16 @@ import { exit } from 'process'
 import { spawnSync } from 'child_process'
 import { writeFileSync, existsSync, mkdirSync } from 'fs'
 import search from 'libnpmsearch'
+import { actions as existingActions } from './action.mjs'
 
 const searchKeywords = ['plugin', 'capacitor']
-const PAGE_SIZE = 100 // npm search API page size
+const PAGE_SIZE = 100
 const MAX_RESULTS = 1000
 
 async function fetchPackages() {
   let count = 0
   let totalLimit = MAX_RESULTS
   try {
-    // Parse command-line arguments for start and end limits
     if (!isNaN(parseInt(process.argv[2]))) totalLimit = Math.min(parseInt(process.argv[2]), MAX_RESULTS)
   } catch (e) {
     totalLimit = MAX_RESULTS
@@ -25,14 +25,14 @@ async function fetchPackages() {
         limit: PAGE_SIZE,
         from: page * PAGE_SIZE,
       })
-      // No more results
       if (!packageData.length) break
       const packagesWithKeywords = packageData.filter((pkg) => {
         const packageKeywords = pkg.keywords || []
         return searchKeywords.every((keyword) => packageKeywords.includes(keyword))
       })
+      const newPackages = packagesWithKeywords.filter((pkg) => !existingActions.some((existing) => existing.name === pkg.name))
       resultArray.push(
-        ...packagesWithKeywords.map((pkg) => ({
+        ...newPackages.map((pkg) => ({
           name: pkg.name,
           href: pkg.links?.repository || '',
           title: pkg.name.split('/').pop(),
@@ -40,20 +40,23 @@ async function fetchPackages() {
           author: pkg.maintainers?.[0]?.username || '',
         })),
       )
-      count += packagesWithKeywords.length
+      count += newPackages.length
       if (resultArray.length >= totalLimit) {
-        resultArray.length = totalLimit // Trim to limit
+        resultArray.length = totalLimit
         break
       }
     }
-    console.table({ 'Total Packages': count })
+    const combinedActions = [...existingActions, ...resultArray]
+    console.table({
+      'Existing Packages': existingActions.length,
+      'New Packages': resultArray.length,
+      'Total Packages': combinedActions.length,
+    })
     console.log(`Writing to scripts/action.mjs...`)
-    if (!existsSync(join(process.cwd(), 'scripts', 'action.mjs'))) {
-      mkdirSync(join(process.cwd(), 'scripts'))
-    }
-    writeFileSync(join(process.cwd(), 'scripts', 'action.mjs'), `export const actions = [${resultArray.map((i) => JSON.stringify(i))}]`)
+    if (!existsSync(join(process.cwd(), 'scripts'))) mkdirSync(join(process.cwd(), 'scripts'))
+    writeFileSync(join(process.cwd(), 'scripts', 'action.mjs'), `export const actions = [${combinedActions.map((i) => JSON.stringify(i))}]`)
     console.log(`Writing to src/config/plugins.ts...`)
-    if (!existsSync(join(process.cwd(), 'src', 'config', 'plugins.ts'))) {
+    if (!existsSync(join(process.cwd(), 'src', 'config'))) {
       mkdirSync(join(process.cwd(), 'src'))
       mkdirSync(join(process.cwd(), 'src', 'config'))
     }
@@ -77,7 +80,7 @@ async function fetchPackages() {
         dateModified?: string
         tutorial?: string
       }
-      export const actions = [${resultArray.map((i) => JSON.stringify(i))}]`,
+      export const actions = [${combinedActions.map((i) => JSON.stringify(i))}]`,
     )
     console.log(`Running prettier...`)
     spawnSync('pnpm', ['fmt'])

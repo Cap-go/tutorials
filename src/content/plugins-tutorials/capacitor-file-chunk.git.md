@@ -36,7 +36,7 @@ npx cap sync
 
 2. Add the library to dependencies in your `build.gradle`:
 
-```gradle
+```java
 // build.gradle
 dependencies {
     ...

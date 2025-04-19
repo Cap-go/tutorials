@@ -31,7 +31,7 @@ To enable the @periksa/cap-usb-camera package on Android, you need to modify the
 1. Open the `build.gradle` file located at `/android/build.gradle` in your project.
 2. Inside the `allprojects` -> `repositories` section, add the following line:
 
-   ```gradle
+   ```java
    maven { url 'https://raw.github.com/saki4510t/libcommon/master/repository/' }
    ```
 
