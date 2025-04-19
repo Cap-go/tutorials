@@ -1,8 +1,8 @@
 ---
-"title": "Using BlinkCard Capacitor Plugin with @microblink/blinkcard-capacitor",
-"description": "Learn how to integrate and use the BlinkCard plugin for Capacitor by @microblink/blinkcard-capacitor in your cross-platform apps.",
-"created_at": "2023-11-19",
-"published": true,
+"title": "Using BlinkCard Capacitor Plugin with @microblink/blinkcard-capacitor"
+"description": "Learn how to integrate and use the BlinkCard plugin for Capacitor by @microblink/blinkcard-capacitor in your cross-platform apps."
+"created_at": "2023-11-19"
+"published": true
 "slug": "blinkcard-capacitor-git"
 ---
 

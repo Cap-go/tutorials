@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/sqlite Package Tutorial",
-"description": "Learn how to incorporate the @capacitor-community/sqlite package into your Capacitor project with this detailed tutorial.",
-"created_at": "2023-10-15",
-"published": true,
+"title": "Using @capacitor-community/sqlite Package Tutorial"
+"description": "Learn how to incorporate the @capacitor-community/sqlite package into your Capacitor project with this detailed tutorial."
+"created_at": "2023-10-15"
+"published": true
 "slug": "sqlite-git"
 ---
 

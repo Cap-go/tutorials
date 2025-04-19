@@ -1,8 +1,8 @@
 ---
-"title": "How to Use capacitor-exit-app-ios Plugin",
-"description": "Step-by-step guide on using the capacitor-exit-app-ios plugin in your Capacitor project to force quit the app on iOS.",
-"created_at": "2023-10-04",
-"published": true,
+"title": "How to Use capacitor-exit-app-ios Plugin"
+"description": "Step-by-step guide on using the capacitor-exit-app-ios plugin in your Capacitor project to force quit the app on iOS."
+"created_at": "2023-10-04"
+"published": true
 "slug": "capacitor-exit-app-ios.git"
 ---
 

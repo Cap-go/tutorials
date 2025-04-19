@@ -1,4 +1,3 @@
-```md
 ---
 title: "Using Capacitor Gleap Plugin Package"
 description: "A tutorial on how to use the capacitor-gleap-plugin package for integrating Gleap into Ionic apps."

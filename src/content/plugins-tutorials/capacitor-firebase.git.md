@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Firebase Crashlytics with Capacitor",
-"description": "Learn how to integrate Firebase Crashlytics into your Capacitor project for error monitoring and reporting.",
-"created_at": "2022-01-25",
-"published": true,
+"title": "Using Firebase Crashlytics with Capacitor"
+"description": "Learn how to integrate Firebase Crashlytics into your Capacitor project for error monitoring and reporting."
+"created_at": "2022-01-25"
+"published": true
 "slug": "capacitor-firebase.git"
 ---
 

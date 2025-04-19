@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using the @microblink/blinkid-capacitor Package",
-"description": "A comprehensive tutorial on how to use the @microblink/blinkid-capacitor package to integrate AI-driven ID scanning software into cross-platform apps built with Capacitor.",
-"created_at": "2022-09-04",
-"published": true,
+"title": "Using the @microblink/blinkid-capacitor Package"
+"description": "A comprehensive tutorial on how to use the @microblink/blinkid-capacitor package to integrate AI-driven ID scanning software into cross-platform apps built with Capacitor."
+"created_at": "2022-09-04"
+"published": true
 "slug": "blinkid-capacitor.git"
 ---
 

@@ -1,8 +1,8 @@
 ---
-"title": "Getting Started with capacitor-stripe-terminal Package",
-"description": "Learn how to integrate and use capacitor-stripe-terminal package in your Capacitor project for Stripe Terminal functionality.",
-"created_at": "2021-10-07",
-"published": true,
+"title": "Getting Started with capacitor-stripe-terminal Package"
+"description": "Learn how to integrate and use capacitor-stripe-terminal package in your Capacitor project for Stripe Terminal functionality."
+"created_at": "2021-10-07"
+"published": true
 "slug": "capacitor-stripe-terminal.git"
 ---
 

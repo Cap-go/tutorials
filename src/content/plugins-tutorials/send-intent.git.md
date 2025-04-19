@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Send-Intent Plugin in Capacitor Apps",
-"description": "A comprehensive tutorial on integrating and utilizing the Send-Intent Capacitor plugin in Ionic applications for sharing content between Android and iOS platforms.",
-"created_at": "September 22, 2021",
-"published": true,
+"title": "Using Send-Intent Plugin in Capacitor Apps"
+"description": "A comprehensive tutorial on integrating and utilizing the Send-Intent Capacitor plugin in Ionic applications for sharing content between Android and iOS platforms."
+"created_at": "September 22, 2021"
+"published": true
 "slug": "send-intent.git"
 ---
 

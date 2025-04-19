@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using @capacitor-community/exif Package Tutorial",
-"description": "Learn how to use the @capacitor-community/exif package in your Capacitor project to read and set image EXIF metadata",
-"created_at": "2023-01-17",
-"published": true,
+"title": "Using @capacitor-community/exif Package Tutorial"
+"description": "Learn how to use the @capacitor-community/exif package in your Capacitor project to read and set image EXIF metadata"
+"created_at": "2023-01-17"
+"published": true
 "slug": "exif.git"
 ---
 

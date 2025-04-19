@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Swipe Back Plugin",
-"description": "A tutorial on how to use the capacitor-swipe-back-plugin in your Capacitor project.",
-"created_at": "2022-03-07",
-"published": true,
+"title": "Using Capacitor Swipe Back Plugin"
+"description": "A tutorial on how to use the capacitor-swipe-back-plugin in your Capacitor project."
+"created_at": "2022-03-07"
+"published": true
 "slug": "capacitor-plugin-swipe-back.git"
 ---
 

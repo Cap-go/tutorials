@@ -1,9 +1,8 @@
-```
 ---
-"title": "Using Capacitor Plugin MS Auth Package",
-"description": "Markdown tutorial on how to use the @recognizebv/capacitor-plugin-msauth package for Microsoft authentication.",
-"created_at": "September 21, 2021",
-"published": true,
+"title": "Using Capacitor Plugin MS Auth Package"
+"description": "Markdown tutorial on how to use the @recognizebv/capacitor-plugin-msauth package for Microsoft authentication."
+"created_at": "September 21, 2021"
+"published": true
 "slug": "capacitor-plugin-msauth-git"
 ---
 

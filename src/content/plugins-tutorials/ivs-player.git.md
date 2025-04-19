@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capgo/ivs-player Package",
-"description": "Tutorial on how to use the @capgo/ivs-player package for Capacitor apps on Android and iOS.",
-"created_at": "2021-09-15",
-"published": true,
+"title": "Using @capgo/ivs-player Package"
+"description": "Tutorial on how to use the @capgo/ivs-player package for Capacitor apps on Android and iOS."
+"created_at": "2021-09-15"
+"published": true
 "slug": "ivs-player.git"
 ---
 

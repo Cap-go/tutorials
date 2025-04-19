@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor-Plugin-Filesharer Package Tutorial",
-"description": "This tutorial will guide you through using the Capacitor-Plugin-Filesharer package to share files in your Capacitor application.",
-"created_at": "2022-10-10",
-"published": true,
+"title": "Using Capacitor-Plugin-Filesharer Package Tutorial"
+"description": "This tutorial will guide you through using the Capacitor-Plugin-Filesharer package to share files in your Capacitor application."
+"created_at": "2022-10-10"
+"published": true
 "slug": "capacitor-plugin-filesharer.git"
 ---
 

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use capacitor-plugin-playlist Package",
-"description": "A tutorial on integrating and using the capacitor-plugin-playlist package in your projects for handling audio playlists, background support, and lock screen controls.",
-"created_at": "2022-03-07",
-"published": true,
+"title": "How to Use capacitor-plugin-playlist Package"
+"description": "A tutorial on integrating and using the capacitor-plugin-playlist package in your projects for handling audio playlists, background support, and lock screen controls."
+"created_at": "2022-03-07"
+"published": true
 "slug": "capacitor-plugin-playlist.git"
 ---
 

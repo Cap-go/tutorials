@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/date-picker Package Tutorial",
-"description": "A step-by-step guide on how to use the @capacitor-community/date-picker package for Capacitor apps.",
-"created_at": "2023-10-17",
-"published": true,
+"title": "Using @capacitor-community/date-picker Package Tutorial"
+"description": "A step-by-step guide on how to use the @capacitor-community/date-picker package for Capacitor apps."
+"created_at": "2023-10-17"
+"published": true
 "slug": "date-picker.git"
 ---
 

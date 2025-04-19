@@ -1,8 +1,8 @@
 ---
-"title": "Using capacitor-pass-to-wallet package",
-"description": "Generate a markdown tutorial on how to use the capacitor-pass-to-wallet package in Capacitor applications",
-"created_at": "2022-01-26",
-"published": true,
+"title": "Using capacitor-pass-to-wallet package"
+"description": "Generate a markdown tutorial on how to use the capacitor-pass-to-wallet package in Capacitor applications"
+"created_at": "2022-01-26"
+"published": true
 "slug": "capacitor-pass-to-wallet.git.git"
 ---
 

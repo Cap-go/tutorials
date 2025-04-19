@@ -1,8 +1,8 @@
 ---
-"title": "Using capacitor-plugin-siri-shorts Package Tutorial",
-"description": "This blog tutorial will guide you on how to use the capacitor-plugin-siri-shorts package to add support for donating and removing Siri Shortcuts in your Capacitor app.",
-"created_at": "2022-01-25",
-"published": true,
+"title": "Using capacitor-plugin-siri-shorts Package Tutorial"
+"description": "This blog tutorial will guide you on how to use the capacitor-plugin-siri-shorts package to add support for donating and removing Siri Shortcuts in your Capacitor app."
+"created_at": "2022-01-25"
+"published": true
 "slug": "capacitor-plugin-siri-shortcuts-git"
 ---
 

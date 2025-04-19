@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Falconeta Capacitor Wifi Connect Package",
-"description": "Learn how to use the @falconeta/capacitor-wifi-connect package to manage WiFi connections in your Capacitor apps.",
-"created_at": "2023-10-06",
-"published": true,
+"title": "Using Falconeta Capacitor Wifi Connect Package"
+"description": "Learn how to use the @falconeta/capacitor-wifi-connect package to manage WiFi connections in your Capacitor apps."
+"created_at": "2023-10-06"
+"published": true
 "slug": "capacitor-wifi-connect.git"
 ---
 

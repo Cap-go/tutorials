@@ -1,8 +1,8 @@
 ---
-"title": "Using pinia-plugin-capacitor-persist Package Tutorial",
-"description": "A step-by-step guide on integrating and using the pinia-plugin-capacitor-persist package with Pinia for state management in Vue applications.",
-"created_at": "2022-01-20",
-"published": true,
+"title": "Using pinia-plugin-capacitor-persist Package Tutorial"
+"description": "A step-by-step guide on integrating and using the pinia-plugin-capacitor-persist package with Pinia for state management in Vue applications."
+"created_at": "2022-01-20"
+"published": true
 "slug": "pinia-plugin-capacitor-persist.git"
 ---
 

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor-Plugin-Purchase-iOS",
-"description": "This tutorial will guide you through the process of integrating and using the Capacitor plugin 'purchase' for iOS.",
-"created_at": "July 22, 2022",
-"published": true,
+"title": "Using Capacitor-Plugin-Purchase-iOS"
+"description": "This tutorial will guide you through the process of integrating and using the Capacitor plugin 'purchase' for iOS."
+"created_at": "July 22, 2022"
+"published": true
 "slug": "capacitor-plugin-purchase-ios.git"
 ---
 

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use the @docutain/capacitor-plugin-docutain-sdk Package",
-"description": "This tutorial will guide you through the process of integrating and using the @docutain/capacitor-plugin-docutain-sdk package in your Capacitor app.",
-"created_at": "2022-03-04",
-"published": true,
+"title": "How to Use the @docutain/capacitor-plugin-docutain-sdk Package"
+"description": "This tutorial will guide you through the process of integrating and using the @docutain/capacitor-plugin-docutain-sdk package in your Capacitor app."
+"created_at": "2022-03-04"
+"published": true
 "slug": "docutain-sdk-example-capacitor-ionic.git"
 ---
 

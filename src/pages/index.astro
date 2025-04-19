@@ -4,9 +4,7 @@ import { useRuntimeConfig } from '@/config/app'
 import VueBlogIndex from '@/vue-pages/plugins/tutorials.vue'
 import { getCollection } from 'astro:content'
 
-const posts = await getCollection('blog', ({ data }) => {
-  return data.published === true
-})
+const posts = await getCollection('blog', ({ data }) => data.published !== false)
 
 const config = useRuntimeConfig()
 

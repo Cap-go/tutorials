@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using the Capacitor Document Scanner Package"
 "description": "A markdown tutorial demonstrating how to use the capacitor-document-scanner package for scanning documents in Capacitor apps."

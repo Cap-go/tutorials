@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @bugfender/capacitor Package"
 "description": "A tutorial on incorporating the @bugfender/capacitor package into your Capacitor project."

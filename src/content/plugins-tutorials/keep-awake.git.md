@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/keep-awake Package Tutorial",
-"description": "A step-by-step guide on utilizing the @capacitor-community/keep-awake package in Capacitor applications.",
-"created_at": "2022-02-01",
-"published": true,
+"title": "Using @capacitor-community/keep-awake Package Tutorial"
+"description": "A step-by-step guide on utilizing the @capacitor-community/keep-awake package in Capacitor applications."
+"created_at": "2022-02-01"
+"published": true
 "slug": "keep-awake.git"
 ---
 

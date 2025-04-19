@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using capacitor-plugin-scgssigninwithgoogle",
-"description": "A comprehensive tutorial on how to use the capacitor-plugin-scgssigninwithgoogle package for Google Sign-In with Capacitor.",
-"created_at": "2021-11-10",
-"published": true,
+"title": "Using capacitor-plugin-scgssigninwithgoogle"
+"description": "A comprehensive tutorial on how to use the capacitor-plugin-scgssigninwithgoogle package for Google Sign-In with Capacitor."
+"created_at": "2021-11-10"
+"published": true
 "slug": "capacitor-plugin-scgssigninwithgoogle.git"
 ---
 

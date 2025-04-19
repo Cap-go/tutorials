@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Facebook Login Package Tutorial",
-"description": "A step-by-step guide on how to use the @freeedcom/capacitor-facebook-login package for integrating Facebook login in a Capacitor project.",
-"created_at": "2023-10-12",
-"published": true,
+"title": "Using Capacitor Facebook Login Package Tutorial"
+"description": "A step-by-step guide on how to use the @freeedcom/capacitor-facebook-login package for integrating Facebook login in a Capacitor project."
+"created_at": "2023-10-12"
+"published": true
 "slug": "capacitor-facebook-login-git"
 ---
 

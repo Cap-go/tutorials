@@ -1,7 +1,7 @@
 ---
-"title": "Using Klaviyo SDK Capacitor Plugin",
-"description": "Learn how to incorporate the Klaviyo SDK Capacitor Plugin into your Capacitor project and utilize its features.",
-"created_at": "2023-10-06",
+"title": "Using Klaviyo SDK Capacitor Plugin"
+"description": "Learn how to incorporate the Klaviyo SDK Capacitor Plugin into your Capacitor project and utilize its features."
+"created_at": "2023-10-06"
 "published": true
 "slug": "klaviyo-sdk-capacitor-plugin.git"
 ---

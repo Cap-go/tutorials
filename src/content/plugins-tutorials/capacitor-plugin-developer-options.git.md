@@ -1,4 +1,3 @@
-```md
 ---
 "title": "Using the Capacitor Developer Options Plugin"
 "description": "Learn how to use the Capacitor Developer Options Plugin to customize your Capacitor app during development."

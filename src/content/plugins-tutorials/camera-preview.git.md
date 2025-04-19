@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor Camera Preview Package Tutorial",
-"description": "Step-by-step guide on how to use the @capacitor-community/camera-preview package in your Capacitor project.",
-"created_at": "2022-02-28",
-"published": true,
+"title": "Using Capacitor Camera Preview Package Tutorial"
+"description": "Step-by-step guide on how to use the @capacitor-community/camera-preview package in your Capacitor project."
+"created_at": "2022-02-28"
+"published": true
 "slug": "camera-preview.git"
 ---
 

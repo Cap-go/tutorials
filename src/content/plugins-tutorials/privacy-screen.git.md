@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/privacy-screen Package Tutorial",
-"description": "This tutorial covers how to use the @capacitor-community/privacy-screen package to protect your app from displaying screenshots in the Recents screen and App Switcher",
-"created_at": "2022-01-18",
-"published": true,
+"title": "Using @capacitor-community/privacy-screen Package Tutorial"
+"description": "This tutorial covers how to use the @capacitor-community/privacy-screen package to protect your app from displaying screenshots in the Recents screen and App Switcher"
+"created_at": "2022-01-18"
+"published": true
 "slug": "privacy-screen.git"
 ---
 

@@ -1,8 +1,8 @@
 ---
-"title": "Using @whiteguru/capacitor-plugin-file-opener Package",
-"description": "A tutorial on how to use the @whiteguru/capacitor-plugin-file-opener package to open PDF files on Android devices",
-"created_at": "2023-09-25",
-"published": true,
+"title": "Using @whiteguru/capacitor-plugin-file-opener Package"
+"description": "A tutorial on how to use the @whiteguru/capacitor-plugin-file-opener package to open PDF files on Android devices"
+"created_at": "2023-09-25"
+"published": true
 "slug": "capacitor-plugin-file-opener.git"
 ---
 

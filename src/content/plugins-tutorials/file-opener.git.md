@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/file-opener Package",
-"description": "Step-by-step guide to using the @capacitor-community/file-opener package to open PDF files on Android devices.",
-"created_at": "August 25, 2023",
-"published": true,
+"title": "Using @capacitor-community/file-opener Package"
+"description": "Step-by-step guide to using the @capacitor-community/file-opener package to open PDF files on Android devices."
+"created_at": "August 25, 2023"
+"published": true
 "slug": "file-opener-git"
 ---
 

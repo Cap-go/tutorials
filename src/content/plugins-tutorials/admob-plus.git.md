@@ -1,11 +1,11 @@
-```markdown
 ---
-"title": "Using @admob-plus/capacitor Package Tutorial",
-"description": "This blog contains a tutorial on how to use the @admob-plus/capacitor package in your Capacitor projects. It covers installation, configuration, and examples of initializing AdMob and using User Message Platform (UMP)",
-"created_at": "2022-01-20",
-"published": true,
+"title": "Using @admob-plus/capacitor Package Tutorial"
+"description": "This blog contains a tutorial on how to use the @admob-plus/capacitor package in your Capacitor projects. It covers installation, configuration, and examples of initializing AdMob and using User Message Platform (UMP)"
+"created_at": "2022-01-20"
+"published": true
 "slug": "admob-plus.git"
 ---
+
 ## Installation
 
 Get started with the @admob-plus/capacitor package in your app by running the following command:

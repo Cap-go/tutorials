@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using capacitor-plugin-audiosession-bluetooth Package"
 "description": "This tutorial will guide you on how to utilize the capacitor-plugin-audiosession-bluetooth package in your Capacitor project."

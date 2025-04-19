@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using Capacitor Secure Storage Plugin",
-"description": "A tutorial on how to use the @atroo/capacitor-secure-storage-plugin package for storing string values securely on iOS and Android using Capacitor 3.",
-"created_at": "2022-01-25",
-"published": true,
+"title": "Using Capacitor Secure Storage Plugin"
+"description": "A tutorial on how to use the @atroo/capacitor-secure-storage-plugin package for storing string values securely on iOS and Android using Capacitor 3."
+"created_at": "2022-01-25"
+"published": true
 "slug": "capacitor-secure-storage-plugin.git.git"
 ---
 

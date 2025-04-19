@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Tutorial on using @okode/capacitor-plugin-secure-share package"
 "description": "This tutorial covers how to use @okode/capacitor-plugin-secure-share package in your Capacitor project."

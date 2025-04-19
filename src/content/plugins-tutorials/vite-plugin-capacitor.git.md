@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "How to Use @bistroo/vite-plugin-capacitor Package"
 "description": "Tutorial on integrating and using @bistroo/vite-plugin-capacitor package in a Vite project."

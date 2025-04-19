@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using @capgo/capacitor-data-storage-sqlite Package",
-"description": "A step-by-step tutorial on how to use the @capgo/capacitor-data-storage-sqlite package in your Capacitor project.",
-"created_at": "2021-10-19",
-"published": true,
+"title": "Using @capgo/capacitor-data-storage-sqlite Package"
+"description": "A step-by-step tutorial on how to use the @capgo/capacitor-data-storage-sqlite package in your Capacitor project."
+"created_at": "2021-10-19"
+"published": true
 "slug": "capacitor-data-storage-sqlite-git"
 ---
 

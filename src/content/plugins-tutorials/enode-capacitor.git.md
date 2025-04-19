@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using enode-capacitor Package Tutorial"
 "description": "Learn how to use the enode-capacitor package in your Capacitor projects. This tutorial will guide you through the installation, API reference, and configuration steps."

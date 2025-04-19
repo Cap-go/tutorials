@@ -1,8 +1,8 @@
 ---
-"title": "How to Use capacitor-suppress-longpress-gesture Package",
-"description": "A tutorial on using the capacitor-suppress-longpress-gesture package to suppress longpress gestures in iOS systems using Capacitor.",
-"created_at": "2023-02-24",
-"published": true,
+"title": "How to Use capacitor-suppress-longpress-gesture Package"
+"description": "A tutorial on using the capacitor-suppress-longpress-gesture package to suppress longpress gestures in iOS systems using Capacitor."
+"created_at": "2023-02-24"
+"published": true
 "slug": "capacitor-suppress-longpress-gesture.git"
 ---
 

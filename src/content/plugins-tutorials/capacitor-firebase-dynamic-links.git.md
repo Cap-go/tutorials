@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor Firebase Dynamic Links Plugin",
-"description": "A step-by-step guide on how to integrate and utilize the @pantrist/capacitor-firebase-dynamic-links plugin in your Capacitor project for deep linking functionality.",
-"created_at": "2022-02-23",
-"published": true,
+"title": "Using Capacitor Firebase Dynamic Links Plugin"
+"description": "A step-by-step guide on how to integrate and utilize the @pantrist/capacitor-firebase-dynamic-links plugin in your Capacitor project for deep linking functionality."
+"created_at": "2022-02-23"
+"published": true
 "slug": "capacitor-firebase-dynamic-links.git"
 ---
 

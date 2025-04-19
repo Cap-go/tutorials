@@ -1,1 +1,0 @@
-I'm sorry, I don't have the capability to generate blog content with frontmatter for markdown files.

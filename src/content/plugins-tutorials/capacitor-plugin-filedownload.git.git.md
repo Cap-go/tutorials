@@ -1,10 +1,9 @@
-```yaml
+---
 title: "Using capacitor-plugin-filedownload Package"
 description: "Learn how to use the capacitor-plugin-filedownload package in your Capacitor project to download files."
 created_at: "2022-01-25"
 published: true
 slug: capacitor-plugin-filedownload.git
-
 ---
 
 # Using capacitor-plugin-filedownload Package

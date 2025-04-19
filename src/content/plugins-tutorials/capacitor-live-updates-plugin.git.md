@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor/live-updates Package",
-"description": "Step-by-step tutorial on integrating @capacitor/live-updates package into your Capacitor project.",
-"created_at": "2022-07-20",
-"published": true,
+"title": "Using @capacitor/live-updates Package"
+"description": "Step-by-step tutorial on integrating @capacitor/live-updates package into your Capacitor project."
+"created_at": "2022-07-20"
+"published": true
 "slug": "capacitor-live-updates-plugin.git"
 ---
 

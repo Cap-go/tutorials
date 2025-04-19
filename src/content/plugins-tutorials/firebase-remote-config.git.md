@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Guide on Using @dghathway/firebase-remote-config Package",
-"description": "This tutorial will guide you on how to use the @dghathway/firebase-remote-config package with Capacitor in your Ionic applications. It includes step-by-step instructions on integrating Firebase Remote Config on both Android and iOS platforms.",
-"created_at": "2022-10-08",
-"published": true,
+"title": "Guide on Using @dghathway/firebase-remote-config Package"
+"description": "This tutorial will guide you on how to use the @dghathway/firebase-remote-config package with Capacitor in your Ionic applications. It includes step-by-step instructions on integrating Firebase Remote Config on both Android and iOS platforms."
+"created_at": "2022-10-08"
+"published": true
 "slug": "firebase-remote-config-git"
 ---
 

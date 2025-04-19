@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Music Controls Plugin",
-"description": "Tutorial on how to use the Capacitor Music Controls Plugin in your Capacitor applications.",
-"created_at": "2022-04-05",
-"published": true,
+"title": "Using Capacitor Music Controls Plugin"
+"description": "Tutorial on how to use the Capacitor Music Controls Plugin in your Capacitor applications."
+"created_at": "2022-04-05"
+"published": true
 "slug": "capacitor-music-controls-plugin.git"
 ---
 

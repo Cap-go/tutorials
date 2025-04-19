@@ -1,1 +1,0 @@
-I don't have the specific documentation for the `@okode/capacitor-dynatrace` package. It seems you are referring to the `capacitor-dynatrace` package, which I provided information about earlier. If you need further details on the `@okode/capacitor-dynatrace` package, I suggest checking the official documentation or website of the package for instructions on how to use it.

@@ -1,1 +1,0 @@
-I don't have specific information about a package called `capacitor-luna-id-sdk`.

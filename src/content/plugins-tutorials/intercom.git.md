@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/intercom Package Tutorial",
-"description": "A step-by-step guide on how to integrate and use the @capacitor-community/intercom package in your Capacitor project.",
-"created_at": "2022-01-28",
-"published": true,
+"title": "Using @capacitor-community/intercom Package Tutorial"
+"description": "A step-by-step guide on how to integrate and use the @capacitor-community/intercom package in your Capacitor project."
+"created_at": "2022-01-28"
+"published": true
 "slug": "intercom-git"
 ---
 

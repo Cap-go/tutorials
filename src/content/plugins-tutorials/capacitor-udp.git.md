@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @frontall/capacitor-udp Package",
-"description": "A tutorial on how to use the @frontall/capacitor-udp package in Capacitor apps.",
-"created_at": "2023-10-18",
-"published": true,
+"title": "Using @frontall/capacitor-udp Package"
+"description": "A tutorial on how to use the @frontall/capacitor-udp package in Capacitor apps."
+"created_at": "2023-10-18"
+"published": true
 "slug": "capacitor-udp.git"
 ---
 

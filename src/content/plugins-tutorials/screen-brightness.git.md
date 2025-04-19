@@ -1,7 +1,7 @@
 ---
-"title": "Using @capacitor-community/screen-brightness Package Tutorial",
-"description": "Step-by-step guide on how to use the @capacitor-community/screen-brightness package to control screen brightness on iOS and Android devices.",
-"created_at": "2022-01-25",
+"title": "Using @capacitor-community/screen-brightness Package Tutorial"
+"description": "Step-by-step guide on how to use the @capacitor-community/screen-brightness package to control screen brightness on iOS and Android devices."
+"created_at": "2022-01-25"
 "published": true
 "slug": "screen-brightness.git"
 ---

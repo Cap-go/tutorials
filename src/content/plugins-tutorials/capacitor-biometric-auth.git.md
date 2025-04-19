@@ -1,4 +1,3 @@
-```md
 ---
 "title": "Using @aparajita/capacitor-biometric-auth Package"
 "description": "Learn how to integrate biometric authentication using the @aparajita/capacitor-biometric-auth package in your Capacitor app."

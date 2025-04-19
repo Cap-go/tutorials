@@ -3,13 +3,14 @@ import { computed } from 'vue'
 import { formatTime } from '@/config/app'
 
 const props = defineProps<{
-  link: string
+  link?: string
   title?: string
   description?: string
   date?: string | Date
   tag?: string
 }>()
-const cannLink = computed(() => `/plugins/${props.link}/`)
+
+const cannLink = computed(() => props.link ? `/plugins/${props.link}/` : '#')
 </script>
 
 <template>

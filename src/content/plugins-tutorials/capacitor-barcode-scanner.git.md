@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @capacitor/barcode-scanner Package Tutorial"
 "description": "Step-by-step guide on integrating and using the @capacitor/barcode-scanner package for scanning barcodes in a Capacitor application."

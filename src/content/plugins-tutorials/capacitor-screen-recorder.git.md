@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "How to Use @capgo/capacitor-screen-recorder Package",
-"description": "A step-by-step tutorial on using the @capgo/capacitor-screen-recorder package for recording screens on iOS and Android in Capacitor projects.",
-"created_at": "2022-02-22",
-"published": true,
+"title": "How to Use @capgo/capacitor-screen-recorder Package"
+"description": "A step-by-step tutorial on using the @capgo/capacitor-screen-recorder package for recording screens on iOS and Android in Capacitor projects."
+"created_at": "2022-02-22"
+"published": true
 "slug": "capacitor-screen-recorder.git"
 ---
 

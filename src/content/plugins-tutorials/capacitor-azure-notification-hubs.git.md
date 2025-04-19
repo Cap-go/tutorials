@@ -1,9 +1,10 @@
 ---
-"title": "Using Capacitor Azure Notification Hubs Package Tutorial",
-"description": "A step-by-step guide on how to use the @jonz94/capacitor-azure-notification-hubs package in your Capacitor projects.",
-"created_at": "2023-12-15",
-"published": true,
+"title": "Using Capacitor Azure Notification Hubs Package Tutorial"
+"description": "A step-by-step guide on how to use the @jonz94/capacitor-azure-notification-hubs package in your Capacitor projects."
+"created_at": "2023-12-15"
+"published": true
 "slug": "capacitor-azure-notification-hubs"
+---
 
 ## Install
 

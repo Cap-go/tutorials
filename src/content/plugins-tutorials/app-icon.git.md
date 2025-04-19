@@ -1,8 +1,8 @@
 ---
-"title": "Using @capacitor-community/app-icon Package",
-"description": "A step-by-step tutorial on how to use the @capacitor-community/app-icon package to programmatically change an app's icon.",
-"created_at": "2022-01-25",
-"published": true,
+"title": "Using @capacitor-community/app-icon Package"
+"description": "A step-by-step tutorial on how to use the @capacitor-community/app-icon package to programmatically change an app's icon."
+"created_at": "2022-01-25"
+"published": true
 "slug": "app-icon.git"
 ---
 

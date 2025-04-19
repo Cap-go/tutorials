@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Swipe Gestures Plugin",
-"description": "Learn how to integrate and use the Capacitor Swipe Gestures Plugin in your Ionic app",
-"created_at": "2022-02-25",
-"published": true,
+"title": "Using Capacitor Swipe Gestures Plugin"
+"description": "Learn how to integrate and use the Capacitor Swipe Gestures Plugin in your Ionic app"
+"created_at": "2022-02-25"
+"published": true
 "slug": "capacitor-plugin-swipe-gestures.git"
 ---
 

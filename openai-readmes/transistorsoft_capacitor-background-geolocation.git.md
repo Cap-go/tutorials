@@ -131,7 +131,6 @@ BackgroundGeolocation.ready(config).then((state) => {
 // NO!  .ready() has not resolved.
 BackgroundGeolocation.getCurrentPosition(options);
 BackgroundGeolocation.start();
-```
 ---------------------------------------------------------------------------------------------
 
 ### Example 1. &mdash; *React*

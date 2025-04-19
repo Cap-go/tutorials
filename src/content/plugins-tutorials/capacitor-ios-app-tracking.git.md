@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor iOS App Tracking Package",
-"description": "This tutorial will guide you through the process of using the capacitor-ios-app-tracking package to track events in your iOS application.",
-"created_at": "2023-06-14",
-"published": true,
+"title": "Using Capacitor iOS App Tracking Package"
+"description": "This tutorial will guide you through the process of using the capacitor-ios-app-tracking package to track events in your iOS application."
+"created_at": "2023-06-14"
+"published": true
 "slug": "capacitor-ios-app-tracking.git"
 ---
 

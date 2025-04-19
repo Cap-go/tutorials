@@ -1,3 +1,7 @@
+---
+title: "Using @whiteguru/capacitor-plugin-file-picker"
+---
+
 ### @whiteguru/capacitor-plugin-file-picker Tutorial
 
 To use the `@whiteguru/capacitor-plugin-file-picker` package in your Capacitor project, follow these steps:

@@ -254,7 +254,6 @@ removeAttribute(options: { name: string; }) => void
 #### Usage:
 ```ts
     NewRelicCapacitorPlugin.removeAttribute({ name: "CapacitorAttribute" });
-```
 --------------------
 
 
@@ -360,7 +359,6 @@ crashNow(options?: { message: string; } | undefined) => void
 ```ts
     NewRelicCapacitorPlugin.crashNow();
     NewRelicCapacitorPlugin.crashNow({ message: "A demo crash message" });
-```
 --------------------
 
 
@@ -379,7 +377,6 @@ currentSessionId(options?: {} | undefined) => Promise<{ sessionId: string; }>
 #### Usage:
 ```ts
     let { sessionId } = await NewRelicCapacitorPlugin.currentSessionId();
-```
 --------------------
 
 
@@ -424,7 +421,6 @@ noticeHttpTransaction(options: { url: string; method: string; status: number; st
       bytesReceived: 2500,
       body: "fake http response body 200",
     });
-```
 --------------------
 
 ### [noticeNetworkFailure(...)](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile-android/android-sdk-api/notice-network-failure)
@@ -516,7 +512,6 @@ setMaxEventBufferTime(options: { maxBufferTimeInSeconds: number; }) => void
 #### Usage: 
 ```ts
     NewRelicCapacitorPlugin.setMaxEventBufferTime({ maxBufferTimeInSeconds: 60 });
-```
 --------------------
 
 
@@ -534,7 +529,6 @@ setMaxEventPoolSize(options: { maxPoolSize: number; }) => void
 #### Usage:
 ```ts
     NewRelicCapacitorPlugin.setMaxEventPoolSize({ maxPoolSize: 2000 })
-```
 --------------------
 
 
@@ -571,7 +565,6 @@ networkRequestEnabled(options: { enabled: boolean; }) => void
 #### Usage:
 ```ts
     NewRelicCapacitorPlugin.networkRequestEnabled({ enabled: true })
-```
 --------------------
 
 
@@ -630,7 +623,6 @@ getAgentConfiguration(options?: {} | undefined) => Promise<AgentConfiguration>
 
     let agentConfig : AgentConfiguration = await NewRelicCapacitorPlugin.getAgentConfiguration();
     let sendConsoleEvents = agentConfig.sendConsoleEvents;
-```
 --------------------
 
 ### [shutdown(...)](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile-android/android-sdk-api/shut-down/)
@@ -673,7 +665,6 @@ generateDistributedTracingHeaders(options?: {} | undefined) => Promise<object>
       body: "fake http response body 200",
       traceAttributes: distributedTraceAttributes,
     });
-```
 --------------------
 
 ### [addHTTPHeadersTrackingFor(...)](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile/mobile-sdk/add-tracked-headers/)
@@ -694,7 +685,6 @@ addHTTPHeadersTrackingFor(options:{headers: string[]}): void;
 ```ts
  NewRelicCapacitorPlugin.addHTTPHeadersTrackingFor({headers:["Car","Music"]});
 
-```
 --------------------
 
 ### [setMaxOfflineStorageSize(...)](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile/mobile-sdk/set-max-offline-storage/)
@@ -711,7 +701,6 @@ setMaxOfflineStorageSize(options: { megaBytes: number; }) => void
 #### Usage:
 ```ts
     NewRelicCapacitorPlugin.setMaxOfflineStorageSize({ megaBytes: 200 })
-```
 --------------------
 
 ### `logInfo(...)`
@@ -729,7 +718,6 @@ logInfo(options: { message: string}) => void
 ```typescript
 NewRelicCapacitorPlugin.logInfo(
    {message: "User profile loaded successfully"});
-```
 --------------------
 ### `logVerbose(...)`
 Logs verbose messages for detailed debugging information.
@@ -799,7 +787,6 @@ logDebug(options: { message: string }) => void
 #### Usage:
 ```typescript
 NewRelicCapacitorPlugin.logDebug({message:"Debugging session started"});
-```
 --------------------
 
 ### `logAll(...)`
@@ -843,7 +830,6 @@ NewRelicCapacitorPlugin.logAttributes({attributes:{
   "message":"this is test",
   "level":"INFO"
 }});
-```
 --------------------
 
 

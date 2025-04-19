@@ -12,17 +12,16 @@ export async function getStaticPaths() {
   let tutMap: any = {}
   const promises: any[] = []
   let processTuts: Plugin[] = []
-  let tuts = await getCollection('blog', ({ data }) => {
-    return data.published === true
-  })
+  let tuts = await getCollection('blog', ({ data }) => data.published !== false)
   for (let i of tuts) {
     if (!i.filePath) continue
     const slug = i.filePath
       .substring(i.filePath.lastIndexOf('/') + 1)
-      .replace('.md', '')
+      .replaceAll('.md', '')
+      .replaceAll('.git', '')
       .toLowerCase()
     tutMap[slug] = i.body
-    const findTut = actions.find((item) => getSlug(item.href) === slug.replace('.md', ''))
+    const findTut = actions.find((item) => getSlug(item.href).replaceAll('.git', '').replaceAll('.md', '') === slug)
     if (findTut) processTuts.push(findTut)
   }
   let plugins: Plugin[] = processTuts
@@ -83,7 +82,7 @@ export async function getStaticPaths() {
   }
   // await Promise.allSettled(promises)
   return plugins.map((item) => {
-    let slug = getSlug(item.href)
+    const slug = getSlug(item.href).replaceAll('.git', '').replaceAll('.md', '')
     return {
       params: {
         id: slug,

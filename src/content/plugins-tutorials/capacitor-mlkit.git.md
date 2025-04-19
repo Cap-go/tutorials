@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Tutorial on Using @capacitor-mlkit/barcode-scanning Package"
 "description": "Explore how to implement barcode scanning using the @capacitor-mlkit/barcode-scanning package in Capacitor."

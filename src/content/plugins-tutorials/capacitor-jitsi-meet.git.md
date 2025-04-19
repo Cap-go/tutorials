@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on using the `capacitor-jitsi-meet` package.

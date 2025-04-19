@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using @nativescript/capacitor Package Tutorial",
-"description": "Learn how to use the @nativescript/capacitor package in your NativeScript project.",
-"created_at": "2022-02-28",
-"published": true,
+"title": "Using @nativescript/capacitor Package Tutorial"
+"description": "Learn how to use the @nativescript/capacitor package in your NativeScript project."
+"created_at": "2022-02-28"
+"published": true
 "slug": "capacitor.git"
 ---
 

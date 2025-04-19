@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/media Package Tutorial",
-"description": "Step-by-step guide on how to use the @capacitor-community/media package for enabling extra media capabilities in Capacitor apps.",
-"created_at": "2023-10-08",
-"published": true,
+"title": "Using @capacitor-community/media Package Tutorial"
+"description": "Step-by-step guide on how to use the @capacitor-community/media package for enabling extra media capabilities in Capacitor apps."
+"created_at": "2023-10-08"
+"published": true
 "slug": "media.git"
 ---
 

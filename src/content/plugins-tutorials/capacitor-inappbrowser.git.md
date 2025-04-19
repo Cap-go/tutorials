@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Tutorial on Using @capgo/inappbrowser Package"
 description: "This tutorial will guide you on how to use the @capgo/inappbrowser package in your Capacitor applications. It covers installation, usage, camera and microphone permissions, two-way communication, and closing the inappbrowser from within the browser."

@@ -1,8 +1,8 @@
 ---
-"title": "Using Capacitor Google Play Services Checker Package",
-"description": "This tutorial will guide you on how to implement the capacitor-google-play-services-checker package in your Capacitor project to verify the availability of Google Play services within your Android application.",
-"created_at": "2022-01-19",
-"published": true,
+"title": "Using Capacitor Google Play Services Checker Package"
+"description": "This tutorial will guide you on how to implement the capacitor-google-play-services-checker package in your Capacitor project to verify the availability of Google Play services within your Android application."
+"created_at": "2022-01-19"
+"published": true
 "slug": "capacitor-google-play-services-checker.git"
 ---
 
