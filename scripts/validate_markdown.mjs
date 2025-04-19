@@ -11,7 +11,7 @@ const rl = readline.createInterface({
 const prompt = (question) => new Promise((resolve) => rl.question(question, resolve))
 
 async function validateMarkdownFiles() {
-  const tutorialsDir = path.join(process.cwd(), 'src/content/plugins-tutorials')
+  const tutorialsDir = path.join(process.cwd(), 'src', 'content', 'plugins-tutorials')
   try {
     const files = await fs.readdir(tutorialsDir)
     const mdFiles = files.filter((file) => file.endsWith('.md'))
