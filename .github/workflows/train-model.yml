@@ -10,9 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Train Model
     steps:
+      - name: Install Git LFS
+        run: sudo apt-get update && sudo apt-get install git-lfs && git lfs install
+
       - name: Checkout code
         uses: actions/checkout@v4
         with:
+          lfs: true
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: Setup pnpm
@@ -40,6 +44,10 @@ jobs:
         run: |
           git config --global user.name "Martin DONADIEU"
           git config --global user.email "martindonadieu@gmail.com"
+          git lfs track "loadedVectorStore/*.json"
+          git lfs track "loadedVectorStore/*.index"
+          git add .gitattributes
+          git add loadedVectorStore/*.json loadedVectorStore/*.index
           git add -A
           git commit -m "Commit generated files"
           git push origin main -f
