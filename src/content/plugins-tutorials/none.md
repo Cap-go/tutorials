@@ -1,0 +1,1 @@
+I don't have information on the `netshow-screen-plugin` package or its usage in this context.

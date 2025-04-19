@@ -1,0 +1,1 @@
+I don't know about the "@rolster/capacitor-update-manager" package and cannot provide a tutorial for it.

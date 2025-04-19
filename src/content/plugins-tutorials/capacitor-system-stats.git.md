@@ -1,0 +1,1 @@
+I don't know how to use the `@netacoltd/capacitor-system-stats` package.
