@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial for the "@skektec/capacitor-contacts" package, as the information provided in the context is related to the plugin "capacitor-plugin-contacts." If you have specific information or steps for the "@skektec/capacitor-contacts" package, please provide that information, and I'll be happy to assist in creating a markdown tutorial.

@@ -1,0 +1,1 @@
+I don't have information on the `@capgo/capacitor-crisp` package or how to specifically use it. It's best to refer to the official documentation of the package for a detailed tutorial on how to use it.

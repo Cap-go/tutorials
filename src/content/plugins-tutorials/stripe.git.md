@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial of using the @capacitor-community/stripe package as the information provided is about the capacitor-stripe-terminal plugin and not the Capacitor community stripe package.

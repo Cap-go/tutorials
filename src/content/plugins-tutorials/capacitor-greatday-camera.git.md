@@ -1,0 +1,1 @@
+I don't have information about the `capacitor-greatday-camera` package or its markdown tutorial.

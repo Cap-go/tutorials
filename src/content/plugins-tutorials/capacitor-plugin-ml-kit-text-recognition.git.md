@@ -1,0 +1,1 @@
+I don't have information on the specific package @pantrist/capacitor-plugin-ml-kit-text-recognition.

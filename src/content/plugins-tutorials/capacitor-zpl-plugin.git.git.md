@@ -1,0 +1,1 @@
+I don't have information about the `@albgen/capacitor-zpl-plugin` package needed to generate a markdown tutorial with the specific content you asked for. It's recommended to refer to the official documentation or source code of the package to create the tutorial correctly.

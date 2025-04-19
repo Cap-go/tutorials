@@ -1,0 +1,1 @@
+I'm sorry, but I do not have information specific to the "@spryrocks/capacitor-socket-connection-plugin" package. If you have any other questions or need general assistance, feel free to ask.

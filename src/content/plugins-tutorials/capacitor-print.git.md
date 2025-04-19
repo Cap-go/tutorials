@@ -1,0 +1,1 @@
+I don't have information about a Capacitor package named `capacitor-print` in the provided context. If you have any specific details or documentation about the `capacitor-print` package, I can help you create a markdown tutorial with the information available.

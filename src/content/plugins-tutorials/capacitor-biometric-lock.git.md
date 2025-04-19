@@ -1,0 +1,1 @@
+I don't have information on the `capacitor-biometric-lock` package to provide a markdown tutorial or the specific frontmatter values you're requesting. You might want to refer to the package's documentation for guidance or reach out to the package maintainers for assistance.

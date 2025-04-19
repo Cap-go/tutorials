@@ -1,0 +1,1 @@
+I don't have specific information about the `@adplorg/capacitor-in-app-purchase` package in the provided context. Therefore, I'm unable to provide a detailed markdown tutorial for that particular package. If you have any other questions or need assistance with something else, feel free to ask!

@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on a specific package called `netshow-screen2-plugin`. If you have a different question or need help with something else, feel free to ask!
