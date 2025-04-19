@@ -1,8 +1,3 @@
-**Title**: How to Use @aalzehla/capacitor-sms-retriever Package
-
-**Description**: This tutorial will guide you through the process of using the @aalzehla/capacitor-sms-retriever package to retrieve SMS without the need for any permission. It includes setup instructions and code snippets for both Android and iOS.
-
-```yaml
 ---
 "title": "How to Use @aalzehla/capacitor-sms-retriever Package"
 "description": "This tutorial will guide you through the process of using the @aalzehla/capacitor-sms-retriever package to retrieve SMS without the need for any permission. It includes setup instructions and code snippets for both Android and iOS."
@@ -10,7 +5,6 @@
 "published": true
 "slug": "capacitor-sms-retriever.git"
 ---
-```
 
 To get started with the @aalzehla/capacitor-sms-retriever package, follow these steps:
 1. Install the package by running `npm install @aalzehla/capacitor-sms-retriever`.

@@ -1,1 +1,0 @@
-I don't have information specific to the capacitor-zeroconf package.

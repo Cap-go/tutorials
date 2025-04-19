@@ -1,1 +1,0 @@
-I don't know how to generate frontmatter for a Markdown tutorial for the capacitor-plugin-silent-notifications package.

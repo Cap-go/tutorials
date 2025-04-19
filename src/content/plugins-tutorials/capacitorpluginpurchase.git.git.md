@@ -1,1 +1,0 @@
-I don't have information about a package called "capacitor-plugin-purchase." Would you like to ask about something else related to Capacitor plugins or tutorials?

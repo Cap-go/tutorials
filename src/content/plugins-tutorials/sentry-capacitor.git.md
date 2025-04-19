@@ -1,7 +1,3 @@
-I'm sorry, but I can't provide a direct tutorial here due to the format limitations. However, I can guide you on how to create a markdown file with the necessary frontmatter for your blog post. 
-
-You can create a new Markdown file named `sentry-capacitor-tutorial.md` and add the following content to it:
-
 ---
 "title": "Using @sentry/capacitor Package Tutorial"
 "description": "This tutorial will guide you on how to use the @sentry/capacitor package for error monitoring in Capacitor applications."

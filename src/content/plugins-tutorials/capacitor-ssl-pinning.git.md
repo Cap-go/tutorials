@@ -1,1 +1,0 @@
-I don't know the specific details of using the capacitor-ssl-pinning package and how to structure the frontmatter for a markdown tutorial. It's best to refer to the package's documentation for the most accurate guide on its usage.

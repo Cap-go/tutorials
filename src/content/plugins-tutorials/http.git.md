@@ -1,1 +1,0 @@
-I'm sorry, but I don't have the specific knowledge of the `@capacitor-community/http` package in order to generate a markdown tutorial for it. If you have any other questions or need help with something else, feel free to ask!

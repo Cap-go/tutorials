@@ -1,1 +1,0 @@
-I don't have information on the capacitor-reader package required to generate a markdown tutorial.

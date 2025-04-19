@@ -1,1 +1,0 @@
-I don't know how to generate the markdown tutorial for using the metamap-capacitor-plugin package with the specific frontmatter attributes as described.

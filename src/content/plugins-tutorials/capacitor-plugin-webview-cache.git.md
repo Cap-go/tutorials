@@ -1,13 +1,9 @@
-**Title:** Using capacitor-plugin-webview-cache Package
-
-**Description:** This markdown tutorial will guide you through using the capacitor-plugin-webview-cache package in your Capacitor app.
-
-**Created_at:** "2022-01-15"
-
-**Published:** true
-
-**Slug:** capacitor-plugin-webview-cache.git
-
+---
+title: Using capacitor-plugin-webview-cache Package
+description: This markdown tutorial will guide you through using the capacitor-plugin-webview-cache package in your Capacitor app.
+created_at: "2022-01-15"
+published: true
+slug: capacitor-plugin-webview-cache.git
 ---
 
 ## Getting Started with capacitor-plugin-webview-cache

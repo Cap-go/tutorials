@@ -1,1 +1,0 @@
-I'm unable to provide specific details about the package usage without knowing the implementation details of the code. You can refer to the official documentation and examples provided by the package creator, [@aparajita/capacitor-secure-storage](https://github.com/aparajita/capacitor-secure-storage), for a detailed markdown tutorial and usage instructions.

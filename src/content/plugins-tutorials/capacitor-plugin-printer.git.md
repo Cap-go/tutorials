@@ -1,10 +1,4 @@
 ---
-title: "Using @bcyesil/capacitor-plugin-printer"
----
-
-### @bcyesil/capacitor-plugin-printer Tutorial
-
----
 "title": "Capacitor Printer Plugin Tutorial"
 "description": "Step-by-step guide on how to use the @bcyesil/capacitor-plugin-printer package to print HTML, text, and images in iOS/Android apps."
 "created_at": "2023-11-02"

@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide information on the "fiuuxdk-capacitor-plugin" package as it is not mentioned in the context provided. If you have any other questions or need assistance on a different topic, feel free to ask!

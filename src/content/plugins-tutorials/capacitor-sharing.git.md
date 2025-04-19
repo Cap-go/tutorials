@@ -1,1 +1,0 @@
-I don't know how to generate the specific markdown tutorial you're asking for.

@@ -1,5 +1,3 @@
-Certainly! Below is a markdown tutorial demonstrating how to use the `@teamhive/capacitor-single-signon` package. Additionally, a frontmatter section has been added to the file containing the specified values:
-
 ---
 "title": "Using '@teamhive/capacitor-single-signon' Package"
 "description": "A tutorial on integrating and utilizing the '@teamhive/capacitor-single-signon' package for Capacitor apps"
