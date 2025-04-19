@@ -33,7 +33,7 @@ Add these permissions in your `AndroidManifest.xml`:
 ### Add JitPack Repository
 Add JitPack repository to your Android app's build.gradle (android/app/build.gradle):
 
-```gradle
+```java
 allprojects {
     repositories {
         google()

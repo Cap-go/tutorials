@@ -21,7 +21,7 @@ Before you begin, ensure you have the following:
 
 To get started, clone or download the repository containing the adal-azure-ios-plugin package. You can do this by running the following command in the Terminal:
 
-```terminal
+```bash
 git clone https://github.com/bhandaribhumin/azure-capacitor-ms-identity-mobile-apple-swift-objc
 ```
 
@@ -31,7 +31,7 @@ Alternatively, you can download the repository as a ZIP file and extract it to a
 
 Next, navigate to the project directory in the Terminal and install the required dependencies by running the following command:
 
-```terminal
+```bash
 npm install adal-azure-ios-plugin --save
 ```
 

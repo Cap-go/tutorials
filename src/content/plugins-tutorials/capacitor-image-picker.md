@@ -60,7 +60,7 @@ The `@jonz94/capacitor-image-picker` package uses a forked version of [TedImageP
 
 To use this package on Android, you need to add the JitPack repository to your `android/build.gradle` file. Open the file and add the following line to the `repositories` block:
 
-```gradle
+```java
 maven { url "https://jitpack.io" }
 ```
 
@@ -68,7 +68,7 @@ maven { url "https://jitpack.io" }
 
 To enable data binding in your Android project, open the `android/app/build.gradle` file and add the following lines:
 
-```gradle
+```java
 android {
     // ...
     dataBinding {

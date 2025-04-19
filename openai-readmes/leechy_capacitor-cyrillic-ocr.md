@@ -51,7 +51,7 @@ if (file) {
 
 To install properly Tessaract4Android libraries, it is needed to add the following repository to your `/android/app/build.gradle` file:
 
-```gradle
+```java
 repositories {
     ...
     maven { url 'https://jitpack.io' }

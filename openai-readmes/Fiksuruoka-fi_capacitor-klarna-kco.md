@@ -43,7 +43,7 @@ npx cap sync
 ### Android modifications
 
 1. Edit your application level build.gradle file and add the following repository to your repositories section:
-   ```gradle
+   ```java
    repositories {
      ....
      maven {
@@ -52,7 +52,7 @@ npx cap sync
    }
    ```
 2. If you are willing to change SDK version, add new version to your variables.gradle
-   ```gradle
+   ```java
    ext {
      ...
      klarnaSdkVersion: 'x.x.x'

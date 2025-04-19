@@ -13,7 +13,7 @@ npx cap sync
 
 Add this to your app's `settings.gradle`
 
-```gradle
+```java
 include ':IAP6Helper'
 project(':IAP6Helper').projectDir = new File('../node_modules/@gif-games/capacitor-samsung-iap/android/IAP6Helper')
 ```

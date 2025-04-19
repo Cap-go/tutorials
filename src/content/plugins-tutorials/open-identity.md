@@ -14,7 +14,7 @@ The open-identity package provides a powerful set of tools for integrating ident
 
 To get started, you will need to install the open-identity package in your project. You can do this by running the following command:
 
-```terminal
+```bash
 npm install open-identity
 ```
 

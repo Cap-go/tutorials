@@ -28,7 +28,7 @@ ionic cap sync
 
 For Android, you also need to add the `UXCam` Maven repository to the build.gradle script of your project. Add the following code snippet to the `repositories` section:
 
-```gradle
+```java
 maven {
     url 'https://sdk.uxcam.com/android/'
 }

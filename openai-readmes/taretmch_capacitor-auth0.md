@@ -56,7 +56,7 @@ Setup Auth0 domain & clientId at `android/app/src/main/res/values/strings.xml`.
 
 Add manifestPlaceholders at `android/app/build.gradle`.
 
-```gradle
+```java
 android {
     ...
     defaultConfig {

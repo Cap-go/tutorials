@@ -40,7 +40,7 @@ This will install the package and its dependencies.
 
 1. In your project's `build.gradle` file, add the following code inside the `android` block:
 
-   ```gradle
+   ```java
    android {
        ...
        buildFeatures {
@@ -51,7 +51,7 @@ This will install the package and its dependencies.
 
 2. In the same file, add the following repositories to the `allprojects` block:
 
-   ```gradle
+   ```java
    allprojects {
        repositories {
            ...

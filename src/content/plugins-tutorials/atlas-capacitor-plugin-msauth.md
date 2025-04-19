@@ -104,7 +104,7 @@ For Android, follow these additional configuration steps:
 
 5. Add the following snippet to the `build.gradle` file in the `android/app/` directory:
 
-   ```gradle
+   ```java
    allprojects {
        repositories {
            maven {

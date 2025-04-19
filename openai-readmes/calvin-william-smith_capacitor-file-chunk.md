@@ -49,7 +49,7 @@ npx cap sync
 ```
 
 ### 2. Add library to dependencies:
-```gradle
+```java
 // build.gradle
 dependencies {
     ...

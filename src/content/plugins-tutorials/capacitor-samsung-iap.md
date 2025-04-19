@@ -23,7 +23,7 @@ This will install the package and sync the Capacitor project.
 
 Next, we need to include the sub dependencies for the @gif-games/capacitor-samsung-iap package. Open your app's `settings.gradle` file and add the following lines:
 
-```gradle
+```java
 include ':IAP6Helper'
 project(':IAP6Helper').projectDir = new File('../node_modules/@gif-games/capacitor-samsung-iap/android/IAP6Helper')
 ```

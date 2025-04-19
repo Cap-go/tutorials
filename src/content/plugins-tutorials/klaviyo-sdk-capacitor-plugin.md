@@ -24,7 +24,7 @@ $ npm install klaviyo-sdk-capacitor-plugin
 
 If you are using Android, you need to make sure that your project's `build.gradle` file is properly configured to include the necessary repositories for Klaviyo SDK and any required dependencies. Ensure you have the following repositories added to the top-level app level `build.gradle` file:
 
-```gradle
+```java
 allprojects {
 
     repositories {

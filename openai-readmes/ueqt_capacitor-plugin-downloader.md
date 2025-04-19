@@ -60,7 +60,7 @@ Note that there are two placeholders, one for you package name and one for the k
 
 - (Android) Add the following snippet to the `build.gradle` file in the `android/` folder
 
-```gradle
+```java
 allprojects {
     repositories {
         maven {

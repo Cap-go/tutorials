@@ -25,17 +25,17 @@
 
 ## Installation
 
-```terminal
+```bash
 npm install capacitor-screenshot
 ionic cap sync
 ```
 
-```terminal
+```bash
 yarn install capacitor-screenshot
 ionic cap sync
 ```
 
-```terminal
+```bash
 pnpm add capacitor-screenshot
 ionic cap sync
 ```

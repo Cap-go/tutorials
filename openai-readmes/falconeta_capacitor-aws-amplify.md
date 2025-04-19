@@ -28,7 +28,7 @@ Inside MainActivity
 ```
 Inside gradle
 
-```gradle
+```java
     // Amplify core dependency
     implementation 'com.amplifyframework:core:1.38.7'
 
@@ -194,7 +194,9 @@ deleteUser() => Promise<{ status: AwsAmplifyPluginResponseStatus; }>
 
 Construct a type with a set of properties K of type T
 
-<code>{ [P in K]: T; }</code>
+<code>{
+ [P in K]: T;
+ }</code>
 
 
 ### Enums

@@ -28,7 +28,7 @@ For Android, you'll need to download the Tesseract language files and add them t
 3. If your app uses the Capacitor Filesystem plugin, you may encounter memory issues with large files. To overcome this, you can use the [Capacitor Blob Writer](https://www.npmjs.com/package/capacitor-blob-writer) plugin as an alternative.
 4. Add the following repository to your `/android/app/build.gradle` file:
 
-```gradle
+```java
 repositories {
     ...
     maven { url 'https://jitpack.io' }

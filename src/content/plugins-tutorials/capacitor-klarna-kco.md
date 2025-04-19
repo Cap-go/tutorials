@@ -61,7 +61,7 @@ If you are developing for Android, you need to make some additional modification
 
 2. Add the following repository to the `repositories` section:
 
-```gradle
+```java
 repositories {
   ...
   maven {
@@ -72,7 +72,7 @@ repositories {
 
 3. (Optional) If you want to use a different version of the Klarna SDK, add the desired version to the `variables.gradle` file:
 
-```gradle
+```java
 ext {
   ...
   klarnaSdkVersion: 'x.x.x'

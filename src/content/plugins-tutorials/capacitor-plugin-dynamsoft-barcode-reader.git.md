@@ -33,7 +33,7 @@ To use the package in your iOS project, you need to edit the project file with X
 ### Android
 For Android, add the following Maven repository under the ```allprojects -> repositories``` section in the ```build.gradle``` file of your project:
 
-```gradle
+```java
 maven { url 'https://jitpack.io' }
 ```
 

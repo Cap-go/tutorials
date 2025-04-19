@@ -89,7 +89,7 @@ In order to complete the setup on DoclineSDK for capacitor you need to follow fe
 
 By default its android.app module gradle file.
 
-```gradle
+```java
 android {
     ...
     buildFeatures {
@@ -103,7 +103,7 @@ android {
 
 You need to add the following repositories to the top app level so dependencies can be resolved.
 
-```gradle
+```java
 ...
 allprojects {
 

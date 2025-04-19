@@ -17,7 +17,7 @@ To use the check-play-services package in your Android app, follow these steps:
 1. Open your app's `build.gradle` file.
 2. Add the following dependency to the `dependencies` block:
 
-   ```gradle
+   ```java
    implementation 'com.google.android.gms:play-services-basement:XX.X.X'
    ```
 

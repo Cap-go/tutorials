@@ -23,7 +23,7 @@ npx cap sync
 
 To set up the Kakao login plugin for Android, you'll need to add the Kakao repository to your root `build.gradle` file. Update the repositories section as follows:
 
-```gradle
+```java
 allprojects {
     repositories {
         google()

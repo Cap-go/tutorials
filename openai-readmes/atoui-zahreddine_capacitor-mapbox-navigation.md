@@ -68,7 +68,7 @@ MAPBOX_DOWNLOADS_TOKEN=SECRET_TOKEN_HERE
 
 Open up your _project-level_ `build.gradle` file. Declare the Mapbox Downloads API's `releases/maven` endpoint in the `repositories` block.
 
-```gradle
+```java
 allprojects {
     repositories {
         maven {

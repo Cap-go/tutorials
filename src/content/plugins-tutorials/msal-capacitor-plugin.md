@@ -129,7 +129,7 @@ To configure MSAL for Android in Capacitor, follow these steps:
 
 4. Add the following code inside the `allprojects` > `repositories` section:
 
-   ```gradle
+   ```java
    maven {
        url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1'
    }
