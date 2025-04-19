@@ -4,14 +4,24 @@ import { useRuntimeConfig } from '@/config/app'
 import VueBlogIndex from '@/vue-pages/plugins/tutorials.vue'
 import { getCollection } from 'astro:content'
 
-const posts = await getCollection('blog', ({ data }) => data.published !== false)
+let posts = await getCollection('blog', ({ data }) => data.published !== false)
+posts = posts.map((i) => ({
+  ...i,
+  data: {
+    ...i.data,
+    slug: i.filePath
+      .substring(i.filePath.lastIndexOf('/') + 1)
+      .replaceAll('.md', '')
+      .replaceAll('.git', '')
+      .toLowerCase(),
+  },
+}))
 
 const config = useRuntimeConfig()
 
 const content = {}
 
 if (config.public.blog_title) content['title'] = config.public.blog_title
-
 if (config.public.blog_description) content['description'] = config.public.blog_description
 ---
 
