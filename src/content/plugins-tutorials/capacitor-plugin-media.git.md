@@ -1,0 +1,1 @@
+I do not have detailed information on the "@whiteguru/capacitor-plugin-media" package. Unfortunately, I cannot generate the markdown tutorial you requested.

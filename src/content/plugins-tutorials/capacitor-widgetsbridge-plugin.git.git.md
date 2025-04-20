@@ -1,0 +1,1 @@
+I don't have information on the `capacitor-widgetsbridge-plugin` package, and I can't generate a correct tutorial without that information. I recommend checking the documentation of the `capacitor-widgetsbridge-plugin` package to understand its usage first.

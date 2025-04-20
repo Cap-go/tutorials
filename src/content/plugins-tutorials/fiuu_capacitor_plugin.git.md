@@ -1,0 +1,1 @@
+I don't have information on the "fiuuxdk-capacitor-plugin" package to generate a markdown tutorial for it.

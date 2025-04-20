@@ -1,0 +1,1 @@
+I don't know how to use the package "capacitor2-zoom-plugin" as it is not in the provided context.

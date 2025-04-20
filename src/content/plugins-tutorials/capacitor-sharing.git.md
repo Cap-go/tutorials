@@ -1,0 +1,1 @@
+I don't know how to use the `@palauaandsons/capacitor-sharing` package or generate a markdown tutorial for it.

@@ -1,0 +1,1 @@
+I'm sorry, but I can't provide a tutorial for using the `@rolster/capacitor-otp-manager` package as it is not mentioned in the context you provided. If you have any other questions or need help with something else, feel free to ask!
