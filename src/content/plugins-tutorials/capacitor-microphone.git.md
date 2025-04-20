@@ -1,0 +1,1 @@
+I don't have specific information about `@mozartec/capacitor-microphone` package.

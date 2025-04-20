@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the capacitor-branch-deep-links package.

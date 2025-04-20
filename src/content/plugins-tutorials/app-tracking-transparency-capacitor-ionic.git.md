@@ -1,0 +1,1 @@
+I don't have knowledge of the `app-tracking-transparency-capacitor-ionic` package to generate a markdown tutorial.

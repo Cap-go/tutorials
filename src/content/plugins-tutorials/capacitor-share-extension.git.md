@@ -1,0 +1,1 @@
+I don't know the specific details for generating a markdown tutorial for using the `capacitor-share-extension` package. If you have any other questions or need assistance with something else, feel free to ask!

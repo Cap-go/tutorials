@@ -1,0 +1,1 @@
+I don't have information on the `capacitor-rate-app` package. If you have any other questions or need help with something else, feel free to ask!

@@ -1,0 +1,1 @@
+I don't know the specific details of using the `@capgo/capacitor-shake` package or how to generate the necessary Markdown tutorial at this moment. It's best to consult the official documentation or resources related to the package for accurate guidance on its usage.

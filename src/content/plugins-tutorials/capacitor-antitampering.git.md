@@ -1,0 +1,1 @@
+I'm not sure about the usage of the `capacitor-antitampering` package or how markdown tutorial would look like for it.

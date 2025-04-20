@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial for the `indigitall-capacitor-plugin package` as that specific package is not provided in the context you have mentioned. If you have any other questions or need assistance with something else, please let me know!

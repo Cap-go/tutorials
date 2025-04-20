@@ -1,0 +1,1 @@
+I'm sorry, but as of now, I don't have the specific information on the `@pantrist/capacitor-plugin-ml-kit-text-recognition` package. If you need guidance on another topic or have any other questions, feel free to ask!

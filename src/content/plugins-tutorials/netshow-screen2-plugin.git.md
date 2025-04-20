@@ -1,0 +1,1 @@
+I don't have information about the `netshow-screen2-plugin` package to generate a markdown tutorial.

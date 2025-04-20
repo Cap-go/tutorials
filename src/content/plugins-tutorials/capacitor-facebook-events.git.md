@@ -1,0 +1,1 @@
+I am unable to provide the exact markdown tutorial or frontmatter content for the capacitor-facebook-events package as I don't have specific information about that package. Please refer to the official documentation for the capacitor-facebook-events package for the tutorial and frontmatter details.

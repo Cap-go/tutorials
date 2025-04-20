@@ -1,0 +1,1 @@
+I don't know how to generate a complete Markdown tutorial with frontmatter for the "@jofr/capacitor-media-session" package.

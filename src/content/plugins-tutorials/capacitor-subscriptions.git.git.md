@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the `capacitor-subscriptions` package to generate a tutorial. Additionally, I can't create a markdown file with the specified frontmatter values. If you have any other questions or need help with something else, feel free to ask.

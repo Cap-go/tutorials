@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about an `appsflyer-capacitor-plugin` package in the context provided.
