@@ -15,6 +15,8 @@ export interface Plugin extends Action {
   datePublished?: string
   dateModified?: string
   tutorial?: string
+  page_title?: string
+  page_description?: string
 }
 export const actions = [
   {

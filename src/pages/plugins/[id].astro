@@ -27,6 +27,8 @@ export async function getStaticPaths() {
   for (let i of tuts) {
     tutMap[i.data.slug] = i.body
     const findTut = actions.find((item) => getSlug(item.href).replaceAll('.git', '').replaceAll('.md', '') === i.data.slug)
+    if (i.data.title) findTut['page_title'] = i.data.title
+    if (i.data.description) findTut['page_description'] = i.data.description
     if (findTut) processTuts.push(findTut)
   }
   let plugins: Plugin[] = processTuts
@@ -106,10 +108,10 @@ let tutorial = Astro.props.tutorial
 if (tutorial) plugin['tutorial'] = marked.parse(tutorial)
 
 const content = {}
-
 if (plugin.title) content['title'] = plugin.title
-
+if (plugin.page_title) content['title'] = plugin.page_title
 if (plugin.description) content['description'] = plugin.description
+if (plugin.page_description) content['description'] = plugin.page_description
 
 const config = useRuntimeConfig()
 
@@ -122,7 +124,7 @@ content['ldJSON'] = JSON.stringify({
     '@type': 'WebPage',
     '@id': `${config.public.baseUrl}/plugins/${id}`,
   },
-  headline: plugin.description,
+  headline: content['title'],
   image: [`${config.public.baseUrl}/capgo_banner.webp`],
   publisher: {
     '@type': 'Organization',
