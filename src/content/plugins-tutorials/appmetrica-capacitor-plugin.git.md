@@ -1,1 +1,0 @@
-I don't have information on the "@soroka282/appmetrica-capacitor-plugin" package.

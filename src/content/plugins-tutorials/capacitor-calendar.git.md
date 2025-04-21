@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "How to Use @ebarooni/capacitor-calendar Package"
 "description": "A comprehensive tutorial for utilizing the @ebarooni/capacitor-calendar package to manage calendar events on iOS and Android."

@@ -1,1 +1,0 @@
-I don't know the specific details on how to use the capacitor-open-app-settings package or how to generate a markdown tutorial for it. For more information, you might want to refer to the package documentation or official resources for Capacitor.

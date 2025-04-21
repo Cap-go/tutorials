@@ -1,1 +1,0 @@
-I'm sorry, but the information provided is about the "tailwind-capacitor" plugin, not the "capacitor-plugin-safe-area" package. Since there is no information about the "capacitor-plugin-safe-area" package in the provided context, I'm unable to generate a markdown tutorial for it.

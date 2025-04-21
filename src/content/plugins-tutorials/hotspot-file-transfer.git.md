@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide a specific tutorial or content for the `@idpass/hotspot-file-transfer-capacitor` package as requested. If you have any other questions or need general guidance on using Capacitor or any other topic, feel free to ask!

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @capacitor-community/stripe Package Tutorial",
-"description": "A step-by-step guide on how to use the @capacitor-community/stripe package for implementing native Stripe functionality in a Capacitor project.",
-"created_at": "October 14, 2021",
-"published": true,
+"title": "Using @capacitor-community/stripe Package Tutorial"
+"description": "A step-by-step guide on how to use the @capacitor-community/stripe package for implementing native Stripe functionality in a Capacitor project."
+"created_at": "October 14, 2021"
+"published": true
 "slug": "stripe.git"
 ---
 

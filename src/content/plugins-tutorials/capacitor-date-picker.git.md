@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide a markdown tutorial for the `@pantrist/capacitor-date-picker` package since the provided context is related to the `@capacitor-community/date-picker` package.

@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @aparajita/capacitor-secure-storage Package",
-"description": "This tutorial will guide you through using the @aparajita/capacitor-secure-storage package to securely store key/value data on iOS, Android, and the web.",
-"created_at": "2023-09-07",
-"published": true,
+"title": "Using @aparajita/capacitor-secure-storage Package"
+"description": "This tutorial will guide you through using the @aparajita/capacitor-secure-storage package to securely store key/value data on iOS, Android, and the web."
+"created_at": "2023-09-07"
+"published": true
 "slug": "capacitor-secure-storage.git"
 ---
 

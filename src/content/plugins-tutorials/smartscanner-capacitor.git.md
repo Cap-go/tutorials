@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "How to Use @idpass/smartscanner-capacitor Package"
 "description": "A tutorial on integrating and using the @idpass/smartscanner-capacitor package to scan MRZ, NFC, and barcodes in a Capacitor project."

@@ -1,1 +1,0 @@
-I don't have information on using the `capacitor-aad` package or the specific details you requested for the markdown tutorial. You may want to refer to the package documentation or guides for this specific information.

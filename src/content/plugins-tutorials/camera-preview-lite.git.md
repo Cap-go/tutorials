@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @michaelwolz/camera-preview-lite Package",
-"description": "A tutorial on how to integrate and use the @michaelwolz/camera-preview-lite package for camera interaction in Capacitor projects.",
-"created_at": "2021-10-21",
-"published": true,
+"title": "Using @michaelwolz/camera-preview-lite Package"
+"description": "A tutorial on how to integrate and use the @michaelwolz/camera-preview-lite package for camera interaction in Capacitor projects."
+"created_at": "2021-10-21"
+"published": true
 "slug": "camera-preview-lite.git"
 ---
 

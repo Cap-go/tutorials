@@ -1,9 +1,8 @@
-```
 ---
-"title": "Using @skektec/capacitor-contacts Package",
-"description": "A markdown tutorial on how to use the @skektec/capacitor-contacts package in your Ionic Capacitor project.",
-"created_at": "2023-10-06",
-"published": true,
+"title": "Using @skektec/capacitor-contacts Package"
+"description": "A markdown tutorial on how to use the @skektec/capacitor-contacts package in your Ionic Capacitor project."
+"created_at": "2023-10-06"
+"published": true
 "slug": "capacitor-v7-contacts-port.git"
 ---
 

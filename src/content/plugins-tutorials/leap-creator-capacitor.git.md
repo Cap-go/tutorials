@@ -1,1 +1,0 @@
-I don't have specific information about a package called "leap-creator-capacitor" in the provided context. If you could provide more details or context about this specific package, I can definitely assist you in generating the markdown tutorial and the frontmatter with the specified values.

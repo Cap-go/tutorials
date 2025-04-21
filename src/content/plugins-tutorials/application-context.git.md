@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using Capacitor-Application-Context Package"
 "description": "A tutorial on how to utilize the capacitor-application-context package in your Capacitor project."

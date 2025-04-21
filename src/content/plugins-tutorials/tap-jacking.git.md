@@ -1,1 +1,0 @@
-I don't know how to generate a markdown tutorial of using @capacitor-community/tap-jacking package with frontmatter values in the format you provided.

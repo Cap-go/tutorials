@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on the specific package "capacitor-plugin-security-check" mentioned in your question. If you need assistance with something else or have any other questions, feel free to ask!

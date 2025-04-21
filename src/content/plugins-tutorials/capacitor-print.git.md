@@ -1,1 +1,0 @@
-I'm unable to provide a markdown tutorial for using the capacitor-print package as it's not documented here. It's important to refer to the official documentation for the capacitor-print package for the accurate and complete tutorial.

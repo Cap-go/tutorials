@@ -1,11 +1,9 @@
-```markdown
 ---
 "title": "Using @capawesome/capacitor-app-update Package"
-"description": "This tutorial covers the implementation of the @capawesome/capacitorI'm-app-update package for sorry, updating Capac but I don't have access to external sources toitor applications generate a markdown tutorial manually."
- for using"created_at": "October "@cap 30, 2021"
-"acitorpublished": true
-"slug/preferences".": " If youcapac have anyitor-plugins specific content.git"
- or questions---
+"description": "This tutorial covers the implementation of the @capawesome/capacitor-app-update package."
+"created_at": "2021-10-30"
+"published": true
+---
 
 # related to Using @ this topiccapawesome/cap, feelacitor free to-app-update ask. Package
 

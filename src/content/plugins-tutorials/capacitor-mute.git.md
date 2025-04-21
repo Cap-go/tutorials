@@ -1,1 +1,0 @@
-I don't have the details on the `@capgo/capacitor-mute` package needed to generate a tutorial.

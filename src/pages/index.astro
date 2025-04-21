@@ -5,17 +5,19 @@ import VueBlogIndex from '@/vue-pages/plugins/tutorials.vue'
 import { getCollection } from 'astro:content'
 
 let posts = await getCollection('blog', ({ data }) => data.published !== false)
-posts = posts.map((i) => ({
-  ...i,
-  data: {
-    ...i.data,
-    slug: i.filePath
-      .substring(i.filePath.lastIndexOf('/') + 1)
-      .replaceAll('.md', '')
-      .replaceAll('.git', '')
-      .toLowerCase(),
-  },
-}))
+posts = posts
+  .map((i) => ({
+    ...i,
+    data: {
+      ...i.data,
+      slug: i.filePath
+        .substring(i.filePath.lastIndexOf('/') + 1)
+        .replaceAll('.md', '')
+        .replaceAll('.git', '')
+        .toLowerCase(),
+    },
+  }))
+  .sort((a, b) => (a.data.created_at && b.data.created_at ? (new Date(a.data.created_at) < new Date(b.data.created_at) ? 1 : -1) : 0))
 
 const config = useRuntimeConfig()
 

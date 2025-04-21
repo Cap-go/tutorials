@@ -1,1 +1,0 @@
-I don't have information specific to the `capacitor-freerasp` package or its usage in the context provided.

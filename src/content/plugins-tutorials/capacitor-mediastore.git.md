@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @agorapulse/capacitor-mediastore Package",
-"description": "A tutorial on how to use the @agorapulse/capacitor-mediastore package to manage media storage in Capacitor apps.",
-"created_at": "2023-10-06",
-"published": true,
+"title": "Using @agorapulse/capacitor-mediastore Package"
+"description": "A tutorial on how to use the @agorapulse/capacitor-mediastore package to manage media storage in Capacitor apps."
+"created_at": "2023-10-06"
+"published": true
 "slug": "capacitor-mediastore.git"
 ---
 

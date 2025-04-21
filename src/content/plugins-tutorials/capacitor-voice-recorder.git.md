@@ -1,11 +1,8 @@
-I don't have the specific details on how to use the `capacitor-voice-recorder` package, but I can assist you with generating the Markdown tutorial along with the frontmatter structure you mentioned. Here is a sample template:
-
-```markdown
 ---
-"title": "How to Use the Capacitor Voice Recorder Plugin",
-"description": "Learn how to integrate and use the capacitor-voice-recorder package in your Capacitor project.",
-"created_at": "2023-01-27",
-"published": true,
+"title": "How to Use the Capacitor Voice Recorder Plugin"
+"description": "Learn how to integrate and use the capacitor-voice-recorder package in your Capacitor project."
+"created_at": "2023-01-27"
+"published": true
 "slug": "capacitor-voice-recorder.git"
 ---
 

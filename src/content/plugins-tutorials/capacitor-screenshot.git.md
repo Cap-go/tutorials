@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on using the capacitor-screenshot package or creating markdown tutorials with specific attributes like frontmatter. However, I can assist you with any other questions you might have in relation to this topic if you need help with something else.

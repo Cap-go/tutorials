@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to Use adjust-capacitor-plugin"
 description: "Step-by-Step Guide to Utilize the adjust-capacitor-plugin Package in Your Capacitor Project"

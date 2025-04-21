@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @adeprez/capacitor-user-agent Package Tutorial"
 "description": "A detailed tutorial on how to integrate and use the @adeprez/capacitor-user-agent package in your Capacitor app."

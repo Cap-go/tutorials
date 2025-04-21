@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on how to use the `@whiteguru/capacitor-plugin-video-editor` package to generate a markdown tutorial.

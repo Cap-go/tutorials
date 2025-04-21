@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @ua/capacitor-airship Package Tutorial"
 "description": "This tutorial will guide you through using the @ua/capacitor-airship package in your Capacitor project."

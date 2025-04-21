@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information about the `@capacitor-community/device-security-detect` package.

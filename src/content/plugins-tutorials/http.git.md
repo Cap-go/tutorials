@@ -1,1 +1,0 @@
-I don't have specific information on using the `@capacitor-community/http` package to generate a markdown tutorial. To provide accurate information, I recommend checking the official documentation or resources related to the `@capacitor-community/http` package.

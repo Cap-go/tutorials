@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to Use capacitor-greatday-camera Package"
 description: "A tutorial on integrating the capacitor-greatday-camera package into your Capacitor project."

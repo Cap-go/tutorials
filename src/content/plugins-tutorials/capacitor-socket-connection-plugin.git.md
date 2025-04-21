@@ -1,1 +1,0 @@
-I don't have access to the "@spryrocks/capacitor-socket-connection-plugin" package documentation to create a tutorial with accurate steps. I recommend referring to the official documentation or the README file of the package for guidance on using it. If you have any specific questions or need help with any parts of the tutorial, feel free to ask!

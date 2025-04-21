@@ -1,9 +1,8 @@
-```md
 ---
-"title": "Using Capacitor Dynamsoft Barcode Reader Plugin",
-"description": "This tutorial will guide you on how to utilize the 'capacitor-plugin-dynamsoft-barcode-reader' package in your application to recognize barcodes efficiently.",
-"created_at": "2023-10-03",
-"published": true,
+"title": "Using Capacitor Dynamsoft Barcode Reader Plugin"
+"description": "This tutorial will guide you on how to utilize the 'capacitor-plugin-dynamsoft-barcode-reader' package in your application to recognize barcodes efficiently."
+"created_at": "2023-10-03"
+"published": true
 "slug": "capacitor-plugin-dynamsoft-barcode-reader.git"
 ---
 

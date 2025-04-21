@@ -1,9 +1,8 @@
-```
 ---
-"title": "Using @capacitor-community/google-maps Package Tutorial",
-"description": "A markdown tutorial on how to use the @capacitor-community/google-maps package in Capacitor.",
-"created_at": "2022-01-21",
-"published": true,
+"title": "Using @capacitor-community/google-maps Package Tutorial"
+"description": "A markdown tutorial on how to use the @capacitor-community/google-maps package in Capacitor."
+"created_at": "2022-01-21"
+"published": true
 "slug": "google-maps.git"
 ---
 

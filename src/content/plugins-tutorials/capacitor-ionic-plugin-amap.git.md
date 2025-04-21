@@ -1,1 +1,0 @@
-I cannot provide specific information about the `capacitor-ionic-plugin-amap` package. I recommend referring to the official documentation or guides provided by the plugin authors for detailed information.

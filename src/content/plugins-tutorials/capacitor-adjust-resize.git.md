@@ -1,1 +1,0 @@
-I don't have information on a specific package called capacitor-adjust-resize.

@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Tutorial on using tailwind-capacitor package"
 "description": "Learn how to use the tailwind-capacitor package for your capacitor apps."

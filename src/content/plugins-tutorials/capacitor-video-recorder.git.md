@@ -1,1 +1,0 @@
-I don't have information on the specific tutorial for using the "@teamhive/capacitor-video-recorder" package. Would you like general guidance on creating a markdown tutorial with frontmatter values for a different Capacitor package or any other specific information related to markdown tutorials?

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Using Capacitor Native Settings Package"
 description: "A tutorial on how to utilize the Capacitor Native Settings package for your mobile app."

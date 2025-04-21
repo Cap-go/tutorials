@@ -1,1 +1,0 @@
-I'm sorry, but I do not have information on the `@capgo/capacitor-crisp` package or its usage as of now.

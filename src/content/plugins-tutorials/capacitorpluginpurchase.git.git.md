@@ -1,1 +1,0 @@
-Unfortunately, I don't have information available on the `capacitor-plugin-purchase` package or tutorial.

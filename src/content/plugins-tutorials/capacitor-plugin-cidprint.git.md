@@ -1,1 +1,0 @@
-I don't have information about a package called `capacitor-cidprint` in the available context. It appears to be unrelated to the provided context about `learn-helloworld-capacitor` and `capacitor-choose-video`. Therefore, I don't have the necessary details to generate a markdown tutorial for the `capacitor-cidprint` package or to create the specified frontmatter.

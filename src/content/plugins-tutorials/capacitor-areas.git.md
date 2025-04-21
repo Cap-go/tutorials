@@ -1,1 +1,0 @@
-I'm sorry, but there seems to be a misunderstanding. The information provided is about the Tailwind Capacitor plugin and its configuration. There is no mention of the "capacitor-areas" package or tutorial in the context you provided. If you would like information on the Tailwind Capacitor plugin or another topic, please let me know.

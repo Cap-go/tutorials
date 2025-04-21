@@ -1,1 +1,0 @@
-I don't have information on the `@nitra/capacitor-plugin-smartmerch-camera` package or the specific frontmatter structure you requested. It's best to refer to the package's official documentation or reach out to their support for guidance on usage and custom frontmatter requirements.

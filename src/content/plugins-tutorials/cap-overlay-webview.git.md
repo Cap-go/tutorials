@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using cap-overlay-webview Package Tutorial",
-"description": "This tutorial will guide you on how to use the cap-overlay-webview package to display webviews and overlay them with app UI elements.",
-"created_at": "2023-01-29",
-"published": true,
+"title": "Using cap-overlay-webview Package Tutorial"
+"description": "This tutorial will guide you on how to use the cap-overlay-webview package to display webviews and overlay them with app UI elements."
+"created_at": "2023-01-29"
+"published": true
 "slug": "cap-overlay-webview.git"
 ---
 

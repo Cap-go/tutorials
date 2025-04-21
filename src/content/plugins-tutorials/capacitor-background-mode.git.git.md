@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using @anuradev/capacitor-background-mode Package Tutorial",
-"description": "Learn how to effectively use the @anuradev/capacitor-background-mode package for Capacitor applications.",
-"created_at": "2023-10-10",
-"published": true,
+"title": "Using @anuradev/capacitor-background-mode Package Tutorial"
+"description": "Learn how to effectively use the @anuradev/capacitor-background-mode package for Capacitor applications."
+"created_at": "2023-10-10"
+"published": true
 "slug": "capacitor-background-mode.git.git"
 ---
 

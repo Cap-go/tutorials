@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on the package `@albgen/capacitor-zpl-plugin` to generate a markdown tutorial.

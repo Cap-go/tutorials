@@ -1,1 +1,0 @@
-I don't know the details of the "@capacitor-community/security-provider" package.

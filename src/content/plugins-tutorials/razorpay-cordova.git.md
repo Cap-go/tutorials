@@ -1,9 +1,8 @@
-```markdown
 ---
-"title": "Using Capacitor-Razorpay Package",
-"description": "A tutorial on integrating the Capacitor-Razorpay package into your Capacitor application.",
-"created_at": "2022-06-21",
-"published": true,
+"title": "Using Capacitor-Razorpay Package"
+"description": "A tutorial on integrating the Capacitor-Razorpay package into your Capacitor application."
+"created_at": "2022-06-21"
+"published": true
 "slug": "razorpay-cordova.git"
 ---
 
