@@ -1,0 +1,1 @@
+I'm sorry, I don't have information regarding the `@capacitor-community/speech-recognition` package.

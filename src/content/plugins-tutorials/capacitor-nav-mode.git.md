@@ -1,0 +1,1 @@
+I don't know much about the `capacitor-android-nav-mode` package.

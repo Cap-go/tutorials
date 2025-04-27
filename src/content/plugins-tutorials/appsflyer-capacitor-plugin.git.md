@@ -1,0 +1,1 @@
+I'm sorry, but I don't have the specific information needed on the appsflyer-capacitor-plugin package to generate a tutorial in markdown.

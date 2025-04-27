@@ -1,0 +1,1 @@
+I don't have the specific information required to generate a markdown tutorial for using the `@capacitor/inappbrowser` package. If you have any other questions or need assistance with something else, feel free to ask!

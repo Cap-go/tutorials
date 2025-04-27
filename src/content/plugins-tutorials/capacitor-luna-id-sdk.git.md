@@ -1,0 +1,1 @@
+I don't have information specifically on the `capacitor-luna-id-sdk` package and its API.

@@ -1,0 +1,1 @@
+I'm sorry, I don't have information on the specific details and usage of the `@newrelic/newrelic-capacitor-plugin` package or how to create a markdown tutorial for it. For detailed information on the package and creating a tutorial, I recommend referring to the official documentation of the package or reaching out to the package maintainers.

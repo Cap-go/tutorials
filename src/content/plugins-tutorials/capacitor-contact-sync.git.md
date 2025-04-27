@@ -1,0 +1,1 @@
+I don't have information on the `@blue-performance/capacitor-contact-sync` package.

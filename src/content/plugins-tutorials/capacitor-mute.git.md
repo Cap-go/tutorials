@@ -1,0 +1,1 @@
+I'm unable to find information related to a package called `@capgo/capacitor-mute` in the context provided. Is there anything else I can help you with?

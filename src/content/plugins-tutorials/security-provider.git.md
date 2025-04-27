@@ -1,0 +1,1 @@
+I don't have specific information on the "@capacitor-community/security-provider" package. You might want to refer to the package's documentation or README file for the tutorial on how to use it. If you have any other questions, feel free to ask.

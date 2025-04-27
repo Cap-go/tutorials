@@ -1,0 +1,1 @@
+I don't have information about the `@rolster/capacitor-otp-manager` package or its usage.

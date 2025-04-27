@@ -1,0 +1,1 @@
+I don't have specific information on the `@joinflux/capacitor-segment` package or its usage. If you have any specific questions or need general assistance, feel free to ask!

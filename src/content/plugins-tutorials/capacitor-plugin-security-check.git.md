@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about the `capacitor-plugin-security-check` package to generate a tutorial with frontmatter.

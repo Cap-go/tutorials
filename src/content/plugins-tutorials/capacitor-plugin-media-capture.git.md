@@ -1,0 +1,1 @@
+I don't have information on the `@whiteguru/capacitor-plugin-media-capture` package to generate a markdown tutorial for it.

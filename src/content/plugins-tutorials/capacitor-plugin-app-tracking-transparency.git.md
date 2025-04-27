@@ -1,0 +1,1 @@
+I don't have information about a package called "capacitor-plugin-app-tracking-transparency" in my context. So, unfortunately, I can't generate a tutorial with front matter for that specific package.

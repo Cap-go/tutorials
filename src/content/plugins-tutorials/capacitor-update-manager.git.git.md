@@ -1,0 +1,1 @@
+I'm not sure of the specific markdown tutorial for using the "@rolster/capacitor-update-manager" package. If you have a specific question about the package, I'd be happy to try and help with that.

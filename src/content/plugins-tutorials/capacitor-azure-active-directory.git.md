@@ -1,0 +1,1 @@
+I don't have information about the `capacitor-aad` package or the specific frontmatter keys/values you've mentioned. I recommend checking the documentation or official resources related to the capacitor-aad package for accurate instructions on how to generate the markdown tutorial with the specified frontmatter.

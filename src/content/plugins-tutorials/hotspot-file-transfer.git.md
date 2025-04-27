@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information specific to the package `@idpass/hotspot-file-transfer-capacitor` and how to use it.

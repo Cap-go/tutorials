@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial for the capacitor-areas package as requested because the context provided is about the tailwind-capacitor plugin. If you have any other questions or need help with another topic, feel free to ask!
