@@ -1,3 +1,4 @@
 Allow: /
+Disallow: /cdn-cgi/
 
 Sitemap: https://capacitor-tutorial.com/sitemap-index.xml
