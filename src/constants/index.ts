@@ -1,3 +1,2 @@
-export const appName = 'Capgo - Capacitor Live update'
-export const appDescription =
-  'Send and manage updates in realtime for your capacitor app without store hassle, 5 min to install Over-the-Air (OTA) updates. Use channels to send to specific groups.'
+export const appName = 'Capacitor Blog | Capgo'
+export const appDescription = 'The best articles to enhance your Capacitor app. Do more with Capacitor and Capgo. Learn how to build a modern app with Capacitor.'

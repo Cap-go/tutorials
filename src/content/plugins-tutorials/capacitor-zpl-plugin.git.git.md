@@ -1,1 +1,0 @@
-I don't have information specifically about the `@albgen/capacitor-zpl-plugin` package in the provided context. Do you want me to continue and provide a markdown tutorial based on the general template for a Capacitor plugin installation and setup, or is there something specific you would like me to include in the tutorial for the `@albgen/capacitor-zpl-plugin` package?

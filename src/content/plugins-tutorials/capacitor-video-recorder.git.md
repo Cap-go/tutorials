@@ -1,1 +1,0 @@
-Sorry, I don't have the specific knowledge about the `@teamhive/capacitor-video-recorder` package and its usage.

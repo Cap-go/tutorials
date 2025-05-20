@@ -1,1 +1,0 @@
-I don't have information on the specific markdown tutorial for using the `capacitor-branch-deep-links` package.

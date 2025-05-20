@@ -1,1 +1,0 @@
-I am unable to find information specific to the capacitor-ssl-pinning package.

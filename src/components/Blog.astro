@@ -1,0 +1,54 @@
+---
+import { formatTime } from '@/config/app'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+interface Props {
+  tag?: string
+  link: string
+  date?: Date
+  title: string
+  image?: string
+  loading?: 'eager' | 'lazy'
+}
+
+const { tag, link, date, title, image, loading } = Astro.props
+
+const cannLink = getRelativeLocaleUrl(Astro.locals.locale, `blog/${link}`)
+---
+
+<div class="rounded-lg bg-gray-700 pb-8">
+  <div>
+    <div class="relative p-2">
+      {
+        image && (
+          <a href={cannLink} title={title} class="aspect-w-4 aspect-h-3 block">
+            <img
+              src={image}
+              alt={title}
+              width="1536"
+              height="1024"
+              decoding="async"
+              loading={loading || 'lazy'}
+              class="z-2 aspect-video h-full w-full rounded-lg border border-gray-600 bg-gradient-to-br from-gray-600/50 to-gray-700/50 bg-cover bg-center bg-no-repeat object-contain text-transparent"
+            />
+          </a>
+        )
+      }
+      {
+        tag && (
+          <div class="absolute top-4 left-4">
+            <span class="rounded-full bg-white px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase shadow-lg">{tag}</span>
+          </div>
+        )
+      }
+    </div>
+    <span class="mt-3 block px-5 text-sm font-semibold tracking-widest text-gray-300 uppercase">
+      {formatTime(date)}
+    </span>
+    <p class="mt-3 px-5 text-2xl font-semibold">
+      <a href={cannLink} title={title} class="text-gray-100">
+        {title}
+      </a>
+    </p>
+  </div>
+</div>

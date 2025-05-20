@@ -1,1 +1,0 @@
-I don't have information on the "@adplorg/capacitor-in-app-purchase" package specifically. If you provide me with the relevant API documentation or other details, I can assist you in generating the markdown tutorial and adding the frontmatter as requested.

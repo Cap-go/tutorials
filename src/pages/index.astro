@@ -1,32 +1,15 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import { useRuntimeConfig } from '@/config/app'
-import VueBlogIndex from '@/vue-pages/plugins/tutorials.vue'
+import BlogListing from '@/components/BlogListing.astro'
+import { getSlug } from '@/services/github'
 import { getCollection } from 'astro:content'
 
-let posts = await getCollection('blog', ({ data }) => data.published !== false)
-posts = posts
-  .map((i) => ({
-    ...i,
-    data: {
-      ...i.data,
-      slug: i.filePath
-        .substring(i.filePath.lastIndexOf('/') + 1)
-        .replaceAll('.md', '')
-        .replaceAll('.git', '')
-        .toLowerCase(),
-    },
-  }))
-  .sort((a, b) => (a.data.created_at && b.data.created_at ? (new Date(a.data.created_at) < new Date(b.data.created_at) ? 1 : -1) : 0))
-
-const config = useRuntimeConfig()
-
-const content = {}
-
-if (config.public.blog_title) content['title'] = config.public.blog_title
-if (config.public.blog_description) content['description'] = config.public.blog_description
+const allPosts = (await getCollection('blog', ({ data }) => data.published !== false)).map((i) => ({
+  ...i,
+  data: {
+    ...i.data,
+    slug: getSlug(i.filePath.substring(i.filePath.lastIndexOf('/') + 1)),
+  },
+}))
 ---
 
-<Layout content={content}>
-  <VueBlogIndex Content={posts} client:load />
-</Layout>
+<BlogListing {allPosts} />

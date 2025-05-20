@@ -1,1 +1,0 @@
-I don't have information on the `@basecom-gmbh/capacitor-jailbreak-root-detection` package. You may want to refer to the package documentation for specific instructions on how to use it. If you have any other questions or need assistance with something else, feel free to ask.

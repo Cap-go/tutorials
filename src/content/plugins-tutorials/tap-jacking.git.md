@@ -1,1 +1,0 @@
-I don't have information on the "@capacitor-community/tap-jacking" package.

@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on a `capacitor-print` package in the provided context.

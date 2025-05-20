@@ -1,1 +1,0 @@
-I don't have information on using the `capacitor-brightcove-player` package.

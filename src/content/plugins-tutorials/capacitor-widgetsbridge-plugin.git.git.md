@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information specifically about the `capacitor-widgetsbridge-plugin` package in the given context.

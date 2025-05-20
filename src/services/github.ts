@@ -12,4 +12,10 @@ export const fetchWithToken = async (githubApiUrl: string) => {
   }
 }
 
-export const getSlug = (item: string) => item.substring(item.lastIndexOf('/') + 1).toLowerCase()
+export const getSlug = (item: string) =>
+  item
+    .substring(item.lastIndexOf('/') + 1)
+    .toLowerCase()
+    .replaceAll('.git', '')
+    .replaceAll('.md', '')
+    .toLowerCase()

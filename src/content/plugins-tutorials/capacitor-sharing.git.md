@@ -1,1 +1,0 @@
-I don't have specific information on the `@palauaandsons/capacitor-sharing` package or its usage details for a markdown tutorial. I recommend checking the official documentation provided by the package's developers for a comprehensive guide.

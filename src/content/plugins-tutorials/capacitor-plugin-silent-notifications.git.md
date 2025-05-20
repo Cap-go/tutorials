@@ -1,1 +1,0 @@
-I don't have the ability to generate a file or publish content directly. If you need further assistance or guidance on how to generate a Markdown tutorial with the frontmatter for the capacitor-plugin-silent-notifications package, please let me know and I can help you with the content structure.

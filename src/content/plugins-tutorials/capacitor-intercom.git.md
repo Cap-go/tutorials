@@ -1,1 +1,0 @@
-I currently do not have information on the "@unsou/capacitor-intercom" package.

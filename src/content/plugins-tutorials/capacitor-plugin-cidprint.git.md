@@ -1,1 +1,0 @@
-I don't have information on a package called `capacitor-cidprint` in the context provided. If you have specific details or documentation about the `capacitor-cidprint` package that you would like me to use, please provide them so I can assist you in generating the markdown tutorial along with the frontmatter.

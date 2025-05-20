@@ -1,1 +1,0 @@
-I don't have information about the package "@capacitor-community/device-security-detect" required to generate a markdown tutorial.

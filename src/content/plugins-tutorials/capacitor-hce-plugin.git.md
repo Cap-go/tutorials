@@ -1,1 +1,0 @@
-I'm unable to provide a tutorial for using the `capacitor-hce-plugin-int` package as it seems that the documentation for that specific package is not provided here. If you have any more questions or if there's anything else I can help you with, feel free to ask.

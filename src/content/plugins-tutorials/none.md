@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information about a specific "netshow-screen-plugin" package in the provided context. Since I don't have the necessary details about that specific package, I won't be able to generate a tutorial for it or create the requested frontmatter. If you have any other questions or need assistance with something else, feel free to ask!

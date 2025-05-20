@@ -20,7 +20,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-public/**/*
-openai-readmes/
-src/content/**/*
+**/*.md*
+**/*.yml
+public/
+src/services/locale.ts
+src/paraglide
 loadedVectorStore/

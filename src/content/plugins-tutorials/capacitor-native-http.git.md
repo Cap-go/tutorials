@@ -1,1 +1,0 @@
-I don't know how to use the capacitor-native-http package, would you like help with anything else related to Capacitor or Markdown?

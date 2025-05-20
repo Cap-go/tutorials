@@ -1,28 +1,39 @@
 ---
-import { join } from 'node:path'
+import { baseDomain, structuredData } from '@/config/app'
+import { appName } from '@/constants'
 import { AstroFont } from 'astro-font'
-import { structuredData } from '@/config/app'
-import { appDescription, appName } from '@/constants'
-import { baseDomain, useRuntimeConfig } from '@/config/app'
+import { join } from 'node:path'
+import * as m from '@/paraglide/messages'
 
 const {
   ldJSON = structuredData,
-  title = appName,
-  description = appDescription,
+  title = m.website_title({}, { locale: Astro.locals.locale }),
+  description = m.website_description({}, { locale: Astro.locals.locale }),
   url = Astro.url,
-  image = `${useRuntimeConfig().public.baseUrl}/capgo_banner.png`,
+  image = `${Astro.locals.runtimeConfig.public.baseUrl}/capgo_banner.png`,
   canonical = Astro.url,
   author = `Martin DONADIEU`,
+  keywords = m.website_keywords({}, { locale: Astro.locals.locale }),
   audio = null,
+  alternateVersions = [],
 } = Astro.props
+
+const localeName_to_OGP = {
+  en: 'en_EN',
+  es: 'es_ES',
+  id: 'id_ID',
+  it: 'it_IT',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+}
+
+const localeOGP = localeName_to_OGP[Astro.locals.locale.toLowerCase() as keyof typeof localeName_to_OGP]
 
 let displayDescription = description
 
 const descSize = 170
 
-if (description.length > descSize) {
-  displayDescription = `${description.substring(0, descSize - 3)}...`
-}
+if (description.length > descSize) displayDescription = `${description.substring(0, descSize - 3)}...`
 
 const image_unsecure = image.replace('https://', 'http://')
 const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
@@ -77,6 +88,9 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
   ]}
 />
 
+<!-- Sitemap -->
+<link rel="sitemap" href="/sitemap-index.xml" />
+
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="theme-color" content="#456b9a" />
@@ -84,13 +98,25 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="apple-mobile-web-app-title" content={baseDomain()} />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta property="keywords" content="Capacitor, updater, OTA, autoupdate, capgo" />
+<meta property="keywords" content={keywords} />
 
 <link rel="canonical" href={canonical} />
 <link rel="apple-touch-icon" href="/capgo.webp" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/svg+xml" href="/safari-pinned-tab.svg" />
+
+<!-- Hreflang tags for internationalization -->
+{
+  alternateVersions &&
+    alternateVersions.length > 0 &&
+    alternateVersions.map((version: { locale: string; url: string }) => <link rel="alternate" hreflang={version.locale} href={version.url} />)
+}
+{
+  alternateVersions && alternateVersions.length > 0 && (
+    <link rel="alternate" hreflang="x-default" href={alternateVersions.find((v: { locale: string }) => v.locale === 'en')?.url || alternateVersions[0].url} />
+  )
+}
 
 <!-- Primary Meta Tags -->
 <title set:html={title} />
@@ -103,7 +129,7 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
 <meta property="og:title" content={title} />
 <meta property="og:audio" content={audio} />
 <meta property="og:type" content="website" />
-<meta property="og:locale" content="en_EN" />
+<meta property="og:locale" content={localeOGP} />
 <meta property="og:type" content="website" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="627" />
@@ -121,12 +147,12 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
 <meta property="twitter:title" content={title} />
 <meta property="twitter:image" content={image} />
 <meta property="twitter:app:id:iphone" content={appName} />
-<meta property="twitter:app:name:iphone" content={appName} />
+<meta property="twitter:app:name:iphone" content="1602316563" />
 <meta property="twitter:creator" content="@martindonadieu" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:description" content={displayDescription} />
 <meta property="twitter:app:id:googleplay" content="ee.forgr.capgo" />
-<meta property="twitter:app:name:googleplay" content="ee.forgr.capgo" />
+<meta property="twitter:app:name:googleplay" content={appName} />
 
 <!-- @ts-ignore -->
-<script hid="seo-schema-graph" type="application/ld+json" set:html={ldJSON} />
+<script is:inline hid="seo-schema-graph" type="application/ld+json" set:html={JSON.stringify(ldJSON)} />

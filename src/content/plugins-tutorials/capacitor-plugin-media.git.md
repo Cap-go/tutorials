@@ -1,1 +1,0 @@
-I don't have information about the "@whiteguru/capacitor-plugin-media" package. You might want to check the correct package name and then come back, so I can assist you better.
