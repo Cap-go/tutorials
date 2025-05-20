@@ -1,0 +1,56 @@
+name: Deploy
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun run build
+        env:
+          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+          ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
+          ORAMA_CLOUD_ENDPOINT: ${{ secrets.ORAMA_CLOUD_ENDPOINT }}
+          CLOUDFLARE_TURNSTILE_SITE_KEY: ${{ secrets.CLOUDFLARE_TURNSTILE_SITE_KEY }}
+      - name: Set branch name
+        id: vars
+        run: |
+          ref=${{ github.event.pull_request.head.ref }}
+          if [ "$ref" == "refs/heads/main" ]; then
+            echo "branch=main" >> $GITHUB_OUTPUT
+          else
+            echo "branch=${ref}" >> $GITHUB_OUTPUT
+          fi
+      - run: bunx wrangler@latest pages deploy dist --project-name capgo-website --branch ${{ steps.vars.outputs.branch }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Comment deployed link on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const branch = '${{ steps.vars.outputs.branch }}';
+            const url = `https://${branch}.capgo-website.pages.dev`;
+            const body = `🚀 Preview deployed: [${url}](${url})`;
+            await github.rest.issues.createComment({
+              body,
+              repo: context.repo.repo,
+              owner: context.repo.owner,
+              issue_number: context.issue.number,
+            });
