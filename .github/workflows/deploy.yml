@@ -35,7 +35,7 @@ jobs:
           else
             echo "branch=${ref}" >> $GITHUB_OUTPUT
           fi
-      - run: bunx wrangler@latest pages deploy dist --project-name capgo-website --branch ${{ steps.vars.outputs.branch }}
+      - run: bunx wrangler@latest pages deploy dist --project-name capacitor-tutorial --branch ${{ steps.vars.outputs.branch }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -46,7 +46,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const branch = '${{ steps.vars.outputs.branch }}';
-            const url = `https://${branch}.capgo-website.pages.dev`;
+            const url = `https://${branch}.capacitor-tutorial.pages.dev`;
             const body = `🚀 Preview deployed: [${url}](${url})`;
             await github.rest.issues.createComment({
               body,
