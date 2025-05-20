@@ -38,11 +38,6 @@ const navigation: Record<string, NavigationItem[]> = {
       icon: () => '🟢',
     },
     { name: m.status({}, { locale: Astro.locals.locale }), href: 'https://status.capgo.app/', target: '_blank' },
-    {
-      name: m.chat({}, { locale: Astro.locals.locale }),
-      href: 'mailto:support@capgo.app',
-      rel: 'nofollow',
-    },
   ],
   hero: [
     {
