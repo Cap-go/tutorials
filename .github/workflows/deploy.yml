@@ -35,6 +35,24 @@ jobs:
           else
             echo "branch=${ref}" >> $GITHUB_OUTPUT
           fi
+      - name: Ensure Cloudflare Pages project exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -e
+          project_name="capacitor-tutorial"
+          api="https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/${project_name}"
+          status=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" "$api")
+          if [ "$status" = "404" ]; then
+            echo "Project does not exist. Creating..."
+            curl -s -X POST "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects" \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              --data "{\"name\":\"${project_name}\",\"production_branch\":\"main\"}"
+          else
+            echo "Project exists or another error occurred (status: $status)."
+          fi
       - run: bunx wrangler@latest pages deploy dist --project-name capacitor-tutorial --branch ${{ steps.vars.outputs.branch }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
