@@ -18,28 +18,17 @@ interface NavigationItem {
 const navigation: Record<string, NavigationItem[]> = {
   solutions: [
     { name: m.register({}, { locale: Astro.locals.locale }), href: 'https://capgo.app/register/', target: '_blank' },
-    { name: m.app_mobile({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'app_mobile') },
-    {
-      name: m.documentation({}, { locale: Astro.locals.locale }),
-      href: getRelativeLocaleUrl(Astro.locals.locale, 'docs'),
-    },
-    { name: m.plugins({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'plugins') },
     {
       name: m.awesome_capacitor({}, { locale: Astro.locals.locale }),
       href: 'https://github.com/riderx/awesome-capacitor/',
       target: '_blank',
     },
-    { name: m.top_app_by_framework({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'top_app') },
   ],
   support: [
     {
       name: m.community({}, { locale: Astro.locals.locale }),
       href: 'https://discord.com/invite/VnYRvBfgA6',
       target: '_blank',
-    },
-    {
-      name: m.pricing({}, { locale: Astro.locals.locale }),
-      href: getRelativeLocaleUrl(Astro.locals.locale, 'pricing'),
     },
     { name: m.guides({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'blog') },
     {
@@ -54,33 +43,6 @@ const navigation: Record<string, NavigationItem[]> = {
       href: 'mailto:support@capgo.app',
       rel: 'nofollow',
     },
-    {
-      name: m.sponsor({}, { locale: Astro.locals.locale }),
-      href: getRelativeLocaleUrl(Astro.locals.locale, 'sponsor'),
-    },
-  ],
-  company: [
-    { name: m.about({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'about') },
-    { name: m.imprint({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'imprint') },
-    { name: m.jobs({}, { locale: Astro.locals.locale }), href: 'https://console.algora.io/org/capgo/bounties?status=open/' },
-    { name: m.contributing({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'contributing') },
-    { name: m.trust({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'trust') },
-    { name: m.consulting({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'consulting') },
-  ],
-  legal: [
-    { name: m.privacy({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'privacy'), rel: 'nofollow' },
-    { name: m.support_policy({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'support-policy'), rel: 'nofollow' },
-    { name: m.sla({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'sla'), rel: 'nofollow' },
-    { name: m.aup({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'aup'), rel: 'nofollow' },
-    { name: m.terms({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'tos'), rel: 'nofollow' },
-    { name: m.security_txt({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'security'), rel: 'nofollow' },
-    // {
-    //   name: m.privacy({}, { locale: Astro.locals.locale }),
-    //   href: 'https://www.privacyboard.co/company/capgo/',
-    //   target: '_blank',
-    // },
-    { name: m.dp({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'dp'), rel: 'nofollow' },
-    { name: m.dpa({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'dpa'), rel: 'nofollow' },
   ],
   hero: [
     {
@@ -209,43 +171,6 @@ const navigation: Record<string, NavigationItem[]> = {
                       class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
                     >
                       {item.icon && <span class="mr-2" set:html={typeof item.icon === 'function' ? item.icon() : item.icon} />}
-                      {typeof item.name === 'function' ? item.name() : item.name}
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-base font-medium text-gray-900">{m.company({}, { locale: Astro.locals.locale })}</h3>
-            <ul role="list" class="mt-4 space-y-4">
-              {
-                navigation.company.map((item) => (
-                  <li>
-                    <a
-                      href={item.href}
-                      class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
-                    >
-                      {typeof item.name === 'function' ? item.name() : item.name}
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-          <div class="mt-12 md:mt-0">
-            <h3 class="text-base font-medium text-gray-900">{m.legal({}, { locale: Astro.locals.locale })}</h3>
-            <ul role="list" class="mt-4 space-y-4">
-              {
-                navigation.legal.map((item) => (
-                  <li>
-                    <a
-                      rel={item.rel}
-                      href={item.href}
-                      class="border-b-2 border-transparent text-base text-gray-500 transition-all duration-200 hover:border-blue-600 hover:text-gray-900 focus:border-blue-600"
-                    >
                       {typeof item.name === 'function' ? item.name() : item.name}
                     </a>
                   </li>
