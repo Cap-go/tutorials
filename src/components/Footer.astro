@@ -30,7 +30,7 @@ const navigation: Record<string, NavigationItem[]> = {
       href: 'https://discord.com/invite/VnYRvBfgA6',
       target: '_blank',
     },
-    { name: m.guides({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, 'blog') },
+    { name: m.guides({}, { locale: Astro.locals.locale }), href: getRelativeLocaleUrl(Astro.locals.locale, '') },
     {
       name: () => m.all_systems_normal({}, { locale: Astro.locals.locale }),
       href: 'https://status.capgo.app/',
