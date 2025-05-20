@@ -8,9 +8,6 @@ import { defaultLocale, localeNames, locales } from './src/services/locale'
 
 export default defineConfig({
   trailingSlash: 'always',
-  redirects: {
-    '/blog/': '/',
-  },
   env: {
     validateSecrets: true,
     schema: {
