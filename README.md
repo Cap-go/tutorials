@@ -9,7 +9,7 @@
 # Setup Local
 
 ```
-pnpm i
+bun i
 ```
 
 # Step 1. Fetch Capacitor Plugins Metadata from NPM registry
@@ -39,7 +39,7 @@ node scripts/generate_tutorials.mjs
 # Step 5: Build and Preview
 
 ```
-pnpm build && pnpm preview
+bun run build && bun run preview
 ```
 
 # Setup Github actions
