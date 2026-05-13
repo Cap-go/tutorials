@@ -8,6 +8,10 @@ jobs:
   check-and-submit:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
       - name: indexnow-action
         uses: bojieyang/indexnow-action@v2
         with:
@@ -17,6 +21,10 @@ jobs:
   google-indexing:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
       - uses: robingenz/action-google-indexing@v1.0.0
         with:
           siteUrl: 'capacitor-tutorial.com'
