@@ -27,6 +27,8 @@ A deployment pipeline with three channels:
 - Node.js >= 18
 - A Capgo account ([capgo.app](https://capgo.app))
 
+Authenticate the Capgo CLI once before running channel/bundle commands:
+
 ---
 
 ## Step 1 — Install the Capgo Plugin
