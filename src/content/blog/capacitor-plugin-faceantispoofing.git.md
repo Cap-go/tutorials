@@ -1,1 +1,0 @@
-I can't generate the markdown tutorial for the `capacitor-plugin-faceantispoofing` package as it doesn't appear to be a real package or documented in the context provided. If you have any other questions or need assistance with different topics, feel free to ask!

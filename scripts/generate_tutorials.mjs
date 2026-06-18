@@ -25,8 +25,8 @@ let processedCount = 0
 async function chat(input, pluginPath) {
   const contentDir = join(process.cwd(), 'src', 'content')
   if (!existsSync(contentDir)) mkdirSync(contentDir)
-  const tutorialsDir = join(contentDir, 'blog')
-  if (!existsSync(tutorialsDir)) mkdirSync(tutorialsDir)
+  const tutorialsDir = join(contentDir, 'blog', 'en')
+  if (!existsSync(tutorialsDir)) mkdirSync(tutorialsDir, { recursive: true })
   const outputFile = join(tutorialsDir, `${pluginPath}.md`)
   const currentContent = existsSync(outputFile) ? readFileSync(outputFile, 'utf8') : null
   // if file exists
@@ -91,11 +91,19 @@ const endLimit = parseInt(process.argv[3]) || actions.length
 const getSlug = (href) => href.substring(href.lastIndexOf('/') + 1).toLowerCase()
 
 const inputQuery = (item) =>
-  `Generate a markdown tutorial of using ${
+  `Generate a markdown tutorial for using the ${
     item.name
-  } package, also add a frontmatter with values making sure that they are in double quotes (and the content in them does not contain double quotes) to the same file containing title for the blog, description as the summary of what will be in the blog, created_at as the date of this answer, published boolean value as true and slug value equal to ${getSlug(
-    item.href,
-  )} and make sure that there is no commas at the end of each key value pair in the frontmatter`
+  } package. Start the file with valid YAML frontmatter using this exact format (no code fences, no JSON keys):
+---
+title: <blog title>
+description: <short summary>
+created_at: <ISO date YYYY-MM-DD>
+published: true
+slug: ${getSlug(item.href)}
+locale: en
+---
+
+Then write the tutorial body in markdown below the frontmatter.`
 
 async function spinTutorials(list) {
   const gap = 5

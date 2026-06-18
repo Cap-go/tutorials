@@ -1,1 +1,0 @@
-I'm not sure how to generate a markdown tutorial with frontmatter in the specified format for the @nativescript/capacitor package.

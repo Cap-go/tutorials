@@ -1,1 +1,0 @@
-I don't have information about how to use the `@capgo/capacitor-is-root` package.

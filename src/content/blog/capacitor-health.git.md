@@ -1,1 +1,0 @@
-I don't have information about the specific `capacitor-health` package. It would be best to refer to the official documentation or resources related to `capacitor-health` for a tutorial on how to use it.

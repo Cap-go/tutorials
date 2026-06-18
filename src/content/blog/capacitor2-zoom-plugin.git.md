@@ -1,1 +1,0 @@
-I'm sorry, but I cannot generate a markdown tutorial for the "capacitor2-zoom-plugin" package as it is not mentioned in the provided context. If you have any specific information or details about the "capacitor2-zoom-plugin" package, feel free to share it, and I'll be happy to help you with creating the markdown tutorial.

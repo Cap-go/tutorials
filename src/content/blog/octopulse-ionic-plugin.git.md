@@ -1,1 +1,0 @@
-I don't have information on a package called `capacitor-plugin-octopulse`. It seems like an unknown package or a package not mentioned in the provided context.

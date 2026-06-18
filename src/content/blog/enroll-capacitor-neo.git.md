@@ -1,1 +1,0 @@
-I don't have information on a package called "enroll-capacitor-neo".

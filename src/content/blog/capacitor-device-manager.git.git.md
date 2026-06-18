@@ -1,1 +1,0 @@
-I don't have information on the `@rolster/capacitor-device-manager` package.

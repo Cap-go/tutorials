@@ -1,1 +1,0 @@
-I don't have information regarding the "@adplorg/capacitor-in-app-purchase" package in the provided context.

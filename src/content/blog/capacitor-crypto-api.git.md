@@ -1,1 +1,0 @@
-I don't have information on the `@perfood/capacitor-crypto-api` package or the specific details needed to generate the markdown tutorial and frontmatter for it. If you have any other questions or need further assistance, feel free to ask!

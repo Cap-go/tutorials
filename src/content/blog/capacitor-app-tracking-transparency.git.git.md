@@ -1,1 +1,0 @@
-I don't have information about the specific package `capacitor-app-tracking-transparency`. You might need to refer to the package documentation or examples for creating a markdown tutorial.

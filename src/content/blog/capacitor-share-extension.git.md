@@ -1,1 +1,0 @@
-I'm not familiar with the `capacitor-share-extension` package, so I can't provide a markdown tutorial for it.

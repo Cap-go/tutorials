@@ -1,1 +1,0 @@
-I cannot provide details on the `@capgo/capacitor-zebra-datawedge` package as it is not included in the provided context.

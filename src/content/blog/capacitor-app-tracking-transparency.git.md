@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide a markdown tutorial for the `@capgo/capacitor-app-tracking-transparency` package as it is not mentioned in the context provided. If you have any other question or need help with a different topic, feel free to ask.

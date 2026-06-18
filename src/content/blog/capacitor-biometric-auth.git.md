@@ -1,1 +1,0 @@
-I'm sorry, but I don't have the specific knowledge about the "@aparajita/capacitor-biometric-auth" package to generate a tutorial. You may need to refer to the package documentation or resources related to it to create a markdown tutorial effectively.

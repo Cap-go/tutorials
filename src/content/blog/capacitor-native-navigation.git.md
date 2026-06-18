@@ -1,1 +1,0 @@
-I'm unable to generate a markdown tutorial for the capacitor-native-navigation package because the information provided is only about creating an app with Capacitor. If you have any specific questions or need help with Capacitor, feel free to ask!

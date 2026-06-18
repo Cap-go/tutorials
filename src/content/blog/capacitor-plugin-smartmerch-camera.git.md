@@ -1,1 +1,0 @@
-I don't have information about "@nitra/capacitor-plugin-smartmerch-camera" package in the provided context.

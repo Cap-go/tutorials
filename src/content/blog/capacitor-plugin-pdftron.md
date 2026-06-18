@@ -1,1 +1,0 @@
-I don't know how to use "@mmgodc/capacitor-plugin-pdftron" package as I couldn't find any information or documentation about this specific plugin.

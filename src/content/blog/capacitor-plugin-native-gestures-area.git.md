@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information about the `@hiloenergie/capacitor-plugin-native-gestures-area` package to generate a specific markdown tutorial for it. To provide accurate details, I would need more information or documentation about the package.

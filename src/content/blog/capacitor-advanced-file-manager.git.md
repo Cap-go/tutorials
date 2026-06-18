@@ -1,1 +1,0 @@
-I'm unable to provide a tutorial for using the Capacitor-Advanced-File-Manager package.

@@ -1,1 +1,0 @@
-I can provide you with the tutorial and frontmatter but I need to know if you are targeting Capacitor 2, Capacitor 3, or Capacitor 5 as each version requires different package versions for this tutorial.

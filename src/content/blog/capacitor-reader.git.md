@@ -1,1 +1,0 @@
-I don't know how to generate a markdown tutorial with frontmatter as you described for the capacitor-reader package.

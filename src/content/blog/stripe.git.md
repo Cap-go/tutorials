@@ -1,1 +1,0 @@
-I'm unable to perform operations directly on files or generate markdown content. However, if you would like to know how to create the frontmatter and markdown content, I can guide you through the process. Let me know if you would like to proceed with the step-by-step instructions.

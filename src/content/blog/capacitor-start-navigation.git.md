@@ -1,1 +1,0 @@
-I don't know the specifics of using the `@cwoebker/capacitor-start-navigation` package. You can check the official documentation or resources for a tutorial on using it. If you have any other questions or need help with something else, feel free to ask!

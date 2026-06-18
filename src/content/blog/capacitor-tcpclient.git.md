@@ -1,1 +1,0 @@
-I don't have the specific information on the "@devioarts/capacitor-tcpclient" package to generate a markdown tutorial. You might want to refer to the package documentation for the specific instructions.

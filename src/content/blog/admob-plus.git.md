@@ -1,1 +1,0 @@
-I don't have information on the **@admob-plus/capacitor** package to provide a detailed markdown tutorial including the specified frontmatter details you mentioned.

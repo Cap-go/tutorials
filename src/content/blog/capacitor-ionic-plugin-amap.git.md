@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information on a `capacitor-ionic-plugin-amap`, and therefore cannot generate a tutorial for it.

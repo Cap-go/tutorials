@@ -1,1 +1,0 @@
-I'm unable to provide an exact solution for creating a frontmatter-infused Markdown tutorial for using the `@okode/capacitor-dynatrace` package. The information provided is related to the `capacitor-dynatrace` plugin, not the `@okode/capacitor-dynatrace` package. If you need further clarification or have any other questions related to this topic, feel free to ask!

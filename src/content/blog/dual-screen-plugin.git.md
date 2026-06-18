@@ -1,1 +1,0 @@
-I'm unable to provide an answer for using the "dual-screen-plugin" package because the context provided is for the "capacitor-splash-screen" plugin.

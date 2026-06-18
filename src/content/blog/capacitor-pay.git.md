@@ -1,1 +1,0 @@
-I'm sorry, I don't have information about the `@capgo/capacitor-pay` package.

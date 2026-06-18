@@ -1,1 +1,0 @@
-I don't have information on a package called `@capgo/capacitor-file`. It seems that you might have mistyped the package name. If you provide the correct package name or details, I'll be able to help you generate the markdown tutorial.

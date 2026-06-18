@@ -1,1 +1,0 @@
-I don't know the answer to this question as it requires detailed explanations on how to use the capacitor-open-app-settings package and front matter creation. For detailed tutorials on these topics, I recommend checking the official documentation for Capacitor and markdown tutorials.

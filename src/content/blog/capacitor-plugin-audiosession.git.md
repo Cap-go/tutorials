@@ -1,1 +1,0 @@
-I don't have information specifically about the `@studiokloek/capacitor-plugin-audiosession` package to generate a markdown tutorial.

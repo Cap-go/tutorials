@@ -1,1 +1,0 @@
-I'm unable to generate a markdown tutorial for the `@capgo/capacitor-barometer` package as it is not mentioned in the context provided.

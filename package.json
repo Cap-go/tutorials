@@ -7,7 +7,7 @@
     "astro": "astro",
     "dev": "tsx scripts/fix_code_languages_all.tsx && astro dev",
     "start": "astro dev",
-    "build": "bun run paraglide:compile && tsx scripts/fix_code_languages_all.tsx && astro build && tsx ./scripts/repair_sitemap.tsx",
+    "build": "bun run paraglide:compile && tsx scripts/fix_code_languages_all.tsx && tsx scripts/blogs/delete_broken_all.tsx && astro build && tsx ./scripts/repair_sitemap.tsx",
     "preview": "astro preview",
     "fmt": "prettier --write '**/*' --ignore-unknown",
     "blogs:translate_all": "tsx scripts/blogs/translate_all.tsx",

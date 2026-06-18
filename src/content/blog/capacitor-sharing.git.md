@@ -1,1 +1,0 @@
-I don't know how to use the `@palauaandsons/capacitor-sharing` package, could you provide me with more details so I can assist you better?

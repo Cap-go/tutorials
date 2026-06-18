@@ -1,1 +1,0 @@
-I don't have information specifically about the `@capgo/capacitor-android-inline-install` package to provide a tutorial.

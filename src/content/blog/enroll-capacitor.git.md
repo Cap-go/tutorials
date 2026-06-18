@@ -1,3 +1,0 @@
-I'm sorry, but it seems like there is some confusion in your request. The context provided does not contain any information or documentation about an "enroll-capacitor" package. 
-
-If you have any specific information about the "enroll-capacitor" package that you would like to include in the tutorial or need assistance with a different package or topic, please provide the relevant details so that I can help you create a markdown tutorial as per your requirements.

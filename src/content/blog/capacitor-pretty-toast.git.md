@@ -1,1 +1,0 @@
-I'm sorry, but I don't have information about the `@capgo/capacitor-pretty-toast` package.

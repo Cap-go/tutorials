@@ -1,1 +1,0 @@
-I don't have information on the `capacitor-media-session-control` package, so I'm unable to provide guidance on writing a tutorial for it.

@@ -1,1 +1,0 @@
-I don't have information on the specific package "@teamhive/capacitor-video-recorder" or how to generate a markdown tutorial for it. Feel free to ask for help with other questions or topics!

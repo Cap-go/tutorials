@@ -1,1 +1,0 @@
-I don't know how to use the `capacitor-application-context` package at the moment.

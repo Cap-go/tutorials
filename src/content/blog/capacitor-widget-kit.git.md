@@ -1,1 +1,0 @@
-I'm sorry, but I cannot provide a markdown tutorial for the `@capgo/capacitor-widget-kit` package as it is not mentioned in the provided context. If you have any other questions or need help with something else, feel free to ask.

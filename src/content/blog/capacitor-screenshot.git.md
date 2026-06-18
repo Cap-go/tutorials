@@ -1,1 +1,0 @@
-I don't have enough information to provide a markdown tutorial specific to the capacitor-screenshot package. If you provide me with the necessary steps and information, I can help you create the markdown tutorial with the frontmatter you mentioned.

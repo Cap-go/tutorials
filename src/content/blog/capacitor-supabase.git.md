@@ -1,1 +1,0 @@
-I don't have the specific information about the `@capgo/capacitor-supabase` package. You might want to refer to the package documentation or resources to create the markdown tutorial.
