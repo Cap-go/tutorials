@@ -11,21 +11,222 @@ const content: { title?: string; description?: string; image?: string; author?: 
 
 const posts = allPosts.sort((a, b) => (new Date(a.data.created_at) > new Date(b.data.created_at) ? -1 : 1))
 
+const categoryRules = [
+  { label: 'Authentication', terms: ['auth', 'login', 'signin', 'sign-in', 'single-sign-on', 'sso', 'kakao', 'oauth', 'biometric', 'autofill', 'password'] },
+  { label: 'Firebase & Messaging', terms: ['firebase', 'fcm', 'push', 'notification', 'airship', 'cleverpush', 'marketingcloud', 'azure-notification', 'emarsys'] },
+  { label: 'Maps & Location', terms: ['map', 'maps', 'location', 'geolocation', 'gps'] },
+  { label: 'Media & Camera', terms: ['camera', 'photo', 'video', 'audio', 'music', 'media', 'barcode', 'scanner', 'speech', 'player', 'brightness'] },
+  { label: 'Files & Storage', terms: ['file', 'storage', 'sqlite', 'blob', 'couchbase', 'mediastore', 'document', 'docutain', 'opener', 'uploader'] },
+  { label: 'Payments & Revenue', terms: ['admob', 'ads', 'advertising', 'purchase', 'purchases', 'subscription', 'stripe', 'monetize', 'wallet'] },
+  {
+    label: 'Device APIs',
+    terms: ['bluetooth', 'contacts', 'calendar', 'sim', 'sensor', 'nfc', 'health', 'healthkit', 'device', 'printer', 'datawedge', 'shortcut', 'siri', 'call-number'],
+  },
+  { label: 'App Shell & WebView', terms: ['webview', 'tailwind', 'edge-to-edge', 'navigation-bar', 'home-indicator', 'cookies', 'user-agent'] },
+  { label: 'Background & System', terms: ['background', 'updater', 'update', 'keep-awake', 'exit-app', 'developer-options', 'system-stats', 'ssl', 'privacy-screen', 'launcher'] },
+  { label: 'Analytics & Growth', terms: ['analytics', 'mixpanel', 'facebook-events', 'appmetrica', 'adjust', 'meta', 'bugfender', 'apprate'] },
+]
+const fallbackCategory = 'Capacitor Plugins'
+
+const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+const getPostCategory = (post: CollectionEntry<'blog'>) => {
+  const haystack = [post.data.title, post.data.description, post.data.slug].filter(Boolean).join(' ').toLowerCase()
+  return categoryRules.find((category) => category.terms.some((term) => new RegExp(`\\b${escapeRegex(term)}\\b`).test(haystack)))?.label ?? fallbackCategory
+}
+
+const postsWithCategories = posts.map((post) => ({ post, category: getPostCategory(post) }))
+const categoryCounts = postsWithCategories.reduce((counts, { category }) => {
+  counts.set(category, (counts.get(category) ?? 0) + 1)
+  return counts
+}, new Map<string, number>())
+const categories = [
+  { label: 'All', count: posts.length },
+  ...[...categoryRules.map((category) => category.label), fallbackCategory]
+    .map((label) => ({ label, count: categoryCounts.get(label) ?? 0 }))
+    .filter((category) => category.count > 0),
+]
+
 if (Astro.locals.runtimeConfig.public.blog_title) content['title'] = Astro.locals.runtimeConfig.public.blog_title
 if (Astro.locals.runtimeConfig.public.blog_keywords) content['keywords'] = Astro.locals.runtimeConfig.public.blog_keywords
 if (Astro.locals.runtimeConfig.public.blog_description) content['description'] = Astro.locals.runtimeConfig.public.blog_description
 ---
 
 <Layout {content}>
-  <div class="flex w-full flex-col items-center py-8">
-    <div class="relative w-full max-w-7xl px-8 sm:px-10 lg:px-12">
-      <h1 class="text-3xl leading-tight font-bold text-white sm:text-4xl lg:text-5xl">{m.latest_from_the_blog({}, { locale: Astro.locals.locale })}</h1>
-      <h2 class="mt-2 text-base leading-relaxed text-gray-50">
-        {config.public.blog_description}
-      </h2>
-      <div class="mt-8 grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((j, i) => <Blog link={j.data.slug} title={j.data.title} date={j.data.created_at} loading={i < 3 ? 'eager' : 'lazy'} />)}
+  <div class="w-full py-8 sm:py-10">
+    <div class="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl leading-10 font-bold text-white sm:text-4xl lg:text-5xl">{m.latest_from_the_blog({}, { locale: Astro.locals.locale })}</h1>
+        <h2 class="mt-2 text-base/7 text-gray-50">
+          {config.public.blog_description}
+        </h2>
+      </div>
+
+      <div class="mt-8 grid gap-8 lg:grid-cols-[18rem_minmax(0,1fr)] lg:items-start">
+        <aside class="hidden lg:sticky lg:top-6 lg:block">
+          <div class="rounded-lg border border-white/10 bg-gray-800/80 p-4">
+            <p class="text-sm/6 font-semibold tracking-widest text-gray-300 uppercase">Search</p>
+            <div class="relative mt-3">
+              <svg aria-hidden="true" viewBox="0 0 20 20" class="pointer-events-none absolute top-1/2 left-3 size-5 -translate-y-1/2 text-gray-400">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M8.5 3a5.5 5.5 0 0 0-4.383 8.823l-1.647 1.647a.75.75 0 1 0 1.06 1.06l1.647-1.647A5.5 5.5 0 1 0 8.5 3Zm-4 5.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <input
+                data-blog-search
+                id="blog-search"
+                name="blog-search"
+                type="search"
+                aria-label="Search blog articles"
+                placeholder="Search articles"
+                class="w-full rounded-lg border border-white/10 bg-gray-900 py-2.5 pr-3 pl-10 text-base/6 text-white placeholder:text-gray-500 focus:border-blue-400 focus:outline-none sm:text-sm/6"
+              />
+            </div>
+
+            <div class="mt-6">
+              <p class="text-sm/6 font-semibold tracking-widest text-gray-300 uppercase">Categories</p>
+              <div class="mt-3 flex flex-col gap-2">
+                {
+                  categories.map((category) => (
+                    <button
+                      type="button"
+                      data-blog-category={category.label}
+                      aria-pressed={category.label === 'All' ? 'true' : 'false'}
+                      class="flex w-full items-center justify-between gap-3 rounded-lg border border-white/10 px-3 py-2 text-left text-sm/6 text-gray-200 transition hover:border-white/25 hover:bg-white/5 aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-gray-950"
+                    >
+                      <span>{category.label}</span>
+                      <span class="text-current tabular-nums">{category.count}</span>
+                    </button>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div>
+          <div class="sticky top-0 z-20 -mx-6 border-y border-white/10 bg-gray-900/95 px-6 py-3 backdrop-blur sm:-mx-8 sm:px-8 lg:hidden">
+            <div class="relative">
+              <svg aria-hidden="true" viewBox="0 0 20 20" class="pointer-events-none absolute top-1/2 left-3 size-5 -translate-y-1/2 text-gray-400">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M8.5 3a5.5 5.5 0 0 0-4.383 8.823l-1.647 1.647a.75.75 0 1 0 1.06 1.06l1.647-1.647A5.5 5.5 0 1 0 8.5 3Zm-4 5.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <input
+                data-blog-search
+                id="blog-search-mobile"
+                name="blog-search-mobile"
+                type="search"
+                aria-label="Search blog articles"
+                placeholder="Search articles"
+                class="w-full rounded-lg border border-white/10 bg-gray-800 py-3 pr-3 pl-10 text-base/6 text-white placeholder:text-gray-500 focus:border-blue-400 focus:outline-none"
+              />
+            </div>
+            <details class="mt-3">
+              <summary class="flex list-none items-center justify-between rounded-lg border border-white/10 px-3 py-2.5 text-base/7 font-semibold text-gray-100 marker:hidden">
+                Categories
+                <svg aria-hidden="true" viewBox="0 0 20 20" class="size-5 text-gray-400">
+                  <path
+                    fill="currentColor"
+                    d="M5.22 7.22a.75.75 0 0 1 1.06 0L10 10.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 8.28a.75.75 0 0 1 0-1.06Z"></path>
+                </svg>
+              </summary>
+              <div class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {
+                  categories.map((category) => (
+                    <button
+                      type="button"
+                      data-blog-category={category.label}
+                      aria-pressed={category.label === 'All' ? 'true' : 'false'}
+                      class="flex w-full items-center justify-between gap-3 rounded-lg border border-white/10 px-3 py-2.5 text-left text-base/7 text-gray-200 transition hover:border-white/25 hover:bg-white/5 aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-gray-950 sm:py-2 sm:text-sm/6"
+                    >
+                      <span>{category.label}</span>
+                      <span class="text-current tabular-nums">{category.count}</span>
+                    </button>
+                  ))
+                }
+              </div>
+            </details>
+          </div>
+
+          <div class="mb-4 flex items-center justify-between gap-4">
+            <p data-blog-result-count class="text-base/7 text-gray-300 sm:text-sm/6" aria-live="polite">Showing {posts.length} articles</p>
+          </div>
+
+          <div class="grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {
+              postsWithCategories.map(({ post, category }, i) => (
+                <article
+                  data-blog-card
+                  data-blog-card-category={category}
+                  data-blog-card-search={[post.data.title, post.data.description, category].filter(Boolean).join(' ').toLowerCase()}
+                >
+                  <Blog link={post.data.slug} title={post.data.title} date={post.data.created_at} tag={category} loading={i < 3 ? 'eager' : 'lazy'} />
+                </article>
+              ))
+            }
+          </div>
+
+          <p data-blog-empty hidden role="status" aria-live="polite" class="rounded-lg border border-white/10 bg-gray-800/80 p-6 text-base/7 text-gray-200">
+            No articles match your filters.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </Layout>
+
+<script>
+  const searchInputs = Array.from(document.querySelectorAll<HTMLInputElement>('input[data-blog-search]'))
+  const categoryButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('button[data-blog-category]'))
+  const blogCards = Array.from(document.querySelectorAll<HTMLElement>('[data-blog-card]'))
+  const resultCount = document.querySelector<HTMLElement>('[data-blog-result-count]')
+  const emptyState = document.querySelector<HTMLElement>('[data-blog-empty]')
+  let selectedCategory = 'All'
+
+  const syncSearchInputs = (value: string, source: HTMLInputElement) => {
+    searchInputs.forEach((input) => {
+      if (input !== source) input.value = value
+    })
+  }
+
+  const applyFilters = () => {
+    const query = searchInputs[0]?.value.trim().toLowerCase() ?? ''
+    let visibleCount = 0
+
+    blogCards.forEach((card) => {
+      const matchesCategory = selectedCategory === 'All' || card.dataset.blogCardCategory === selectedCategory
+      const matchesSearch = !query || (card.dataset.blogCardSearch ?? '').includes(query)
+      const isVisible = matchesCategory && matchesSearch
+      card.hidden = !isVisible
+      if (isVisible) visibleCount += 1
+    })
+
+    categoryButtons.forEach((button) => {
+      button.setAttribute('aria-pressed', button.dataset.blogCategory === selectedCategory ? 'true' : 'false')
+    })
+
+    if (resultCount) resultCount.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`
+    if (emptyState) emptyState.hidden = visibleCount > 0
+  }
+
+  searchInputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      syncSearchInputs(input.value, input)
+      applyFilters()
+    })
+  })
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      selectedCategory = button.dataset.blogCategory ?? 'All'
+      applyFilters()
+    })
+  })
+
+  applyFilters()
+</script>
