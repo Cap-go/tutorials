@@ -1,6 +1,6 @@
 ---
 import { getRelativeLocaleUrl } from 'astro:i18n'
-import I18nText from '@/components/I18nText.astro'
+import * as m from '@/paraglide/messages'
 ---
 
 <div>
@@ -10,11 +10,11 @@ import I18nText from '@/components/I18nText.astro'
 
     <div class="relative">
       <span class="mb-4 text-3xl leading-tight font-normal text-white sm:mb-6 sm:text-4xl md:text-[44px]">
-        <I18nText k="instant_updates_for_capacitor_apps" />
+        {m.instant_updates_for_capacitor_apps({}, { locale: Astro.locals.locale })}
       </span>
 
       <p class="mb-6 max-w-3xl text-lg leading-relaxed font-normal text-gray-300 sm:mb-8 sm:text-xl md:mb-12">
-        <I18nText k="instant_updates_for_capacitor_apps_description" />
+        {m.instant_updates_for_capacitor_apps_description({}, { locale: Astro.locals.locale })}
       </p>
 
       <a
@@ -22,7 +22,7 @@ import I18nText from '@/components/I18nText.astro'
         href="https://capgo.app/register/"
         class="inline-flex w-full items-center justify-center rounded-lg bg-black px-6 py-3 text-lg text-white transition-colors duration-200 hover:bg-gray-800 sm:w-auto sm:px-10 sm:py-4 sm:text-xl"
       >
-        <I18nText k="get_started_now" />
+        {m.get_started_now({}, { locale: Astro.locals.locale })}
       </a>
     </div>
   </div>

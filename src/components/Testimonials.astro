@@ -116,7 +116,7 @@ const testimonials = [
 
 // Format message to highlight Twitter handles
 const messageFormatter = (message: string) => message.replace(/(@\w+)/g, '<span class="text-indigo-400">$1</span>').replace(/\n/g, '<br/>')
-import I18nText from '@/components/I18nText.astro'
+import * as m from '@/paraglide/messages'
 ---
 
 <section class="relative isolate bg-gray-900 pt-24 pb-32 sm:pt-32">
@@ -178,7 +178,7 @@ import I18nText from '@/components/I18nText.astro'
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-base/7 font-semibold text-indigo-400">Testimonials</h2>
       <p class="mt-2 text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-        <I18nText k="they_love_capgo" />
+        {m.they_love_capgo({}, { locale: Astro.locals.locale })}
       </p>
     </div>
 

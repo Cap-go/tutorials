@@ -1,8 +1,8 @@
 ---
-import I18nText from '@/components/I18nText.astro'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 const brand = Astro.locals.runtimeConfig.public.brand
+import * as m from '@/paraglide/messages'
 ---
 
 <header class="relative py-2">
@@ -26,34 +26,34 @@ const brand = Astro.locals.runtimeConfig.public.brand
           href="https://capgo.app/pricing/"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          <I18nText k="pricing" />
+          {m.pricing({}, { locale: Astro.locals.locale })}
         </a>
         <a
           href={getRelativeLocaleUrl(Astro.locals.locale, '')}
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          <I18nText k="blog" />
+          {m.blog({}, { locale: Astro.locals.locale })}
         </a>
         <a
           href="https://capgo.app/docs/"
           target="_blank"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          <I18nText k="documentation" />
+          {m.documentation({}, { locale: Astro.locals.locale })}
         </a>
         <a
           target="_blank"
           href="https://web.capgo.app/login/"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          <I18nText k="login" />
+          {m.login({}, { locale: Astro.locals.locale })}
         </a>
         <a
           target="_blank"
           href="https://capgo.app/register/"
           class="font-pj rounded-xl border border-gray-300 bg-transparent px-5 py-2 text-base leading-7 font-semibold text-gray-300 transition-all duration-200 hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:outline-none"
         >
-          <I18nText k="register" />
+          {m.register({}, { locale: Astro.locals.locale })}
         </a>
       </div>
     </div>
@@ -62,41 +62,41 @@ const brand = Astro.locals.runtimeConfig.public.brand
     <div class="mt-2 space-y-1 bg-gray-700 px-2 pt-2 pb-3">
       <a
         href="https://capgo.app/pricing/"
-        data-i18n-title="pricing"
+        title={m.pricing({}, { locale: Astro.locals.locale })}
         target="_blank"
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        <I18nText k="pricing" />
+        {m.pricing({}, { locale: Astro.locals.locale })}
       </a>
       <a
         href={getRelativeLocaleUrl(Astro.locals.locale, '')}
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        <I18nText k="blog" />
+        {m.blog({}, { locale: Astro.locals.locale })}
       </a>
       <a
         href="https://capgo.app/docs/"
-        data-i18n-title="documentation"
+        title={m.documentation({}, { locale: Astro.locals.locale })}
         target="_blank"
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        <I18nText k="documentation" />
+        {m.documentation({}, { locale: Astro.locals.locale })}
       </a>
       <a
         href="https://web.capgo.app/login/"
         target="_blank"
-        data-i18n-title="login"
+        title={m.login({}, { locale: Astro.locals.locale })}
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        <I18nText k="login" />
+        {m.login({}, { locale: Astro.locals.locale })}
       </a>
       <a
         target="_blank"
-        data-i18n-title="register"
+        title={m.register({}, { locale: Astro.locals.locale })}
         href="https://capgo.app/register/"
         class="font-pj block rounded-md border border-gray-300 bg-transparent px-5 py-2 text-base leading-7 font-medium text-gray-300 text-white transition-all duration-200 hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:outline-none"
       >
-        <I18nText k="register" />
+        {m.register({}, { locale: Astro.locals.locale })}
       </a>
     </div>
   </div>

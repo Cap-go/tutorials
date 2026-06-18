@@ -23,8 +23,8 @@ const features = [
     color: 'teal',
   },
 ]
-import I18nText from '@/components/I18nText.astro'
 import { t } from '@/services/messages'
+import * as m from '@/paraglide/messages'
 ---
 
 <section class="relative bg-gray-900 py-12 sm:py-16 lg:py-20 xl:py-24">
@@ -49,9 +49,9 @@ import { t } from '@/services/messages'
   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-lg text-center lg:max-w-4xl">
       <h2 class="text-3xl font-semibold text-white sm:mt-8 sm:text-4xl lg:text-5xl xl:text-6xl">
-        <I18nText k="flexible_organization_management_for_your_team" />
+        {m.flexible_organization_management_for_your_team({}, { locale: Astro.locals.locale })}
       </h2>
-      <p class="mt-6 text-lg font-normal text-gray-400"><I18nText k="create_manage_organizations_with_ease" /></p>
+      <p class="mt-6 text-lg font-normal text-gray-400">{m.create_manage_organizations_with_ease({}, { locale: Astro.locals.locale })}</p>
     </div>
     <div class="mx-auto mt-12 grid max-w-md grid-cols-1 gap-6 text-center sm:mt-16 lg:mt-20 lg:max-w-none lg:grid-cols-3">
       {
