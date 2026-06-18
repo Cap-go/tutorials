@@ -63,8 +63,14 @@ async function patchDatabaseId(databaseName: string) {
     headers: { Authorization: `Bearer ${token}` },
   }).then(r => r.json()) as { success?: boolean, result?: Array<{ name: string, uuid: string }>, errors?: unknown }
 
-  if (!list.success)
+  if (!list.success) {
+    const errors = Array.isArray(list.errors) ? list.errors as Array<{ code?: number }> : []
+    if (errors.some(error => error.code === 10000)) {
+      console.log('Skipping database_id patch: Cloudflare token lacks D1 permissions')
+      return false
+    }
     throw new Error(`d1 list failed: ${JSON.stringify(list.errors || list)}`)
+  }
 
   const match = list.result?.find(db => db.name === databaseName)
   if (!match?.uuid)
