@@ -31,7 +31,8 @@
       "d1_databases": [
         {
           "binding": "DB_TRANSLATIONS",
-          "database_name": "capgo_translation_tutorials"
+          "database_name": "capgo_translation_tutorials",
+          "database_id": "af3c37eb-e571-43d6-acca-57c14ba0b9d5"
         }
       ],
       "queues": {
@@ -53,7 +54,7 @@
       },
       "routes": [
         {
-          "pattern": "api.capacitor-tutorial.com/translation*",
+          "pattern": "capacitor-tutorial.com/translation*",
           "zone_name": "capacitor-tutorial.com"
         }
       ]
@@ -69,7 +70,8 @@
       "d1_databases": [
         {
           "binding": "DB_TRANSLATIONS",
-          "database_name": "capgo_translation_tutorials_local"
+          "database_name": "capgo_translation_tutorials_local",
+          "database_id": "af3c37eb-e571-43d6-acca-57c14ba0b9d5"
         }
       ],
       "queues": {

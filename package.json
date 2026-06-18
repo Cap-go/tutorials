@@ -16,7 +16,7 @@
     "blogs:repair_deleted_all": "node scripts/blogs/repair_deleted_all.mjs",
     "fix_code_languages_all": "tsx scripts/fix_code_languages_all.tsx",
     "clean:unused": "npx tsx scripts/clean_not_used.tsx",
-    "deploy:cloudflare:translation:prod": "TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx && bunx wrangler deploy --config cloudflare_workers/translation/wrangler.jsonc --env=prod --minify --upload-source-maps && TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx",
+    "deploy:cloudflare:translation:prod": "TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx && bunx wrangler deploy --config cloudflare_workers/translation/wrangler.jsonc --env=prod --minify --upload-source-maps",
     "deploy:cloudflare:translation:local": "TRANSLATION_WORKER_ENV=local tsx scripts/ensure_translation_worker.tsx && bunx wrangler deploy --config cloudflare_workers/translation/wrangler.jsonc --env=local --minify && TRANSLATION_WORKER_ENV=local tsx scripts/ensure_translation_worker.tsx",
     "ensure:translation:worker": "tsx scripts/ensure_translation_worker.tsx"
   },

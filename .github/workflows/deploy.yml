@@ -30,7 +30,7 @@ jobs:
           ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
           ORAMA_CLOUD_ENDPOINT: ${{ secrets.ORAMA_CLOUD_ENDPOINT }}
           CLOUDFLARE_TURNSTILE_SITE_KEY: ${{ secrets.CLOUDFLARE_TURNSTILE_SITE_KEY }}
-          PUBLIC_TRANSLATION_API_HOST: https://api.capacitor-tutorial.com/
+          PUBLIC_TRANSLATION_API_HOST: https://capacitor-tutorial.com/
       - name: Set branch name
         id: vars
         run: |
@@ -80,7 +80,6 @@ jobs:
 
   deploy_translation_worker:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    continue-on-error: true
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

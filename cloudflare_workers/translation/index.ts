@@ -1272,7 +1272,8 @@ async function fetchHandler(request: Request, env: TranslationWorkerBindings) {
     return new Response(null, { status: 204, headers: corsHeaders() })
 
   const url = new URL(request.url)
-  if (request.method === 'POST' && (url.pathname === '/translation/messages' || url.pathname === '/messages'))
+  const pathname = url.pathname.replace(/\/$/, '') || '/'
+  if (request.method === 'POST' && (pathname === '/translation/messages' || pathname === '/messages'))
     return handleTranslationMessages(request, env)
 
   return errorResponse(404, 'not_found', 'Not found')

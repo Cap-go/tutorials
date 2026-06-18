@@ -33,10 +33,10 @@ function getApiHost() {
     return configured
   if (typeof window === 'undefined')
     return ''
-  const { hostname, protocol } = window.location
+  const { hostname, origin } = window.location
   if (hostname === 'localhost')
     return 'http://localhost:8787'
-  return `${protocol}//api.${hostname.replace(/^www\./, '')}`
+  return origin.replace(/\/$/, '')
 }
 
 function getLocaleFromPathname(pathname: string) {
@@ -51,7 +51,7 @@ async function fetchRemoteMessages(lang: string): Promise<MessageCatalog> {
   if (pending)
     return pending
 
-  const request = fetch(`${getApiHost()}/translation/messages/`, {
+  const request = fetch(`${getApiHost()}/translation/messages`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
