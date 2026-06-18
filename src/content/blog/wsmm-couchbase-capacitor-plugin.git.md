@@ -1,0 +1,1 @@
+I don't have information on the package `wsmm-couchbase-capacitor-plugin`. You can search for the package documentation online to find the necessary steps and details for using it. If you need help with writing a markdown tutorial or any other assistance, feel free to ask!

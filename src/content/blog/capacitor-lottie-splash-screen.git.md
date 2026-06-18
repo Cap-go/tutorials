@@ -1,0 +1,1 @@
+I'm sorry, but I cannot provide information about the `capacitor-lottie-splash-screen` package as you requested, as it is not mentioned in the provided context.

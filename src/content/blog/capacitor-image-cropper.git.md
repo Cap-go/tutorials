@@ -1,0 +1,1 @@
+I don't know how to generate a markdown tutorial with frontmatter including the specified values for the capacitor-image-cropper package.

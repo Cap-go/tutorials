@@ -1,0 +1,1 @@
+I'm sorry, but I don't have specific information about the `@ni2khanna/capacitor-game-connect` package or its usage to generate a markdown tutorial. If you can provide more details or specific instructions, I'd be happy to help create that markdown tutorial for you.

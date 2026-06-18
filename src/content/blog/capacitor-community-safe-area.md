@@ -1,0 +1,1 @@
+I cannot generate a markdown tutorial for the `@hiloenergie/capacitor-plugin-safe-area` package since that package is not mentioned in the provided context. Would you like me to help with anything else related to the existing content?

@@ -1,0 +1,1 @@
+I don't have information on the specific package "capacitor-cors-bypass-enhanced" and generating a tutorial for it.

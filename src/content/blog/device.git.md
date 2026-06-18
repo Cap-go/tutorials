@@ -1,0 +1,1 @@
+I don't know the information about the "@capacitor-community/device" package or how to use it.

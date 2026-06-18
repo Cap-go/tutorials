@@ -1,0 +1,1 @@
+I don't have information on "@capgo/capacitor-twilio-voice" package.

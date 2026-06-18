@@ -1,0 +1,1 @@
+I'm unable to provide a tutorial for the `@capgo/capacitor-wifi` package as it is not mentioned in the context provided. If you have any other questions or need assistance with another topic, feel free to ask!

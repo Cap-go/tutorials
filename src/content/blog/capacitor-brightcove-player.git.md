@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on how to use the Capacitor Brightcove Player package or how to generate a markdown tutorial for it.

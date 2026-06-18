@@ -1,0 +1,1 @@
+I don't have information specific to the package `capacitor-widgetsbridge-plugin` to generate a markdown tutorial or frontmatter values for it.

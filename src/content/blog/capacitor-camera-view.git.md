@@ -1,0 +1,1 @@
+I don't have knowledge of the `capacitor-camera-view` package or its usage to generate a markdown tutorial.

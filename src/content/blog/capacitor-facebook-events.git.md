@@ -1,0 +1,1 @@
+I don't have information about a capacitor-facebook-events package at the moment.
