@@ -1,0 +1,1 @@
+I don't have information specifically about using the `@capacitor/live-updates` package in Capacitor.

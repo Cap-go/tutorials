@@ -1,0 +1,1 @@
+I don't have information on the package "capacitor-radar." It seems like it might be a custom or fictional package. Unfortunately, I cannot provide specific details or generate a markdown tutorial for it.

@@ -1,0 +1,2 @@
+I do not have the specific information about using the `@capacitor-community/http` package to generate a markdown tutorial. The details for creating a markdown tutorial for this package with frontmatter as specified would depend on the specific content of the tutorial, the steps involved, and the examples provided.  
+I recommend checking the official documentation or community resources for `@capacitor-community/http` for detailed guidance on how to create a tutorial.

@@ -1,0 +1,1 @@
+I don't have specific information about the `capacitor-plugin-ios-webview-configurator` package. It's recommended to refer directly to the official plugin documentation or repository for the most accurate and up-to-date instructions on how to use it.

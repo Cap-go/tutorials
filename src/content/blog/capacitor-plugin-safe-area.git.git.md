@@ -1,0 +1,1 @@
+I don't have the information related to the `capacitor-plugin-safe-area` package needed to create the markdown tutorial.

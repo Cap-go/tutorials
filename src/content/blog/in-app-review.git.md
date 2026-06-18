@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the `@capacitor-community/in-app-review` package to generate a markdown tutorial.
