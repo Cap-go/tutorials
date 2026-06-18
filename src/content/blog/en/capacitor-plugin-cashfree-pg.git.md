@@ -36,7 +36,7 @@ cordova prepare
 
 - Navigate to the `www/js` directory and open the `index.js` file.
 
-![API Keys Configuration](screenshots/api-keys.png)
+- Add your Cashfree PG dashboard credentials (`APP_ID`, `APP_SECRET`) in `index.js`.
 
 - Replace `APP_ID` and `APP_SECRET` with the credentials from your Cashfree PG dashboard.
 - Set the `ENV` variable to match the environment you are working with (either 'TEST' or 'PROD').

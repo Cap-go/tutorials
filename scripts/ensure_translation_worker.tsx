@@ -1,5 +1,4 @@
 import { readFileSync, writeFileSync } from 'node:fs'
-import { spawnSync } from 'node:child_process'
 import { resolve } from 'node:path'
 import keys from '../configs.json'
 
@@ -43,20 +42,8 @@ async function ensureQueue(name: string) {
   console.log(`Created queue: ${name}`)
 }
 
-function patchDatabaseId(databaseName: string) {
-  const listed = spawnSync('bunx', ['wrangler', 'd1', 'list', '--json', '--config', wranglerPath], {
-    encoding: 'utf8',
-    env: process.env,
-  })
 
-  if (listed.status !== 0)
-    throw new Error(`wrangler d1 list failed: ${listed.stderr || listed.stdout}`)
-
-  const databases = JSON.parse(listed.stdout) as Array<{ name: string, uuid: string }>
-  const match = databases.find(db => db.name === databaseName)
-  if (!match?.uuid)
-    return false
-
+async function patchDatabaseId(databaseName: string) {
   const config = readFileSync(wranglerPath, 'utf8')
   const envBlock = `"${env}"`
   const envIndex = config.indexOf(envBlock)
@@ -72,6 +59,17 @@ function patchDatabaseId(databaseName: string) {
   if (afterDbName.includes('"database_id"'))
     return true
 
+  const list = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountId}/d1/database`, {
+    headers: { Authorization: `Bearer ${token}` },
+  }).then(r => r.json()) as { success?: boolean, result?: Array<{ name: string, uuid: string }>, errors?: unknown }
+
+  if (!list.success)
+    throw new Error(`d1 list failed: ${JSON.stringify(list.errors || list)}`)
+
+  const match = list.result?.find(db => db.name === databaseName)
+  if (!match?.uuid)
+    return false
+
   const insertAt = dbNameIndex + dbNameNeedle.length
   const patched = `${config.slice(0, insertAt)},
           "database_id": "${match.uuid}"${config.slice(insertAt)}`
@@ -84,6 +82,5 @@ for (const queue of queues)
   await ensureQueue(queue)
 
 const databaseName = env === 'local' ? 'capgo_translation_tutorials_local' : 'capgo_translation_tutorials'
-patchDatabaseId(databaseName)
-
+await patchDatabaseId(databaseName)
 console.log(`Translation API host: ${keys.translation_api_host.prod}`)
