@@ -5,50 +5,68 @@ on:
   schedule:
     - cron: '0 3 * * 0' # Run at 3AM UTC every Sunday
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Write Tutorials
     steps:
       - name: Install Git LFS
-        run: sudo apt-get update && sudo apt-get install git-lfs && git lfs install
+        run: sudo apt-get update && sudo apt-get install -y git-lfs && git lfs install
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           lfs: true
-          token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: latest
+      - uses: oven-sh/setup-bun@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 24.x
-          cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install && pnpm approve-builds && pnpm add faiss-node --allow-build=faiss-node && pnpm rebuild faiss-node
+        run: bun install
 
       - name: Generate tutorials
-        run: node scripts/generate_tutorials.mjs
+        run: bun scripts/generate_tutorials.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Commit generated files
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Check for changes
+        id: git-check
         run: |
-          git config --global user.name "Martin DONADIEU"
-          git config --global user.email "martindonadieu@gmail.com"
-          git lfs track "loadedVectorStore/*.json"
-          git lfs track "loadedVectorStore/*.index"
-          git add .gitattributes
-          git add loadedVectorStore/*.json loadedVectorStore/*.index
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit generated files
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git lfs track "loadedVectorStore/*.json" 2>/dev/null || true
+          git lfs track "loadedVectorStore/*.index" 2>/dev/null || true
+          git add .gitattributes 2>/dev/null || true
+          git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
-          git commit -m "Commit generated files"
-          git push origin main -f
+          git commit -m "chore: update generated tutorials [skip ci]" \
+            -m "Automated update from write-tutorials workflow" \
+            -m "Run ID: ${{ github.run_id }}"
+          git pull --rebase origin main || {
+            echo "Rebase conflict detected, aborting and retrying..."
+            git rebase --abort
+            git pull --no-rebase origin main
+            exit 1
+          }
+          git push origin main
         working-directory: ./
+
+      - name: Report no changes
+        if: steps.git-check.outputs.changes != 'true'
+        run: echo "No changes to commit - generated tutorials are up to date"
