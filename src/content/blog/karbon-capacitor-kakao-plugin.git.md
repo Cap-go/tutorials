@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the "karbon-capacitor-kakao-plugin" package or its usage.

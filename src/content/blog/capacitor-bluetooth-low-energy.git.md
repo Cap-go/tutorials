@@ -1,0 +1,1 @@
+I'm sorry, but I can't provide a markdown tutorial for using `@capgo/capacitor-bluetooth-low-energy` package as I don't have information on that specific package. If you have any other questions or need assistance with something else, feel free to ask.

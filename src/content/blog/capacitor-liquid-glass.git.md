@@ -1,0 +1,1 @@
+I don't have the information about a package called '@ajuarezso/capacitor-liquid-glass' in the provided context.

@@ -1,0 +1,1 @@
+I'm sorry, but I cannot provide a markdown tutorial for the specific package `@ajuarezso/capacitor-background-geolocation-firestore` as it is not mentioned in the provided context. If you have any other questions or need assistance with anything else, feel free to ask!

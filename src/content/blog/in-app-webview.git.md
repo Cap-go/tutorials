@@ -1,0 +1,1 @@
+I don't have information on the "@gateb8/in-app-webview" package.

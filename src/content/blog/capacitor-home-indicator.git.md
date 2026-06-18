@@ -1,0 +1,1 @@
+I don't have information on the `@capgo/capacitor-home-indicator` package and its usage to generate a markdown tutorial.

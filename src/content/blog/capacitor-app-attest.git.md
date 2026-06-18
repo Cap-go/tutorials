@@ -1,0 +1,1 @@
+I don't know the answer to that question. You might want to refer to the documentation of the `@capgo/capacitor-app-attest` package for a tutorial on how to use it.

@@ -1,0 +1,1 @@
+I'm sorry, but I don't have specific information or a tutorial on using the `capacitor-live-activities` package at the moment. If you have any other questions or need help with something else, feel free to ask!

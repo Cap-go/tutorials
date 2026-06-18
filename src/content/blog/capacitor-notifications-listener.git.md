@@ -1,0 +1,1 @@
+I don't have information about the `capacitor-notifications-listener` package.

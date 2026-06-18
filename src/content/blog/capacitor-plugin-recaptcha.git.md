@@ -1,0 +1,1 @@
+I don't have exact information on the `capacitor-plugin-recaptcha` package.
