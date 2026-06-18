@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   fetch-and-create:
@@ -47,6 +48,8 @@ jobs:
           fi
       - name: Commit and push generated files
         if: steps.git-check.outputs.changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -70,6 +73,7 @@ jobs:
           }
           
           git push origin main
+          gh workflow run deploy.yml --ref main
 
       - name: Report no changes
         if: steps.git-check.outputs.changes != 'true'
