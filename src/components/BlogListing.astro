@@ -28,9 +28,11 @@ const categoryRules = [
 ]
 const fallbackCategory = 'Capacitor Plugins'
 
+const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
 const getPostCategory = (post: CollectionEntry<'blog'>) => {
-  const haystack = [post.data.title, post.data.description, post.data.slug, post.id].filter(Boolean).join(' ').toLowerCase()
-  return categoryRules.find((category) => category.terms.some((term) => haystack.includes(term)))?.label ?? fallbackCategory
+  const haystack = [post.data.title, post.data.description, post.data.slug].filter(Boolean).join(' ').toLowerCase()
+  return categoryRules.find((category) => category.terms.some((term) => new RegExp(`\\b${escapeRegex(term)}\\b`).test(haystack)))?.label ?? fallbackCategory
 }
 
 const postsWithCategories = posts.map((post) => ({ post, category: getPostCategory(post) }))
@@ -158,14 +160,20 @@ if (Astro.locals.runtimeConfig.public.blog_description) content['description'] =
           <div class="grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
             {
               postsWithCategories.map(({ post, category }, i) => (
-                <article data-blog-card data-blog-category={category} data-blog-search={[post.data.title, post.data.description, category].filter(Boolean).join(' ').toLowerCase()}>
+                <article
+                  data-blog-card
+                  data-blog-card-category={category}
+                  data-blog-card-search={[post.data.title, post.data.description, category].filter(Boolean).join(' ').toLowerCase()}
+                >
                   <Blog link={post.data.slug} title={post.data.title} date={post.data.created_at} tag={category} loading={i < 3 ? 'eager' : 'lazy'} />
                 </article>
               ))
             }
           </div>
 
-          <p data-blog-empty hidden class="rounded-lg border border-white/10 bg-gray-800/80 p-6 text-base/7 text-gray-200">No articles match your filters.</p>
+          <p data-blog-empty hidden role="status" aria-live="polite" class="rounded-lg border border-white/10 bg-gray-800/80 p-6 text-base/7 text-gray-200">
+            No articles match your filters.
+          </p>
         </div>
       </div>
     </div>
@@ -173,8 +181,8 @@ if (Astro.locals.runtimeConfig.public.blog_description) content['description'] =
 </Layout>
 
 <script>
-  const searchInputs = Array.from(document.querySelectorAll<HTMLInputElement>('[data-blog-search]'))
-  const categoryButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-blog-category]'))
+  const searchInputs = Array.from(document.querySelectorAll<HTMLInputElement>('input[data-blog-search]'))
+  const categoryButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('button[data-blog-category]'))
   const blogCards = Array.from(document.querySelectorAll<HTMLElement>('[data-blog-card]'))
   const resultCount = document.querySelector<HTMLElement>('[data-blog-result-count]')
   const emptyState = document.querySelector<HTMLElement>('[data-blog-empty]')
@@ -191,8 +199,8 @@ if (Astro.locals.runtimeConfig.public.blog_description) content['description'] =
     let visibleCount = 0
 
     blogCards.forEach((card) => {
-      const matchesCategory = selectedCategory === 'All' || card.dataset.blogCategory === selectedCategory
-      const matchesSearch = !query || (card.dataset.blogSearch ?? '').includes(query)
+      const matchesCategory = selectedCategory === 'All' || card.dataset.blogCardCategory === selectedCategory
+      const matchesSearch = !query || (card.dataset.blogCardSearch ?? '').includes(query)
       const isVisible = matchesCategory && matchesSearch
       card.hidden = !isVisible
       if (isVisible) visibleCount += 1
