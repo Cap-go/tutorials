@@ -6,9 +6,12 @@ concurrency:
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 0' # Run at 1AM UTC every Sunday
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   fetch-and-create:
@@ -32,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Create READMEs
-        run: node scripts/write_readme.mjs
+        run: bun scripts/write_readme.mjs
         env:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
       - name: Check for changes
@@ -45,6 +48,8 @@ jobs:
           fi
       - name: Commit and push generated files
         if: steps.git-check.outputs.changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -55,7 +60,7 @@ jobs:
           git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
           
-          git commit -m "chore: update READMEs from NPM packages [skip ci]" \
+          git commit -m "chore: update READMEs from NPM packages" \
             -m "Automated update from write-readmes workflow" \
             -m "Run ID: ${{ github.run_id }}"
           
@@ -68,6 +73,7 @@ jobs:
           }
           
           git push origin main
+          gh workflow run deploy.yml --ref main
 
       - name: Report no changes
         if: steps.git-check.outputs.changes != 'true'

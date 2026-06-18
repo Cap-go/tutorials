@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   deploy:
@@ -47,6 +48,8 @@ jobs:
 
       - name: Commit generated files
         if: steps.git-check.outputs.changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -55,7 +58,7 @@ jobs:
           git add .gitattributes 2>/dev/null || true
           git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
-          git commit -m "chore: update generated tutorials [skip ci]" \
+          git commit -m "chore: update generated tutorials" \
             -m "Automated update from write-tutorials workflow" \
             -m "Run ID: ${{ github.run_id }}"
           git pull --rebase origin main || {
@@ -65,6 +68,7 @@ jobs:
             exit 1
           }
           git push origin main
+          gh workflow run deploy.yml --ref main
         working-directory: ./
 
       - name: Report no changes

@@ -6,9 +6,12 @@ concurrency:
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # Run at midnight UTC every Sunday
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   generate-packages:
@@ -34,7 +37,7 @@ jobs:
       - name: Generate packages list
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: node scripts/generate_actions.mjs
+        run: bun scripts/generate_actions.mjs
       - name: Check for changes
         id: git-check
         run: |
@@ -45,6 +48,8 @@ jobs:
           fi
       - name: Commit and push generated files
         if: steps.git-check.outputs.changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -53,7 +58,7 @@ jobs:
           git add .gitattributes 2>/dev/null || true
           git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
-          git commit -m "chore: update NPM packages list [skip ci]" \
+          git commit -m "chore: update NPM packages list" \
             -m "Automated update from generate-actions workflow" \
             -m "Run ID: ${{ github.run_id }}"
           # Try to pull and rebase in case of conflicts
@@ -64,6 +69,7 @@ jobs:
             exit 1
           }
           git push origin main
+          gh workflow run deploy.yml --ref main
       - name: Report no changes
         if: steps.git-check.outputs.changes != 'true'
         run: echo "✅ No changes to commit - packages list is up to date"
