@@ -15,7 +15,7 @@
     "paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide",
     "postinstall": "bun run paraglide:compile",
     "preview:worker": "bun run build && wrangler dev",
-    "deploy": "bun run build && wrangler deploy",
+    "deploy": "wrangler deploy --env=\"\"",
     "deploy:translation": "cd translation-worker && bun run deploy",
     "ci:verify:translation": "cd translation-worker && bun run check",
     "verify:real-translation": "cd translation-worker && bun run test:real"

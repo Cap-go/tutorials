@@ -14,10 +14,6 @@
     {
       "pattern": "capacitor-tutorial.com",
       "custom_domain": true
-    },
-    {
-      "pattern": "capacitor-tutorial.com/*",
-      "custom_domain": true
     }
   ],
   "env": {
@@ -26,10 +22,6 @@
       "routes": [
         {
           "pattern": "development.capacitor-tutorial.com",
-          "custom_domain": true
-        },
-        {
-          "pattern": "development.capacitor-tutorial.com/*",
           "custom_domain": true
         }
       ]

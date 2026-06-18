@@ -32,7 +32,7 @@ jobs:
           CLOUDFLARE_TURNSTILE_SITE_KEY: ${{ secrets.CLOUDFLARE_TURNSTILE_SITE_KEY }}
       - name: Deploy site worker
         if: github.event_name != 'pull_request'
-        run: bunx wrangler deploy
+        run: bunx wrangler deploy --env=""
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
