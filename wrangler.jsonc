@@ -10,21 +10,9 @@
     "run_worker_first": true
   },
   "workers_dev": false,
-  "routes": [
-    {
-      "pattern": "capacitor-tutorial.com",
-      "custom_domain": true
-    }
-  ],
   "env": {
     "development": {
-      "name": "capacitor-tutorial-development",
-      "routes": [
-        {
-          "pattern": "development.capacitor-tutorial.com",
-          "custom_domain": true
-        }
-      ]
+      "name": "capacitor-tutorial-development"
     }
   }
 }
