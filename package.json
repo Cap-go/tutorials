@@ -13,6 +13,7 @@
     "blogs:fix_locales_all": "tsx scripts/blogs/fix_locales_all.tsx",
     "blogs:remove_mismatching_locales": "tsx scripts/blogs/remove_mismatching_locales.tsx",
     "blogs:delete_broken_all": "tsx scripts/blogs/delete_broken_all.tsx",
+    "blogs:repair_deleted_all": "node scripts/blogs/repair_deleted_all.mjs",
     "fix_code_languages_all": "tsx scripts/fix_code_languages_all.tsx",
     "clean:unused": "npx tsx scripts/clean_not_used.tsx",
     "deploy:cloudflare:translation:prod": "TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx && bunx wrangler deploy --config cloudflare_workers/translation/wrangler.jsonc --env=prod --minify --upload-source-maps && TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx",
