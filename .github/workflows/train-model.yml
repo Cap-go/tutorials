@@ -55,7 +55,7 @@ jobs:
           git add .gitattributes 2>/dev/null || true
           git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
-          git commit -m "chore: update trained model [skip ci]" \
+          git commit -m "chore: update trained model" \
             -m "Automated update from train-model workflow" \
             -m "Run ID: ${{ github.run_id }}"
           git pull --rebase origin main || {

@@ -6,6 +6,8 @@ concurrency:
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 0' # Run at 1AM UTC every Sunday
 
 permissions:
   contents: write
@@ -32,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Create READMEs
-        run: node scripts/write_readme.mjs
+        run: bun scripts/write_readme.mjs
         env:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
       - name: Check for changes
@@ -55,7 +57,7 @@ jobs:
           git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
           
-          git commit -m "chore: update READMEs from NPM packages [skip ci]" \
+          git commit -m "chore: update READMEs from NPM packages" \
             -m "Automated update from write-readmes workflow" \
             -m "Run ID: ${{ github.run_id }}"
           

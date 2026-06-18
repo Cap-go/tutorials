@@ -55,7 +55,7 @@ jobs:
           git add .gitattributes 2>/dev/null || true
           git add loadedVectorStore/*.json loadedVectorStore/*.index 2>/dev/null || true
           git add -A
-          git commit -m "chore: update generated tutorials [skip ci]" \
+          git commit -m "chore: update generated tutorials" \
             -m "Automated update from write-tutorials workflow" \
             -m "Run ID: ${{ github.run_id }}"
           git pull --rebase origin main || {
