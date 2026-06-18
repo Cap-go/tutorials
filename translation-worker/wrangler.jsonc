@@ -1,0 +1,277 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "capacitor-tutorial-translation",
+  "account_id": "9ee3d7479a3c359681e3fab2c8cb22c0",
+  "main": "./src/index.ts",
+  "compatibility_date": "2026-05-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": false,
+  "limits": {
+    "cpu_ms": 300000
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "TRANSLATION_COORDINATOR",
+        "class_name": "TranslationCoordinator"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1_translation_coordinator",
+      "new_classes": [
+        "TranslationCoordinator"
+      ]
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "r2_buckets": [
+    {
+      "binding": "TRANSLATION_STORE",
+      "bucket_name": "capacitor-tutorial-translation-cache"
+    }
+  ],
+  "vars": {
+    "TRANSLATION_MODEL": "@cf/meta/llama-3.1-8b-instruct-fast"
+  },
+  "queues": {
+    "producers": [
+      {
+        "binding": "TRANSLATION_QUEUE",
+        "queue": "capacitor-tutorial-translation-refresh"
+      },
+      {
+        "binding": "TRANSLATION_PRIORITY_QUEUE",
+        "queue": "capacitor-tutorial-translation-priority-refresh"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "capacitor-tutorial-translation-priority-refresh",
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 3,
+        "retry_delay": 15,
+        "max_concurrency": 4
+      },
+      {
+        "queue": "capacitor-tutorial-translation-refresh",
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 3,
+        "retry_delay": 60,
+        "max_concurrency": 2
+      }
+    ]
+  },
+  "services": [
+    {
+      "binding": "WEB",
+      "service": "capacitor-tutorial"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "routes": [
+    {
+      "pattern": "capacitor-tutorial.com/de",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/de/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/es",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/es/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/fr",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/fr/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/id",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/id/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/it",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/it/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/ja",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/ja/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/ko",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/ko/*",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/zh",
+      "zone_name": "capacitor-tutorial.com"
+    },
+    {
+      "pattern": "capacitor-tutorial.com/zh/*",
+      "zone_name": "capacitor-tutorial.com"
+    }
+  ],
+  "env": {
+    "development": {
+      "limits": {
+        "cpu_ms": 300000
+      },
+      "durable_objects": {
+        "bindings": [
+          {
+            "name": "TRANSLATION_COORDINATOR",
+            "class_name": "TranslationCoordinator"
+          }
+        ]
+      },
+      "ai": {
+        "binding": "AI"
+      },
+      "vars": {
+        "TRANSLATION_MODEL": "@cf/meta/llama-3.1-8b-instruct-fast"
+      },
+      "r2_buckets": [
+        {
+          "binding": "TRANSLATION_STORE",
+          "bucket_name": "capacitor-tutorial-translation-cache-development"
+        }
+      ],
+      "queues": {
+        "producers": [
+          {
+            "binding": "TRANSLATION_QUEUE",
+            "queue": "capacitor-tutorial-translation-refresh-development"
+          },
+          {
+            "binding": "TRANSLATION_PRIORITY_QUEUE",
+            "queue": "capacitor-tutorial-translation-priority-refresh-development"
+          }
+        ],
+        "consumers": [
+          {
+            "queue": "capacitor-tutorial-translation-priority-refresh-development",
+            "max_batch_size": 1,
+            "max_batch_timeout": 1,
+            "max_retries": 3,
+            "retry_delay": 15,
+            "max_concurrency": 4
+          },
+          {
+            "queue": "capacitor-tutorial-translation-refresh-development",
+            "max_batch_size": 1,
+            "max_batch_timeout": 1,
+            "max_retries": 3,
+            "retry_delay": 60,
+            "max_concurrency": 2
+          }
+        ]
+      },
+      "services": [
+        {
+          "binding": "WEB",
+          "service": "capacitor-tutorial-development"
+        }
+      ],
+      "routes": [
+        {
+          "pattern": "development.capacitor-tutorial.com/de",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/de/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/es",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/es/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/fr",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/fr/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/id",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/id/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/it",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/it/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/ja",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/ja/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/ko",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/ko/*",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/zh",
+          "zone_name": "capacitor-tutorial.com"
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/zh/*",
+          "zone_name": "capacitor-tutorial.com"
+        }
+      ]
+    }
+  }
+}

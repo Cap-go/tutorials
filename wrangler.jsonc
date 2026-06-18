@@ -1,0 +1,38 @@
+{
+  "name": "capacitor-tutorial",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2026-03-29",
+  "compatibility_flags": ["nodejs_compat", "disable_nodejs_process_v2"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "capacitor-tutorial.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "capacitor-tutorial.com/*",
+      "custom_domain": true
+    }
+  ],
+  "env": {
+    "development": {
+      "name": "capacitor-tutorial-development",
+      "routes": [
+        {
+          "pattern": "development.capacitor-tutorial.com",
+          "custom_domain": true
+        },
+        {
+          "pattern": "development.capacitor-tutorial.com/*",
+          "custom_domain": true
+        }
+      ]
+    }
+  }
+}

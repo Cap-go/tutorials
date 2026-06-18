@@ -1,10 +1,9 @@
 import sitemap from '@astrojs/sitemap'
 import { paraglideVitePlugin } from '@inlang/paraglide-js'
 import tailwindcss from '@tailwindcss/vite'
-import { filterSitemapByDefaultLocale, i18n } from 'astro-i18n-aut/integration'
 import { defineConfig, envField } from 'astro/config'
 import config from './configs.json'
-import { defaultLocale, localeNames, locales } from './src/services/locale'
+import { defaultLocale } from './src/services/locale'
 
 export default defineConfig({
   trailingSlash: 'always',
@@ -25,18 +24,10 @@ export default defineConfig({
   },
   site: `https://${config.base_domain.prod}`,
   integrations: [
-    i18n({
-      locales: localeNames,
-      defaultLocale,
-      redirectDefaultLocale: false,
-      exclude: ['pages/**/*.json.ts'],
-    }),
     sitemap({
-      i18n: {
-        defaultLocale,
-        locales: localeNames,
-      },
-      filter: filterSitemapByDefaultLocale({ defaultLocale }),
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
     }),
   ],
   build: {
@@ -60,7 +51,7 @@ export default defineConfig({
     }),
   ],
   i18n: {
-    locales,
+    locales: [defaultLocale],
     defaultLocale,
     routing: {
       redirectToDefaultLocale: false,

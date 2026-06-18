@@ -13,7 +13,12 @@
     "fix_code_languages_all": "tsx scripts/fix_code_languages_all.tsx",
     "clean:unused": "npx tsx scripts/clean_not_used.tsx",
     "paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide",
-    "postinstall": "bun run paraglide:compile"
+    "postinstall": "bun run paraglide:compile",
+    "preview:worker": "bun run build && wrangler dev",
+    "deploy": "bun run build && wrangler deploy",
+    "deploy:translation": "cd translation-worker && bun run deploy",
+    "ci:verify:translation": "cd translation-worker && bun run check",
+    "verify:real-translation": "cd translation-worker && bun run test:real"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.3.1",
@@ -34,7 +39,7 @@
     "striptags": "^3.2.0",
     "tailwindcss": "^4.1.5",
     "toastify-js": "^1.12.0",
-    "astro-i18n-aut": "^0.7.3"
+    "@datafast/ai-crawl": "^1.0.5"
   },
   "devDependencies": {
     "@dotenvx/dotenvx": "^1.44.0",
@@ -66,7 +71,8 @@
     "typescript": "^5.7.3",
     "zod": "^3.24.2",
     "@inlang/cli": "^3.0.0",
-    "@inlang/paraglide-js": "2.0.12"
+    "@inlang/paraglide-js": "2.0.12",
+    "wrangler": "4.101.0"
   },
   "trustedDependencies": [
     "faiss-node"
