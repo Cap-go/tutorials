@@ -1,0 +1,94 @@
+{
+  "name": "capgo_translation_tutorials",
+  "logpush": true,
+  "compatibility_date": "2026-04-21",
+  "main": "./index.ts",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env"
+  ],
+  "placement": {
+    "mode": "smart"
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "workers_dev": false,
+  "upload_source_maps": true,
+  "env": {
+    "prod": {
+      "name": "capgo_translation_tutorials-prod",
+      "ai": {
+        "binding": "AI"
+      },
+      "vars": {
+        "ENV_NAME": "capgo_translation_tutorials-prod"
+      },
+      "observability": {
+        "enabled": true,
+        "head_sampling_rate": 1
+      },
+      "d1_databases": [
+        {
+          "binding": "DB_TRANSLATIONS",
+          "database_name": "capgo_translation_tutorials"
+        }
+      ],
+      "queues": {
+        "producers": [
+          {
+            "binding": "TRANSLATION_MESSAGES_QUEUE",
+            "queue": "capgo-tutorials-prod-translation-messages"
+          }
+        ],
+        "consumers": [
+          {
+            "queue": "capgo-tutorials-prod-translation-messages",
+            "max_batch_size": 1,
+            "max_batch_timeout": 5,
+            "max_retries": 5,
+            "retry_delay": 30
+          }
+        ]
+      },
+      "routes": [
+        {
+          "pattern": "api.capacitor-tutorial.com/translation*",
+          "zone_name": "capacitor-tutorial.com"
+        }
+      ]
+    },
+    "local": {
+      "name": "capgo_translation_tutorials-local",
+      "ai": {
+        "binding": "AI"
+      },
+      "vars": {
+        "ENV_NAME": "capgo_translation_tutorials-local"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB_TRANSLATIONS",
+          "database_name": "capgo_translation_tutorials_local"
+        }
+      ],
+      "queues": {
+        "producers": [
+          {
+            "binding": "TRANSLATION_MESSAGES_QUEUE",
+            "queue": "capgo-tutorials-local-translation-messages"
+          }
+        ],
+        "consumers": [
+          {
+            "queue": "capgo-tutorials-local-translation-messages",
+            "max_batch_size": 1,
+            "max_batch_timeout": 5,
+            "max_retries": 5,
+            "retry_delay": 30
+          }
+        ]
+      }
+    }
+  }
+}

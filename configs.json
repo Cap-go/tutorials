@@ -3,5 +3,10 @@
     "prod": "capacitor-tutorial.com",
     "development": "development.capgo.app",
     "local": "localhost:3000"
+  },
+  "translation_api_host": {
+    "prod": "https://api.capacitor-tutorial.com",
+    "development": "https://api.development.capgo.app",
+    "local": "http://localhost:8787"
   }
 }

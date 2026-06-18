@@ -1,9 +1,11 @@
 import sitemap from '@astrojs/sitemap'
-import { paraglideVitePlugin } from '@inlang/paraglide-js'
 import tailwindcss from '@tailwindcss/vite'
 import { filterSitemapByDefaultLocale, i18n } from 'astro-i18n-aut/integration'
 import { defineConfig, envField } from 'astro/config'
 import config from './configs.json'
+
+const translationApiHost = config.translation_api_host.prod
+
 import { defaultLocale, localeNames, locales } from './src/services/locale'
 
 export default defineConfig({
@@ -17,6 +19,11 @@ export default defineConfig({
         optional: true,
       }),
       ORAMA_CLOUD_API_KEY: envField.string({
+        context: 'client',
+        access: 'public',
+        optional: true,
+      }),
+      PUBLIC_TRANSLATION_API_HOST: envField.string({
         context: 'client',
         access: 'public',
         optional: true,
@@ -52,13 +59,6 @@ export default defineConfig({
     open: true,
     host: '0.0.0.0',
   },
-  plugins: [
-    paraglideVitePlugin({
-      outdir: './src/paraglide',
-      project: './project.inlang',
-      disableAsyncLocalStorage: true,
-    }),
-  ],
   i18n: {
     locales,
     defaultLocale,
@@ -74,5 +74,8 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    define: {
+      'import.meta.env.PUBLIC_TRANSLATION_API_HOST': JSON.stringify(translationApiHost),
+    },
   },
 })

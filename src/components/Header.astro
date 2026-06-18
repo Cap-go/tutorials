@@ -1,5 +1,5 @@
 ---
-import * as m from '@/paraglide/messages'
+import I18nText from '@/components/I18nText.astro'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 const brand = Astro.locals.runtimeConfig.public.brand
@@ -26,34 +26,34 @@ const brand = Astro.locals.runtimeConfig.public.brand
           href="https://capgo.app/pricing/"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          {m.pricing({}, { locale: Astro.locals.locale })}
+          <I18nText k="pricing" />
         </a>
         <a
           href={getRelativeLocaleUrl(Astro.locals.locale, '')}
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          {m.blog({}, { locale: Astro.locals.locale })}
+          <I18nText k="blog" />
         </a>
         <a
           href="https://capgo.app/docs/"
           target="_blank"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          {m.documentation({}, { locale: Astro.locals.locale })}
+          <I18nText k="documentation" />
         </a>
         <a
           target="_blank"
           href="https://web.capgo.app/login/"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
-          {m.login({}, { locale: Astro.locals.locale })}
+          <I18nText k="login" />
         </a>
         <a
           target="_blank"
           href="https://capgo.app/register/"
           class="font-pj rounded-xl border border-gray-300 bg-transparent px-5 py-2 text-base leading-7 font-semibold text-gray-300 transition-all duration-200 hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:outline-none"
         >
-          {m.register({}, { locale: Astro.locals.locale })}
+          <I18nText k="register" />
         </a>
       </div>
     </div>
@@ -62,41 +62,41 @@ const brand = Astro.locals.runtimeConfig.public.brand
     <div class="mt-2 space-y-1 bg-gray-700 px-2 pt-2 pb-3">
       <a
         href="https://capgo.app/pricing/"
-        title={m.pricing({}, { locale: Astro.locals.locale })}
+        data-i18n-title="pricing"
         target="_blank"
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        Pricing
+        <I18nText k="pricing" />
       </a>
       <a
         href={getRelativeLocaleUrl(Astro.locals.locale, '')}
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        Blog
+        <I18nText k="blog" />
       </a>
       <a
         href="https://capgo.app/docs/"
-        title={m.documentation({}, { locale: Astro.locals.locale })}
+        data-i18n-title="documentation"
         target="_blank"
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        Documentation
+        <I18nText k="documentation" />
       </a>
       <a
         href="https://web.capgo.app/login/"
         target="_blank"
-        title={m.login({}, { locale: Astro.locals.locale })}
+        data-i18n-title="login"
         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
-        Login
+        <I18nText k="login" />
       </a>
       <a
         target="_blank"
-        title={m.register({}, { locale: Astro.locals.locale })}
+        data-i18n-title="register"
         href="https://capgo.app/register/"
         class="font-pj block rounded-md border border-gray-300 bg-transparent px-5 py-2 text-base leading-7 font-medium text-gray-300 text-white transition-all duration-200 hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:outline-none"
       >
-        Register
+        <I18nText k="register" />
       </a>
     </div>
   </div>

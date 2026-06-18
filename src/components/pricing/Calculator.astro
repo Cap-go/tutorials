@@ -1,7 +1,6 @@
 ---
 import { roundNumber } from '@/services/misc'
 import type { Database } from '@/services/supabase.types'
-import * as m from '@/paraglide/messages'
 
 interface Props {
   pricing: Database['public']['Tables']['plans']['Row'][]
@@ -53,16 +52,18 @@ const initialTotalPrice = (() => {
   if (sum > 0) return roundNumber(basePrice + sum) * (yearly ? 12 : 1)
   return (initialSuggestion ? roundNumber(pricing.find((plan) => plan.name === initialSuggestion)!.price_m) : basePrice) * (yearly ? 12 : 1)
 })()
+import I18nText from '@/components/I18nText.astro'
+import { t } from '@/services/messages'
 ---
 
 <section id="calculator">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center xl:max-w-4xl">
       <h2 class="font-pj text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
-        {m.calculate_your_usage({}, { locale: Astro.locals.locale })}<br />
+        <I18nText k="calculate_your_usage" /><br />
       </h2>
       <p class="font-pj mt-6 text-sm font-normal text-gray-600">
-        {m.enter_your_estimated_monthly_active_users({}, { locale: Astro.locals.locale })}
+        <I18nText k="enter_your_estimated_monthly_active_users" />
       </p>
     </div>
     <div class="relative mt-6 lg:mx-auto lg:mt-12 lg:max-w-5xl">
@@ -76,7 +77,7 @@ const initialTotalPrice = (() => {
       <div class="relative grid grid-cols-1 gap-x-20 gap-y-12 overflow-hidden rounded-2xl bg-gray-900 px-16 py-12 text-center text-white md:grid-cols-3">
         <div class="flex flex-col items-center">
           <p class="calc-label">
-            MAU<br /><span class="text-[0.6rem]">{m.monthly_active_users({}, { locale: Astro.locals.locale })}</span>
+            MAU<br /><span class="text-[0.6rem]"><I18nText k="monthly_active_users" /></span>
           </p>
           <input
             id="mau-input"
@@ -86,7 +87,7 @@ const initialTotalPrice = (() => {
           />
         </div>
         <div class="flex flex-col items-center">
-          <p class="calc-label" set:html={m.updates_by_month({}, { locale: Astro.locals.locale })} />
+          <p class="calc-label" set:html=<I18nText k="updates_by_month" /> />
           <input
             id="updates-by-month-input"
             value={initialUpdatesByMonth}
@@ -95,7 +96,7 @@ const initialTotalPrice = (() => {
           />
         </div>
         <div class="flex flex-col items-center">
-          <p class="calc-label" set:html={m.updates_size({}, { locale: Astro.locals.locale })} />
+          <p class="calc-label" set:html=<I18nText k="updates_size" /> />
           <input
             id="updates-size-input"
             value={initialUpdatesSize}
@@ -104,26 +105,26 @@ const initialTotalPrice = (() => {
           />
         </div>
         <div class="flex flex-col items-center">
-          <p class="calc-label" set:html={m.updates_total({}, { locale: Astro.locals.locale })} />
+          <p class="calc-label" set:html=<I18nText k="updates_total" /> />
           <p class="font-pj mt-3 text-3xl font-bold break-all text-white" data-updates>
             {initialUpdates.toLocaleString()}
           </p>
         </div>
         <div class="flex flex-col items-center">
-          <p class="calc-label" set:html={m.bandwidth_gb({}, { locale: Astro.locals.locale })} />
+          <p class="calc-label" set:html=<I18nText k="bandwidth_gb" /> />
           <p class="font-pj mt-3 text-3xl font-bold break-all text-white" data-bandwidth>
             {initialBandwidth.toLocaleString()}
           </p>
         </div>
         <div class="flex flex-col items-center">
-          <p class="calc-label" set:html={m.storage({}, { locale: Astro.locals.locale })} />
+          <p class="calc-label" set:html=<I18nText k="storage" /> />
           <p class="font-pj mt-3 text-3xl font-bold break-all text-white" data-storage>
             {initialStorage.toLocaleString()}
           </p>
         </div>
         <div class="col-span-1 flex flex-col items-center md:col-span-3">
           <p class="text-md font-pj mt-0 mt-5 font-bold tracking-widest text-white uppercase">
-            {yearly ? m.yearly({}, { locale: Astro.locals.locale }) : m.monthly({}, { locale: Astro.locals.locale })} Price
+            {yearly ? t('yearly') : t('monthly')} Price
           </p>
           <p class="font-pj mt-3 rounded-xl bg-white p-2 text-3xl font-bold break-all text-gray-900" data-total-price>
             {initialTotalPrice}€
@@ -131,11 +132,11 @@ const initialTotalPrice = (() => {
           {
             initialSuggestion && (
               <p class="font-pj mt-0 mt-5 text-sm font-bold tracking-widest text-white">
-                {m.we_suggest_you_to_choose_the({}, { locale: Astro.locals.locale })}
+                <I18nText k="we_suggest_you_to_choose_the" />
                 <button id="suggestion-button" class="underline-current cursor-pointer font-bold text-red-400 uppercase underline" data-suggestion={initialSuggestion}>
                   {initialSuggestion}
                 </button>
-                {m.plan({}, { locale: Astro.locals.locale })}
+                <I18nText k="plan" />
               </p>
             )
           }

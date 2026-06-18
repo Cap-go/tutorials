@@ -1,7 +1,6 @@
 ---
 import { numberWithSpaces, toTb, updateCalc } from '@/services/misc'
 import { getRelativeLocaleUrl } from 'astro:i18n'
-import * as m from '@/paraglide/messages'
 
 interface Props {
   payg: {
@@ -18,6 +17,8 @@ interface Props {
 }
 
 const { payg, yearly } = Astro.props
+import I18nText from '@/components/I18nText.astro'
+import { t } from '@/services/messages'
 ---
 
 <section id="pay-as-you-go" class="bg-gray-50 py-12 sm:py-16 lg:py-20">
@@ -25,11 +26,11 @@ const { payg, yearly } = Astro.props
     <div class="text-center">
       <div class="flex items-center justify-center">
         <div class="inline-flex h-24 w-24 items-center justify-center text-8xl">❤️‍🔥</div>
-        <h2 class="font-pj ml-3 text-4xl font-bold text-gray-900">{m.pay_as_you_go({}, { locale: Astro.locals.locale })}</h2>
+        <h2 class="font-pj ml-3 text-4xl font-bold text-gray-900"><I18nText k="pay_as_you_go" /></h2>
       </div>
       <p class="font-pj mt-4 text-base font-normal text-gray-600">
         +{numberWithSpaces(updateCalc(payg))}
-        {m.pay_as_you_go_description({}, { locale: Astro.locals.locale })}
+        <I18nText k="pay_as_you_go_description" />
       </p>
     </div>
     <div class="relative mx-auto mt-8 max-w-sm md:mt-12 md:max-w-3xl">
@@ -51,11 +52,11 @@ const { payg, yearly } = Astro.props
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <p class="font-pj text-lg font-bold text-gray-900">{m.monthly_active_users({}, { locale: Astro.locals.locale })}</p>
+                  <p class="font-pj text-lg font-bold text-gray-900"><I18nText k="monthly_active_users" /></p>
                   <p class="font-pj mt-1 text-sm font-normal text-gray-600">
                     <span class="font-bold">{payg.mau.toLocaleString()}</span>
-                    {m.users_included({}, { locale: Astro.locals.locale })}, {m.tr_then({}, { locale: Astro.locals.locale })} ${payg.mau_unit}/{
-                      m.user({}, { locale: Astro.locals.locale })
+                    <I18nText k="users_included" />, <I18nText k="tr_then" /> ${payg.mau_unit}/{
+                      t('user')
                     }
                   </p>
                 </div>
@@ -72,11 +73,11 @@ const { payg, yearly } = Astro.props
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <p class="font-pj text-lg font-bold text-gray-900">{m.bandwidth({}, { locale: Astro.locals.locale })}</p>
+                  <p class="font-pj text-lg font-bold text-gray-900"><I18nText k="bandwidth" /></p>
                   <p class="font-pj mt-1 text-sm font-normal text-gray-600">
                     <span class="font-bold">{toTb(payg.bandwidth)}</span>
-                    {m.TB_included({}, { locale: Astro.locals.locale })}, {m.tr_then({}, { locale: Astro.locals.locale })} ${payg.bandwidth_unit}
-                    {m.per_GB({}, { locale: Astro.locals.locale })}
+                    <I18nText k="TB_included" />, <I18nText k="tr_then" /> ${payg.bandwidth_unit}
+                    <I18nText k="per_GB" />
                   </p>
                 </div>
               </div>
@@ -91,11 +92,11 @@ const { payg, yearly } = Astro.props
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <p class="font-pj text-lg font-bold text-gray-900">{m.cloud_storage({}, { locale: Astro.locals.locale })}</p>
+                  <p class="font-pj text-lg font-bold text-gray-900"><I18nText k="cloud_storage" /></p>
                   <p class="font-pj mt-1 text-sm font-normal text-gray-600">
                     <span class="font-bold">{payg.storage.toLocaleString()}</span>
-                    {m.GB_included({}, { locale: Astro.locals.locale })}, {m.tr_then({}, { locale: Astro.locals.locale })} ${payg.storage_unit}
-                    {m.per_GB({}, { locale: Astro.locals.locale })}
+                    <I18nText k="GB_included" />, <I18nText k="tr_then" /> ${payg.storage_unit}
+                    <I18nText k="per_GB" />
                   </p>
                 </div>
               </div>
@@ -171,8 +172,8 @@ const { payg, yearly } = Astro.props
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <p class="font-pj text-lg font-bold text-gray-900">{m.API_access({}, { locale: Astro.locals.locale })}</p>
-                  <p class="font-pj mt-1 text-sm font-normal text-gray-600">{m.create_anything_you_want({}, { locale: Astro.locals.locale })}</p>
+                  <p class="font-pj text-lg font-bold text-gray-900"><I18nText k="API_access" /></p>
+                  <p class="font-pj mt-1 text-sm font-normal text-gray-600"><I18nText k="create_anything_you_want" /></p>
                 </div>
               </div>
               <div class="flex items-center">
@@ -187,8 +188,8 @@ const { payg, yearly } = Astro.props
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <p class="font-pj text-lg font-bold text-gray-900">{m.dedicated_support({}, { locale: Astro.locals.locale })}</p>
-                  <p class="font-pj mt-1 text-sm font-normal text-gray-600">{m.get_an_answer_in_less_than_6h({}, { locale: Astro.locals.locale })}</p>
+                  <p class="font-pj text-lg font-bold text-gray-900"><I18nText k="dedicated_support" /></p>
+                  <p class="font-pj mt-1 text-sm font-normal text-gray-600"><I18nText k="get_an_answer_in_less_than_6h" /></p>
                 </div>
               </div>
               <div class="flex items-center">
@@ -202,8 +203,8 @@ const { payg, yearly } = Astro.props
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <p class="font-pj text-lg font-bold text-gray-900">{m.custom_domain({}, { locale: Astro.locals.locale })}</p>
-                  <p class="font-pj mt-1 text-sm font-normal text-gray-600">{m.add_your_own_domain({}, { locale: Astro.locals.locale })}</p>
+                  <p class="font-pj text-lg font-bold text-gray-900"><I18nText k="custom_domain" /></p>
+                  <p class="font-pj mt-1 text-sm font-normal text-gray-600"><I18nText k="add_your_own_domain" /></p>
                 </div>
               </div>
             </div>
@@ -212,13 +213,13 @@ const { payg, yearly } = Astro.props
       </div>
     </div>
     <div class="mt-8 text-center">
-      <p class="font-pj text-base font-medium text-gray-600">{m.all_our_features_are_available_to_all_users({}, { locale: Astro.locals.locale })}</p>
+      <p class="font-pj text-base font-medium text-gray-600"><I18nText k="all_our_features_are_available_to_all_users" /></p>
       <div class="mt-10 flex items-end justify-center">
         <p class="font-pj text-lg font-bold text-gray-400">$</p>
         <p class="font-pj text-6xl font-bold text-gray-900">
           {yearly ? payg.price_y.toLocaleString() : payg.price_m.toLocaleString()}
         </p>
-        <p class="font-pj text-lg font-bold text-gray-400">/{m.month({}, { locale: Astro.locals.locale })}</p>
+        <p class="font-pj text-lg font-bold text-gray-400">/<I18nText k="month" /></p>
       </div>
       <a
         role="button"
@@ -227,7 +228,7 @@ const { payg, yearly } = Astro.props
         href="https://capgo.app/register/"
         class="font-pj relative mt-9 inline-flex items-center justify-center rounded-xl border border-transparent bg-gray-900 px-8 py-3.5 text-base font-bold text-white transition-all duration-200 hover:bg-gray-900/90 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
       >
-        {m.get_started_for_free({}, { locale: Astro.locals.locale })}
+        <I18nText k="get_started_for_free" />
       </a>
     </div>
   </div>

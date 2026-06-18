@@ -2,12 +2,10 @@
   "type": "module",
   "name": "capacitor-tutorial",
   "scripts": {
-    "paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide",
-    "postinstall": "bun run paraglide:compile",
     "astro": "astro",
     "dev": "tsx scripts/fix_code_languages_all.tsx && astro dev",
     "start": "astro dev",
-    "build": "bun run paraglide:compile && tsx scripts/fix_code_languages_all.tsx && tsx scripts/blogs/delete_broken_all.tsx && astro build && tsx ./scripts/repair_sitemap.tsx",
+    "build": "tsx scripts/fix_code_languages_all.tsx && tsx scripts/blogs/delete_broken_all.tsx && astro build && tsx ./scripts/repair_sitemap.tsx",
     "preview": "astro preview",
     "fmt": "prettier --write '**/*' --ignore-unknown",
     "blogs:translate_all": "tsx scripts/blogs/translate_all.tsx",
@@ -16,7 +14,10 @@
     "blogs:remove_mismatching_locales": "tsx scripts/blogs/remove_mismatching_locales.tsx",
     "blogs:delete_broken_all": "tsx scripts/blogs/delete_broken_all.tsx",
     "fix_code_languages_all": "tsx scripts/fix_code_languages_all.tsx",
-    "clean:unused": "npx tsx scripts/clean_not_used.tsx"
+    "clean:unused": "npx tsx scripts/clean_not_used.tsx",
+    "deploy:cloudflare:translation:prod": "TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx && bunx wrangler deploy --config cloudflare_workers/translation/wrangler.jsonc --env=prod --minify --upload-source-maps && TRANSLATION_WORKER_ENV=prod tsx scripts/ensure_translation_worker.tsx",
+    "deploy:cloudflare:translation:local": "TRANSLATION_WORKER_ENV=local tsx scripts/ensure_translation_worker.tsx && bunx wrangler deploy --config cloudflare_workers/translation/wrangler.jsonc --env=local --minify && TRANSLATION_WORKER_ENV=local tsx scripts/ensure_translation_worker.tsx",
+    "ensure:translation:worker": "tsx scripts/ensure_translation_worker.tsx"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.3.1",
@@ -30,21 +31,19 @@
     "astro": "^5.7.10",
     "astro-font": "^1.1.0",
     "astro-heroicons": "^2.1.5-1",
-    "astro-i18n-aut": "^0.7.3",
     "github-slugger": "^2.0.0",
     "marked": "^7.0.5",
     "mermaid": "^11.6.0",
     "sitemap": "^8.0.0",
     "striptags": "^3.2.0",
     "tailwindcss": "^4.1.5",
-    "toastify-js": "^1.12.0"
+    "toastify-js": "^1.12.0",
+    "astro-i18n-aut": "^0.7.3"
   },
   "devDependencies": {
     "@dotenvx/dotenvx": "^1.44.0",
     "@iconify-json/carbon": "^1.2.7",
     "@iconify-json/twemoji": "^1.2.2",
-    "@inlang/cli": "^3.0.0",
-    "@inlang/paraglide-js": "2.0.12",
     "@octokit/rest": "^21.1.1",
     "@types/js-yaml": "^4.0.9",
     "@types/marked": "^6.0.0",

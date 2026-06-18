@@ -3,24 +3,25 @@ import { baseDomain, structuredData } from '@/config/app'
 import { appName } from '@/constants'
 import { AstroFont } from 'astro-font'
 import { join } from 'node:path'
-import * as m from '@/paraglide/messages'
 
 const {
   ldJSON = structuredData,
-  title = m.website_title({}, { locale: Astro.locals.locale }),
-  description = m.website_description({}, { locale: Astro.locals.locale }),
+  title = t('website_title'),
+  description = t('website_description'),
   url = Astro.url,
   image = `${Astro.locals.runtimeConfig.public.baseUrl}/capgo_banner.png`,
   canonical = Astro.url,
   author = `Martin DONADIEU`,
-  keywords = m.website_keywords({}, { locale: Astro.locals.locale }),
+  keywords = t('website_keywords'),
   audio = null,
   alternateVersions = [],
 } = Astro.props
 
 const localeName_to_OGP = {
   en: 'en_EN',
+  de: 'de_DE',
   es: 'es_ES',
+  fr: 'fr_FR',
   id: 'id_ID',
   it: 'it_IT',
   ja: 'ja_JP',
@@ -39,6 +40,8 @@ const image_unsecure = image.replace('https://', 'http://')
 const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
 
 const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', name)
+import I18nText from '@/components/I18nText.astro'
+import { t } from '@/services/messages'
 ---
 
 <AstroFont
@@ -98,7 +101,7 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="apple-mobile-web-app-title" content={baseDomain()} />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta property="keywords" content={keywords} />
+<meta property="keywords" data-i18n="website_keywords" content={keywords} />
 
 <link rel="canonical" href={canonical} />
 <link rel="apple-touch-icon" href="/capgo.webp" />
@@ -119,14 +122,14 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
 }
 
 <!-- Primary Meta Tags -->
-<title set:html={title} />
-<meta name="title" content={title} />
+<title data-i18n="website_title" set:html={title} />
+<meta name="title" data-i18n="website_title" content={title} />
 <meta name="author" content={author} />
-<meta name="description" content={displayDescription} />
+<meta name="description" data-i18n="website_description" content={displayDescription} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:url" content={url} />
-<meta property="og:title" content={title} />
+<meta property="og:title" data-i18n="website_title" content={title} />
 <meta property="og:audio" content={audio} />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content={localeOGP} />
@@ -140,17 +143,17 @@ const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', na
 <meta property="og:article:author" content={author} />
 <meta property="og:audio:type" content="audio/mpeg" />
 <meta property="og:site_name" content={baseDomain()} />
-<meta property="og:description" content={displayDescription} />
+<meta property="og:description" data-i18n="website_description" content={displayDescription} />
 
 <!-- Twitter -->
 <meta property="twitter:url" content={url} />
-<meta property="twitter:title" content={title} />
+<meta property="twitter:title" data-i18n="website_title" content={title} />
 <meta property="twitter:image" content={image} />
 <meta property="twitter:app:id:iphone" content={appName} />
 <meta property="twitter:app:name:iphone" content="1602316563" />
 <meta property="twitter:creator" content="@martindonadieu" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:description" content={displayDescription} />
+<meta property="twitter:description" data-i18n="website_description" content={displayDescription} />
 <meta property="twitter:app:id:googleplay" content="ee.forgr.capgo" />
 <meta property="twitter:app:name:googleplay" content={appName} />
 
