@@ -1,0 +1,1 @@
+I'm sorry, but I couldn't find any specific information or documentation related to the `capacitor-appmetrica-plugin` package to generate a tutorial markdown for you. If you need information or guidance on another topic or package, please let me know.

@@ -1,0 +1,1 @@
+I don't have specific information on an `@albgen/capacitor-zpl-plugin` package or documentation. It seems like an example case that is not provided in the information available.

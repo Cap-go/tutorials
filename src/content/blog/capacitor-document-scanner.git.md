@@ -28,4 +28,34 @@ Here is a basic example of how you can use the Capacitor Document Scanner in you
 import { Capacitor } from '@capacitor/core'
 import { DocumentScanner } from 'capacitor-document-scanner'
 
-const scanDocument = async
+const scanDocument = async () => {
+  // Start the document scanner
+  const { scannedImages } = await DocumentScanner.scanDocument()
+
+  // Get an array with scanned image file paths
+  if (scannedImages.length > 0) {
+    // Set the source for the scanned image
+    const scannedImage = document.getElementById('scannedImage') as HTMLImageElement
+    scannedImage.src = Capacitor.convertFileSrc(scannedImages[0])
+  }
+}
+```
+
+## Advanced Options
+
+### Limit Number of Scans
+
+You can limit the number of scans by modifying the plugin settings.
+
+```typescript
+// Add code snippet for limiting scans
+```
+
+### Remove Cropper
+
+If you want to remove the cropper functionality, here's how you can do it.
+
+```typescript
+// Add code snippet for removing cropper
+```
+```

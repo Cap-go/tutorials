@@ -1,0 +1,1 @@
+I don't have information about the `@olo/pay-capacitor` package in the context provided.

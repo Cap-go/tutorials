@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on using the `@basecom-gmbh/capacitor-jailbreak-root-detection` package or its specific tutorial. If you have any other questions or need general guidance on Markdown tutorials or frontmatter in Markdown files, feel free to ask!

@@ -57,4 +57,21 @@ or on Android:
 
 ```shell
 npx cap run android
-``
+```
+
+## Available Recognizers
+
+Depending on your use case, you can choose from the following available recognizers:
+
+- **BlinkID Recognizer**: Scans and extracts data from the front side of the document as well as any machine-readable travel document (MRTD).
+- **BlinkID Combined Recognizer**: For scanning both sides of the supported document as well as any machine-readable travel document.
+- **BlinkID IDBarcode Recognizer**: Extracts data from various barcodes found on identity documents.
+
+Refer to the [documentation](https://github.com/BlinkID/blinkid-capacitor) for a detailed list of supported documents and features provided by each recognizer.
+
+---
+
+You can refer to this tutorial to successfully integrate and use the @microblink/blinkid-capacitor package in your Capacitor project for ID scanning functionalities.
+```
+
+Make sure to save this content in a markdown file with the appropriate name and extension for easy access and reference.

@@ -1,0 +1,1 @@
+I don't have access to the tutorial for using `@teamhive/capacitor-single-signon` package as part of my current context. If you are interested in learning more about Capacitor plugins or need assistance with specific details, feel free to ask!

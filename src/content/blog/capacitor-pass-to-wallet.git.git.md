@@ -60,4 +60,5 @@ PassToWallet.addMultipleToWallet({ base64: base64Strings })
   });
 ```
 
-This tutorial provides a simple guide on how to use the `capacitor-pass-to-wallet` package to add .pkpass
+This tutorial provides a simple guide on how to use the `capacitor-pass-to-wallet` package to add .pkpass files to Apple Wallet in your Capacitor project.
+```
