@@ -1,0 +1,1 @@
+I'm unable to provide a tutorial for using the `@capgo/capacitor-recaptcha` package as it is not mentioned in the provided information on the Tailwind Capacitor Plugin. If you have any other questions or need assistance, feel free to ask.

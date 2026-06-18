@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial for using the `@capgo/capacitor-appsflyer` package since it's not a real package. If you have a different question or a specific package in mind, feel free to ask.

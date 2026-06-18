@@ -1,0 +1,1 @@
+I don't have the specific details or documentation for the `@dudod/capacitor-plugin-install-referrer` package to generate a tutorial for it.

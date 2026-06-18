@@ -1,0 +1,1 @@
+I'm sorry, but I don't have the specific information or tutorial on using the `@capgo/capacitor-proximity` package at the moment.

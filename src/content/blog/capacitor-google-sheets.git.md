@@ -1,0 +1,1 @@
+I don't have information about a package called `capacitor-google-sheets-zeattacker`.

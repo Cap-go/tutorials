@@ -1,0 +1,1 @@
+I don't have the specific details for using the `@capgo/capacitor-photo-library` package.

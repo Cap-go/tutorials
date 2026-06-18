@@ -1,0 +1,1 @@
+I'm sorry, but I can't provide a markdown tutorial for the `@capgo/capacitor-gtm` package as it is not mentioned in the context provided. If you have any other questions or need help with something specific, feel free to ask!

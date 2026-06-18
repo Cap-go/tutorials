@@ -1,0 +1,1 @@
+I don't have information on the `@triplesense/capacitor-device-info` package.

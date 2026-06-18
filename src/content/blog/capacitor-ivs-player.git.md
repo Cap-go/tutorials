@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the `@capgo/capacitor-ivs-player` package nor the specific details required for creating the markdown file as you described. You might want to refer to the package documentation or seek guidance from an expert.

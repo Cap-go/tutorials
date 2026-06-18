@@ -1,0 +1,1 @@
+I'm sorry, but I couldn't find any information or details related to the package "mosip-sbi-capacitor-plugin." It seems to be missing from the context provided. If you have any other questions or need further assistance, feel free to ask!

@@ -1,0 +1,1 @@
+I don't have information on the `@capgo/capacitor-brightness` package mentioned in your question.

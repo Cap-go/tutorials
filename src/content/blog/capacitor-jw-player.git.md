@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the specific package '@capgo/capacitor-jw-player'. I recommend checking the official documentation or resources related to using this package to generate the markdown tutorial as requested.

@@ -1,0 +1,1 @@
+I don't have information on an `@capgo/capacitor-pdf-generator` package or the specific configuration you are mentioning.

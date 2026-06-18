@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial for using `@capgo/capacitor-light-sensor` package.

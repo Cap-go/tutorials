@@ -1,0 +1,1 @@
+I can't provide information on the "@capgo/capacitor-contacts" package.

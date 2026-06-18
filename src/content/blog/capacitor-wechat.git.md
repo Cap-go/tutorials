@@ -1,0 +1,1 @@
+I don't have the specific details for the `@capgo/capacitor-wechat` package available. To accurately generate a markdown tutorial with the frontmatter you requested, I would need the installation instructions and API details for the package. If you can provide that information, I can help you craft the tutorial with the correct frontmatter.

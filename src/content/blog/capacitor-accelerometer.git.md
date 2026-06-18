@@ -1,0 +1,1 @@
+I'm sorry, I don't have the specific details or documentation for the `@capgo/capacitor-accelerometer` package to create a tutorial. It's best to refer to the official documentation or the repository for that package to get accurate information for the tutorial you need.

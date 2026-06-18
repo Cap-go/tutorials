@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about the `taleemabad-capacitor-plugin` package or its usage to generate a markdown tutorial.
