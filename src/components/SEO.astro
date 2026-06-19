@@ -1,8 +1,12 @@
 ---
 import { baseDomain, structuredData } from '@/config/app'
 import { appName } from '@/constants'
+import { generateAlternateVersions } from '@/lib/alternateVersions'
+import * as m from '@/paraglide/messages'
 import { AstroFont } from 'astro-font'
 import { join } from 'node:path'
+
+const rawLocale = (Astro.locals.locale || 'en').toString().toLowerCase()
 
 const {
   ldJSON = structuredData,
@@ -14,26 +18,50 @@ const {
   author = `Martin DONADIEU`,
   keywords = m.website_keywords({}, { locale: Astro.locals.locale }),
   audio = null,
-  alternateVersions = [],
+  alternateVersions = generateAlternateVersions(Astro),
+  robots = 'index, follow',
 } = Astro.props
 
 const localeName_to_OGP = {
-  en: 'en_EN',
+  en: 'en_US',
+  de: 'de_DE',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  id: 'id_ID',
+  it: 'it_IT',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  zh: 'zh_CN',
+} as const
+
+const localeOGP = localeName_to_OGP[rawLocale as keyof typeof localeName_to_OGP] ?? localeName_to_OGP.en
+
+const toStringUrl = (value: unknown): string | null => {
+  if (!value) return null
+  if (typeof value === 'string') return value
+  if (value instanceof URL) return value.toString()
+  if (typeof (value as { toString?: () => string })?.toString === 'function') return (value as { toString: () => string }).toString()
+  return null
 }
 
-const localeOGP = localeName_to_OGP[Astro.locals.locale.toLowerCase() as keyof typeof localeName_to_OGP]
+const titleString = typeof title === 'string' && title.trim().length > 0 ? title : m.website_title({}, { locale: Astro.locals.locale })
+const descriptionString = typeof description === 'string' && description.trim().length > 0 ? description : m.website_description({}, { locale: Astro.locals.locale })
 
-let displayDescription = description
+const urlString = toStringUrl(url) || Astro.url.toString()
+const canonicalString = toStringUrl(canonical) || urlString
 
+const baseUrl = Astro.locals.runtimeConfig.public.baseUrl || Astro.url.origin
+const rawImage = typeof image === 'string' ? image : toStringUrl(image)
+const imageUrl = rawImage ? new URL(rawImage, baseUrl).toString() : new URL('/capgo_banner.png', baseUrl).toString()
+
+let displayDescription = descriptionString
 const descSize = 170
+if (displayDescription.length > descSize) displayDescription = `${displayDescription.substring(0, descSize - 3)}...`
 
-if (description.length > descSize) displayDescription = `${description.substring(0, descSize - 3)}...`
-
-const image_unsecure = image.replace('https://', 'http://')
-const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
+const image_unsecure = imageUrl.replace('https://', 'http://')
+const titleFix = titleString || (imageUrl.split('/').pop() || '.').split('.')[0]
 
 const makeFontPath = (name: string) => join(process.cwd(), 'public', 'fonts', name)
-import * as m from '@/paraglide/messages'
 ---
 
 <AstroFont
@@ -95,7 +123,7 @@ import * as m from '@/paraglide/messages'
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta property="keywords" content={keywords} />
 
-<link rel="canonical" href={canonical} />
+<link rel="canonical" href={canonicalString} />
 <link rel="apple-touch-icon" href="/capgo.webp" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" href="/favicon.png" />
@@ -115,14 +143,15 @@ import * as m from '@/paraglide/messages'
 }
 
 <!-- Primary Meta Tags -->
-<title set:html={title} />
-<meta name="title" content={title} />
+<title set:html={titleString} />
+<meta name="title" content={titleString} />
 <meta name="author" content={author} />
 <meta name="description" content={displayDescription} />
+<meta name="robots" content={robots} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:url" content={url} />
-<meta property="og:title" content={title} />
+<meta property="og:url" content={urlString} />
+<meta property="og:title" content={titleString} />
 <meta property="og:audio" content={audio} />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content={localeOGP} />
@@ -130,7 +159,7 @@ import * as m from '@/paraglide/messages'
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="627" />
 <meta property="og:image:alt" content={titleFix} />
-<meta property="og:image:secure" content={image} />
+<meta property="og:image:secure" content={imageUrl} />
 <meta property="og:image" content={image_unsecure} />
 <meta property="og:image:type" content="image/webp" />
 <meta property="og:article:author" content={author} />
@@ -139,9 +168,9 @@ import * as m from '@/paraglide/messages'
 <meta property="og:description" content={displayDescription} />
 
 <!-- Twitter -->
-<meta property="twitter:url" content={url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:image" content={image} />
+<meta property="twitter:url" content={urlString} />
+<meta property="twitter:title" content={titleString} />
+<meta property="twitter:image" content={imageUrl} />
 <meta property="twitter:app:id:iphone" content={appName} />
 <meta property="twitter:app:name:iphone" content="1602316563" />
 <meta property="twitter:creator" content="@martindonadieu" />

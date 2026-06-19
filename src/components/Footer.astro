@@ -1,9 +1,26 @@
 ---
 import * as m from '@/paraglide/messages'
+import { getLocalizedPath } from '@/services/locale-path'
+import { locales } from '@/services/locale'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 const brand = Astro.locals.runtimeConfig.public.brand
 const year = new Date().getFullYear()
+
+const localeFlags: Record<string, string> = {
+  de: '🇩🇪',
+  en: '🇺🇸',
+  es: '🇪🇸',
+  fr: '🇫🇷',
+  id: '🇮🇩',
+  it: '🇮🇹',
+  ja: '🇯🇵',
+  ko: '🇰🇷',
+  zh: '🇨🇳',
+}
+
+const currentFlag = localeFlags[Astro.locals.locale] || '🇺🇸'
+
 
 interface NavigationItem {
   name: string | (() => string)
@@ -189,8 +206,31 @@ const navigation: Record<string, NavigationItem[]> = {
         </div>
       </div>
     </div>
-    <div class="mt-12 border-t border-gray-200 pt-8">
-      <p class="text-base text-gray-500 xl:text-center">&copy; {year} {brand}, Inc. {m.copyright({}, { locale: Astro.locals.locale })}</p>
+    <div class="mt-12 flex flex-col items-center justify-between gap-6 border-t border-gray-200 pt-8 md:flex-row">
+      <div class="relative">
+        <button type="button" id="language-dropdown-button" class="flex items-center text-sm text-gray-500 hover:text-gray-900 focus:outline-none">
+          <span class="mr-2">{currentFlag}</span>
+          {Astro.locals.locale.toUpperCase()}
+          <span class="ml-1">▼</span>
+        </button>
+        <div id="language-dropdown" class="absolute bottom-full left-0 z-50 mb-2 hidden w-32 rounded-md border border-gray-200 bg-white shadow-lg">
+          <div class="py-1">
+            {
+              locales.map((item) => (
+                <a
+                  href={getLocalizedPath(item, Astro.url.pathname)}
+                  id={`language_${item}`}
+                  data-language={item}
+                  class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+                >
+                  {item.toUpperCase()}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <p class="text-base text-gray-500">&copy; {year} {brand}, Inc. {m.copyright({}, { locale: Astro.locals.locale })}</p>
     </div>
   </div>
 </footer>

@@ -145,7 +145,7 @@ type WorkerExecutionContext = {
   waitUntil(promise: Promise<unknown>): void
 }
 
-const DATAFAST_WEBSITE_ID = 'dfid_hu0aLqOvk52g6hykzIZei'
+const DATAFAST_WEBSITE_ID = ''
 const SKIP_AI_CRAWLER_TRACKING_HEADER = 'X-Capgo-Skip-AI-Crawler-Tracking'
 
 function trackAICrawler(request: Request, response: Response, ctx?: WorkerExecutionContext): Response {

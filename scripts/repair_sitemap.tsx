@@ -75,4 +75,16 @@ if (existsSync(sitemapPath)) {
   smStream.end()
   const sitemap = await streamToPromise(smStream)
   writeFileSync(sitemapPath, sitemap.toString(), 'utf-8')
+
+  if (sitemapUrls.length > 0) {
+    const sitemapIndex = [
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+      `  <sitemap><loc>${HOSTNAME}/sitemap-0.xml</loc></sitemap>`,
+      '</sitemapindex>',
+      '',
+    ].join('\n')
+
+    writeFileSync(join('dist', 'sitemap-index.xml'), sitemapIndex, 'utf-8')
+  }
 }

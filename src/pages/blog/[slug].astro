@@ -4,6 +4,7 @@ import GetStarted from '@/components/GetStarted.astro'
 import { formatTime } from '@/config/app'
 import Layout from '@/layouts/Layout.astro'
 import { getSlug } from '@/services/github'
+import { defaultLocale, locales } from '@/services/locale'
 import { getCollection, render, type CollectionEntry } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import striptags from 'striptags'
@@ -118,7 +119,7 @@ const entry = entries.find((j) => j.data.locale === Astro.locals.locale)
 
 if (!entry) {
   if (Astro.locals.locale !== 'en') {
-    const enEntry = entries.find((j) => j.data.locale === 'en')
+    const enEntry = entries.find((j) => j.data.locale === defaultLocale)
     if (enEntry)
       return new Response(
         `<!doctype html>
@@ -136,19 +137,20 @@ if (!entry) {
 }
 
 const related = allPublishedEntries.filter((j) => j.data.slug !== Astro.params.slug && j.data.locale === Astro.locals.locale).slice(0, 3)
-const seenLocales = new Set()
-const alternateVersions = entries
-  .filter(({ data }) => {
-    if (seenLocales.has(data.locale)) return false
-    seenLocales.add(data.locale)
-    return true
-  })
-  .map(({ data }) => ({
-    slug: data.slug,
-    locale: data.locale,
+const entriesByLocale = new Map(entries.map((localizedEntry) => [localizedEntry.data.locale, localizedEntry]))
+const fallbackEntry = entriesByLocale.get('en') ?? entry
+const alternateVersions = locales.map((locale) => {
+  const alternateEntry = entriesByLocale.get(locale) ?? fallbackEntry
+  const slug = alternateEntry.data.slug
+  return {
+    slug,
+    locale,
     url:
-      data.locale === 'en' ? `${Astro.locals.runtimeConfig.public.baseUrl}/blog/${data.slug}/` : `${Astro.locals.runtimeConfig.public.baseUrl}/${data.locale}/blog/${data.slug}/`,
-  }))
+      locale === defaultLocale
+        ? `${Astro.locals.runtimeConfig.public.baseUrl}/blog/${slug}/`
+        : `${Astro.locals.runtimeConfig.public.baseUrl}/${locale}/blog/${slug}/`,
+  }
+})
 
 const { Content, headings } = await render(entry)
 

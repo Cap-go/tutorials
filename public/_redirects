@@ -1,3 +1,4 @@
 /blog    /       301
 /blog/    /       301
-/sitemap.xml    /sitemap-0.xml       301
+/sitemap.xml    /sitemap-index.xml       301
+/en/*    /:splat    301
