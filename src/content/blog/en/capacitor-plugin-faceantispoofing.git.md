@@ -1,0 +1,1 @@
+I don't have information about the "capacitor-plugin-faceantispoofing" package in the provided context. I recommend checking the official documentation of the package for instructions on how to use it.

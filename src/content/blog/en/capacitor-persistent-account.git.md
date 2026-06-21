@@ -1,0 +1,1 @@
+I don't have information about the `@capgo/capacitor-persistent-account` package to generate a tutorial based on the documentation you provided.

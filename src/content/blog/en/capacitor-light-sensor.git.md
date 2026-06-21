@@ -1,0 +1,1 @@
+I don't have information on a package called `@capgo/capacitor-light-sensor` in the provided context.

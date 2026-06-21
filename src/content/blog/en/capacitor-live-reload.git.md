@@ -1,0 +1,1 @@
+I don't have information about the `@capgo/capacitor-live-reload` package to generate a tutorial.

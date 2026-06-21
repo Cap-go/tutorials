@@ -1,0 +1,1 @@
+I don't have specific information about the "@capacitor-trancee/app-language" package to generate a tutorial.

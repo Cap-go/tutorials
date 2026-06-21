@@ -1,0 +1,1 @@
+I'm sorry, but the information provided is related to the `tailwind-capacitor` plugin, not the `@capgo/capacitor-video-thumbnails` package. I don't have information about the `@capgo/capacitor-video-thumbnails` package to generate a markdown tutorial with YAML frontmatter.

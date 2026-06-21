@@ -1,0 +1,1 @@
+I don't have information about the @capgo/capacitor-volume-buttons package or its specific usage tutorial.

@@ -1,0 +1,1 @@
+I don't have information about an "@capgo/capacitor-app-tracking-transparency" package.

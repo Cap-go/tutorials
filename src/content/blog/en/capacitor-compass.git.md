@@ -1,0 +1,1 @@
+I don't have specific information on the "@capgo/capacitor-compass" package. I recommend checking the official documentation or repository of the package for accurate information on how to use it.

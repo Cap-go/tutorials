@@ -1,0 +1,1 @@
+I'm sorry, but I don't have the information on the "@capgo/capacitor-widget-kit" package to generate a tutorial for using it.

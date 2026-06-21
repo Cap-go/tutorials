@@ -1,0 +1,1 @@
+I don't have information on the `@capgo/capacitor-file` package. You might want to refer to the official documentation or resources related to that package to create the tutorial.

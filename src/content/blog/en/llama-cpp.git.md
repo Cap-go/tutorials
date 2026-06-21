@@ -1,0 +1,1 @@
+I don't have specific information or the ability to generate content for the "llama-cpp-capacitor" package.

@@ -1,0 +1,1 @@
+I don't have specific information about the `capacitor-autostartmanager` package at the moment. You might want to refer to the official documentation or online resources for a tutorial on using that package.

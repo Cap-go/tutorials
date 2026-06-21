@@ -1,0 +1,1 @@
+I don't have the specific details for the "@mmgodc/capacitor-plugin-pdftron" package required to generate a detailed tutorial.

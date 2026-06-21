@@ -1,0 +1,1 @@
+I don't know the specifics of the capacitor-stream-http package to provide you with an accurate tutorial. You might need to refer to the official documentation or guides for the capacitor-stream-http package to create a tutorial.

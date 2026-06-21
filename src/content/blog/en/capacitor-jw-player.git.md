@@ -1,0 +1,1 @@
+I don't know how to use the @capgo/capacitor-jw-player package or generate a tutorial for it.

@@ -1,0 +1,1 @@
+I don't have information about the `@capgo/capacitor-appinsights` package to generate a tutorial for it.

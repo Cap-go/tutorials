@@ -1,0 +1,1 @@
+I don't have information specifically about the `@capgo/capacitor-share-target` package and how to use it.

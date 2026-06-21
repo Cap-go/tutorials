@@ -1,0 +1,1 @@
+I don't have information on the `@ajuarezso/capacitor-liquid-glass` package or its tutorials. I recommend checking the official documentation for the package or any related tutorials for guidance on creating a markdown tutorial for its usage.

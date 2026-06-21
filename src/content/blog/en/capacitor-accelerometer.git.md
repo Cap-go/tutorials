@@ -1,0 +1,1 @@
+I don't have information specifically about the `@capgo/capacitor-accelerometer` package and how to use it. For detailed information on how to generate a markdown tutorial for using that package, you might want to refer to the package's official documentation or guides. If you have any other questions or need assistance with something else, feel free to ask!

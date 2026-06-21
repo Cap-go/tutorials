@@ -1,0 +1,1 @@
+I'm sorry, but I am unfamiliar with the specific package `ionic-capacitor-tenjin`. Therefore, I am unable to generate a tutorial for it at this time.

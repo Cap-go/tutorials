@@ -1,0 +1,1 @@
+I'm sorry, but I cannot provide a tutorial for the "@capgo/capacitor-pretty-toast" package as it is not a recognized Capacitor package. If you have any other questions or need assistance with a different package, feel free to ask!

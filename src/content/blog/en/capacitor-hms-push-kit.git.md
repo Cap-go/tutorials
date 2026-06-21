@@ -1,0 +1,1 @@
+I don't have information on the capacitor-hms-push-kit package right now.

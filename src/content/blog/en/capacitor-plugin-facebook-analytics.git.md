@@ -1,0 +1,1 @@
+I don't have information about the package "@jonit-dev/capacitor-plugin-facebook-analytics" in the context provided.

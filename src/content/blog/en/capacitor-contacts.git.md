@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on a package called `@capgo/capacitor-contacts`. It seems like you might be looking for information on a different Capacitor plugin related to contacts. If you have any other questions or need assistance with something else, feel free to ask!

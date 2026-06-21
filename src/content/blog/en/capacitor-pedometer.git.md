@@ -1,0 +1,1 @@
+I don't have information about the "@capgo/capacitor-pedometer" package or any specific tutorial content for it. For accurate details and instructions on how to use the package, I recommend referring to the official documentation provided by the package author or community contributors.

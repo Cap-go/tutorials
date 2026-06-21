@@ -1,0 +1,1 @@
+I don't have information about the "@onesignal/capacitor-plugin" package or its usage. You may want to refer to the plugin's official documentation or community resources for a markdown tutorial on using it.

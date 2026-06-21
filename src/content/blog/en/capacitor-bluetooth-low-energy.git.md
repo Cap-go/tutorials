@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on a package called "@capgo/capacitor-bluetooth-low-energy." It seems like you might have made a typo or provided the wrong package name. Please double-check the package name, and I'll be happy to help you generate the markdown tutorial for it.

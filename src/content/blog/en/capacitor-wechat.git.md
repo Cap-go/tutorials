@@ -1,0 +1,1 @@
+I don't have information on the specific @capgo/capacitor-wechat package tutorial. You may need to refer to the official documentation or resources related to that package to create the tutorial.

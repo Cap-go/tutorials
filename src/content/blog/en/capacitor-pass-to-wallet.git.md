@@ -1,0 +1,1 @@
+I don't have information about the "@belongnet/capacitor-pass-to-wallet" package or its usage tutorial.

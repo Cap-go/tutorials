@@ -1,0 +1,1 @@
+I don't have information about a package specifically named "karbon-capacitor-kakao-plugin." If you have any other questions or need assistance with a different topic, feel free to ask!

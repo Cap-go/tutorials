@@ -1,0 +1,1 @@
+I don't have specific information on the `capacitor-printer` package or its usage. It's best to refer to the official documentation or resources related to the package for a detailed tutorial.

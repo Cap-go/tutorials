@@ -1,0 +1,1 @@
+I'm sorry, but I cannot create the markdown tutorial for the @capgo/capacitor-youtube-player package as it is not the package mentioned in the context, and I don't have specific information on that package. If you provide me with details or documentation about the "@capacitor-youtube-player" package, I can assist you in creating the markdown tutorial.

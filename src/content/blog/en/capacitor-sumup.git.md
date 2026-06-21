@@ -1,0 +1,1 @@
+I don't have specific information on the `@globy-app/capacitor-sumup` package or its usage tutorial. It would be best to refer to the official documentation or the package's repository for detailed instructions.

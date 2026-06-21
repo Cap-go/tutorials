@@ -1,0 +1,1 @@
+I don't have information on the specific `@capgo/capacitor-appsflyer` package or its usage.

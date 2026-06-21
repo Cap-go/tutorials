@@ -1,0 +1,1 @@
+I don't have information on the `@team-lepisode/capacitor-naver-login` package to generate a tutorial.

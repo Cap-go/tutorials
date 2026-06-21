@@ -1,0 +1,1 @@
+I don't have specific information regarding the @capgo/capacitor-incoming-call-kit package.

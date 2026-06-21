@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on the `capacitor-native-navigation` package to create a tutorial.

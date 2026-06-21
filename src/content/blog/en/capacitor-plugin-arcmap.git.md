@@ -1,0 +1,1 @@
+Sorry, I don't have information on the "@thevillages/capacitor-arcmap" package. I recommend checking the official documentation or resources provided by the package creators for steps on how to use it.

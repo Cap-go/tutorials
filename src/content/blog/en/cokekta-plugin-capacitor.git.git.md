@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about the `conekta-plugin-capacitor` package. It seems to be a typo as the package name should be `conekta-plugin-capacitor` instead of `cokekta-plugin-capacitor`. If you need information on a different package or topic, feel free to ask!

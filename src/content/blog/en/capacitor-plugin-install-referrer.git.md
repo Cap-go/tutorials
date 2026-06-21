@@ -1,0 +1,1 @@
+I'm unable to provide information specific to the `@dudod/capacitor-plugin-install-referrer` package as it is not part of the provided context. If you have any other questions or need help with different topics related to Capacitor plugins, feel free to ask!

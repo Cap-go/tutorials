@@ -1,0 +1,1 @@
+I don't have information specific to the `@capgo/capacitor-mux-player` package. It would be best to refer to the official documentation or resources for a tutorial on using that package.

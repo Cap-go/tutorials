@@ -1,0 +1,1 @@
+I don't have information about the "@cabletv102/capacitor-upload-care-plugin" package to generate the markdown tutorial for it.

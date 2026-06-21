@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information on a package called `capacitor-voice-recorder-wav`. It seems like it might not be a widely known or documented package. If you have any other questions or need help with something else related to Capacitor or any other topic, feel free to ask!

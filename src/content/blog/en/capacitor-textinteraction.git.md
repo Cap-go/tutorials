@@ -1,0 +1,1 @@
+I don't have information specific to the "@capgo/capacitor-textinteraction" package.

@@ -1,0 +1,1 @@
+I don't have specific information on the `@notnotsamuel/capacitor-swipe-back` package or its usage.

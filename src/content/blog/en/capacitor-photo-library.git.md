@@ -1,0 +1,1 @@
+I don't have information specific to the `@capgo/capacitor-photo-library` package. It seems like you are referring to a hypothetical package named `capacitor-photo-library`. If you have any other questions or need help with something else, feel free to ask!

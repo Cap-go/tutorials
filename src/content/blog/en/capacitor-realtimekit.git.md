@@ -1,0 +1,1 @@
+I don't have information specifically related to the "@capgo/capacitor-realtimekit" package. You may want to refer to the official documentation or contact the package authors for detailed instructions on creating a tutorial for using their package.

@@ -1,0 +1,1 @@
+I don't have information on the specific package "@capgo/capacitor-ivs-player" to generate a tutorial with accurate details.

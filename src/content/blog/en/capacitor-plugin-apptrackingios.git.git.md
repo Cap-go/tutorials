@@ -1,0 +1,1 @@
+I don't have specific information on the `capacitor-plugin-apptrackingios` package. It's best to refer to the official documentation or the repository associated with the package for specific instructions and guidelines.

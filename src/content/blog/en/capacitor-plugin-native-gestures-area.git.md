@@ -1,0 +1,1 @@
+I don't have information on the package **@hiloenergie/capacitor-plugin-native-gestures-area**.

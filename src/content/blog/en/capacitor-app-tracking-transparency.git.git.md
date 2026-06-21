@@ -1,0 +1,1 @@
+I don't have specific information about the `capacitor-app-tracking-transparency` package to generate a tutorial at the moment.

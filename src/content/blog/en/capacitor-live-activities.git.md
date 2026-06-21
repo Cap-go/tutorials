@@ -1,0 +1,1 @@
+I'm not familiar with the "capacitor-live-activities" package, so I can't provide a tutorial for it.

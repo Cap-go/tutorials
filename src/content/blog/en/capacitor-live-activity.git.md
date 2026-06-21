@@ -1,0 +1,1 @@
+I don't have information on the `capacitor-live-activity` package. It seems to be a custom package that is not widely known. I recommend checking the official documentation or resources related to this specific package for the most accurate tutorial.
