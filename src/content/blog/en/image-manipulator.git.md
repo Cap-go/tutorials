@@ -1,0 +1,1 @@
+I'm sorry, but I don't have the specific knowledge required to generate a markdown tutorial for using the @capacitor-community/image-manipulator package. It's a detailed technical task that requires deep familiarity with the package. I recommend checking out the official documentation or reaching out to the community for guidance on creating such a tutorial.

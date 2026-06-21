@@ -1,0 +1,1 @@
+I don't have information on the `@fresha/capacitor-plugin-applepay` package, so I cannot generate a markdown tutorial for it.

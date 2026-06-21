@@ -1,0 +1,1 @@
+I don't have specific information on the capacitor-open-app-settings package to generate a tutorial.

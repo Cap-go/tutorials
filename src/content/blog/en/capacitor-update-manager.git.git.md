@@ -1,0 +1,1 @@
+I'm only familiar with the `@capgo/capacitor-updater` package. If you need information or a tutorial on that, I can help you with that. Let me know if you would like me to provide guidance on that instead.

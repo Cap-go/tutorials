@@ -1,0 +1,1 @@
+I don't have the specific details for the `@capacitor-community/http` package tutorial. If you need help with something else or have any other questions, feel free to ask!

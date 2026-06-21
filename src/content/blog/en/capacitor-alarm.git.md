@@ -1,0 +1,1 @@
+I don't have the specific information or tutorial for using the `@capgo/capacitor-alarm` package.

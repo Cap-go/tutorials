@@ -1,0 +1,1 @@
+I don't have information specific to the `capacitor-camera-view` package to generate a tutorial with valid YAML frontmatter. You may need to refer to the official documentation or guides for the `capacitor-camera-view` package to create that tutorial accurately.

@@ -1,0 +1,1 @@
+I don't have information on the `netshow-screen-plugin` package or its usage. As a result, I cannot generate a specific tutorial for that package.

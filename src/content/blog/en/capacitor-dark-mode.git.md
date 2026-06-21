@@ -1,0 +1,1 @@
+I'm unable to generate the YAML frontmatter and tutorial content for the `@aparajita/capacitor-dark-mode` package as I do not have the information to fill in the placeholders. If you provide me with the specific title, description, creation date, and any other relevant information, I would be happy to help generate the tutorial for you.

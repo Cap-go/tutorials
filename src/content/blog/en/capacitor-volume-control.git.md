@@ -1,0 +1,1 @@
+I don't have information specific to the @odion-cloud/capacitor-volume-control package.

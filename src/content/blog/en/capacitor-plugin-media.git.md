@@ -1,0 +1,1 @@
+I'm sorry, but I cannot provide a markdown tutorial for using the @whiteguru/capacitor-plugin-media package as the context provided is related to a different plugin, namely `@capacitor-community/media`.

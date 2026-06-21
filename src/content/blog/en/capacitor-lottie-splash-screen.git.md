@@ -1,0 +1,1 @@
+I don't have information on a package named `capacitor-lottie-splash-screen`. It seems to be a hypothetical package you are referring to. Please verify the package name or provide more context so I can assist you further.

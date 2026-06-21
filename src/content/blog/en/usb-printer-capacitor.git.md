@@ -1,0 +1,1 @@
+I don't know how to use the `@atomsolution/usb-printer-capacitor` package.

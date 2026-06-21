@@ -1,0 +1,1 @@
+I don't have information on the `@hiloenergie/capacitor-plugin-safe-area` package.

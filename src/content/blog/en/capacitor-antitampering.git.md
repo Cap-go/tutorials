@@ -1,0 +1,1 @@
+I don't know the tutorial for using the capacitor-antitampering package.

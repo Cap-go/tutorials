@@ -1,0 +1,1 @@
+I'm sorry, but I don't have specific information on the capacitor-screenshot package or its usage at the moment. You might want to refer to the official Capacitor documentation or the README file of the capacitor-screenshot package for detailed instructions on how to use it.

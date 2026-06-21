@@ -1,0 +1,1 @@
+I don't know the details of the "@nitra/capacitor-plugin-smartmerch-camera" package or its functionalities to generate a tutorial. If you provide specific information or steps you'd like to include in the tutorial, I can help structure it for you.

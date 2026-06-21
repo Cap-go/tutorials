@@ -1,0 +1,1 @@
+I'm sorry, but I can't generate a markdown tutorial for using the `@olo/pay-capacitor` package as the information provided in the context is related to the `learn-helloworld-capacitor` plugin and not the `@olo/pay-capacitor` package. If you need a tutorial for the `@olo/pay-capacitor` package, please provide relevant information or details about that package.

@@ -1,0 +1,1 @@
+I don't have information on the specific package "@ni2khanna/capacitor-game-connect" mentioned in your request, so I can't generate a tutorial specifically for that package.

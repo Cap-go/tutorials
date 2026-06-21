@@ -1,0 +1,1 @@
+I'm sorry, but I can't generate a markdown tutorial for using the @revenuecat/purchases-capacitor package as I don't have access to the specific details required to create the tutorial content. It's recommended to visit the official documentation of the package for accurate and detailed guidance on how to use it effectively.

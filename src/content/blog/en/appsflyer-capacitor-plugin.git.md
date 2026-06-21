@@ -1,0 +1,1 @@
+I don't have specific information about the `appsflyer-capacitor-plugin` package. For the most accurate and up-to-date tutorial, I recommend checking the official documentation or resources provided by the creators of the package.

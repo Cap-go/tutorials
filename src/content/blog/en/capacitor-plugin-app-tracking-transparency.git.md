@@ -1,0 +1,1 @@
+I don't have specific information on the `capacitor-plugin-app-tracking-transparency` package. For accurate guidance on writing a tutorial for this package, I recommend checking the official documentation or the repository where the plugin is hosted. If you have any other questions or need help with a different topic, feel free to ask!

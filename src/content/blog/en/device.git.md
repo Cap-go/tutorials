@@ -1,0 +1,1 @@
+I don't have the specific details needed to generate a markdown tutorial for using the `@capacitor-community/device` package. You may need to refer to the official documentation of the package or explore community resources for a detailed tutorial on using it.

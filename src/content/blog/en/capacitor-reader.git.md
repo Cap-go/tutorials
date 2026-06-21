@@ -1,0 +1,1 @@
+I'm sorry, but I don't have specific information about the `capacitor-reader` package. You might want to refer to the official documentation or resources related to the `capacitor-reader` package to create a Markdown tutorial.

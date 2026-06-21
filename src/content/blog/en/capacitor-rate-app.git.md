@@ -1,0 +1,1 @@
+I don't know the specifics of the capacitor-rate-app package or how to use it. You may need to refer to the official documentation or guides for detailed information on how to integrate and use the capacitor-rate-app package in your Capacitor project.

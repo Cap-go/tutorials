@@ -1,0 +1,1 @@
+I don't have specific information about the `@capgo/capacitor-shake` package to generate a tutorial with accurate content. You may want to refer to the official documentation of the package or the repository to get the most up-to-date and accurate information for creating a tutorial.

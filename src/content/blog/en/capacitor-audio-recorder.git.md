@@ -1,0 +1,1 @@
+I don't have the specific information for the `@capgo/capacitor-audio-recorder` package. For accurate and up-to-date information, please refer to the official documentation or README file provided by the package maintainers.

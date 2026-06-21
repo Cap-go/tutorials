@@ -1,0 +1,1 @@
+I don't have information about the specific package "@palauaandsons/capacitor-sharing" or its usage.

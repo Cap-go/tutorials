@@ -1,0 +1,1 @@
+I don't have specific information about the `@mozartec/capacitor-microphone` package to generate a tutorial with valid YAML frontmatter. You may need to refer to the documentation of the package for accurate instructions.

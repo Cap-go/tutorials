@@ -1,0 +1,1 @@
+I don't know about the capacitor-image-cropper package and cannot generate a tutorial for it.

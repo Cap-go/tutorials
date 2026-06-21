@@ -1,0 +1,1 @@
+I'm sorry, but I don't have information about the `@capgo/capacitor-mute` package to generate a markdown tutorial with valid YAML frontmatter.

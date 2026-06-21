@@ -1,0 +1,1 @@
+I don't know the specifics of the @jofr/capacitor-media-session plugin to generate a tutorial.

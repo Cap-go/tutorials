@@ -1,0 +1,1 @@
+I don't have the specific details on how to use the capacitor-native-http package.

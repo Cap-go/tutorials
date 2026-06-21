@@ -1,0 +1,1 @@
+I don't have specific information on the `capacitor-zeroconf` package. You might want to refer to the official documentation or resources related to `capacitor-zeroconf` to create a tutorial.

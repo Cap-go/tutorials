@@ -1,0 +1,1 @@
+I don't have information specifically about the `capacitor-edge-to-edge` package at the moment.

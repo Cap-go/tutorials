@@ -1,0 +1,1 @@
+I don't have information specific to the `@joinflux/capacitor-segment` package to generate a tutorial.

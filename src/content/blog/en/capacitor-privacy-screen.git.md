@@ -1,0 +1,1 @@
+I don't have specific information on the @capacitor/privacy-screen package to create a tutorial. Sorry about that!

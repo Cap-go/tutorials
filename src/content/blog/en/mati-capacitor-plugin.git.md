@@ -1,0 +1,1 @@
+I don't know the answer to that. You can refer to the official documentation provided for the MetaMap Capacitor plugin [here](https://dash.readme.com/project/mati/v1.4/docs/quik-start-1) to create a markdown tutorial for using the package.

@@ -1,0 +1,1 @@
+I don't have information about the `indigitall-capacitor-plugin` package to generate a tutorial.

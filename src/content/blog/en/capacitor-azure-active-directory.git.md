@@ -1,0 +1,1 @@
+I don't have information about the capacitor-aad package or its tutorial. You may need to refer to the official documentation or resources related to the capacitor-aad package to create a tutorial.

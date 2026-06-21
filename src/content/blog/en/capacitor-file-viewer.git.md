@@ -1,0 +1,1 @@
+I don't know, please consult the official documentation or a tutorial for using the @capacitor/file-viewer package.
